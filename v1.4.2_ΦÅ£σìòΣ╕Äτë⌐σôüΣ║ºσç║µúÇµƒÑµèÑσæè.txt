@@ -1,0 +1,29 @@
+SevenColourPagoda v1.4.2 菜单与物品产出检查报告
+
+一、一级建造菜单修复
+1. Info.json DisplayName：七色宝塔
+2. MainList Type：七色宝塔
+3. 文件路径：Settings/Ui/MainList/SevenColourPagodaMainList.xml
+4. Label 仅作为一级页签内部的二级分类，不承担一级菜单注册。
+
+二、建筑注册检查
+建筑定义总数：19
+MainList 已注册：19
+遗漏：0
+
+三、丹药及物品检查
+丹药不需要加入建造 MainList；其显示位置由生产建筑的 ProduceList 决定。
+- 8 种丹药/丹材均已加入鸿钧丹阵的 DrugProduct 列表。
+- 精华类物品均已加入万炼精元鼎的 Handwork 列表。
+- 灵魂类物品均由万炼魂鼎生产或相关事件获得。
+- 血液类物品均由万炼血鼎生产或血鼎事件获得。
+- 七色秘卷及相关卷册均由七色宝塔生产。
+
+四、发现但未擅自修改的项目
+Item_ImmortalLingCrystal（仙晶）存在完整物品定义，但未出现在任何生产建筑、地图事件或其他引用中。
+其说明明确称“绝非下界手段所能造化”，因此可能是作者预留或刻意不提供的物品。本版仅记录，不添加产出方式。
+
+五、校验
+- 所有 XML 文件均可解析。
+- Info.json 可解析。
+- MainList 的 19 个 Name 均能匹配建筑 ThingDef。

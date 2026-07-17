@@ -1,0 +1,13 @@
+SevenColourPagoda-CN v1.4.4 菜单诊断版
+
+本版不再把 MainList 的 Type 与 Label 当作普通显示文本翻译。
+
+修改：
+1. 路径继续使用 Settings/Ui/MainList。
+2. Type 恢复为原作者使用的英文内部分类键：Riths Mod。
+3. Label 统一为已在正常 MOD 中验证可工作的：Buildings。
+4. CMDType 保持 Build。
+5. 19 个建筑条目全部保留。
+
+进入游戏后，一级菜单预计显示为 Riths Mod。
+如果本版出现菜单，说明 Type/Label 属于不应本地化的内部分类键；后续可再研究单独的显示文本本地化方式。

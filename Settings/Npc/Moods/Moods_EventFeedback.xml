@@ -1,0 +1,14 @@
+<MoodDefs><List>
+	
+	
+	<Mood Name="Mood_ZhongLingQiGongNingYC">
+		<DisplayName>中度灵气共鸣</DisplayName>
+		<Desc>与灵气相融，令人通体舒畅。</Desc>
+		<StoryDesc>Because of cultivating in the rich aura, his face is calm</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>10</Value>
+		<Duration>-1</Duration>
+	</Mood>
+
+</List></MoodDefs>

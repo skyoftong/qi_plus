@@ -1,0 +1,1044 @@
+<ThingDefs><List>
+
+<!--Basic Qi Gathering Array-->
+    <ThingDef Type="Building" Name="RithQiArray1" Parent="OrnamentBase">
+		<ThingName>凝气阵</ThingName>	
+		<TexPath>Spr/Object/Buildings/QiArray1.png</TexPath>
+		<Desc>刻于香炉之上的基础聚灵阵。仅需一枚灵晶即可长久运转，且不受建造材料影响，聚灵效果始终相同。</Desc>
+		<TexScale>0.7</TexScale>	
+		<SelectAble>1</SelectAble>
+		<Rate>4</Rate>
+		<Beauty>12</Beauty>
+		<CastShadow>1</CastShadow>
+		<ShadowSize>
+			<x>0.4</x>
+			<y>1.5</y>
+		</ShadowSize>
+		<ColliderKind>Slow</ColliderKind>
+		<Collider>
+			<Data>
+			[3],
+			</Data>
+			<OffsetGroup>
+				<li><x>0</x><y>0.25</y></li>
+				<li><x>0</x><y>0.25</y></li>
+				<li><x>0</x><y>0.25</y></li>
+				<li><x>0</x><y>0.25</y></li>
+			</OffsetGroup>
+		</Collider>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Building>
+			<BeMade>
+				<WorkToMake>100</WorkToMake>
+				<Quality>6</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "WoodBlock"/>
+				</StuffCategories>
+				<CostStuffCount>20</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_LingCrystal" count = "1"/>
+				</CostItems>
+			</BeMade>
+			<SnowRenderData>
+				<x>2.4</x>
+				<y>3.25</y>
+				<z>1</z>
+			</SnowRenderData>		
+		</Building>
+		<Ling>
+			<AddionLing>20</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+	</ThingDef>	
+<!--Intermediate Qi Gathering Array-->
+	<ThingDef Type="Building" Name="RithQiArray2" Parent="OrnamentBase">
+		<ThingName>炼气阵</ThingName>	
+		<TexPath>Spr/Object/Buildings/QiArray2.png</TexPath>
+		<Desc>刻于阵石之上的进阶聚灵阵。仅需一枚灵晶即可长久运转，且不受建造材料影响，聚灵效果始终相同。</Desc>
+		<TexScale>1</TexScale>	
+		<SelectAble>1</SelectAble>
+		<Rate>8</Rate>
+		<Beauty>16</Beauty>
+		<CastShadow>1</CastShadow>
+		<ShadowSize>
+			<x>0.2</x>
+			<y>1.8</y>
+		</ShadowSize>
+		<Collider>
+			<Data>
+			[3],
+			</Data>
+			<Offset>
+				<x>0</x>
+				<y>0.7</y>
+			</Offset>
+		</Collider>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Building>
+			<BeMade>
+				<WorkToMake>300</WorkToMake>
+				<Quality>9</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "WoodBlock"/>
+				</StuffCategories>
+				<CostStuffCount>40</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_LingCrystal" count = "1"/>
+					<Item name = "Item_QiConCrystal" count = "1"/>
+				</CostItems>
+			</BeMade>
+		<SnowRenderData>
+			<x>3.1</x>
+			<y>3.9</y>
+			<z>1</z>
+		</SnowRenderData>		
+		</Building>
+		<Ling>
+			<AddionLing>40</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+	</ThingDef>	
+<!--Advanced Qi Gathering Array-->
+	<ThingDef Type="Building" Name="RithQiArray3" Parent="OrnamentBase">
+		<ThingName>燃气阵</ThingName>	
+		<TexPath>Spr/Object/Buildings/QiArray3.png</TexPath>
+		<Desc>以小塔为阵基的高级聚灵阵。仅需一枚灵晶即可长久运转，且不受建造材料影响，聚灵效果始终相同。</Desc>
+		<TexScale>1.2</TexScale>	
+		<SelectAble>1</SelectAble>
+		<Rate>12</Rate>
+		<Beauty>20</Beauty>
+		<CastShadow>1</CastShadow>
+		<ShadowSize>
+			<x>0.4</x>
+			<y>1.5</y>
+		</ShadowSize>
+		<ColliderKind>Slow</ColliderKind>
+		<Collider>
+			<Data>
+			[3],
+			</Data>
+				<Offset>
+					<x>0</x>
+					<y>0.7</y>
+				</Offset>
+		</Collider>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Building>
+			<BeMade>
+				<WorkToMake>100</WorkToMake>
+				<Quality>6</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "WoodBlock"/>
+				</StuffCategories>
+				<CostStuffCount>100</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_LingCrystal" count = "1"/>
+					<Item name = "Item_QiConCrystal" count = "5"/>
+				</CostItems>
+			</BeMade>
+			<SnowRenderData>
+				<x>2.4</x>
+				<y>3.25</y>
+				<z>1</z>
+			</SnowRenderData>		
+		</Building>
+		<Ling>
+			<AddionLing>60</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+	</ThingDef>	
+<!--Immortal Grade Qi Gathering Array-->
+	<ThingDef Type="Building" Name="RithQiArray4" Parent="OrnamentBase">
+		<ThingName>仙灵聚气阵</ThingName>	
+		<TexPath>Spr/Object/Buildings/QiArray4.png</TexPath>
+		<Desc>仙品聚灵设施。[size=10][color=#D06508]其聚灵强度不高，也无法附带五行属性，但作用范围极广。[/color][/size]</Desc>
+		<TexScale>0.7</TexScale>	
+		<SelectAble>1</SelectAble>
+		<Rate>12</Rate>
+		<Beauty>20</Beauty>
+		<CastShadow>1</CastShadow>
+		<ShadowSize>
+			<x>0.4</x>
+			<y>1.5</y>
+		</ShadowSize>
+		<ColliderKind>Slow</ColliderKind>
+		<Collider>
+			<Data>
+			[3],
+			</Data>
+				<Offset>
+					<x>0</x>
+					<y>0.7</y>
+				</Offset>
+		</Collider>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Building>
+		<AutoUnLock>0</AutoUnLock>
+			<BeMade>
+				<WorkToMake>100</WorkToMake>
+				<Quality>6</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "WoodBlock"/>
+				</StuffCategories>
+				<CostStuffCount>100</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_ImmortalLingStone" count = "1"/>
+				</CostItems>
+			</BeMade>
+			<SnowRenderData>
+				<x>2.4</x>
+				<y>3.25</y>
+				<z>1</z>
+			</SnowRenderData>		
+		</Building>
+		<Element>
+			<Kind>None</Kind>
+			<Value>30</Value>         
+			<Radius>1</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Ling>
+			<AddionLing>40</AddionLing>
+			<AddionRadius>5</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+	</ThingDef>	
+<!--Advanced cultivation cushion, Alternative to the strongest 1 tile cultivation cushion available-->
+	<ThingDef Type="Building" Name="RithCultCushionlvl3" Parent="FurnitureBase">
+		<ThingName>悟道蒲团</ThingName>	
+		<Desc>以最上乘的灵材精制而成的悟道蒲团，可助修行者静心参悟大道。</Desc>
+		<Tags>
+			<Tag Name="Sitable" Level="1"/>
+			<Tag Name="Practice" Level="20"/>
+		</Tags>
+		<TexScale>1</TexScale>
+		<TexPath>Spr/Object/Buildings/CultCushionlvl3.png</TexPath>
+		<SelectAble>1</SelectAble>	
+		<CastShadow>0</CastShadow>
+		<BlockLight>0</BlockLight>	
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[6],
+			</Data>
+				<Offset>
+					<x>0</x>
+					<y>-0.1</y>
+				</Offset>
+			<WorkOffset>
+				<li Index="0"  X="0" Y="0" Ang="181"/>
+			</WorkOffset>
+		</Collider>
+
+		<Building>
+			<OwnerCount>1</OwnerCount>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<BePackage>1</BePackage>
+			<TexScale>1</TexScale>
+			<WorkTexPath>Spr/Object/Buildings/CultCushionlvl3.png</WorkTexPath>
+			
+			<PracticeEffectiveness>1.5</PracticeEffectiveness>
+			<BeMade>
+				<WorkToMake>50</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "WoodBlock"/>
+					<Stuff name = "RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>25</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_LingCrystal" count = "1"/>
+					<Item name = "Item_QiConCrystal" count = "1"/>
+				</CostItems>
+			</BeMade>
+			<SnowRenderData>
+				<x>2.4</x>
+				<y>3.55</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+		<Ling>
+			<AddionLing>250</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+	</ThingDef>	
+<!--Advanced Cultivation Platform, Alternative skin to Kunlun Platform-->
+	<ThingDef Type="Building" Name="RithCultPlatform1" Parent="FurnitureBase">
+		<ThingName>玉阙修行台</ThingName>	
+			<Desc>玉阙修行台以玉阙仙境所产的上乘灵材炼制而成，是一座极为卓越的修行法台。</Desc>
+			<Tags>
+				<Tag Name="Sitable" Level="1"/>
+				<Tag Name="Practice" Level="20"/>
+			</Tags>
+			<TexScale>1.3</TexScale>
+			<TexPath>Spr/Object/Buildings/CultPlatformlvl3b.png</TexPath>
+			<SelectAble>1</SelectAble>	
+			<CastShadow>0</CastShadow>
+			<BlockLight>0</BlockLight>	
+			<Collider>
+				<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+				<Data>
+				[1,6,1],
+				[1,1,1],
+				[1,1,1],
+				</Data>
+					<Offset>
+						<x>0</x>
+						<y>-0.5</y>
+					</Offset>
+			</Collider>
+
+			<Building>
+				<OwnerCount>1</OwnerCount>
+				<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+				<BePackage>1</BePackage>
+				<TexScale>1.3</TexScale>
+				<WorkTexPath>Spr/Object/Buildings/CultPlatformlvl3b.png</WorkTexPath>
+				<PracticeEffectiveness>1.5</PracticeEffectiveness>
+				<BeMade>
+					<WorkToMake>50</WorkToMake>
+					<Quality>0</Quality>
+					<StuffCategories>
+						<Stuff name = "MetalBlock"/>
+						<Stuff name = "WoodBlock"/>
+						<Stuff name = "RockBlock"/>
+					</StuffCategories>
+					<CostStuffCount>50</CostStuffCount>
+					<CostItems>
+						<Item name = "Item_LingCrystal" count = "9"/>
+						<Item name = "Item_QiConCrystal" count = "1"/>
+					</CostItems>
+				</BeMade>
+			<SnowRenderData>
+				<x>2.4</x>
+				<y>3.55</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+		<Ling>
+			<AddionLing>600</AddionLing>
+			<AddionRadius>2</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+	</ThingDef>	
+<!--龙皇修行台: A remarkable cultivation platform unlockable via 7 Coloured Pagoda-->	
+	<ThingDef Type="Building" Name="RithCultPlatform2" Parent="FurnitureBase">
+		<ThingName>龙皇修行台</ThingName>	
+		<Desc>由七色宝塔所得的奇异修行台，似乎源自某处仙界。</Desc>
+		<Tags>
+			<Tag Name="Sitable" Level="1"/>
+			<Tag Name="Practice" Level="20"/>
+		</Tags>
+		<TexScale>1.3</TexScale>
+		<TexPath>Spr/Object/Buildings/CultCushionlvl4.png</TexPath>
+		<SelectAble>1</SelectAble>	
+		<CastShadow>0</CastShadow>
+		<BlockLight>0</BlockLight>	
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[0,1,0],
+			[1,6,1],
+			[0,1,0],
+			</Data>
+				<Offset>
+					<x>0</x>
+					<y>0.2</y>
+				</Offset>
+			<WorkOffset>
+				<li Index="0"  X="0" Y="0.75" Ang="181"/>
+			</WorkOffset>
+		</Collider>
+
+		<Building>
+			<AutoUnLock>0</AutoUnLock>
+			<OwnerCount>1</OwnerCount>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<BePackage>1</BePackage>
+			<TexScale>1.3</TexScale>
+			<WorkTexPath>Spr/Object/Buildings/CultCushionlvl4.png</WorkTexPath>
+			
+			<PracticeEffectiveness>1.5</PracticeEffectiveness>
+			<BeMade>
+				<WorkToMake>50</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "WoodBlock"/>
+					<Stuff name = "RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>100</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_LingCrystal" count = "9"/>
+					<Item name = "Item_ShiftingVoidCrystal" count = "1"/>
+					<Item name = "Item_DragonBoneJade" count = "1"/>
+				</CostItems>
+			</BeMade>
+			<SnowRenderData>
+				<x>2.4</x>
+				<y>3.55</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+		<Ling>
+			<AddionLing>700</AddionLing>
+			<AddionRadius>2</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+	</ThingDef>		
+<!--上古梧桐 (Wood): Cultivation wonder unlockable via the 7 Coloured Pagoda-->
+<ThingDef Type="Building" Name="AncientParasolTree" Parent="FurnitureBase">
+	<ThingName>上古梧桐</ThingName>
+	<Desc>历经漫长岁月的上古梧桐，可供修行者在树下参悟修炼。</Desc>	
+	<ElementKind>Mu</ElementKind>
+	<Tags>
+		<Tag Name="Sitable" Level="1"/>
+		<Tag Name="Practice" Level="20"/>
+	</Tags>
+	<TexPath>Spr\Object\Buildings\AncientParasolTree.png</TexPath>
+	<TexScale>1</TexScale>
+	<ClassName>AncientParasolTree_Building</ClassName>
+	<MaxHitPoints>33333</MaxHitPoints>
+	<Beauty>20</Beauty>
+	<SelectAble>1</SelectAble>
+		<Flammability>
+			<Flammability>-1</Flammability>
+		</Flammability>
+	<Collider>
+		<Data>
+		[1,1,1,5,1],
+		[1,1,3,1,1],
+		</Data>
+		<OffsetGroup>
+			<li><x>0</x><y>0</y></li>  
+			<li><x>0</x><y>0</y></li>     
+			<li><x>0.5</x><y>1.85</y></li>     
+			<li><x>0</x><y>0</y></li>     
+		</OffsetGroup>
+	</Collider>
+	<Building>
+		<AutoUnLock>0</AutoUnLock>
+		<OwnerCount>1</OwnerCount>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>1</BePackage>
+		<WorkTexPath>Spr\Object\Buildings\AncientParasolTree.png</WorkTexPath>
+		
+		<PracticeEffectiveness>2</PracticeEffectiveness>
+		<BeMade>
+			<WorkToMake>2500</WorkToMake>
+			<Quality>13</Quality>
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>150</CostStuffCount>
+			<CostItems>
+				<Item name = "Item_ParasolTreeSeedling" count = "1"/>
+				<Item name = "Item_YangEssence" count = "3"/>
+				<Item name = "Item_JarImmortalEarth" count = "1"/>
+				<Item name = "Item_ParasolWood" count = "50"/>
+				<Item name = "Item_YinOriginEmbryo" count = "5"/>	
+			</CostItems>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.2</x>
+			<y>4.05</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>12</Value>         
+		<Radius>9</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>1200</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	</ThingDef>	
+
+	<ThingDef Type="Building" Name="YangFissure" Parent="FurnitureBase">
+	<TexPath>Spr/Object/Buildings/AbsoluteYangPortal.png</TexPath>
+	<TexScale>1</TexScale>
+	<ElementKind>Huo</ElementKind>
+	<Tags>
+		<Tag Name="Sitable" Level="1"/>
+		<Tag Name="Practice" Level="20"/>
+	</Tags>
+	<ThingName>阳仙界裂隙</ThingName>	
+	<Desc>通往阳属仙界的空间裂隙。贸然进入无异于送死，但若在裂隙之前修炼……</Desc>
+	<MaxHitPoints>33333</MaxHitPoints>	
+	<CastShadow>0</CastShadow>
+	<BlockLight>0</BlockLight>
+	<ShadowSize>
+		<x>0</x>
+		<y>0</y>
+	</ShadowSize>
+	<ColliderKind>Slow</ColliderKind>
+		<Flammability>
+			<Flammability>-1</Flammability>
+		</Flammability>
+		<Light>
+			<Value>50</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>3</Radius>
+			<Color>31CCFFC6</Color>
+		</Light>
+	<Collider>
+		<Data>
+		[0,0,1,1,1,1,1,1,1,0,0],
+		[0,1,1,1,1,1,1,1,1,1,0],
+		[1,1,1,1,1,1,1,1,1,1,1],
+		[1,1,1,1,1,6,1,1,1,1,1],
+		[1,1,1,1,1,1,1,1,1,1,1],
+		[1,1,1,1,1,1,1,1,1,1,1],
+		[0,1,1,1,1,1,1,1,1,1,0],
+		[0,0,1,1,1,1,1,1,1,0,0],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<AutoUnLock>0</AutoUnLock>
+		<OwnerCount>1</OwnerCount>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>1</BePackage>
+		<WorkTexPath>Spr/Object/Buildings/AbsoluteYangPortal.png</WorkTexPath>
+		<PracticeEffectiveness>2</PracticeEffectiveness>
+		<BeMade>
+			<WorkToMake>1500</WorkToMake>
+			<Quality>12</Quality>
+				<StuffCategories>
+					<Stuff name = "RockBlock"/>
+					<Stuff name = "WoodBlock"/>
+				</StuffCategories>
+				<CostStuffCount>500</CostStuffCount>
+			<CostItems>
+				<Item name = "Item_QiConCrystal" count = "33"/>
+				<Item name = "Item_YangEssence" count = "5"/>
+				<Item name = "Item_LifeWoodEmbryo" count = "5"/>
+				<Item name = "Item_ShiftingVoidCrystal" count = "5"/>
+			</CostItems>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.2</x>
+			<y>3.73</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+		<Heat>
+			<Value>200</Value>
+			<RoomValue>600</RoomValue>
+			<Radius>5</Radius>
+			<FailRadius>1</FailRadius>
+			<Failing>0.9</Failing>
+			<SkipSelf>1</SkipSelf>
+		</Heat>
+		<Element>
+			<Kind>Huo</Kind>
+			<Value>30</Value>         
+			<Radius>9</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Ling>
+			<AddionLing>1200</AddionLing>
+			<AddionRadius>5</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+	</ThingDef>	
+<!--太初之门(Water):-->
+	<ThingDef Type="Building" Name="NascentOriginGate" Parent="FurnitureBase">
+		<TexPath>Spr/Object/Buildings/NascentOriginGate.png</TexPath>
+		<TexScale>1</TexScale>
+		<ElementKind>Shui</ElementKind>
+		<Tags>
+			<Tag Name="Sitable" Level="1"/>
+			<Tag Name="Practice" Level="20"/>
+		</Tags>
+		<ThingName>太初之门</ThingName>	
+		<Desc>蕴含太初水行之气的玄妙法门，可供修行者静坐参悟。</Desc>
+		<MaxHitPoints>33333</MaxHitPoints>
+		<Beauty>30</Beauty>	
+		<CastShadow>0</CastShadow>
+		<BlockLight>0</BlockLight>
+		<ShadowSize>
+			<x>0</x>
+			<y>0</y>
+		</ShadowSize>
+		<ColliderKind>Slow</ColliderKind>
+			<Flammability>
+				<Flammability>-1</Flammability>
+			</Flammability>
+			<Light>
+				<Value>100</Value>
+				<Failing>0.8</Failing>
+				<FailRadius>1</FailRadius>
+				<Radius>9</Radius>
+				<Color>31CCFFC6</Color>
+			</Light>
+		<Collider>
+			<Data>
+			[0,1,1,1,1,1,1,1,0],
+			[0,1,1,1,1,1,1,1,0],
+			[1,1,1,1,6,1,1,1,1],
+			[1,1,1,1,0,1,1,1,1],
+			[1,1,1,1,0,1,1,1,1],
+			[1,1,1,1,0,1,1,1,1],
+			[1,1,1,1,0,1,1,1,1],
+			[1,1,1,1,0,1,1,1,1],
+			</Data>
+			<Offset>
+				<y>-1.3</y>
+				<x>0</x>
+			</Offset>
+		</Collider>
+		<Building>
+			<AutoUnLock>0</AutoUnLock>
+			<OwnerCount>1</OwnerCount>
+			<TerrainAffordanceNeeded>ShallowWater</TerrainAffordanceNeeded>
+			<BePackage>1</BePackage>
+			<WorkTexPath>Spr/Object/Buildings/NascentOriginGate.png</WorkTexPath>
+			<PracticeEffectiveness>2</PracticeEffectiveness>
+			<BeMade>
+				<WorkToMake>1500</WorkToMake>
+				<Quality>12</Quality>
+					<StuffCategories>
+						<Stuff name = "RockBlock"/>
+						<Stuff name = "WoodBlock"/>
+					</StuffCategories>
+					<CostStuffCount>500</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_YinOriginEmbryo" count = "5"/>
+					<Item name = "Item_StellarMetalEmbryo" count = "5"/>
+					<Item name = "Item_LifeWoodEmbryo" count = "5"/>
+					<Item name = "Item_OriginGateArrayCore" count = "5"/>
+				</CostItems>
+			</BeMade>
+			<SnowRenderData>
+			</SnowRenderData>		
+		</Building>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>120</Value>         
+			<Radius>9</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Ling>
+			<AddionLing>1200</AddionLing>
+			<AddionRadius>5</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+	</ThingDef>	
+<!--地脉核心池(Earth):-->
+	<ThingDef Type="Building" Name="EarthCorePool" Parent="FurnitureBase">
+		<TexPath>Spr/Object/Buildings/地脉核心Tree.png</TexPath>
+		<TexScale>1</TexScale>
+		<ElementKind>Tu</ElementKind>
+		<Tags>
+			<Tag Name="Sitable" Level="1"/>
+			<Tag Name="Practice" Level="20"/>
+		</Tags>
+		<ThingName>地脉核心池</ThingName>	
+		<Desc>围绕玉阙灵植根系形成的地脉核心池，其中蕴藏着一缕最为本源的土行灵气。</Desc>
+		<MaxHitPoints>33333</MaxHitPoints>
+		<Beauty>30</Beauty>	
+		<CastShadow>0</CastShadow>
+		<BlockLight>0</BlockLight>
+		<ShadowSize>
+			<x>0</x>
+			<y>0</y>
+		</ShadowSize>
+		<ColliderKind>Slow</ColliderKind>
+			<Flammability>
+				<Flammability>-1</Flammability>
+			</Flammability>
+			<Light>
+				<Value>100</Value>
+				<Failing>0.8</Failing>
+				<FailRadius>1</FailRadius>
+				<Radius>9</Radius>
+				<Color>31CCFFC6</Color>
+			</Light>
+		<Collider>
+			<Data>
+			[1,1,1,1,1,1,1],
+			[1,1,1,1,1,1,1],
+			[1,1,1,1,1,1,1],
+			[1,1,1,1,1,1,1],
+			[1,1,1,6,1,1,1],
+			[1,1,1,1,1,1,1],
+			[0,1,1,1,1,1,0],
+			</Data>
+			<Offset>
+				<y>1.5</y>
+				<x>-0.2</x>
+			</Offset>
+		</Collider>
+		<Building>
+			<AutoUnLock>0</AutoUnLock>
+			<OwnerCount>1</OwnerCount>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<BePackage>1</BePackage>
+			<WorkTexPath>Spr/Object/Buildings/地脉核心Tree.png</WorkTexPath>
+			<PracticeEffectiveness>2</PracticeEffectiveness>
+			<BeMade>
+				<WorkToMake>1500</WorkToMake>
+				<Quality>12</Quality>
+					<StuffCategories>
+						<Stuff name = "RockBlock"/>
+						<Stuff name = "WoodBlock"/>
+					</StuffCategories>
+					<CostStuffCount>500</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_JadeHeavenSeedling" count = "1"/>
+					<Item name = "Item_YangEssence" count = "3"/>
+					<Item name = "Item_StellarMetalEmbryo" count = "4"/>
+					<Item name = "Item_EarthCoreEmbryo" count = "5"/>
+				</CostItems>
+			</BeMade>
+			<SnowRenderData>
+			</SnowRenderData>		
+		</Building>
+		<Element>
+			<Kind>Tu</Kind>
+			<Value>120</Value>         
+			<Radius>9</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Ling>
+			<AddionLing>1200</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+	</ThingDef>	
+<!-- 八劫雷池 (Metal): -->
+	<ThingDef Type="Building" Name="8DirThunderArray" Parent="FurnitureBase">
+		<TexPath>Spr/Object/Buildings/8DirectionsThunderArray1.png</TexPath>
+		<TexScale>1</TexScale>
+		<ElementKind>Jin</ElementKind>
+		<Tags>
+			<Tag Name="Sitable" Level="1"/>
+			<Tag Name="Practice" Level="20"/>
+		</Tags>
+		<ThingName>八劫雷池</ThingName>	
+		<Desc>八剑引动天威，淬炼龙柱。修行者可于雷池之中参悟大道。</Desc>
+		<MaxHitPoints>33333</MaxHitPoints>	
+		<CastShadow>0</CastShadow>
+		<BlockLight>0</BlockLight>
+		<ShadowSize>
+			<x>0</x>
+			<y>0</y>
+		</ShadowSize>
+		<ColliderKind>Slow</ColliderKind>
+			<Flammability>
+				<Flammability>-1</Flammability>
+			</Flammability>
+			<Light>
+				<Value>150</Value>
+				<Failing>0.8</Failing>
+				<FailRadius>1</FailRadius>
+				<Radius>3</Radius>
+				<Color>31CCFFC6</Color>
+			</Light>
+		<Collider>
+			<Data>
+			[0,0,1,1,1,1,1,1,1,0,0],
+			[0,1,1,1,1,1,1,1,1,1,0],
+			[1,1,1,1,1,6,1,1,1,1,1],
+			[1,1,1,1,1,1,1,1,1,1,1],
+			[1,1,1,1,1,1,1,1,1,1,1],
+			[1,1,1,1,1,1,1,1,1,1,1],
+			[0,1,1,1,1,1,1,1,1,1,0],
+			[0,0,1,1,1,1,1,1,1,0,0],
+			</Data>
+			<Offset>
+				<y>-1.05</y>
+				<x>-0.1</x>
+			</Offset>
+		</Collider>
+		<Building>
+			<AutoUnLock>0</AutoUnLock>
+			<OwnerCount>1</OwnerCount>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<BePackage>1</BePackage>
+			<WorkTexPath>Spr/Object/Buildings/8DirectionsThunderArray1a.png</WorkTexPath>
+			<PracticeEffectiveness>2</PracticeEffectiveness>
+			<BeMade>
+				<WorkToMake>1500</WorkToMake>
+				<Quality>12</Quality>
+					<StuffCategories>
+						<Stuff name = "RockBlock"/>
+						<Stuff name = "WoodBlock"/>
+					</StuffCategories>
+					<CostStuffCount>500</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_LightningSoul" count = "8"/>
+					<Item name = "Item_StellarMetalEmbryo" count = "8"/>
+					<Item name = "Item_DragonBoneJade" count = "4"/>
+					<Item name = "Item_8ThunderArrayCore" count = "8"/>
+				</CostItems>
+			</BeMade>
+			<SnowRenderData>
+				<x>3.2</x>
+				<y>3.73</y>
+				<z>1</z>
+			</SnowRenderData>		
+		</Building>
+		<Element>
+			<Kind>Jin</Kind>
+			<Value>30</Value>         
+			<Radius>9</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Ling>
+			<AddionLing>1200</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+	</ThingDef>	
+<!--宗门山门: 3 wide entrence version-->
+	<ThingDef Type="Building" Name="Build_TheBigGate1" Parent="FurnitureBase">
+		<ThingName>宗门山门</ThingName>	
+		<Desc>彰显宗门气象的宏伟入口。</Desc>
+		<Tags>
+			<Tag Name="TheGate" Level="1"/>
+		</Tags>
+		<TexPath>res/Sprs/buildingnew/building_paifang01</TexPath>
+		<TexScale>2</TexScale>
+		<SelectAble>1</SelectAble>	
+		<CastShadow>1</CastShadow>
+		<BlockLight>1</BlockLight>
+		<ColliderKind>NoPass</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[0,0,0,1,0,0,0,1,0,0,0],
+			[1,0,0,1,0,0,0,1,0,0,1],
+			[1,0,0,1,0,0,0,1,0,0,1],
+			[1,0,0,1,0,2,0,1,0,0,1],
+			[4,4,4,4,0,0,0,4,4,4,4],
+			[4,4,4,4,0,0,0,4,4,4,4],
+			[4,4,4,4,0,0,0,4,4,4,4],
+			[4,4,4,4,0,0,0,4,4,4,4],
+			[4,4,4,4,0,0,0,4,4,4,4],
+			[4,4,4,4,0,0,0,4,4,4,4],
+			</Data>
+			<OffsetGroup>
+			
+				<li><x>0</x><y>3.8</y></li>
+				<li><x>-1.2</x><y>1.5</y></li>
+				<li><x>0</x><y>3.8</y></li>
+				<li><x>0</x><y>3.8</y></li>
+				
+			</OffsetGroup>
+			
+			<WorkOffset> 
+				<li Index="0"  X="0" Y="0" Ang="1"/>
+				<li Index="1"  X="0" Y="0" Ang="1"/>
+				<li Index="2"  X="0" Y="0" Ang="1"/>
+				<li Index="3"  X="0" Y="0" Ang="1"/>
+				<li Index="4"  X="0" Y="0" Ang="1"/>
+				<li Index="5"  X="0" Y="0" Ang="1"/>
+				<li Index="6"  X="0" Y="0" Ang="1"/>
+				<li Index="7"  X="0" Y="0" Ang="1"/>
+				<li Index="8"  X="0" Y="0" Ang="1"/>
+				<li Index="9"  X="0" Y="0" Ang="1"/>
+				<li Index="10"  X="0" Y="0" Ang="1"/>
+				<li Index="11"  X="0" Y="0" Ang="1"/>
+				<li Index="12"  X="0" Y="0" Ang="1"/>
+				<li Index="13"  X="0" Y="0" Ang="1"/>
+				<li Index="14"  X="0" Y="0" Ang="1"/>
+				<li Index="15"  X="0" Y="0" Ang="1"/>
+				<li Index="16"  X="0" Y="0" Ang="1"/>
+				<li Index="17"  X="0" Y="0" Ang="1"/>
+				<li Index="18"  X="0" Y="0" Ang="1"/>
+				<li Index="19"  X="0" Y="0" Ang="1"/>
+				<li Index="20"  X="0" Y="0" Ang="1"/>
+				<li Index="21"  X="0" Y="0" Ang="1"/>
+				<li Index="22"  X="0" Y="0" Ang="1"/>
+				<li Index="23"  X="0" Y="0" Ang="1"/>
+				<li Index="24"  X="0" Y="0" Ang="1"/>
+				<li Index="25"  X="0" Y="0" Ang="1"/>
+				<li Index="26"  X="0" Y="0" Ang="1"/>
+				<li Index="27"  X="0" Y="0" Ang="1"/>
+				<li Index="28"  X="0" Y="0" Ang="1"/>
+				<li Index="29"  X="0" Y="0" Ang="1"/>
+				<li Index="30"  X="0" Y="0" Ang="1"/>
+				<li Index="31"  X="0" Y="0" Ang="1"/>
+				<li Index="32"  X="0" Y="0" Ang="1"/>
+				<li Index="33"  X="0" Y="0" Ang="1"/>
+				<li Index="34"  X="0" Y="0" Ang="1"/>
+				<li Index="35"  X="0" Y="0" Ang="1"/>
+				<li Index="36"  X="0" Y="0" Ang="1"/>
+				<li Index="37"  X="0" Y="0" Ang="1"/>
+				<li Index="38"  X="0" Y="0" Ang="1"/>
+				<li Index="39"  X="0" Y="0" Ang="1"/>
+				<li Index="40"  X="0" Y="0" Ang="1"/>
+				<li Index="41"  X="0" Y="0" Ang="1"/>
+				<li Index="42"  X="0" Y="0" Ang="1"/>
+				<li Index="43"  X="0" Y="0" Ang="1"/>
+				<li Index="44"  X="0" Y="0" Ang="1"/>
+				<li Index="45"  X="0" Y="0" Ang="1"/>
+				<li Index="46"  X="0" Y="0" Ang="1"/>
+				<li Index="47"  X="0" Y="0" Ang="1"/>
+			</WorkOffset>
+		</Collider>
+
+		<Building>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<BePackage>0</BePackage>
+			<Orientation>F,R</Orientation>
+			<BeMade>
+				<WorkToMake>150</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>60</CostStuffCount>
+			</BeMade>
+			<SnowRenderData>
+				<x>2.8</x>
+				<y>3.88</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+	</ThingDef>
+<!--宗门山门: 1 wide entrence version-->
+	<ThingDef Type="Building" Name="Rith_SmallGate" Parent="FurnitureBase">
+		<ThingName>装饰山门</ThingName>	
+		<Desc>用于点缀宗门景观的小型门楼。</Desc>
+		<TexPath>res/Sprs/buildingnew/building_paifang01</TexPath>
+		<TexScale>1.2</TexScale>
+		<SelectAble>1</SelectAble>	
+		<CastShadow>1</CastShadow>
+		<BlockLight>1</BlockLight>
+		<ColliderKind>NoPass</ColliderKind>
+		<Collider>
+			<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+			<Data>
+			[0,0,1,0,1,0,0],
+			[1,0,1,0,1,0,1],
+			[1,0,1,2,1,0,1],
+			</Data>
+				<Offset>
+				<y>2.5</y>
+				<x>0</x>
+			</Offset>
+		</Collider>
+
+		<Building>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<BePackage>0</BePackage>
+			<Orientation>F,R</Orientation>
+			<BeMade>
+				<WorkToMake>150</WorkToMake>
+				<Quality>0</Quality>
+				<StuffCategories>
+					<Stuff name = "MetalBlock"/>
+					<Stuff name = "RockBlock"/>
+				</StuffCategories>
+				<CostStuffCount>60</CostStuffCount>
+			</BeMade>
+			<SnowRenderData>
+				<x>2.8</x>
+				<y>3.88</y>
+				<z>1</z>
+			</SnowRenderData>
+		</Building>
+	</ThingDef>
+<!--Add more here-->
+
+</List></ThingDefs>

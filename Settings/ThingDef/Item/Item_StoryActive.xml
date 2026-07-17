@@ -1,0 +1,1194 @@
+<ThingDefs><List>
+<!--this file contains items for 7 Coloured Pagoda, Blood/Soul/Spirit Cauldrons that all activate scripts to obtain resources-->
+
+<!--Bundle of Auspicious Materials: Item crafted from 7 coloured pagoda to obtain certain items-->
+	<ThingDef Type="Item" Name="Item_AuspResBundle" Parent="MaterialBase">
+		<ThingName>祥瑞灵材包</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\Item_AuspResBundle01.png</TexPath>
+		<Desc>经七色宝塔鉴定过的一包灵材。 
+[size=10][color=#D06508]开启后可随机获得聚灵资源……偶尔还会有意外之喜！[/color][/size]</Desc>	
+		<Beauty>6</Beauty>	
+		<Rate>4</Rate>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>匣</FabaoSuffix>
+				<BeMade>
+					<WorkToMake>100</WorkToMake>
+					<CostItems>
+						<Item name = "Item_Wood" count = "5"/>
+						<Item name = "Item_BrownRock" count = "5"/>
+						<Item name = "Item_IronRock" count = "5"/>
+						<Item name = "Item_SilverRock" count = "5"/>
+						<Item name = "Item_CopperRock" count = "5"/>
+					</CostItems>
+			</BeMade>			
+		</Item>
+		<StoryBnts>
+			<li Name="开启" Desc="开启灵材包" Story="Story_Item_AuspResBundle" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+<!--7 Coloured Scroll: A scroll created by the 7 Coloured Pagodas Diviniation Array... may contain literally anything-->
+	<ThingDef Type="Item" Name="Item_7ColourScroll" Parent="MaterialBase">
+		<ThingName>七色秘卷</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\Item_7ColorScroll.png</TexPath>
+		<Desc>七色宝塔产出的神秘卷轴。 
+ [size=10][color=#D06508]此类秘卷在诸仙界中名声颇为微妙……[/color][/size] </Desc>	
+		<Beauty>12</Beauty>	
+		<Rate>12</Rate>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>匣</FabaoSuffix>
+			<BeMade>
+				<WorkToMake>100</WorkToMake>
+				<CostItems>
+				<!--Debug cost-->
+					<!--<Item name = "Item_Wood" count = "1"/>-->
+					<Item name = "Item_QiEnrichInk" count = "5"/>
+					<Item name = "Item_SpellPaperLv3" count = "5"/>
+					<Item name = "Item_ShiftingVoidCrystal" count = "1"/>
+				</CostItems>
+		</BeMade>			
+		</Item>
+		<StoryBnts>
+			<li Name="开启" Desc="开启秘卷" Appoint="3" Story="Story_7ColourScroll" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>	
+<!--Notable Formations of the Lower Realms-->
+	<ThingDef Type="Item" Name="Item_FormationCompendiumRare" Parent="MaterialBase">
+		<ThingName>阵法总纲</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\Item_FormArrayJadeSlip1.png</TexPath>
+		<Desc>一枚记载本界诸多名阵的玉简，略一翻阅，诸大名门的阵法似乎多有收录。 
+ [size=10][color=#D06508]陷仙阵。 
+ 北斗真武诛魔阵。 
+ 天地五方仙阵。 
+ 九御伏龙阵。 
+ 真凰羽剑阵。 
+ 阴阳大阵。 
+ 三阴三绝阵。 
+ 诸天六御仪典总图。 
+ 八门诛天图。 
+ 先天乙木神图。 
+ 五峰镇鬼风图。[/color][/size] </Desc>	
+		<Beauty>12</Beauty>	
+		<Rate>12</Rate>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>册,书,简,卷</FabaoSuffix>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>Soft1</li>
+				<li>GreatThing_Attack</li>
+				</PhysicalLables>
+			<BeMade>
+				<WorkToMake>100</WorkToMake>
+				<CostItems>
+				<!--Debug cost-->
+					<!--<Item name = "Item_Wood" count = "1"/>-->
+					<Item name = "Item_ImmortalJadeSlip_Blank" count = "1"/>
+					<Item name = "Item_7ColourScroll" count = "1"/>
+					<Item name = "Item_ImmortalLingStone" count = "1"/>
+				</CostItems>
+		</BeMade>			
+		</Item>
+		<StoryBnts>
+			<li Name="阅读" Desc="研读玉简" Appoint="3" Story="Story_7ColorFormationTome" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+<!--Notable Cultivation laws of the Lower Realms-->
+	<ThingDef Type="Item" Name="Item_CultivationCompendiumRare" Parent="MaterialBase">
+		<ThingName>修行总纲</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\Item_CultLawJadeSlip1.png</TexPath>
+		<Desc>一枚记载本界诸多名门功法的玉简。 
+ [size=10][color=#D06508]万宝真诀。 
+ 七杀剑诀。 
+ 玉清妙法。 
+ 太上忘情道。 
+ 九转金丹经。 
+ 阴阳真法。 
+ 夺天秘典。 
+ 五初符经。[/color][/size] </Desc>	
+		<Beauty>12</Beauty>	
+		<Rate>12</Rate>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>册,书,简,卷</FabaoSuffix>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>Soft1</li>
+				<li>GreatThing_Attack</li>
+			</PhysicalLables>
+			<BeMade>
+				<WorkToMake>100</WorkToMake>
+				<CostItems>
+				<!--Debug cost-->
+					<!---<Item name = "Item_Wood" count = "1"/>-->
+					<Item name = "Item_ImmortalJadeSlip_Blank" count = "1"/>
+					<Item name = "Item_7ColourScroll" count = "1"/>
+					<Item name = "Item_ImmortalLingStone" count = "1"/>
+				</CostItems>
+		</BeMade>			
+		</Item>
+		<StoryBnts>
+			<li Name="阅读" Desc="研读玉简" Appoint="3" Story="Story_7ColorCultivationTome" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+<!--Shifting Void Crystal: Useful in recipies for the 7colour pagoda -->
+	<ThingDef Type="Item" Name="Item_ShiftingVoidCrystal" Parent="MaterialBase">
+		<ThingName>挪虚晶</ThingName>
+		<MaxStack>99</MaxStack>
+		<TexPath>Spr\Object\Items\ShiftingVoidCrystal.png</TexPath>
+		<Desc>天然凝结而成的灵晶聚合物，似能以某种方式扭曲虚空。 
+[size=10][color=#D06508]虚空类灵气极为罕见，却是某些阵法与器物的重要材料。[/color][/size]</Desc>	
+		<Beauty>16</Beauty>	
+		<Rate>12</Rate>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>-1</Flammability>
+		</Flammability>
+		<Item Lable="LingStone">
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>9</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>16</ElementPowerWhenBeMain>
+			<LingNumberRate>0.45</LingNumberRate>
+		</BeMaterial>
+		<BeMade>
+		<!--Debug recipie-->
+					<WorkToMake>100</WorkToMake>
+					<CostItems>
+						<Item name = "Item_ImmortalLingStone" count = "1"/>
+						<Item name = "Rith_Dan_5ElementEssence" count = "1"/>
+						<Item name = "Rith_5EleCatalyst" count = "1"/>											
+					</CostItems>
+			</BeMade>			
+		</Item>
+		<!--<StoryBnts>
+			<li Name="查看" Desc="查看虚空晶" Appoint="3" Story="Story_VoidCrystal" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>-->
+		<Ling>
+			<AddionLing>80</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>None</Kind>
+			<Value>15</Value>         
+			<Radius>4</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Soul-Crystal Cluster: Item crafted from Soul Cauldron, use its special effect to get Soul Crystals-->
+	<ThingDef Type="Item" Name="Item_RefSoulFrag" Parent="MaterialBase">
+		<ThingName>魂晶簇</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\SoulCrystalAgglomeration.png</TexPath>
+		<Desc>由晶化神魂碎片凝结而成的特殊聚合物。 
+[size=10][color=#D06508]若将其剥离拆解，或许能寻得有用之物。[/color][/size]</Desc>	
+		<Beauty>4</Beauty>	
+		<Rate>6</Rate>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="SoulCrystal">
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>匣</FabaoSuffix>
+				<BeMade>
+					<WorkToMake>100</WorkToMake>
+					<StuffCategories>
+						<Stuff name = "Meat"/>
+					</StuffCategories>
+					<CostStuffCount>25</CostStuffCount>
+			
+					<CostItems>
+						<Item name = "Item_LingQiShuiYC" count = "2"/>
+						<Item name = "Item_LingCrystal" count = "1"/>
+					</CostItems>
+			</BeMade>			
+		</Item>
+		<StoryBnts>
+			<li Name="开启" Desc="破开魂晶簇？" Story="Story_Item_RefSoulFrag" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+		<Light>
+			<Value>30</Value>
+			<Failing>0.6</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>2</Radius>
+			<Color>9370DBFF</Color>
+		</Light>
+	</ThingDef>
+<!--Special Blood Item crafted by Blood Cauldron: Use its special effect to get Demon (monster) Blood-->
+	<ThingDef Type="Item" Name="Item_CondensedBlood" Parent="DrugBase">
+		<ThingName>凝血晶</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\CrystallizedBlood.png</TexPath>
+		<Desc>由万炼血鼎凝炼出的血精结晶。 
+[size=10][color=#D06508]可以破开……但最好小心些！[/color][/size]</Desc>	
+		<Beauty>4</Beauty>	
+		<Rate>5</Rate>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Drug">
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>匣</FabaoSuffix>
+				<BeMade>
+					<WorkToMake>150</WorkToMake>
+					<StuffCategories>
+						<Stuff name = "Meat"/>
+					</StuffCategories>
+					<CostStuffCount>25</CostStuffCount>
+					<CostItems>
+						<Item name = "Item_LingStone" count = "10"/>
+						<Item name = "Item_LingQiShuiYC" count = "1"/>
+					</CostItems>
+			</BeMade>			
+		</Item>
+		<StoryBnts>
+			<li Name="Extract" Desc="破开结晶" Story="Story_Item_CondensedBlood" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+<!--精华晶洞: Can occur naturally, or be synthesised through the Essence Cauldron, may contain rare treasures of the earth if broken open-->
+	<ThingDef Type="Item" Name="Item_EssenceGeode" Parent="RockBase">
+		<TexPath>Spr\Object\Items\EssenceGeode.png</TexPath>
+		<ThingName>精华晶洞</ThingName>	
+		<Desc>以玉质精华炼成的精华晶洞，经万炼精元鼎淬炼，其中又蕴入一缕地脉精机。 
+[size=10][color=#D06508]可汇聚土灵气。 
+ 查看后可能获得稀有资源。[/color][/size]</Desc>
+		<MaxStack>1</MaxStack>
+		<Rate>8</Rate>
+		<Beauty>10</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<Item>
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<PhysicalLables>
+			<li>Light1</li>
+			<li>Heavy1</li>
+			<li>Hard2</li>
+			<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<BeMade>
+				<WorkToMake>100</WorkToMake>
+						<CostItems>
+						<!--Debug recipie wood-->
+						<!--<Item name = "Item_Wood" count = "1"/>-->
+						<Item name = "Item_JadeEssence" count = "5"/>
+						<Item name = "Item_LingQiShuiYC" count = "5"/>
+						<Item name = "Item_MonsterBlood" count = "5"/>
+						<Item name = "Item_LingCrystal" count = "5"/>
+						</CostItems>
+				</BeMade>
+		</Item>
+		<StoryBnts>
+			<li Name="炼化" Desc="炼化精华晶洞" Appoint="3" Story="Story_Item_EssenceGeode" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+		<Ling>
+			<AddionLing>60</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.03</Attenuation>
+			<Absorption>0.4</Absorption>
+			<Accommodate>18</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Tu</Kind>
+			<Value>6</Value>         
+			<Radius>3</Radius>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Special Bloodcrystal Item crafted by Blood Cauldron: Use its special effect to get Demon (monster) Blood-->
+	<ThingDef Type="Item" Name="Item_炼化dBloodCrystal" Parent="MaterialBase">
+		<ThingName>精炼血晶</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\炼化dBloodCrystal.png</TexPath>
+		<Desc>由初步处理过的血晶碎片与多种富灵材料精炼而成。 
+[size=10][color=#D06508]将其破开时，或有小概率发现异物。[/color][/size]</Desc>	
+		<Beauty>7</Beauty>	
+		<Rate>7</Rate>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="LingStone">
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>匣</FabaoSuffix>
+				<BeMade>
+					<WorkToMake>150</WorkToMake>
+					<CostItems>
+						<Item name = "Item_LingCrystal" count = "1"/>
+						<Item name = "Item_LingQiShuiYC" count = "1"/>
+						<Item name = "Item_NormalBlood" count = "5"/>
+						<Item name = "Item_BloodCrystalRefuse" count = "1"/>
+					</CostItems>
+			</BeMade>			
+		</Item>
+		<StoryBnts>
+			<li Name="Extract" Desc="破开结晶" Story="Story_炼化dBloodCrystal" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+<!--血脉引: Rare Blood Item crafted by Blood Cauldron: Use its special effect to get a onetime permenant stat boost at both Outer and Inner Disciple Status-->
+	<ThingDef Type="Item" Name="Item_BloodlineCatalyst" Parent="DrugBase">
+		<ThingName>血脉引</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\Blood_BloodlineCatalyst.png</TexPath>
+		<Desc>万炼血鼎中孕成的天材地宝。 
+[size=10][color=#D06508]服用血脉引，可唤醒其获得五行血脉亲和的潜能。
+ 此物可服用两次：外门弟子一次，内门弟子一次。[/color][/size]</Desc>	
+		<Beauty>9</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Drug">
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Liquid</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<LingNumberRate>0.45</LingNumberRate>
+		</BeMaterial>
+		<!--Debug recipie-->
+		<BeMade>
+					<WorkToMake>100</WorkToMake>
+					<CostItems>
+						<Item name = "Item_Wood" count = "1"/>
+					</CostItems>
+			</BeMade>			
+		</Item>
+		<StoryBnts>
+			<li Name="Drink" Desc="饮下此血" Appoint="3" Story="Story_ConsumeloodlineCatalyst" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+<!--阳血 (Fire): Rare Blood Item crafted by Blood Cauldron: Use its special effect to get a onetime permenant stat boost at both Outer and Inner Disciple Status-->
+	<ThingDef Type="Item" Name="Item_YangBlood" Parent="DrugBase">
+		<ThingName>阳血</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\Blood_Yang.png</TexPath>
+		<Desc>万炼血鼎中孕成的天材地宝。 
+[size=10][color=#D06508]饮下阳血，或得奇效，亦可能招致灾祸。 
+ 此物可服用两次：外门弟子一次，内门弟子一次。[/color][/size]</Desc>	
+		<Beauty>9</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>Huo</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Drug">
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Liquid</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<LingNumberRate>0.45</LingNumberRate>
+		</BeMaterial>
+		<!--Debug recipie-->
+		<BeMade>
+					<WorkToMake>100</WorkToMake>
+					<CostItems>
+						<Item name = "Item_Wood" count = "1"/>
+					</CostItems>
+			</BeMade>			
+		</Item>
+		<StoryBnts>
+			<li Name="Drink" Desc="饮下此血" Appoint="3" Story="Story_ConsumeBlood" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+		<Ling>
+			<AddionLing>75</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Huo</Kind>
+			<Value>10</Value>         
+			<Radius>4</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Heat>
+			<Value>100</Value>
+			<Radius>4</Radius>
+			<RoomValue>350</RoomValue>
+			<Failing>0.6</Failing>
+			<FailRadius>1</FailRadius>
+		</Heat>
+	</ThingDef>
+<!--阴血(Water): Rare Blood Item crafted by Blood Cauldron: Use its special effect to get a onetime permenant stat boost at both Outer and Inner Disciple Status-->
+	<ThingDef Type="Item" Name="Item_YinBlood" Parent="DrugBase">
+		<ThingName>阴血</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\Blood_Yin.png</TexPath>
+		<Desc>万炼血鼎中孕成的天材地宝。 
+[size=10][color=#D06508]饮下阴血，或得奇效，亦可能招致灾祸。 
+ 此物可服用两次：外门弟子一次，内门弟子一次。[/color][/size]</Desc>	
+		<Beauty>9</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>Shui</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Drug">
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Liquid</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<LingNumberRate>0.45</LingNumberRate>
+		</BeMaterial>
+		<!--Debug recipie-->
+		<BeMade>
+					<WorkToMake>100</WorkToMake>
+					<CostItems>
+						<Item name = "Item_Wood" count = "1"/>
+					</CostItems>
+			</BeMade>			
+		</Item>
+		<StoryBnts>
+			<li Name="Drink" Desc="饮下此血" Appoint="3" Story="Story_ConsumeBlood" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+		<Ling>
+			<AddionLing>75</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>10</Value>         
+			<Radius>4</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Heat>
+			<Value>-100</Value>
+			<Radius>4</Radius>
+			<RoomValue>350</RoomValue>
+			<Failing>0.6</Failing>
+			<FailRadius>1</FailRadius>
+		</Heat>
+	</ThingDef>
+<!--Golden Blood(Metal): Rare Blood Item crafted by Blood Cauldron: Use its special effect to get a onetime permenant stat boost at both Outer and Inner Disciple Status-->
+	<ThingDef Type="Item" Name="Item_GoldenBlood" Parent="DrugBase">
+		<ThingName>金血</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\Blood_Golden.png</TexPath>
+		<Desc>万炼血鼎中孕成的天材地宝。 
+[size=10][color=#D06508]饮下金血，或得奇效，亦可能招致灾祸。 
+ 此物可服用两次：外门弟子一次，内门弟子一次。[/color][/size]</Desc>	
+		<Beauty>9</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>Jin</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Drug">
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Liquid</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<LingNumberRate>0.45</LingNumberRate>
+		</BeMaterial>
+		<!--Debug recipie-->
+		<BeMade>
+					<WorkToMake>100</WorkToMake>
+					<CostItems>
+						<Item name = "Item_Wood" count = "1"/>
+					</CostItems>
+			</BeMade>			
+		</Item>
+		<StoryBnts>
+			<li Name="Drink" Desc="饮下此血" Appoint="3" Story="Story_ConsumeBlood" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+		<Ling>
+			<AddionLing>75</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Jin</Kind>
+			<Value>10</Value>         
+			<Radius>4</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Life Blood(Wood): Rare Blood Item crafted by Blood Cauldron: Use its special effect to get a onetime permenant stat boost at both Outer and Inner Disciple Status-->
+	<ThingDef Type="Item" Name="Item_LifeBlood" Parent="DrugBase">
+		<ThingName>生血</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\Blood_Life.png</TexPath>
+		<Desc>万炼血鼎中孕成的天材地宝。 
+[size=10][color=#D06508]饮下生血，或得奇效，亦可能招致灾祸。 
+ 此物可服用两次：外门弟子一次，内门弟子一次。[/color][/size]</Desc>	
+		<Beauty>9</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>Mu</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Drug">
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Liquid</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<LingNumberRate>0.45</LingNumberRate>
+		</BeMaterial>
+		<!--Debug recipie-->
+		<BeMade>
+					<WorkToMake>100</WorkToMake>
+					<CostItems>
+						<Item name = "Item_Wood" count = "1"/>
+					</CostItems>
+			</BeMade>			
+		</Item>
+		<StoryBnts>
+			<li Name="Drink" Desc="饮下此血" Appoint="3" Story="Story_ConsumeBlood" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+		<Ling>
+			<AddionLing>75</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>10</Value>         
+			<Radius>4</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Life Blood(Wood): Rare Blood Item crafted by Blood Cauldron: Use its special effect to get a onetime permenant stat boost at both Outer and Inner Disciple Status-->
+	<ThingDef Type="Item" Name="Item_EarthSpiritBlood" Parent="DrugBase">
+		<ThingName>土灵血</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\Blood_EarthSpirit.png</TexPath>
+		<Desc>万炼血鼎中孕成的天材地宝。 
+[size=10][color=#D06508]饮下土灵血，或得奇效，亦可能招致灾祸。 
+ 此物可服用两次：外门弟子一次，内门弟子一次。[/color][/size]</Desc>	
+		<Beauty>9</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>Tu</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Drug">
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Liquid</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<LingNumberRate>0.45</LingNumberRate>
+		</BeMaterial>
+		<!--Debug recipie-->
+		<BeMade>
+				<WorkToMake>100</WorkToMake>
+					<CostItems>
+						<Item name = "Item_Wood" count = "1"/>
+					</CostItems>
+			</BeMade>			
+		</Item>
+		<StoryBnts>
+			<li Name="Drink" Desc="饮下此血" Appoint="3" Story="Story_ConsumeBlood" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+		<Ling>
+			<AddionLing>75</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Tu</Kind>
+			<Value>10</Value>         
+			<Radius>4</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--星核灵胚 Embryo: Rare drop from 7 colour scroll-->
+	<ThingDef Type="Item" Name="Item_StellarMetalEmbryo" Parent="RockBase">
+		<ThingName>星核灵胚</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\StellarMetalEmbryo.png</TexPath>
+		<FabaoTexPath>res\Sprs\object_zhengfatianxia\object_JHjian01</FabaoTexPath>	
+		<Desc>一块来历成谜的“石片”，相传源自将死星辰的核心，却又蕴含无星虚空的森寒。
+[size=10][color=#D06508]细细探查此类碎片，或会引发异象。 
+ 可蕴养为法宝。[/color][/size]</Desc>	
+		<Beauty>12</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>Jin</ElementKind>
+		<Flammability>
+			<Flammability>-1</Flammability>
+		</Flammability>
+		<Item Lable="Metal" Kind="Equipment">
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Heavy2</li>
+			<li>Hard2</li>
+			<li>HighDensity2</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<RateWhenBeMain>12</RateWhenBeMain>
+			<BeautyWhenBeMain>12</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<LingNumberRate>0.45</LingNumberRate>
+		</BeMaterial>
+		<!--Debug recipie-->
+				<BeMade>
+					<WorkToMake>100</WorkToMake>
+					<CostItems>
+						<Item name = "Item_Wood" count = "1"/>
+					</CostItems>
+				</BeMade>
+		<Fabao>
+		    <ActiveCondition>
+			    <Condition eventid = "KillCount" des = "携带此灵胚击杀 25 个生灵" needcount = "25" />
+			</ActiveCondition>
+            <SpecialAbility>
+			     <Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="1" nParam1="0" sParam1="Mu" Desc="对木属性目标造成的伤害提高 100%"/>
+				 <Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="0.3" nParam1="1" nParam2="1" Desc="攻击敌方本体时，额外造成目标当前护体值 30% 的伤害。"/>
+			</SpecialAbility>
+		</Fabao>	
+		</Item>
+		<!--<StoryBnts>
+			<li Name="查看" Desc="查看神秘金石" Appoint="3" Story="Story_StellarMetal" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>-->
+		<Ling>
+			<AddionLing>60</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Jin</Kind>
+			<Value>10</Value>         
+			<Radius>4</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Heat>
+			<Value>-100</Value>
+			<Radius>4</Radius>
+			<RoomValue>200</RoomValue>
+			<Failing>0.6</Failing>
+			<FailRadius>1</FailRadius>
+		</Heat>
+	</ThingDef>
+<!--地脉核心 Embryo: rare drop from 7 colour scroll-->
+	<ThingDef Type="Item" Name="Item_EarthCoreEmbryo" Parent="RockBase">
+		<ThingName>地脉核心胚</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\EarthCoreEmbryo.png</TexPath>
+		<Desc>由一界深处的原初潜能凝结而成，地脉核心承载着地表之下诸般根本力量的平衡……
+[size=10][color=#D06508]直接吞服大抵并非明智之举，但若仔细探查，或可得异样机缘。[/color][/size]</Desc>	
+		<Beauty>12</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>Tu</ElementKind>
+		<Flammability>
+			<Flammability>-1</Flammability>
+		</Flammability>
+		<Item Lable="Rock">
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Heavy2</li>
+			<li>Hard1</li>
+			<li>HighDensity3</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>9</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<LingNumberRate>0.45</LingNumberRate>
+		</BeMaterial>
+		<BeMade>
+		<!--Debug recipie-->
+					<WorkToMake>100</WorkToMake>
+					<CostItems>
+						<Item name = "Item_Wood" count = "1"/>
+					</CostItems>
+			</BeMade>				
+		</Item>
+		<!--<StoryBnts>
+			<li Name="查看" Desc="查看地脉核心胚" Appoint="3" Story="Story_EarthCore" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>-->
+		<Ling>
+			<AddionLing>60</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Tu</Kind>
+			<Value>10</Value>         
+			<Radius>4</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Essence Loci: A special item crafted with the myriad soul cauldron-->
+	<ThingDef Type="Item" Name="Item_SoulEssenceLoci" Parent="MaterialBase">
+		<ThingName>神魂精华核</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\SoulEssenceLoci.png</TexPath>
+		<Desc>由万炼魂鼎炼成的初生潜能结晶。 
+[size=10][color=#D06508]阴阳二气的原初之力在其中交汇凝聚，可与之参悟感应。[/color][/size]</Desc>	
+		<Beauty>16</Beauty>	
+		<Rate>10</Rate>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>-1</Flammability>
+		</Flammability>
+		<Item Lable="SoulCrystal">
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>Light2</li>
+			<li>Soft1</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>9</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<LingNumberRate>0.45</LingNumberRate>
+		</BeMaterial>
+			<BeMade>
+					<WorkToMake>100</WorkToMake>
+					<CostItems>
+					<!--Debug recipie-->
+						<!--<Item name = "Item_Wood" count = "1"/>-->
+						
+						<Item name = "Item_RefSoulFrag" count = "1"/>
+						<Item name = "Item_YangFlameEmbryo" count = "1"/>
+						<Item name = "Item_YinOriginEmbryo" count = "1"/>
+						<Item name = "Item_LingQiShuiYC" count = "5"/>
+						
+					</CostItems>
+			</BeMade>				
+		</Item>
+		<StoryBnts>
+			<li Name="查看" Desc="探查精华核" Appoint="3" Story="Story_SoulEssenceLoci" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+		<Ling>
+			<AddionLing>100</AddionLing>
+			<AddionRadius>2</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>None</Kind>
+			<Value>10</Value>         
+			<Radius>4</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Lightening Soul: A Special Item crafted with the Myriad Soul Cauldron-->
+	<ThingDef Type="Item" Name="Item_LightningSoul" Parent="MaterialBase">
+		<ThingName>雷魄</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\LightningSoul.png</TexPath>
+		<FabaoTexPath>Spr\Object\Items\LighteningSoulTreasure.png</FabaoTexPath>	
+		<Desc>由万炼魂鼎炼成的初生魂魄。 
+[size=10][color=#D06508]其与先天雷霆、天劫之力渊源极深。 
+ 若在突破时随身携带，或可蜕变为法宝。[/color][/size]</Desc>	
+		<Beauty>16</Beauty>	
+		<Rate>12</Rate>
+		<ElementKind>Jin</ElementKind>
+		<Flammability>
+			<Flammability>-1</Flammability>
+		</Flammability>
+		<Item Lable="Other" Kind="Equipment">
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>9</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<LingNumberRate>0.45</LingNumberRate>
+		</BeMaterial>
+			<BeMade>
+		<!--Debug recipie-->
+					<WorkToMake>100</WorkToMake>
+					<CostItems>
+					<!--Debug recipie-->
+						<!--<Item name = "Item_Water" count = "1"/>-->
+
+						<Item name = "Item_Dan_LingYuanZhong" count = "1"/>
+						<Item name = "Item_ThunderNirvanaEssence" count = "1"/>
+						<Item name = "Item_ThunderAir" count = "1"/>
+					</CostItems>
+			</BeMade>
+		<Fabao>
+				<ActiveCondition>
+					<Condition eventid = "BrokenNeck" des = "携带此物完成元神突破" needcount = "1" lParam = "God" />
+				</ActiveCondition>
+				<SpecialAbility>
+					<Ability Kind="AtkRateDamageAddp" fParam1="0.01" fParam2="5" nParam1="0" Desc="造成伤害时，有 10% 概率造成 5 倍伤害。"/>
+					<Ability Kind="Sync_AddEquptDataModifier" sParam1="Mibao_QiDefense" Desc="护体等级 +10"/>
+				</SpecialAbility>
+			</Fabao>				
+		</Item>
+		<!--<StoryBnts>
+			<li Name="查看" Desc="查看雷魄" Appoint="3" Story="Story_LightningSoul" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>-->
+		<Ling>
+			<AddionLing>100</AddionLing>
+			<AddionRadius>2</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Jin</Kind>
+			<Value>10</Value>         
+			<Radius>4</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Heat>
+			<Value>100</Value>
+			<Radius>1</Radius>
+			<RoomValue>200</RoomValue>
+			<Failing>0.6</Failing>
+			<FailRadius>1</FailRadius>
+		</Heat>
+	</ThingDef>
+<!--Dragonbone jade: rare drop from 7 colour scroll-->
+	<ThingDef Type="Item" Name="Item_DragonBoneJade" Parent="MaterialBase">
+		<ThingName>龙骨玉</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\DragonboneJade.png</TexPath>
+		<Desc>太古真龙遗骨所化的化石，历经地脉风水浸染，已蜕变为玉质。 
+[size=10][color=#D06508]直接吞服大抵不妙……但细细探查这等稀世之物，或能有所收获。[/color][/size]</Desc>	
+		<Beauty>16</Beauty>	
+		<Rate>12</Rate>
+		<ElementKind>Tu</ElementKind>
+		<Flammability>
+			<Flammability>-1</Flammability>
+		</Flammability>
+		<Item Lable="Bone">
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>9</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<LingNumberRate>0.45</LingNumberRate>
+		</BeMaterial>
+		<BeMade>
+		<!--Debug recipie-->
+					<WorkToMake>100</WorkToMake>
+					<CostItems>
+						<Item name = "Item_Wood" count = "1"/>
+					</CostItems>
+			</BeMade>				
+		</Item>
+		<!--<StoryBnts>
+			<li Name="查看" Desc="查看玉石" Appoint="3" Story="Story_DragonboneJade" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>-->
+		<Ling>
+			<AddionLing>100</AddionLing>
+			<AddionRadius>2</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Tu</Kind>
+			<Value>10</Value>         
+			<Radius>4</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Jar of 仙土: Rare drop from 7 colour scroll-->
+	<ThingDef Type="Item" Name="Item_JarImmortalEarth" Parent="MaterialBase">
+		<ThingName>仙土坛</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\JarImmortalEarth.png</TexPath>
+		<Desc>一只密封陶坛，内盛来自仙界的沃土，其中初生灵性远超凡土。 
+[size=10][color=#D06508]吃土并非良策，仙土尤其如此！但此物或许另有妙用……[/color][/size]</Desc>	
+		<Beauty>16</Beauty>	
+		<Rate>12</Rate>
+		<ElementKind>Mu</ElementKind>
+		<Flammability>
+			<Flammability>-1</Flammability>
+		</Flammability>
+		<Item Lable="Other">
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>9</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>16</ElementPowerWhenBeMain>
+			<LingNumberRate>0.45</LingNumberRate>
+		</BeMaterial>
+		<BeMade>
+		<!--Debug recipie-->
+					<WorkToMake>100</WorkToMake>
+					<CostItems>
+						<Item name = "Item_Wood" count = "1"/>
+					</CostItems>
+			</BeMade>				
+		</Item>
+		<!--<StoryBnts>
+			<li Name="Investigate" Desc="查看仙土" Appoint="3" Story="Story_ImmortalEarth" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>-->
+		<Ling>
+			<AddionLing>100</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>15</Value>         
+			<Radius>4</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--8 Directions Thunder Array Core-->
+	<ThingDef Type="Item" Name="Item_8ThunderArrayCore" Parent="MaterialBase">
+		<ThingName>八劫雷阵核心</ThingName>
+			<MaxStack>1</MaxStack>
+			<TexPath>Spr\Object\Items\8ThunderArrayCore.png</TexPath>
+			<Desc>强大的金雷属性催化核心。
+[size=10][color=#D06508]可作为八劫雷阵中八柄雷剑的胚基。[/color][/size]</Desc>	
+			<Beauty>16</Beauty>	
+			<Rate>12</Rate>
+			<ElementKind>Jin</ElementKind>
+			<Flammability>
+				<Flammability>-1</Flammability>
+			</Flammability>
+			<Item Lable="LingStone">
+				<NotRandom>1</NotRandom>
+				<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+			<PhysicalLables>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<BeMaterial>
+				<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+				<BeautyWhenBeMain>9</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>16</ElementPowerWhenBeMain>
+				<LingNumberRate>0.45</LingNumberRate>
+			</BeMaterial>
+			<BeMade>
+			<!--Debug recipie-->
+						<WorkToMake>100</WorkToMake>
+						<CostItems>
+							<Item name = "Item_ThunderNirvanaEssence" count = "1"/>
+							<Item name = "Item_LightningSoul" count = "1"/>
+							<Item name = "Item_StellarMetalEmbryo" count = "8"/>
+							<Item name = "Item_7ColourScroll" count = "8"/>
+						</CostItems>
+				</BeMade>			
+			</Item>
+		<!--<StoryBnts>
+			<li Name="查看" Desc="查看阵核" Appoint="3" Story="Story_8ThunderArray" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>-->
+		<Ling>
+			<AddionLing>100</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>0.9</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Jin</Kind>
+			<Value>15</Value>         
+			<Radius>4</Radius>
+			<Failing>0.9</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Origin Gate Array Core-->
+	<ThingDef Type="Item" Name="Item_OriginGateArrayCore" Parent="MaterialBase">
+		<ThingName>太初之门阵核</ThingName>
+			<MaxStack>1</MaxStack>
+			<TexPath>Spr\Object\Items\OriginGateArrayCore.png</TexPath>
+			<Desc>由本源之水凝成的强大催化阵核。
+[size=10][color=#D06508]可作为若干阵法建筑的根基。[/color][/size]</Desc>	
+			<Beauty>16</Beauty>	
+			<Rate>12</Rate>
+			<ElementKind>Shui</ElementKind>
+			<Flammability>
+				<Flammability>-1</Flammability>
+			</Flammability>
+			<Item Lable="LingStone">
+				<NotRandom>1</NotRandom>
+				<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+			<PhysicalLables>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<BeMaterial>
+				<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+				<BeautyWhenBeMain>9</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>16</ElementPowerWhenBeMain>
+				<LingNumberRate>0.45</LingNumberRate>
+			</BeMaterial>
+			<BeMade>
+			<!--Debug recipie-->
+						<WorkToMake>100</WorkToMake>
+						<CostItems>
+
+							<Item name = "Item_AncientWitheredEssence" count = "4"/>
+							<Item name = "Item_LightningSoul" count = "1"/>
+							<Item name = "Item_YinEssence" count = "4"/>
+							<Item name = "Item_7ColourScroll" count = "8"/>
+						</CostItems>
+				</BeMade>			
+			</Item>
+			<!--<StoryBnts>
+				<li Name="查看" Desc="查看阵核" Appoint="3" Story="Story_8ThunderArray" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+			</StoryBnts>-->
+			<Ling>
+				<AddionLing>100</AddionLing>
+				<AddionRadius>3</AddionRadius>
+				<AddionFailing>0.9</AddionFailing>
+				<AddionFailRadius>1</AddionFailRadius>
+				
+				<Attenuation>0.1</Attenuation>
+				<Absorption>0.8</Absorption>
+				<Accommodate>40</Accommodate>
+			</Ling>
+			<Element>
+				<Kind>Shui</Kind>
+				<Value>15</Value>         
+				<Radius>4</Radius>
+				<Failing>0.9</Failing>
+				<FailRadius>1</FailRadius>
+			</Element>
+	</ThingDef>
+<!--Add more after-->	
+</List></ThingDefs>

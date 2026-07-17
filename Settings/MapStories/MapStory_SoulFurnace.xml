@@ -1,0 +1,204 @@
+<Stories><List>	
+<!--Scripts for stuff from Soul cauldron-->
+<Story Name="Story_Item_RefSoulFrag" Parent="BaseFillingStory">
+		<DisplayName>精炼魂晶簇</DisplayName>
+		<Desc>精炼神魂凝成的结晶，其中似有灵光闪烁，是否破开看看？</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>破开</Display>
+				<OKResult>
+				<![CDATA[	
+				local nR = me:RandomInt(1, 9) 
+				if nR <= 2 then
+					me:AddMsg(XT("[NAME]随手破开聚合物，一缕闪光黏液渗出。收集之时，总令人有些毛骨悚然。"));
+					me:DropAwardItem("Item_SoulCrystalYou", 1);
+				elseif nR > 2 and nR <= 4 then
+					me:AddMsg(XT("[NAME]果断破开聚合物，一枚温润雅致的碎片映入眼帘，其中灵光令人心神安定。"));
+					me:DropAwardItem("Item_SoulCrystalNing", 1);	
+				elseif nR > 4 and nR <=6 then
+					me:AddMsg(XT("[NAME]小心剖开聚合物，一枚璀璨而坚实的晶体跃入眼中，竟忍不住朗声一笑。"));
+					me:DropAwardItem("Item_SoulCrystalLing", 1);
+				elseif nR == 7 then
+					me:AddMsg(XT("[NAME]小心剖开聚合物，刺骨寒意陡然渗出，令人倒吸一口凉气！"));
+					me:DropAwardItem("Item_SoulPearl", 1);
+				else
+					me:AddMsg("[NAME] Broke open the Agglomeration but it was just reflected light.");	
+				end
+				story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+
+<Story Name="Story_SoulEssenceLoci" Parent="BaseFillingStory">
+		<DisplayName>神魂精华核</DisplayName>
+		<Desc>由阴阳二气与稀薄魂力凝成的精华核心，其中似有初生神魂正在人为聚合。</Desc>
+		<Kind>None</Kind>
+
+		<ItemCache2>  <!--common soul materials-->
+			<li>
+				<ThingDef>Item_SoulCrystalYou</ThingDef>
+				<Count>1</Count>
+				<Rate>0.3</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_SoulCrystalNing</ThingDef>
+				<Count>1</Count>
+				<Rate>0.3</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_SoulCrystalLing</ThingDef>
+				<Count>1</Count>
+				<Rate>0.3</Rate>	
+			</li> 
+			<li>
+				<ThingDef>Item_SoulPearl</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li> 
+		</ItemCache2>
+		<ItemCache3>  <!--rare rare materials-->
+			<li>
+				<ThingDef>Item_SoulCrystalYou</ThingDef>
+				<Count>3</Count>
+				<Rate>0.2</Rate>
+			</li> 
+					<li>
+				<ThingDef>Item_SoulCrystalNing</ThingDef>
+				<Count>3</Count>
+				<Rate>0.2</Rate>
+			</li> 
+					<li>
+				<ThingDef>Item_SoulCrystalLing</ThingDef>
+				<Count>3</Count>
+				<Rate>0.2</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_SoulPearl</ThingDef>
+				<Count>2</Count>
+				<Rate>0.1</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_ShiftingVoidCrystal</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li> 
+					<li>
+				<ThingDef>Item_YinEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li> 
+					<li>
+				<ThingDef>Item_YangEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_LightningSoul</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_Dan_LingYuanZhong</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li> 
+		</ItemCache3>
+		
+		<Selections>
+			<li>
+			<Display>感应精华核</Display>
+				<DisplayCondition>
+					<![CDATA[	
+					me:GetGLevel() == 0 
+					]]>
+				</DisplayCondition>
+				<OKResult>
+				<![CDATA[
+				local nR = me:RandomInt(1, 3);	
+				if nR == 1 then
+					local nD = me:RandomInt(1, 8);
+					if me:GetLuck() >= me:RandomInt(1, 11) then
+					me:AddMsg(XT("[NAME]凝神注视精华核……数息之后，核心中忽有一缕微光闪过。"));
+						if nD == 1 then
+							me:AddMsg(XT("[NAME]的药理见识有所增长。"));
+							me:AddModifier("HotStory_MedicineLv");
+						elseif nD == 2 then
+							me:AddMsg(XT("[NAME]的烹饪见识有所增长。"));
+							me:AddModifier("HotStory_CookingLv");
+						elseif nD == 3 then
+							me:AddMsg(XT("[NAME]的建造见识有所增长。"));
+							me:AddModifier("HotStory_BuildingLv");
+						elseif nD == 4 then
+							me:AddMsg(XT("[NAME]的农耕见识有所增长。"));
+							me:AddModifier("HotStory_FarmingLv");
+						elseif nD == 5 then
+							me:AddMsg(XT("[NAME]的采矿见识有所增长。"));
+							me:AddModifier("HotStory_MiningLv");
+						elseif nD == 6 then
+							me:AddMsg(XT("[NAME]对雅艺的理解有所增长。"));
+							me:AddModifier("HotStory_ArtLv");
+						elseif nD == 7 then
+							me:AddMsg(XT("[NAME]的巧匠见识有所增长。"));
+							me:AddModifier("HotStory_ManualLv");
+						else
+							me:AddMsg(XT("[NAME]对处世交际的理解有所增长。"));
+							me:AddModifier("HotStory_SocialContactLv");
+						end	
+					else 
+						me:AddMsg(XT("[NAME]凝神注视精华核……数息无事，随后它便崩解成尘。"));
+					end
+				elseif nR == 2 then
+					me:AddMsg(XT("[NAME]察觉精华核烫得难以触碰，惊叫一声将其丢下，摔得粉碎……"));
+					me:DropAwardItemFromCache(story.ItemCache2, 1, 2);
+				else
+					me:AddMsg(XT("[NAME]察觉精华核寒冷如灼，还未来得及反应，它便化作雾气消散。"));
+				end
+				story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+
+			<li>
+				<Display>感应精华核</Display>
+				<DisplayCondition>
+					<![CDATA[	
+					me:GetGLevel() >= 1
+					]]>
+				</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+				local nR = me:RandomInt(1, 9) 
+				if nR <= 3 then
+					me:AddMsg(XT("[NAME]将真气注入精华核，感到一丝微弱共鸣。随后晶核融解，只留下数件物品。"));
+					if me:GetLuck() >= me:RandomInt(1, 11) then
+						me:DropAwardItemFromCache(story.ItemCache2, 1, 4);
+						me:DropAwardItemFromCache(story.ItemCache3, 1, 1);
+					else
+						me:DropAwardItemFromCache(story.ItemCache2, 1, 3);
+					end
+				elseif nR == 4 then
+					me:AddMsg(XT("[NAME]将一缕真气注入精华核，炽热之意升腾，周遭空气扭曲，此物在眼前迅速蜕变。"));
+					me:DropAwardItem("Item_YangEssence", 1);	
+				elseif nR == 5 then
+					me:AddMsg(XT("[NAME]将一缕真气注入精华核，寒意如灼，周遭空气扭曲，此物在眼前迅速蜕变。"));
+					me:DropAwardItem("Item_YinEssence", 1);
+				elseif nR == 6 then
+					me:AddMsg(XT("[NAME]将一缕真气注入精华核，雷光在其中跳跃，周遭空气扭曲，此物在眼前迅速蜕变。"));
+					me:DropAwardItem("Item_LightningSoul", 1);
+				elseif nR == 7 then
+					me:AddMsg(XT("[NAME]将一缕真气注入精华核，温润暖意弥散四周，周遭空气扭曲，此物在眼前迅速蜕变。"));
+					me:DropAwardItem("Item_Dan_LingYuanZhong", 1);
+				else
+					me:AddMsg("[NAME] blinks as the soul loci dissolves away into mist leaving nothing behind.. what a nuisence!");	
+				end
+				story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+</List></Stories>

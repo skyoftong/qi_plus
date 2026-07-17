@@ -1,0 +1,205 @@
+<ModifierDefs><List>
+
+    <Modifier Name="Rith_QiAt1" Type="Normal">
+		<DisplayName>开脉丹</DisplayName>
+		<Desc>开辟经脉，大幅提升灵气亲和。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Qi" LevelOver="5"/>
+		</Skills>
+		<Properties>
+			<li Name="MaxAge" AddV="50"/>
+		</Properties>
+	</Modifier>	
+
+	<Modifier Name="Rith_QiAt2" Type="Normal">
+		<DisplayName>洗脉丹</DisplayName>
+		<Desc>洗炼经脉，提升灵气亲和，并增加真气上限。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Qi" LevelOver="2"/>
+		</Skills>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="0.3"/>
+		</Properties>
+	</Modifier>	
+
+	<Modifier Name="Rith_QiAt3" Type="Normal">
+		<DisplayName>拓脉丹</DisplayName>
+		<Desc>拓宽已有经脉，略微提升灵气亲和。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Qi" LevelOver="1"/>
+		</Skills>
+	</Modifier>	
+
+	<Modifier Name="Rith_EssGather28" Type="Normal">
+		<DisplayName>吞龙丹</DisplayName>
+		<Desc>大幅提升精元炼化速度与修行速度，并免除饥饿与疲劳。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>16800</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NutritionToJingYuanK" AddV="0.01"/>
+			<li Name="NutritionToJingYuanK" AddP="0.25"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.3"/>
+			<li Name="NutritionConsumeConstant" AddP="-1"/>
+			<li Name="FatigueConsumeConstant" AddP="-1"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="Rith_5ElementEssence" Type="Normal">
+		<DisplayName>五行精华</DisplayName>
+		<Desc>由五种五行灵木精炼而成，服用后可在三日内提升修行速度。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1800</Duration>
+		<Display>1</Display>
+		<Properties>
+		<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.4"/>
+		</Properties>
+	</Modifier>	
+
+	<Modifier Name="Rith_HeavenSeizingEss" Type="Normal">
+		<DisplayName>夺天精华 </DisplayName>
+		<Desc>服食仙界炼化而来的造化精华，可一次性提升真气炼化与机缘。 </Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0,0,0,2</BaseFive>
+		<Properties>
+		<li Name="NpcLingMaxValue" AddP="0.50"/>
+		<li Name="NutritionToJingYuanK" AddV="3"/>
+		<li Name="NutritionToJingYuanK" AddP="0.25"/>
+		<li Name="NutritionWaterAutoRecover" AddV="1"/>
+		<li Name="MaxAge" AddP="-0.5"/>
+		<li Name="PotentialOfBasepracticeAddValue" AddV="-2"/>
+		<li Name="AbilityLvAddV" AddV="-30"/>
+		</Properties>
+	</Modifier>	
+
+	<Modifier Name="Rith_ParasolEss" Type="Normal">
+		<DisplayName>梧桐精华种</DisplayName>
+		<Desc>蕴含纯净木行灵气的精华种，可将潜能转化为真气与生机。 </Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0.5,0.5,0.5,0.5,0.5</BaseFive>
+		<Properties>
+		<li Name="NpcLingMaxValue" AddP="0.15"/>
+		<li Name="NutritionToJingYuanK" AddV="2"/>
+		<li Name="NutritionToJingYuanK" AddP="0.2"/>
+		<li Name="NutritionWaterAutoRecover" AddV="1"/>
+		<li Name="MaxAge" AddV="250"/>
+		<li Name="PotentialOfBasepracticeAddValue" AddV="-0.5"/>
+		<li Name="AbilityLvAddV" AddV="-30"/>
+		</Properties>
+		<Skills>
+			<li Name="Barrier" LevelOver="2"/><!-- 护体 -->
+			<li Name="Zhen" LevelOver="2"/>	
+		</Skills>
+	</Modifier>	
+
+	<Modifier Name="Rith_YangEss" Type="Normal">
+		<DisplayName>阳焰精华种</DisplayName>
+		<Desc>蕴含纯净火行灵气的精华种，可将潜能与代谢之力化入根基真气，并影响交际资质。  </Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0.5,0.5,0.5,0.5,0.5</BaseFive>
+		<Properties>
+		<li Name="NpcLingMaxValue" BAddV="250"/>
+		<li Name="NutritionToJingYuanK" AddV="0.01"/>
+		<li Name="NutritionToJingYuanK" AddP="0.5"/>
+		<li Name="NutritionWaterAutoRecover" AddV="-0.5"/>
+		<li Name="PotentialOfBasepracticeAddValue" AddV="-0.5"/>
+		<li Name="MaxAge" AddV="-100"/>
+		<li Name="AbilityLvAddV" AddV="-30"/>
+		</Properties>
+		<Skills>
+			<li Name="Fight" LevelOver="2"/>
+			<li Name="SocialContact" LevelOver="5"/>	
+		</Skills>
+	</Modifier>	
+
+	<Modifier Name="Dan_LingQiShuiYC" Type="Normal">
+		<DisplayName>灵气共鸣</DisplayName>
+		<Desc>饮用灵气水修行，可加快恢复，并从根本上提升修行速度。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>5400</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" BAddV="0.15"/>
+			<li Name="LingAbsorbSpeed" AddP="10"/>
+		</Properties>
+		<Moods>
+			<li>Mood_ZhongLingQiGongNingYC</li>
+		</Moods>
+	</Modifier> 
+
+	<Modifier Name="Rith_LingStone" Type="Normal">
+		<DisplayName>灵气共鸣</DisplayName>
+		<Desc>以灵石辅助修行，可促进真气恢复，并从根本上提升修行速度。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1800</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" BAddV="0.1"/>
+			<li Name="LingAbsorbSpeed" AddP="5"/>
+		</Properties>
+		<Moods>
+			<li>Mood_LingStone</li>
+		</Moods>
+	</Modifier> 
+
+	<Modifier Name="Dan_ImmortalLingStone" Type="Normal">
+		<DisplayName>仙灵共鸣</DisplayName>
+		<Desc>一时胆大包天，竟敢在下界以仙石修行……而且居然活了下来！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1800</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" BAddV="10"/>
+			<li Name="LingAbsorbSpeed" AddP="60"/>
+		</Properties>
+		<Moods>
+			<li>Mood_LingStone</li>
+		</Moods>
+	</Modifier> 
+
+	<Modifier Name="Dan_ImmortalLingCrystal" Type="Normal">
+		<DisplayName>仙灵共鸣</DisplayName>
+		<Desc>不知是无知还是逆天求死，竟敢以仙晶修行……却没有当场形神俱灭，实在异数。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>9000</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" BAddV="20"/>
+			<li Name="LingAbsorbSpeed" AddP="120"/>
+		</Properties>
+		<Moods>
+			<li>Mood_LingStone1</li>
+		</Moods>
+	</Modifier> 
+	<Modifier Name="Dan_TribulationDelay" Type="Normal">
+		<DisplayName>延缓天劫一年</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NeckCountdownAddV" AddV="67200"/>
+		</Properties>
+	</Modifier> 
+
+
+
+
+
+
+</List></ModifierDefs>

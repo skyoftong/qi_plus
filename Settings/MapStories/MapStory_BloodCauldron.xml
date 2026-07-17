@@ -1,0 +1,589 @@
+<Stories><List>	
+<!--Scripts for stuff from Blood Cauldron-->
+	<Story Name="Story_Item_CondensedBlood" Parent="BaseFillingStory">
+		<DisplayName>凝血晶</DisplayName>
+		<Desc>由万炼血鼎凝成的血晶，破开后方知其中孕有何种血液。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>刺破凝血晶</Display>
+				<OKResult>
+				<![CDATA[	
+				local nR = me:RandomInt(1, 18) 
+				if nR <= 7 then
+					me:AddMsg(XT("[NAME]察觉到些许富含灵气的血迹，设法收集到一瓶合成妖血。"));
+					me:DropAwardItem("Item_MonsterBlood", 1);
+					me:DropAwardItem("Item_NormalBlood", 4);
+					me:DropAwardItem("Item_BloodCrystalRefuse", 1);	
+				elseif nR <= 10  then
+					me:AddMsg(XT("[NAME]发现其中血液触之发烫，内含缕缕灵气，近似妖血，便收集到数瓶。"));
+					me:DropAwardItem("Item_MonsterBlood", 2);
+					me:DropAwardItem("Item_NormalBlood", 3);
+					me:DropAwardItem("Item_BloodCrystalRefuse", 1);		
+				elseif nR <= 12 then
+					me:AddMsg(XT("[NAME]颇为惊讶，其中血液几近沸腾，灵气浓郁，成功收集到数瓶。"));
+					me:DropAwardItem("Item_MonsterBlood", 5);
+					me:DropAwardItem("Item_BloodCrystalRefuse", 1);	
+                elseif nR == 13 then
+					me:AddMsg(XT("[NAME]惊呼出声！这枚血晶之中竟孕出一件天材地宝！"));
+					me:DropAwardItem("Item_EarthEssence1", 1);
+					me:DropAwardItem("Item_BloodCrystalRefuse", 1);	
+				else
+					me:AddMsg("[NAME] finds that the blood inside is unaltered and can be recovered.");	
+				    me:DropAwardItem("Item_NormalBlood", 5);
+					me:DropAwardItem("Item_BloodCrystalRefuse", 1);	
+				end
+				story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+<!--精炼血晶 开启ing-->
+	<Story Name="Story_炼化dBloodCrystal" Parent="BaseFillingStory">
+		<DisplayName>精炼血晶</DisplayName>
+		<Desc>由处理过的血液再度精炼而成，破开后或许能发现异物。</Desc>
+		<Kind>None</Kind>
+		<ItemCache>  <!--base essence materials-->
+				<li>
+					<ThingDef>Item_CondensedBlood</ThingDef>
+					<Count>3</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BloodlineCatalyst</ThingDef>
+					<Count>1</Count>
+					<Rate>0.25</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YangBlood</ThingDef>
+					<Count>1</Count>
+					<Rate>0.05</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_YinBlood</ThingDef>
+					<Count>1</Count>
+					<Rate>0.05</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_GoldenBlood</ThingDef>
+					<Count>1</Count>
+					<Rate>0.05</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_LifeBlood</ThingDef>
+					<Count>1</Count>
+					<Rate>0.05</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_EarthSpiritBlood</ThingDef>
+					<Count>1</Count>
+					<Rate>0.05</Rate>
+				</li>
+		</ItemCache>
+
+		<Selections>
+			<li>
+				<Display>击碎血晶</Display>
+				<OKResult>
+				<![CDATA[	
+				local nR = me:RandomInt(1, 18) 
+				if nR <= 10 then
+					me:AddMsg(XT("[NAME]破开血晶，里面有一些合成妖血。"));
+					me:DropAwardItem("Item_MonsterBlood", 3);
+					me:DropAwardItem("Item_BloodCrystalRefuse", 1);	
+				elseif nR == 11  then
+					me:AddMsg(XT("[NAME]发现其中血液触之发烫，内含缕缕灵气，近似妖血，便收集到数瓶。"));
+					me:DropAwardItem("Item_EarthEssence1", 1);
+					me:DropAwardItem("Item_MonsterBlood", 2);
+					me:DropAwardItem("Item_BloodCrystalRefuse", 1);		
+				elseif nR == 12 then
+					me:AddMsg(XT("[NAME]大为震惊，血晶核心冰寒刺骨，凝结之时的剧烈变化竟孕出一枚富含阴气的结晶。"));
+					me:DropAwardItem("Item_YinOriginEmbryo", 1);
+					me:DropAwardItem("Item_MonsterBlood", 2);
+					me:DropAwardItem("Item_BloodCrystalRefuse", 1);	
+                elseif nR == 13 then
+					me:AddMsg(XT("[NAME]惊呼出声！这枚血晶之中竟孕出一件天材地宝！"));
+					me:DropAwardItemFromCache(story.ItemCache, 1, 1);
+					me:DropAwardItem("Item_BloodCrystalRefuse", 1);	
+				elseif nR == 14 then
+					me:AddMsg(XT("[NAME]惊呼出声！这枚血晶之中竟孕出一件奇珍！"));
+					me:DropAwardItem("Item_BloodlineCatalyst", 1);
+					me:DropAwardItem("Item_BloodCrystalRefuse", 1);	
+				else
+					me:AddMsg("[NAME] finds that the blood and Shards inside has been enriched with Qi and can be recovered.");	
+				    me:DropAwardItem("Item_QiEnrichBlood", 4 );
+					me:DropAwardItem("Item_BloodCrystalRefuse", 1);	
+
+				end
+				story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+<!--Consume 阳血, Uses Flags 600 to 615-->
+	<Story Name="Story_ConsumeloodlineCatalyst" Parent="BaseFillingStory">
+		<DisplayName>血脉引</DisplayName>
+		<Desc>血脉引乃血液受灵气浸染，又在机缘巧合中久经炼化而成的灵物。饮下后或得巨大裨益，但其中阳火之气极盛，亦会反噬肉身。此物可服用两次：入内门前一次，入内门后一次。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+			<Display>饮下血脉引</Display>
+				<DisplayCondition>
+				<![CDATA[	
+				me:GetGLevel() == 0 and me:GetFlag(600) == 0
+				]]>
+				</DisplayCondition>
+				<OKResult>
+				<![CDATA[
+				local nR = me:RandomInt(1, 30)
+				local nI = me:RandomInt(1, 5)
+				if me:GetFlag(600) == 0 then
+					me:AddMsg(XT("[NAME]感到血脉引与自身产生共鸣，但因尚处筑基之境，无法彻底释放其潜能。"));
+					me:SetFlag(600, 1);
+						if nR <= 5 then
+							me:AddMsg(XT("[NAME]感到血脉引洗过骨髓，根基随之凝实。"));
+							me:AddModifier("Foundation_BloodBase", true);
+							me:AddModifier("YangBlood_F_Bones", true);
+							me:AddDamage("Jin_ThunderDamage","Bone",0.1,XT("金灵催化"));
+							me:SetFlag(609, 1);
+
+						elseif nR <= 10  then
+							me:AddMsg(XT("[NAME]感到血脉引融入血脉，根基随之凝实。"));	
+							me:AddModifier("Foundation_BloodBase", true);
+							me:AddModifier("YangBlood_F_Blood", true);
+							me:AddDamage("Mu_Corrosion","Flesh",0.1,XT("生机催化"));
+							me:SetFlag(610, 1);
+
+						elseif nR <= 15 then
+							me:AddMsg(XT("[NAME]感到血脉引强化筋肉，根基随之凝实。"));
+							me:AddModifier("Foundation_BloodBase", true);
+							me:AddModifier("YangBlood_F_Muscles", true);
+							me:AddDamage("Tu_Petrifaction1","Flesh",0.1,XT("土灵催化"));
+							me:SetFlag(610, 1);
+
+						elseif nR <= 20 then
+							me:AddMsg(XT("[NAME]感到血脉引洗炼五脏，使其气机相合，根基随之凝实。")); --equivalent of Twelve Principal Meridians
+							me:AddModifier("Foundation_BloodBase", true);
+							me:AddModifier("YangBlood_F_Organs", true);
+							me:AddDamage("Huo_VisceralBurn","Lung",0.1,XT("阳血洗炼"));
+							me:SetFlag(611, 1);
+
+						elseif nR == 25 then
+							me:AddMsg(XT("[NAME]感到血脉引温养心脉，根基大为增强。"));
+							me:AddModifier("Foundation_BloodBase", true);
+							me:AddModifier("YangBlood_F_Heart", true);
+							me:SetFlag(612, 1);
+
+						else
+							me:AddMsg(XT("[NAME]惨叫出声，血脉引如烈火般灼过全身。"));
+								if 	nI == 1 then
+									me:AddDamage("Jin_ThunderDamage","Bone",0.1,XT("金灵催化"));
+									me:SetFlag(614, 1);
+
+								elseif nI == 2 then
+									me:AddDamage("Tu_Petrifaction1","Flesh",0.1,XT("土灵催化"));
+									me:SetFlag(615, 1);
+
+								elseif nI == 3 then
+									me:AddDamage("Mu_Corrosion","Flesh",0.1,XT("生机催化"));
+									me:SetFlag(616, 1);
+
+								elseif nI == 4 then
+									me:AddDamage("Huo_VisceralBurn","Liver",0.1,XT("阳火催化"));
+									me:SetFlag(617, 1);
+
+								else 
+									me:AddDamage("Shui_ColdPoison","Lung",0.1,XT("阴水催化"));
+									me:SetFlag(618, 1);
+								end
+							me:AddMsg(XT("此刻，[NAME]对“阳”之本质生出些许微妙体悟。"));
+							me:AddModifier("Foundation_BloodBase", true);
+							me:SetFlag(619, 1);
+						end
+					story:RemoveBindItem();
+				else
+					me:AddMsg(XT("[NAME]已经服用过血脉引，再饮亦无效果。"));
+				end
+				]]>		
+				</OKResult>
+			</li>
+
+			<li>
+			<Display>饮下血脉引</Display>
+				<DisplayCondition>
+					<![CDATA[	
+					me:GetGLevel() >= 1 and me:GetFlag(601) == 0
+					]]>
+				</DisplayCondition>
+				<OKResult>
+					<![CDATA[
+					local nR = me:RandomInt(1, 20)
+					local nI = me:RandomInt(1, 5)
+					if me:GetFlag(601) == 0 then
+						me:AddMsg(XT("[NAME]感到血脉引与自身产生共鸣。"));
+						me:SetFlag(601, 1);
+							if nR <= 4 then
+								me:AddMsg(XT("[NAME]感到灵血融入骨髓……骨骼吸纳其中灵气，真气储量随之提升，恢复与修行速度亦有所增长。"));
+								me:AddModifier("Cultivator_YangBloodBase", true);
+								me:ModifierProperty("NpcLingMaxValue",0 ,0.05);
+								me:ModifierProperty("NpcLingMaxValue",100);
+								me:ModifierProperty("LingAbsorbSpeed",0 ,0.05);
+								me:ModifierProperty("NpcFight_ShieldConversionRateAddP",0.1);
+								me:SetFlag(602, 1);
+								
+							elseif nR <= 8 then
+								me:AddMsg(XT("[NAME]感到灵血融入血脉……真气有所提升，术法消耗降低，术法威能增强。"));	
+								me:AddModifier("Cultivator_YangBloodBase", true);
+								me:ModifierProperty("NpcLingMaxValue",0 ,0.05);
+								me:ModifierProperty("NpcLingMaxValue",200);
+								me:ModifierProperty("NpcFight_SpellLingCostAddP",-0.05);
+								me:ModifierProperty("NpcFight_SpellPowerAddP",0.25);
+								me:SetFlag(603, 1);
+								
+							elseif nR <= 12 then
+								me:AddMsg(XT("[NAME]感到灵血缠绕五脏……寿元、灵气亲和与修行速度皆有所增长。"));
+								me:AddModifier("Cultivator_YangBloodBase", true);
+								me:ModifierProperty("NpcLingMaxValue",0 ,0.05);
+								me:ModifierProperty("NpcLingMaxValue",400);
+								me:ModifierProperty("MaxAge", 150);
+								me:ModifierProperty("DeepPracticeSpeedSpecialCoefficient",1.5);
+								me:SetFlag(604, 1);
+								
+							elseif nR <= 14 then
+								me:AddMsg(XT("[NAME]体内灵血淬炼十二正经，使经脉容量、坚韧程度与真气流转皆有所提升。"));
+								me:AddModifier("Cultivator_YangBloodBase", true);
+								me:ModifierProperty("NpcLingMaxValue",0 ,0.1);
+								me:ModifierProperty("NpcLingMaxValue",600); 
+								me:ModifierProperty("LingAbsorbSpeed",0 ,0.2);
+								me:ModifierProperty("NpcFight_ShieldConversionRateAddP",0.2);
+								me:SetFlag(605, 1);
+								
+							elseif nR == 15 then
+								me:AddMsg(XT("[NAME]感到灵血融入奇经八脉，术法威能与真气皆大幅增强。"));
+								me:AddModifier("Cultivator_YangBloodBase", true);
+								me:ModifierProperty("NpcLingMaxValue",0 ,0.15);
+								me:ModifierProperty("NpcLingMaxValue",1200); 
+								me:ModifierProperty("NpcFight_SpellLingCostAddP",-0.15);
+								me:ModifierProperty("NpcFight_SpellPowerAddP",1);
+								me:SetFlag(606, 1);
+								
+							elseif nR == 16 then
+								me:AddMsg(XT("[NAME]感到灵血融入灵根，对灵气的天然亲和以及借灵根抵御灵气侵袭的能力大幅增强。"));
+								me:AddModifier("Cultivator_YangBloodBase", true);
+								me:ModifierProperty("NpcLingMaxValue",0 ,0.3);
+								me:ModifierProperty("NpcLingMaxValue",2400); 
+								me:ModifierProperty("NpcFight_ShieldConversionRate",1);
+								me:ModifierProperty("NpcFight_ShieldConversionRateAddP",0.4);
+								me:ModifierProperty("AbilityLvAddV",-20);
+								me:SetFlag(607, 1);
+								
+							else
+								me:AddMsg(XT("[NAME]感到血脉引灼遍全身。"));
+								if 	nI == 1 then
+									me:AddDamage("Huo_VisceralBurn","Kidney",0.3,XT("阳血灼身"));
+								elseif nI == 2 then
+									me:AddDamage("Huo_VisceralBurn","Genitals",0.3,XT("阳血灼身"));
+								elseif nI == 3 then
+									me:AddDamage("Huo_VisceralBurn","Head",0.3,XT("阳血灼身"));
+								elseif nI == 4 then
+									me:AddDamage("Huo_VisceralBurn","Liver",0.3,XT("阳血灼身"));
+								else 
+									me:AddDamage("Huo_VisceralBurn","Lung",0.3,XT("阳血灼身"));
+								end
+								me:AddMsg(XT("不过，[NAME]也感到这股火力祛除了些许杂质，并略微提升真气、寿元与修行速度。"));
+								me:AddModifier("Cultivator_YangBloodBase", true);
+								me:ModifierProperty("AbilityLvAddV",-10);
+								me:SetFlag(608, 1);
+								
+							end
+							story:RemoveBindItem();
+					else
+						me:AddMsg(XT("[NAME]已经服用过血脉引，再饮亦无效果。"));
+					end
+					]]>		
+				</OKResult>
+			</li>
+		<!--Refuse to take the yang Blood-->
+			<li>
+			<Display>不饮用</Display>
+				<DisplayCondition>
+					<![CDATA[	
+					 me:GetGLevel() == 0 and me:GetFlag(600) == 0 
+					]]>
+				</DisplayCondition>
+				<OKResult>
+					<![CDATA[	
+					me:AddMsg(XT("[NAME]将小瓶放了回去。"));
+					]]>
+				</OKResult>
+			</li>
+			<li>
+			<Display>不饮用</Display>
+				<DisplayCondition>
+					<![CDATA[	
+					 me:GetGLevel() >= 1 and me:GetFlag(601) == 0  
+					]]>
+				</DisplayCondition>
+				<OKResult>
+					<![CDATA[	
+					me:AddMsg(XT("[NAME]将小瓶放了回去。"));
+					]]>
+				</OKResult>
+			</li>
+
+		<!--Cultivation Bonus's for 阳血-->
+			<li>	
+			<Display>修行：血脉引永久加成</Display>
+				<DisplayCondition>
+					<![CDATA[	 
+					me:GetFlag(601) == 1
+					]]>
+				</DisplayCondition>
+				<OKResult>
+					<![CDATA[
+						me:AddMsg(XT("血脉引改善了[NAME]的根基：灵气亲和 +1，护体 +1，根基真气 +10%，真气恢复 +10%，修行速度 +20%，护盾转化率 +25%。"));
+							if me:GetFlag(602) == 1 then
+								me:AddMsg(XT("[NAME]的骨骼浸入金、土、火三行灵气：真气 +100，真气 +5%，修行速度 +60%，真气恢复 +5%，护盾转化率 +10%。"));
+							elseif me:GetFlag(603) == 1 then
+								me:AddMsg(XT("[NAME]的血脉浸入木、水、火三行灵气：真气 +200，真气 +5%，术法消耗 -5%，术法威力 +25%。"));				
+							elseif me:GetFlag(604) == 1 then
+								me:AddMsg(XT("[NAME]的五脏浸入五行灵气：真气 +400，真气 +5%，寿元 +150，修行速度 +150%。"));						
+							elseif me:GetFlag(605) == 1 then
+								me:AddMsg(XT("[NAME]的十二正经浸入五行灵气：真气 +600，真气 +10%，真气恢复速度 +20%，护盾转化率 +10%。"));						
+							elseif me:GetFlag(606) == 1 then
+								me:AddMsg(XT("[NAME]的奇经八脉浸入五行灵气：真气 +1200，真气 +15%，术法消耗 -15%，术法威力 +100%。"));
+							elseif me:GetFlag(607) == 1 then
+								me:AddMsg(XT("[NAME]的灵根得灵气洗炼：真气上限 +30%，真气 +2400，护盾转化率 +40%，护盾转化 +1，道行 -20。"));
+							elseif me:GetFlag(608) == 1 then
+								me:AddMsg(XT("[NAME]的肉身受阳气洗炼，道行 -10。"));	
+							else
+								me:AddMsg(XT("若看到此句，说明出现了异常！"));
+							end
+					]]>
+				</OKResult>
+			</li>
+
+		<!-- Foundation Bonus's for 阳血-->			
+			<li>	
+			<Display>根基：血脉引永久加成</Display>
+				<DisplayCondition>
+					<![CDATA[	 
+					me:GetFlag(600) == 1 
+					]]>
+				</DisplayCondition>
+				<OKResult>
+					<![CDATA[
+						if me:GetFlag(614) == 1 then
+							me:AddMsg(XT("由于阳血之力尽数被灵根吸收，[NAME]未获得阳血的通用裨益。"));
+							me:AddMsg(XT("[NAME]的灵根受阳气洗炼，并显化出五行属性。"));
+						else 
+							me:AddMsg(XT("血脉引改善了[NAME]的根基：灵气亲和 +1，寿元 -25%，冷热耐受提高 15 度，疲劳消耗降低 10%。"));
+								if me:GetFlag(609) == 1 then
+									me:AddMsg(XT("[NAME]的骨骼浸入金灵气，疼痛耐受提高 0.5 与 25%。"));								
+								elseif me:GetFlag(610) == 1 then
+									me:AddMsg(XT("[NAME]的血脉浸入木灵气，精力提高，疲劳消耗降低 10%。"));								
+								elseif me:GetFlag(611) == 1 then
+									me:AddMsg(XT("[NAME]的筋肉浸入土灵气，移动速度提高 25%。"));			
+								elseif me:GetFlag(612) == 1 then
+									me:AddMsg(XT("[NAME]的核心脏腑受水灵气强化，全基础属性 +0.2，机缘 +0.1，灵气亲和 +1。"));							
+								elseif me:GetFlag(613) == 1 then
+									me:AddMsg(XT("[NAME]的心脉浸入火灵气，体魄、感知、魅力与悟性各提高 0.5。"));
+								else
+									me:AddMsg(XT("若看到此句，说明出现了异常！"));
+								end
+						end
+					]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+<!-- new story here-->
+<Story Name="Story_ConsumeBlood" Parent="BaseFillingStory">
+		<DisplayName>饮血</DisplayName>
+		<Desc> 饮下这一瓶蕴含灵气的血液。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+			<Display>饮下阳血</Display>
+				<DisplayCondition>
+				<![CDATA[	
+				story:GetBindThing().def.Name == "Item_YangBlood"
+				]]>
+				</DisplayCondition>
+				<OKResult>
+                    <![CDATA[
+					if me:GetFlag(620) == 0 then
+						me:AddMsg(XT("[NAME]此前尚未饮用过蕴灵之血。"));
+						if me:GetGLevel() == 0 or me:GetFlag(625) == 0 then
+							me:AddMsg(XT("[NAME]饮下此血，以阳灵之体改善了自身根基。"));
+							me:AddModifier("Foundation_YangBloodBase", true);
+							me:SetFlag(625, 1);
+							story:RemoveBindItem();
+						elseif me:GetGLevel() >= 1 and me:GetFlag(625) == 1 then
+							me:AddMsg(XT("[NAME]饮下此血，进一步改善了修为与先天体质。"));
+							me:AddModifier("Cultivator_YangBloodBase", true);
+							me:SetFlag(620, 1);
+							story:RemoveBindItem();
+						else
+							me:AddMsg(XT("修为尚浅，无法继续饮用。"));
+						end
+					else
+						me:AddMsg(XT("已经饮用过此物，肉身无法继续承受。"));
+					end		
+                    ]]>
+                </OKResult>         
+            </li> 
+
+			<li>
+			<Display>饮下阴血</Display>
+				<DisplayCondition>
+				<![CDATA[	
+				story:GetBindThing().def.Name == "Item_YinBlood"
+				]]>
+				</DisplayCondition>
+				<OKResult>
+                    <![CDATA[
+					if me:GetFlag(621) == 0 then
+						me:AddMsg(XT("[NAME]此前尚未饮用过蕴灵之血。"));
+						if me:GetGLevel() == 0 or me:GetFlag(626) == 0 then
+							me:AddMsg(XT("[NAME]饮下此血，以阴灵之体改善了自身根基。"));
+							me:AddModifier("Foundation_YinBodyAdd", true);
+							me:SetFlag(626, 1);
+							story:RemoveBindItem();
+						elseif me:GetGLevel() >= 1 and me:GetFlag(626) == 1 then
+							me:AddMsg(XT("[NAME]饮下此血，进一步改善了修为与先天体质。"));
+							me:AddModifier("Cultivator_YinBodyAdd", true);
+							me:SetFlag(621, 1);
+							story:RemoveBindItem();
+						else
+							me:AddMsg(XT("修为尚浅，无法继续饮用。"));
+						end
+					else
+						me:AddMsg(XT("已经饮用过此物，肉身无法继续承受。"));
+					end		
+                    ]]>
+                </OKResult>         
+            </li> 
+			<li>
+			<Display>饮下金血</Display>
+				<DisplayCondition>
+				<![CDATA[	
+				story:GetBindThing().def.Name == "Item_GoldenBlood"
+				]]>
+				</DisplayCondition>
+				<OKResult>
+                    <![CDATA[
+					if me:GetFlag(622) == 0 then
+						me:AddMsg(XT("[NAME]此前尚未饮用过蕴灵之血。"));
+						if me:GetGLevel() == 0 or me:GetFlag(627) == 0 then
+							me:AddMsg(XT("[NAME]饮下此血，以金灵之体改善了自身根基。"));
+							me:AddModifier("Foundation_GoldenBodyAdd", true);
+							me:SetFlag(627, 1);
+							story:RemoveBindItem();
+						elseif me:GetGLevel() >= 1 and me:GetFlag(627) == 1 then
+							me:AddMsg(XT("[NAME]饮下此血，进一步改善了修为与先天体质。"));
+							me:AddModifier("Cultivator_GoldenBodyAdd", true);
+							me:SetFlag(622, 1);
+							story:RemoveBindItem();
+						else
+							me:AddMsg(XT("修为尚浅，无法继续饮用。"));
+						end
+					else
+						me:AddMsg(XT("已经饮用过此物，肉身无法继续承受。"));
+					end
+							
+                    ]]>
+                </OKResult>         
+            </li> 
+			
+
+			<li>
+			<Display>饮下生血</Display>
+				<DisplayCondition>
+				<![CDATA[	
+				story:GetBindThing().def.Name == "Item_LifeBlood"
+				]]>
+				</DisplayCondition>
+				<OKResult>
+                    <![CDATA[
+					if me:GetFlag(623) == 0 then
+						me:AddMsg(XT("[NAME]此前尚未饮用过蕴灵之血。"));
+						if me:GetGLevel() == 0 or me:GetFlag(628) == 0 then
+							me:AddMsg(XT("[NAME]饮下此血，以长生之体改善了自身根基。"));
+							me:AddModifier("Foundation_LifeBodyAdd", true);
+							me:SetFlag(628, 1);
+							story:RemoveBindItem();
+						elseif me:GetGLevel() >= 1 and me:GetFlag(628) == 1 then
+							me:AddMsg(XT("[NAME]饮下此血，进一步改善了修为与先天体质。"));
+							me:AddModifier("Cultivator_LifeBodyAdd", true);
+							me:SetFlag(623, 1);
+							story:RemoveBindItem();
+						else
+							me:AddMsg(XT("修为尚浅，无法继续饮用。"));
+						end
+					else
+						me:AddMsg(XT("已经饮用过此物，肉身无法继续承受。"));
+					end
+							
+                    ]]>
+                </OKResult>         
+            </li> 
+			<li>
+			<Display>饮下土灵血</Display>
+				<DisplayCondition>
+				<![CDATA[	
+				story:GetBindThing().def.Name == "Item_EarthSpiritBlood"
+				]]>
+				</DisplayCondition>
+				<OKResult>
+                    <![CDATA[
+					if me:GetFlag(624) == 0 then
+						me:AddMsg(XT("[NAME]此前尚未饮用过蕴灵之血。"));
+						if me:GetGLevel() == 0 or me:GetFlag(629) == 0 then
+							me:AddMsg(XT("[NAME]饮下此血，以土灵之体改善了自身根基。"));
+							me:AddModifier("Foundation_EarthBodyAdd", true);
+							me:SetFlag(629, 1);
+							story:RemoveBindItem();
+						elseif me:GetGLevel() >= 1 and me:GetFlag(629) == 1 then
+							me:AddMsg(XT("[NAME]饮下此血，进一步改善了修为与先天体质。"));
+							me:AddModifier("Cultivator_EarthBodyAdd", true);
+							me:SetFlag(624, 1);
+							story:RemoveBindItem();
+						else
+							me:AddMsg(XT("修为尚浅，无法继续饮用。"));
+						end
+					else
+						me:AddMsg(XT("已经饮尽此物，肉身无法继续承受。"));
+					end
+							
+                    ]]>
+                </OKResult>         
+            </li> 
+			<li>
+			<Display>不饮此血</Display>
+				<DisplayCondition>
+					<![CDATA[	
+					story:GetBindThing().def.Name == "Item_YangBlood" or
+					story:GetBindThing().def.Name == "Item_YinBlood" or 
+					story:GetBindThing().def.Name == "Item_GoldenBlood" or 
+					story:GetBindThing().def.Name == "Item_LifeBlood" or 
+					story:GetBindThing().def.Name == "Item_EarthSpiritBlood"
+					]]>
+				</DisplayCondition>
+				<OKResult>
+					<![CDATA[	
+					me:AddMsg(XT("[NAME]将小瓶放了回去。"));
+					]]>
+				</OKResult>
+			</li>
+
+		</Selections>
+	</Story>
+
+<!-- new story here-->
+
+</List></Stories>
+
+

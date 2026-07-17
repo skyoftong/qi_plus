@@ -1,0 +1,313 @@
+<ModifierDefs><List>
+
+    <Modifier Name="Foundation_BloodBase" Type="Normal">
+		<DisplayName>催化血基</DisplayName>
+		<Desc>血脉引唤醒体魄：提升体魄、魅力与机缘，灵气亲和 +1，寿元 -20%，冷热耐受提高 15 度，疲劳消耗降低 10%。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0.5,0.5,0,0.5</BaseFive>
+		<Skills>
+			<li Name="Qi" LevelOver="1"/>
+		</Skills>
+		<Properties>
+			<li Name="MaxAge" AddP="-0.2"/>
+            <li Name="ToleranceTMin" AddV="-15"/>
+            <li Name="ToleranceTMax" AddV="15"/>
+			<li Name="FatigueConsumeConstant" AddP="-0.1"/>
+		</Properties>
+	</Modifier>	
+
+<!--阳血 Modifiers-->
+	<Modifier Name="Foundation_YangBodyAdd" Type="Normal">
+		<DisplayName>阳灵之体 </DisplayName>
+		<Desc>阳属亲和灵根。（灵气亲和 +6，寿元 -50%，魅力大幅提升，体魄提升，悟性降低。）</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,1,3,-1,0</BaseFive>
+		<Skills>
+			<li Name="Qi" LevelOver="6"/>
+		</Skills>
+		<Properties>
+			<li Name="MaxAge" AddP="-0.5"/>
+		</Properties>
+	</Modifier>	
+
+    <Modifier Name="Foundation_YangBloodBase" Type="Normal">
+		<DisplayName>阳血 </DisplayName>
+		<Desc>阳气浸染之血：灵气亲和 +1，寿元 -25%，冷热耐受提高 15 度，疲劳消耗降低 10%。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0.5,1.5,-0.5,0</BaseFive>
+		<Skills>
+			<li Name="Qi" LevelOver="1"/>
+		</Skills>
+		<Properties>
+			<li Name="MaxAge" AddP="-0.25"/>
+            <li Name="ToleranceTMin" AddV="-15"/>
+            <li Name="ToleranceTMax" AddV="15"/>
+			<li Name="FatigueConsumeConstant" AddP="-0.1"/>
+		</Properties>
+	</Modifier>	
+	
+	<Modifier Name="YangBlood_F_Bones" Type="Normal">
+		<DisplayName>阳骨 </DisplayName>
+		<Desc>阳气亲和使骨骼更为坚韧。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+            <li Name="PainTolerance" AddV="0.5" AddP="0.25"/>
+		</Properties>
+	</Modifier>	
+
+	<Modifier Name="YangBlood_F_Blood" Type="Normal">
+		<DisplayName>阳脉血流 </DisplayName>
+		<Desc>阳气亲和使气血更为充盈。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+            <li Name="FatigueConsumeConstant" AddP="-0.1"/>
+		</Properties>
+	</Modifier>	
+
+	<Modifier Name="YangBlood_F_Muscles" Type="Normal">
+		<DisplayName>阳煅筋肌 </DisplayName>
+		<Desc>阳气亲和使筋肉更为坚韧。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+            <li Name="MoveSpeed" AddP="0.2"/>
+		</Properties>
+	</Modifier>	
+		
+	<Modifier Name="YangBlood_F_Organs" Type="Normal">
+		<DisplayName>阳煅筋肌 </DisplayName>
+		<Desc>阳气亲和使五脏内气更趋调和。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0.5,0,0,0</BaseFive>
+		<Skills>
+			<li Name="Qi" LevelOver="1"/>
+		</Skills>
+	</Modifier>	
+
+	<Modifier Name="YangBlood_F_Heart" Type="Normal">
+		<DisplayName>阳火心脉 </DisplayName>
+		<Desc>阳气亲和强化心脉，并影响根本资质。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0.5,0,0,0,0</BaseFive>
+		<Properties>
+		</Properties>
+	</Modifier>	
+
+	<Modifier Name="YangBlood_Temperature" Type="Normal">
+		<DisplayName>阳血温感 </DisplayName>
+		<Desc>阳气亲和略微提升冷热耐受。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+            <li Name="ToleranceTMin" AddV="-25"/>
+            <li Name="ToleranceTMax" AddV="25"/>
+		</Properties>
+	</Modifier>	
+
+    <Modifier Name="Cultivator_YangBloodBase" Type="Normal">
+		<DisplayName>阳血 </DisplayName>
+		<Desc>阳气浸染之血，可提升灵气亲和、护体抗性、寿元与根基真气 10%。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Qi" LevelOver="1"/>
+            <li Name="Barrier" LevelOver="1"/>
+			<li Name="Fabao" LevelOver="2"/>
+		</Skills>
+		<Properties>
+			<li Name="MaxAge" AddP="-0.15"/>
+            <li Name="NpcLingMaxValue" BAddP="0.1"/>
+            <li Name="LingAbsorbSpeed" AddP="0.01"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.2"/>
+            <li Name="NpcFight_ShieldConversionRateAddP" AddP="0.25"/>
+			<li Name="ToleranceTMin" AddV="-25"/>
+            <li Name="ToleranceTMax" AddV="25"/>
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.1"/>
+		</Properties>
+	</Modifier>	
+<!--阴血 Modifiers-->
+	<Modifier Name="Foundation_YinBodyAdd" Type="Normal">
+		<DisplayName>阴灵之体 </DisplayName>
+		<Desc>阴属亲和灵根。（灵气亲和 +6，寿元 -50%，感知大幅提升，魅力提升，体魄降低。）</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>3,-1,2,0,0</BaseFive>
+		<Skills>
+			<li Name="Qi" LevelOver="6"/>
+		</Skills>
+		<Properties>
+			<li Name="MaxAge" AddP="-0.2"/>
+		</Properties>
+	</Modifier>	
+
+    <Modifier Name="Cultivator_YinBodyAdd" Type="Normal">
+		<DisplayName>阴血 </DisplayName>
+		<Desc>阴灵体质</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Qi" LevelOver="1"/>
+            <li Name="Barrier" LevelOver="1"/>
+			<li Name="Fabao" LevelOver="2"/>
+		</Skills>
+		<Properties>
+			<li Name="MaxAge" AddP="-0.3"/>
+            <li Name="NpcLingMaxValue" BAddP="0.15"/>
+            <li Name="LingAbsorbSpeed" AddP="0.01"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.15"/>
+            <li Name="NpcFight_ShieldConversionRateAddP" AddP="0.2"/>
+			<li Name="ToleranceTMin" AddV="-25"/>
+            <li Name="ToleranceTMax" AddV="25"/>
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="0.1"/>
+		</Properties>
+	</Modifier>	
+
+
+<!--Golden Blood-->
+	<Modifier Name="Foundation_GoldenBodyAdd" Type="Normal">
+		<DisplayName>金灵之体 </DisplayName>
+		<Desc>金属亲和灵根。（护体 +6，寿元 -50%，感知与体魄提升，机缘提升，魅力降低。）</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>2,3,-1,0,1</BaseFive>
+		<Skills>
+			<li Name="Barrier" LevelOver="6"/>
+			<li Name="FightSkill" LevelOver="2"/>
+		</Skills>
+		<Properties>
+			<li Name="MaxAge" AddP="-0.3"/>
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="0.1"/>
+		</Properties>
+	</Modifier>	
+
+	<Modifier Name="Cultivator_GoldenBodyAdd" Type="Normal">
+		<DisplayName>金灵之体·进阶 </DisplayName>
+		<Desc>进阶金灵体质</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Qi" LevelOver="1"/>
+            <li Name="Barrier" LevelOver="3"/>
+		</Skills>
+		<Properties>
+			<li Name="MaxAge" AddP="-0.2"/>
+            <li Name="NpcLingMaxValue" BAddP="0.2"/>
+            <li Name="LingAbsorbSpeed" AddP="0.01"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.30"/>
+            <li Name="NpcFight_ShieldConversionRateAddP" AddP="0.5"/>
+            <li Name="ToleranceTMax" AddV="25"/>
+			<li Name="MoveSpeed" AddP="0.2"/>
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="0.1"/>
+		</Properties>
+	</Modifier>	
+
+<!--Life Blood-->
+	<Modifier Name="Foundation_LifeBodyAdd" Type="Normal">
+		<DisplayName>生木之体 </DisplayName>
+		<Desc>木属亲和灵根。（护体 +4，灵气亲和 +2，寿元 +25%，全属性提升。）</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>1,1,1,1,0</BaseFive>
+		<Skills>
+			<li Name="Barrier" LevelOver="4"/>
+			<li Name="Qi" LevelOver="2"/>
+		</Skills>
+		<Properties>
+			<li Name="MaxAge" AddP="0.25"/>
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="0.1"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="Cultivator_LifeBodyAdd" Type="Normal">
+		<DisplayName>长生之体 </DisplayName>
+		<Desc>进阶长生体质</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Qi" LevelOver="3"/>
+            <li Name="Barrier" LevelOver="3"/>
+		</Skills>
+		<Properties>
+			<li Name="MaxAge" AddP="0.4"/>
+            <li Name="NpcLingMaxValue" BAddP="0.25"/>
+            <li Name="LingAbsorbSpeed" AddP="0.01"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.50"/>
+            <li Name="NpcFight_ShieldConversionRateAddP" AddP="0.2"/>
+			<li Name="MoveSpeed" AddP="0.2"/>
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="0.1"/>
+		</Properties>
+	</Modifier>	
+
+<!--Earthspirit Blood-->
+	<Modifier Name="Foundation_EarthBodyAdd" Type="Normal">
+		<DisplayName>土灵之体 </DisplayName>
+		<Desc>土属亲和灵根。（护体 +3，灵气亲和 +3，根基真气 +20%，全属性提升。）</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>1,1,0,1,1</BaseFive>
+		<Skills>
+			<li Name="Barrier" LevelOver="3"/>
+			<li Name="Qi" LevelOver="3"/>
+		</Skills>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddP="0.2"/>
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.05"/>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="0.05"/>
+		</Properties>
+	</Modifier>		
+
+	<Modifier Name="Cultivator_EarthBodyAdd" Type="Normal">
+		<DisplayName>土灵之体 </DisplayName>
+		<Desc>进阶土灵体质</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Skills>
+			<li Name="Qi" LevelOver="5"/>
+            <li Name="Barrier" LevelOver="5"/>
+		</Skills>
+		<Properties>
+			<li Name="MaxAge" AddP="-0.1"/>
+            <li Name="NpcLingMaxValue" BAddP="0.3"/>
+            <li Name="LingAbsorbSpeed" AddP="0.3"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.40"/>
+            <li Name="NpcFight_ShieldConversionRateAddP" AddP="0.4"/>
+			<li Name="MoveSpeed" AddP="0.2"/>
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="0.1"/>	
+		</Properties>
+	</Modifier>	
+
+
+
+</List></ModifierDefs>

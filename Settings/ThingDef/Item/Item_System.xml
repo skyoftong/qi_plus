@@ -1,0 +1,526 @@
+<ThingDefs><List>
+<!-- General items-->
+<!--Reiki Water, should be the same one Farming Fa Uses, for convenience-->	
+	<ThingDef Type="Item" Name="Item_LingQiShuiYC" Parent="DrugBase">
+		<ThingName>灵气水</ThingName>
+		<TexPath>res\Sprs\object\object_AbucketOfWater</TexPath>	
+		<Desc>以碎灵石浸养而成的清水，内中灵机已被激发。饮用后可回复消耗的灵气</Desc>
+		<Rate>6</Rate>
+		<Beauty>6</Beauty>
+		<MaxStack>9999</MaxStack>
+		<ElementKind>Shui</ElementKind>
+		<Item Lable="Drug">
+			<FabaoSuffix>水</FabaoSuffix>
+			<BeMaterial>
+					<NamePrefix></NamePrefix>
+					<CostMultiplier>1</CostMultiplier>
+			</BeMaterial>
+			<PhysicalLables>
+				<li>Liquid</li>
+			</PhysicalLables>
+			<BeMade>
+				<WorkToMake>10</WorkToMake>
+					<CostItems>
+						<Item name = "Item_Water" count = "1"/>
+						<Item name = "Item_LingStone" count = "10"/>
+					</CostItems>
+			</BeMade>
+			<Elixir>
+				<Ling>5000</Ling>
+				<Modifier>Dan_LingQiShuiYC</Modifier>
+			</Elixir>		
+			<Food>
+				<EatDirectable>1</EatDirectable>
+				<Water>50</Water>
+			</Food>
+			<Rot>
+				<RotSpeed>0.005</RotSpeed>
+				<DaysToRotStart>0</DaysToRotStart>
+				<TempMin>0</TempMin>
+				<LingMax>0</LingMax>
+			</Rot>
+		</Item>
+		<Light>
+			<Value>30</Value>
+			<Failing>0.6</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>2</Radius>
+			<Color>358BA7FF</Color>
+		</Light>
+	</ThingDef>
+<!--Immortal Stone: Currency Grade above Spirit Crystals-->
+	<ThingDef Type="Item" Name="Item_ImmortalLingStone" Parent="RockBase">
+		<TexPath>Spr\Object\Items\ImmortalStone1.png</TexPath>
+		<ThingName>仙石</ThingName>	
+		<Desc>诸多仙界通行的基础货币。 
+[size=10][color=#D06508]偶尔也会流落下界……[/color][/size]</Desc>
+		<Rate>12</Rate>
+		<Beauty>10</Beauty>
+		<NoElementKind>1</NoElementKind>
+		<ElementKind>None</ElementKind>
+		<Item Lable="LingStone">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>500</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="12000"/>
+					<SalePrice Value="8000" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="12000" />
+					<SalePrice Value="8000" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1" />
+					<SalePrice Value="1" />
+				</li>
+			</Prices>
+			<PhysicalLables>
+				<li>Heavy1</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<BeMaterial>
+					<NamePrefix>仙</NamePrefix>
+					<CostMultiplier>1</CostMultiplier>
+					
+					<RateWhenBeMain>12</RateWhenBeMain>
+					<WorkSpeedCoefficientWhenBeMain>3</WorkSpeedCoefficientWhenBeMain>
+				
+					<BeautyWhenBeMain>12</BeautyWhenBeMain>
+					<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+			</BeMaterial>
+			<Elixir>
+				<Ling>1000000</Ling>
+				<Modifier>Dan_ImmortalLingStone</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>10</WorkToMake>
+					<CostItems>
+						<Item name = "Item_LingCrystal" count = "100"/>
+					</CostItems>
+			</BeMade>
+		</Item>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>         
+			<Radius>1</Radius>
+			<Failing>0</Failing>
+			<FailRadius>0</FailRadius>
+		</Element>
+		
+		<Light>
+			<Value>90</Value>
+			<Failing>0.6</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>2</Radius>
+			<Color>358BA7FF</Color>
+		</Light>
+	</ThingDef>
+<!--Immortal Stone: Currency Grade above Spirit Crystals-->
+	<ThingDef Type="Item" Name="Item_ImmortalLingCrystal" Parent="RockBase">
+		<TexPath>Spr\Object\Items\ImmortalCrystal1.png</TexPath>
+		<ThingName>仙晶</ThingName>	
+		<Desc>仙界大能之间流通的上乘货币。仙石尚可借器物精炼而成，仙晶却绝非下界手段所能造化。 
+[size=10][color=#D06508]此物若现于下界，一旦消息走漏，往往必生祸端。[/color][/size]</Desc>
+		<Rate>13</Rate>
+		<Beauty>20</Beauty>
+		<NoElementKind>1</NoElementKind>
+		<ElementKind>None</ElementKind>
+		<Item Lable="LingStone">
+			<PhysicalLables>
+				<li>Heavy1</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<BeMaterial>
+					<NamePrefix>大仙</NamePrefix>
+					<CostMultiplier>5</CostMultiplier>
+					
+					<RateWhenBeMain>13</RateWhenBeMain>
+					<WorkSpeedCoefficientWhenBeMain>3</WorkSpeedCoefficientWhenBeMain>
+				
+					<BeautyWhenBeMain>20</BeautyWhenBeMain>
+					<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+			</BeMaterial>
+			<Elixir>
+				<Ling>50000000</Ling>
+				<Modifier>Dan_ImmortalLingCrystal</Modifier>
+			</Elixir>
+		</Item>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>         
+			<Radius>1</Radius>
+			<Failing>0</Failing>
+			<FailRadius>0</FailRadius>
+		</Element>
+		
+		<Light>
+			<Value>90</Value>
+			<Failing>0.6</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>2</Radius>
+			<Color>358BA7FF</Color>
+		</Light>
+	</ThingDef>
+<!-- Qi Condensing Crystal, Basic building item for QI gathering stuff-->
+	<ThingDef Type="Item" Name="Item_QiConCrystal" Parent="DrugBase">
+		<ThingName>凝灵晶</ThingName>
+		<TexPath>Spr\Object\Items\QiCondenseStone.png</TexPath>	
+		<Desc>经特殊法门提纯过的灵晶。 
+[size=10][color=#D06508]用作阵法核心尤为合适。[/color][/size]</Desc>
+		<Rate>8</Rate>
+		<Beauty>16</Beauty>
+		<MaxStack>9999</MaxStack>
+		<ElementKind>None</ElementKind>
+		<Item Lable="LingStone">
+			<BeMaterial>
+					<NamePrefix></NamePrefix>
+					<CostMultiplier>1</CostMultiplier>
+			</BeMaterial>
+			<PhysicalLables>
+				<li>Heavy1</li>
+				<li>Hard1</li>
+			</PhysicalLables>
+			<BeMade>
+				<WorkToMake>10</WorkToMake>
+					<CostItems>
+						<Item name = "Rith_5EleCatalyst" count = "1"/>
+						<Item name = "Item_LingCrystal" count = "1"/>
+					</CostItems>
+			</BeMade>
+			<Elixir>
+				<Ling>1000</Ling>
+				<Modifier>Rith_LingStone</Modifier>
+			</Elixir>		
+		</Item>
+		 <Ling>
+		<AddionLing>45</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+		</Ling>
+		<Light>
+			<Value>30</Value>
+			<Failing>0.6</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>2</Radius>
+			<Color>358BA7FF</Color>
+		</Light>
+	</ThingDef>
+<!--QiCondensed Ink - Special Ink used in making powerful scrolls-->
+	<ThingDef Type="Item" Name="Item_QiEnrichInk" Parent="DrugBase">
+		<ThingName>蕴灵墨</ThingName>
+		<TexPath>Spr\Object\Items\SpecialInk.png</TexPath>	
+		<Desc>蕴灵墨，经万炼魂鼎特法炼制而成的灵墨。 
+[size=10][color=#D06508]可用于制作推演卜算之卷。[/color][/size]</Desc>
+		<MaxHitPoints>500</MaxHitPoints>
+		<MaxStack>9999</MaxStack>
+		<Rate>6</Rate>
+		<Beauty>6</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Spell">
+		<PhysicalLables>
+			<li>Liquid</li>
+		</PhysicalLables>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<CostItems>
+				<Item name = "Rith_5EleCatalyst" count = "1"/>
+				<Item name = "Item_LingQiShuiYC" count = "1"/>
+				<Item name = "Item_LingCrystal" count = "1"/>
+			</CostItems>
+			</BeMade>		
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>12</Value>         
+			<Radius>1</Radius>
+			<Failing>0.7</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Parasol Seedling: Item that functions as the base to make the Parasol Tree Wood wonder-->
+	<ThingDef Type="Item" Name="Item_ParasolTreeSeedling" Parent="MaterialBase">
+		<TexPath>Spr\Object\Items\ParasolTreeSeedling.png</TexPath>
+		<ThingName>梧桐幼株</ThingName>	
+		<Desc>由寄于梧桐木中的生机灵胚培育而成的盆栽梧桐幼株。</Desc>
+		<MaxStack>1</MaxStack>
+		<Rate>9</Rate>
+		<Beauty>20</Beauty>
+		<ElementKind>Mu</ElementKind>
+			<Item>
+				<NotFengshuiItem>0</NotFengshuiItem>
+				<PhysicalLables>
+					<li>Light1</li>
+					<li>Hard1</li>
+				</PhysicalLables>
+				<BeMade>
+					<WorkToMake>50</WorkToMake>
+						<CostItems>
+							<Item name = "Item_LifeWoodEmbryo" count = "1"/>
+							<Item name = "Item_ParasolWood" count = "4"/>
+							<Item name = "Item_MonsterBlood" count = "4"/>
+							<Item name = "Item_OriginShard" count = "4"/>
+						</CostItems>
+					</BeMade>			
+			</Item>
+		<Ling>
+			<AddionLing>75</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.03</Attenuation>
+			<Absorption>0.4</Absorption>
+			<Accommodate>18</Accommodate>
+		</Ling>
+		<Element>
+		<Kind>Mu</Kind>
+		<Value>9</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--JadeHeaven Plant: Item that functions as the base to make the 地脉核心 Tree wonder-->
+	<ThingDef Type="Item" Name="Item_JadeHeavenSeedling" Parent="MaterialBase">
+		<TexPath>Spr\Object\Items\JadeHeavenSeedling.png</TexPath>
+		<ThingName>玉阙幼株</ThingName>	
+		<Desc>由蕴于地母灵液中的生机灵胚培育而成的盆栽玉阙幼株。</Desc>
+		<MaxStack>1</MaxStack>
+		<Rate>9</Rate>
+		<Beauty>20</Beauty>
+		<ElementKind>Tu</ElementKind>
+			<Item>
+				<NotFengshuiItem>0</NotFengshuiItem>
+				<PhysicalLables>
+					<li>GreatThing_Ling</li>
+					<li>Light1</li>
+					<li>Hard1</li>
+				</PhysicalLables>
+				<BeMade>
+					<WorkToMake>50</WorkToMake>
+						<CostItems>
+							<Item name = "Item_LifeWoodEmbryo" count = "1"/>
+							<Item name = "Item_EarthEssence" count = "4"/>
+							<Item name = "Item_MonsterBlood" count = "4"/>
+							<Item name = "Item_FireSpark" count = "4"/>
+						</CostItems>
+					</BeMade>			
+			</Item>
+		<Ling>
+			<AddionLing>75</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.03</Attenuation>
+			<Absorption>0.4</Absorption>
+			<Accommodate>18</Accommodate>
+		</Ling>
+		<Element>
+		<Kind>Tu</Kind>
+		<Value>9</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>	
+<!--Normal Blood-->
+	<ThingDef Type="Item" Name="Item_NormalBlood" Parent="DrugBase">
+		<ThingName>凡血</ThingName>
+		<TexPath>Spr\Object\Items\NormalBlood.png</TexPath>	
+		<Desc>一大罐普通兽血。虽可直接饮用，但滋味实在难言……</Desc>
+		<MaxHitPoints>500</MaxHitPoints>
+		<MaxStack>9999</MaxStack>
+		<Rate>3</Rate>
+		<Beauty>2</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Drug">
+			<PhysicalLables>
+				<li>Liquid</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>0</EatDirectable>
+				<Nutrition>30</Nutrition>
+				<Water>30</Water>
+				<Poisonousness>0</Poisonousness>
+				<FunAddion>-5</FunAddion>
+			</Food>	
+			<BeMade>
+					<WorkToMake>150</WorkToMake>
+					<StuffCategories>
+						<Stuff name = "Meat"/>
+					</StuffCategories>
+					<CostStuffCount>5</CostStuffCount>
+					<CostItems>
+						<Item name = "Item_Water" count = "5"/>
+					</CostItems>
+			</BeMade>	
+
+		</Item>
+	</ThingDef>
+<!--Qi Enriched Blood, byproduct of refined blood crystal from Blood cauldron-->
+	<ThingDef Type="Item" Name="Item_QiEnrichBlood" Parent="DrugBase">
+		<ThingName>蕴灵血</ThingName>
+		<TexPath>Spr\Object\Items\SpecialBlood.png</TexPath>	
+		<Desc>蕴灵血，在万炼血鼎中经人工蕴化并二次精炼而成，会向周遭缓缓逸散灵气。</Desc>
+		<MaxHitPoints>500</MaxHitPoints>
+		<MaxStack>9999</MaxStack>
+		<Rate>6</Rate>
+		<Beauty>6</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Drug">
+			<PhysicalLables>
+				<li>Liquid</li>
+			</PhysicalLables>
+			<Food>
+				<EatDirectable>0</EatDirectable>
+				<Nutrition>60</Nutrition>
+				<Water>60</Water>
+				<Poisonousness>0</Poisonousness>
+				<FunAddion>0</FunAddion>
+			</Food>	
+			<BeMade>
+					<WorkToMake>150</WorkToMake>
+					<CostItems>
+						<Item name = "Item_NormalBlood" count = "1"/>
+						<Item name = "Item_LingQiShuiYC" count = "1"/>
+					</CostItems>
+			</BeMade>
+		</Item>
+		<Element>
+			<Kind>Huo</Kind>
+			<Value>12</Value>         
+			<Radius>1</Radius>
+			<Failing>0.7</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Ling>
+			<AddionLing>25</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>4</Accommodate>
+		</Ling>
+	</ThingDef>
+<!--Blood crystal refuse, base material from blood cauldron-->
+	<ThingDef Type="Item" Name="Item_BloodCrystalRefuse" Parent="MaterialBase">
+		<ThingName>血晶残渣</ThingName>
+		<TexPath>Spr\Object\Items\BloodCrystalRefuse.png</TexPath>	
+		<Desc>破开血晶，或在万炼血鼎中熔炼杂物与血液后剩下的一批残渣……
+[size=10][color=#D06508]此物着实污秽，但似具火性，或许仍有用处。[/color][/size]</Desc>
+		<MaxHitPoints>500</MaxHitPoints>
+		<MaxStack>9999</MaxStack>
+		<Rate>1</Rate>
+		<Beauty>1</Beauty>
+		<ElementKind>Huo</ElementKind>
+		<Item Lable="Other">
+			<PhysicalLables>
+				<li>Rough2</li>
+				<li>LowDensity2</li>
+			</PhysicalLables>
+			<BeMade>
+					<WorkToMake>150</WorkToMake>
+					<CostItems>
+						<Item name = "Item_Garbage" count = "4"/>
+						<Item name = "Item_LingQiShuiYC" count = "1"/>
+						<Item name = "Item_NormalBlood" count = "5"/>
+					</CostItems>
+			</BeMade>			
+		</Item>
+		<Element>
+			<Kind>Huo</Kind>
+			<Value>1</Value>         
+			<Radius>1</Radius>
+			<Failing>0.7</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Ling>
+			<AddionLing>5</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>4</Accommodate>
+		</Ling>
+	</ThingDef>
+<!--Blank Jade Slip: Staple of the Immortal Realms, capable of holding ALOT of information-->
+	<ThingDef Type="Item" Name="Item_ImmortalJadeSlip_Blank" Parent="MaterialBase">
+		<ThingName>仙玉简</ThingName>
+		<TexPath>Spr\Object\Items\Item_JadeSlip4Blank.png</TexPath>	
+		<Desc>以灵玉特别炼制而成的玉简，是承载信息的标准器物。 
+[size=10][color=#D06508]仙玉简在下界极为罕见，常用于记录功法、阵图、丹方及其他浩繁玄奥之识。[/color][/size]</Desc>
+		<MaxHitPoints>1200</MaxHitPoints>
+		<MaxStack>1</MaxStack>
+		<Rate>10</Rate>
+		<Beauty>110</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="LingStone">
+			<PhysicalLables>
+			<li>Smooth2</li>
+			<li>Hard2</li>
+			<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<BeMade>
+					<WorkToMake>300</WorkToMake>
+					<CostItems>
+						<Item name = "Item_ImmortalLingStone" count = "1"/>
+						<Item name = "Item_ExtremeJade" count = "1"/>
+						<Item name = "Item_ShiftingVoidCrystal" count = "1"/>
+					</CostItems>
+			</BeMade>			
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>1</Value>         
+			<Radius>1</Radius>
+			<Failing>0.7</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Ling>
+			<AddionLing>5</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.8</Absorption>
+			<Accommodate>4</Accommodate>
+		</Ling>
+	</ThingDef>
+
+<!--Add more here-->
+
+</List></ThingDefs>

@@ -1,0 +1,669 @@
+<Stories><List>	
+<!--Scripts for stuff in 7 colour Pagoda-->
+<Story Name="Story_Item_AuspResBundle" Parent="BaseFillingStory">
+		<DisplayName>祥瑞灵材包</DisplayName>
+		<Desc>由七色宝塔推演所得的神秘灵材包。</Desc>
+		<Kind>None</Kind>
+        <ItemCache2>  <!--base essence materials-->
+			<li>
+				<ThingDef>Item_IronMetalEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.2</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_StoneEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.2</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_ColdSilverEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.2</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_FireCoppperEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.2</Rate>
+			</li>
+            <li>
+				<ThingDef>Item_OldWoodEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.2</Rate>
+			</li> 
+		</ItemCache2>
+        <ItemCache3> <!--Rare Materials-->
+			<li>
+				<ThingDef>Item_FireSpark</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li>
+            <li>
+				<ThingDef>Item_OriginShard</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li>
+            <li>
+				<ThingDef>Item_LingWood</ThingDef>
+				<Count>1</Count>
+				<Rate>0.2</Rate>
+			</li>
+            <li>
+				<ThingDef>Item_Cinnabar</ThingDef>
+				<Count>5</Count>
+				<Rate>0.25</Rate>
+			</li>
+            <li>
+				<ThingDef>Item_DarksteelRock</ThingDef>
+				<Count>1</Count>
+				<Rate>0.25</Rate>
+			</li>
+            <li>
+				<ThingDef>Item_JadeEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li>
+		</ItemCache3>
+		<ItemCache4> 
+			<li>
+				<ThingDef>Item_StarEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.2</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_StellarMetalEmbryo</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li>		
+            <li>
+				<ThingDef>Item_SkyStone</ThingDef>
+				<Count>1</Count>
+				<Rate>0.2</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_EarthCoreEmbryo</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li>
+            <li>
+				<ThingDef>Item_YinOriginEmbryo</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li>
+            <li>
+				<ThingDef>Item_YangFlameEmbryo</ThingDef>
+				<Count>5</Count>
+				<Rate>0.1</Rate>
+			</li>
+            <li>
+				<ThingDef>Item_LifeWoodEmbryo</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li>
+            <li>
+				<ThingDef>Item_ExtremeJade</ThingDef>
+				<Count>1</Count>
+				<Rate>0.2</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_ShiftingVoidCrystal</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li>
+		</ItemCache4>
+
+		<Selections>
+			<li>
+				<Display>开启</Display>
+				<OKResult>
+				<![CDATA[	
+				local nR = me:RandomInt(1, 16); 
+				if nR <= 8 then
+					me:AddMsg(XT("[NAME]开启灵材包，里面装着一些常见聚灵材料，其余材料似乎都被宝塔吞去了……"));
+					me:DropAwardItemFromCache(story.ItemCache2, 1, 2);
+                elseif nR <= 11 then
+					me:AddMsg(XT("[NAME]开启灵材包，竟从中发现一件稀有材料；其余材料似乎都被宝塔收走了。"));
+					me:DropAwardItemFromCache(story.ItemCache3, 1, 1);
+				elseif nR == 12 then
+					me:AddMsg(XT("[NAME]开启灵材包，震惊地发现其中竟有一件极品灵材；至于其余材料，似乎都被宝塔吞了……不过眼下倒也顾不上计较。"));
+					me:DropAwardItemFromCache(story.ItemCache4, 1, 1);
+                else
+				    me:AddMsg(XT("[NAME]开启灵材包，恼人的是其中毫无祥瑞之物。好在宝塔退回了大半材料，只是有些不知为何已经损毁。"));
+				    me:DropAwardItem("Item_Wood", 3);
+					me:DropAwardItem("Item_BrownRock", 3);
+					me:DropAwardItem("Item_IronRock", 3);
+					me:DropAwardItem("Item_SilverRock", 3);
+					me:DropAwardItem("Item_CopperRock",3);
+					me:DropAwardItem("Item_Garbage", 12);
+                end
+				story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+<!--7 Coloured Scroll-->
+
+<Story Name="Story_7ColourScroll" Parent="BaseFillingStory">
+		<DisplayName>七色秘卷</DisplayName>
+		<Desc>七色宝塔凝成的神秘卷轴，其中似乎记载着某些信息。</Desc>
+		<Kind>None</Kind>
+		<ItemCache2>  <!--rare essence materials-->
+			<li>
+				<ThingDef>Item_ShiftingVoidCrystal</ThingDef>
+				<Count>1</Count>
+				<Rate>0.3</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_StellarMetalEmbryo</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_EarthCoreEmbryo</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_LightningSoul</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_DragonBoneJade</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_JarImmortalEarth</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li>  
+			<li>
+				<ThingDef>Item_YangEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_AncientWitheredEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_YinEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_ThunderNirvanaEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_ProfoundEarthEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li> 
+		</ItemCache2>
+		
+		<Selections>
+			<li>
+				<Display>阅读</Display>
+				<OKResult>
+				<![CDATA[	
+				local nR = me:RandomInt(1, 30);
+				local nY = me:RandomInt(5, 60);
+				
+				if nR <= 10 then
+					local nD = me:RandomInt(1, 8);
+					if me:GetGLevel() == 0 then
+						if nD == 1 then
+							me:AddMsg(XT("[NAME]的药理见识有所增长。"));
+							me:AddModifier("HotStory_MedicineLv");
+						elseif nD == 2 then
+							me:AddMsg(XT("[NAME]的烹饪见识有所增长。"));
+							me:AddModifier("HotStory_CookingLv");
+						elseif nD == 3 then
+							me:AddMsg(XT("[NAME]的建造见识有所增长。"));
+							me:AddModifier("HotStory_BuildingLv");
+						elseif nD == 4 then
+							me:AddMsg(XT("[NAME]的农耕见识有所增长。"));
+							me:AddModifier("HotStory_FarmingLv");
+						elseif nD == 5 then
+							me:AddMsg(XT("[NAME]的采矿见识有所增长。"));
+							me:AddModifier("HotStory_MiningLv");
+						elseif nD == 6 then
+							me:AddMsg(XT("[NAME]对雅艺的理解有所增长。"));
+							me:AddModifier("HotStory_ArtLv");
+						elseif nD == 7 then
+							me:AddMsg(XT("[NAME]的巧匠见识有所增长。"));
+							me:AddModifier("HotStory_ManualLv");
+						else
+							me:AddMsg(XT("[NAME]对处世交际的理解有所增长。"));
+							me:AddModifier("HotStory_SocialContactLv");
+						end	
+					else 
+						me:AddMsg(XT("[NAME]展开秘卷细读，其中记载着构成诸天万道的玄妙感悟。"));
+						if nD <= 2 then
+							me:AddTreeExp(nY * 400);
+						elseif nD == 3 then
+							me:AddMsg(XT("[NAME]展开秘卷，卷轴化作一缕灵气，没入经脉之中。"));
+							me:AddModifier("HotStory_QiLv");
+						elseif nD == 4 then
+							me:AddMsg(XT("[NAME]展开秘卷，一段来自仙界的知识碎片忽然映入识海！"));
+							me:AddModifier("HotStory_FabaoLv");
+						elseif nD == 5 then 
+							me:AddMsg(XT("[NAME]展开秘卷，天外大战的可怖景象在识海中一闪而过！"));
+							me:AddModifier("HotStory_FightSkillLv");
+						elseif nD == 7 then
+							if me:IsTouchNeck() == false then
+								if me:GetGLevel() > 6 then
+									me:AddPracticeResource("Stage",me:GetGLevel() * 2000)
+								else
+									me:AddPracticeResource("Stage",me:GetGLevel() * 100)
+								end	
+							else 	
+								me:AddTreeExp(nY * 400);	
+							end
+						else
+							if me:GetGLevel() > 9 then
+								me:AddMsg(XT("[NAME]展开秘卷细读，其中玄力微微改易了其元神。"));
+								me:DivideGodSoul(true,1);
+							else
+								me:AddTreeExp(nY * 400);
+							end
+						end	
+					end
+				
+				elseif nR >= 11 and nR <= 12 then
+					me:AddMsg(XT("[NAME]展开秘卷细读，卷中竟记载着一门秘法！"));
+					me:DropRandomItem("Esoterica")
+
+				elseif nR == 13 then
+					if world:IsBuildingUnlocked("NascentOriginGate") == false then
+						me:AddMsg(XT("[NAME]发现了修行奇观“太初之门”的图样。此等奇构似从七色宝塔中凭空显化而出……只是细看之下，又令人想起传说中某位仙帝的宝座，二者竟有几分惊人相似。"));
+						world:UnlockBuilding("NascentOriginGate");
+					else
+						me:AddMsg(XT("[NAME]轻吸一口气，只见秘卷化烟而散，原地留下一件稀有资源。"));
+						me:DropAwardItemFromCache(story.ItemCache2, 1, 1);
+					end
+
+				elseif nR == 14 then 
+					if world:IsBuildingUnlocked("AncientParasolTree") == false then
+						me:AddMsg(XT("[NAME]发现了修行奇观“上古梧桐”的图样。下界仅存其低阶异种，真正上古梧桐即便凤凰一族亦视若珍宝。"));
+						world:UnlockBuilding("AncientParasolTree");
+					else
+						me:AddMsg(XT("[NAME]轻吸一口气，只见秘卷化烟而散，原地留下一件稀有资源。"));
+						me:DropAwardItemFromCache(story.ItemCache2, 1, 1);
+					end
+
+				elseif nR == 15 then
+					if world:IsBuildingUnlocked("YangFissure") == false then
+						me:AddMsg(XT("[NAME]发现了开启“阳仙界裂隙”的法门。此图样看似确有其理……但若稍有差池，恐怕会招来天地共弃！"));
+						world:UnlockBuilding("YangFissure");
+					else
+						me:AddMsg(XT("[NAME]轻吸一口气，只见秘卷化烟而散，原地留下一件稀有资源。"));
+						me:DropAwardItemFromCache(story.ItemCache2, 1, 1);
+					end	
+
+					elseif nR == 16 then
+					if world:IsBuildingUnlocked("EarthCorePool") == false then
+						me:AddMsg(XT("[NAME]发现了修行奇观“地脉核心池”的图样。图中多处提及“天命再生大派”，令人颇感不安……"));
+						world:UnlockBuilding("EarthCorePool");
+					else
+						me:AddMsg(XT("[NAME]轻吸一口气，只见秘卷化烟而散，原地留下一件稀有资源。"));
+						me:DropAwardItemFromCache(story.ItemCache2, 1, 1);
+					end
+
+				elseif nR == 17 then
+					if world:IsBuildingUnlocked("8DirThunderArray") == false then
+						me:AddMsg(XT("[NAME]发现了修行奇观“八劫雷池”的图样。按图中记载，此物似源自八雷仙界那庞然大物般的“万雷轮回宗”……宝塔究竟从何得来此图，实在令人有些担忧。"));
+						world:UnlockBuilding("8DirThunderArray");
+					else
+						me:AddMsg(XT("[NAME]轻吸一口气，只见秘卷化烟而散，原地留下一件稀有资源。"));
+						me:DropAwardItemFromCache(story.ItemCache2, 1, 1);
+					end
+				
+				elseif nR == 18 then
+					me:AddMsg(XT("[NAME]展开秘卷，卷轴在灵光与烟雾中消散，显露出一本本界罕见阵图总录！"));
+					me:DropAwardItem("Item_FormationCompendiumRare", 1);
+
+				elseif nR == 19 then
+					me:AddMsg(XT("[NAME]展开秘卷，卷轴在灵光与烟雾中消散，显露出一本本界功法总录！"));
+					me:DropAwardItem("Item_CultivationCompendiumRare", 1);
+
+				elseif nR == 20 then
+					if world:IsBuildingUnlocked("RithCultPlatform2") == false then
+						me:AddMsg(XT("[NAME]发现了一座奇妙修行台的图样……宝塔究竟从何得来此图，着实令人费解。"));
+						world:UnlockBuilding("RithCultPlatform2");
+					else
+						me:AddMsg(XT("[NAME]轻吸一口气，只见秘卷化烟而散，原地留下一件稀有资源。"));
+						me:DropAwardItemFromCache(story.ItemCache2, 1, 1);
+					end
+
+				elseif nR == 21 then
+					if world:IsBuildingUnlocked("RithQiArray4") == false then
+						me:AddMsg(XT("[NAME]发现了一座非凡聚灵阵的营造图样……此等阵图足以成为宗门重宝，只是所需材料实在令人困惑。"));
+						world:UnlockBuilding("RithQiArray4");
+					else
+						me:AddMsg(XT("[NAME]轻吸一口气，只见秘卷化烟而散，原地留下一件稀有资源。"));
+						me:DropAwardItemFromCache(story.ItemCache2, 1, 1);
+					end
+					
+			    else
+					if me:GetLuck() <= me:RandomInt(1, 11) and me:GetFlag(666) == 0 then
+						me:SetFlag(666, 1);
+				   		me:AddMsg(XT("[NAME]刚拾起秘卷，识海便剧烈震荡。来自名为 CatVids4Life 的诡异界域中，那位“挠挠至圣”、猫族超脱者的目光，为追猎一只宇宙金鼠，竟短暂遮蔽了本界坐标。"));
+						me:AddMsg(XT("[NAME]小心翼翼地放下秘卷……环顾四周，似乎无人察觉这场险些灭世的擦肩而过。沉吟片刻后，[NAME]把这卷秘卷喂给了附近一只龟。谨慎总无大错。"));
+					elseif me:GetLuck() <= me:RandomInt(1, 11) and me:GetFlag(666) == 1 then
+						me:AddMsg(XT("[NAME]拾起秘卷，宏大的脉动之声震得识海一滞。凡俗毁灭之景接连浮现，一个声音轰然响起：这……这才是……*遗失*。不要听信他人，他们皆是假先知……这才是真道……"));
+						me:AddMsg(XT("追随我们……不要追随他人……他们才是邪恶之辈……可怖之声渐渐隐没于天乐般的合唱中……"));
+						me:AddMsg(XT("[NAME]惊魂未定，忽然明白了为何此类秘卷会“名声微妙”……与此同时，手中秘卷化作一只彩色小猫，在一道虹光与古怪声响中消失无踪。"));
+					else
+						me:AddMsg(XT("[NAME]展开秘卷细读，里面只是些支离破碎的文字，其中倒也有些趣味，尤其是一幅会动的滑稽猫图。但并无真正价值。片刻后，秘卷化作流光飞回七色宝塔。"));
+					end
+				end
+				story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+<!--Rare Formations Compendium-->
+    <Story Name="Story_7ColorFormationTome" Parent="BaseFillingStory">
+		<DisplayName>七色阵图总录</DisplayName>
+		<Desc>收录下界基础阵法的传承总录。选择一门阵法参悟后，玉简中其余内容似乎便会消散。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+			<Display>陷仙阵</Display>
+				<OKResult>
+                    <![CDATA[	
+					me:AddMsg(XT("记载陷仙剑阵玄图。相传此阵乃上古第一杀阵。"));
+					me:DropAwardItem("Item_MiBao_ZhuXianZhenTu", 1);
+					story:RemoveBindItem();
+                    ]]>
+                </OKResult>         
+            </li>           
+
+			<li>
+			<Display>北斗真武诛魔阵</Display>
+				<OKResult>
+				<![CDATA[
+					me:AddMsg(XT("记载北斗真武诛魔阵秘图。相传此阵可引北斗破妄之光，具诛灭诸魔之威。"));
+					me:DropAwardItem("Item_MiBao_QiXingZhenTu", 1);
+					story:RemoveBindItem();
+					]]>
+                </OKResult>         
+            </li>   
+
+            <li>
+			<Display>天地五方仙阵</Display>
+				<OKResult>
+					<![CDATA[
+					me:AddMsg(XT("记载天地五方仙阵秘图。相传此阵可借天地五方旗布下仙家结界，护持周天万界。"));
+					me:DropAwardItem("Item_MiBao_TianDiWuFangZhenTu", 1);
+					story:RemoveBindItem();
+					]]>
+                </OKResult>         
+            </li> 
+			<li>
+			<Display>九御伏龙阵</Display>
+				<OKResult>
+					<![CDATA[
+					me:AddMsg(XT("记载九御伏龙阵秘图。相传此乃龙族阵法，布成之后可借龙魂施展强大阵道神通。"));
+					me:DropAwardItem("Item_MiBao_LongXingZhenTu", 1);
+					story:RemoveBindItem();
+					]]>
+                </OKResult>         
+            </li> 
+			 <li>
+			<Display>真凰羽剑阵</Display>
+				<OKResult>
+					<![CDATA[
+					me:AddMsg(XT("记载真凰羽剑阵秘图。相传此乃御凰之阵，布成之后可借凤魂施展强大阵道神通。"));
+					me:DropAwardItem("Item_MiBao_FengHunZhenTu", 1);
+					story:RemoveBindItem();
+					]]>
+                </OKResult>         
+            </li> 
+			 <li>
+			<Display>阴阳大阵</Display>
+				<OKResult>
+					<![CDATA[
+					me:AddMsg(XT("记载阴阳两仪神阵秘谱。相传此阵执掌阴阳之道。"));
+					me:DropAwardItem("Item_MiBao_YinYangZhenTu", 1);
+					story:RemoveBindItem();
+					]]>
+                </OKResult>         
+            </li> 
+			<li>
+			<Display>三阴三绝阵图</Display>
+				<OKResult>
+					<![CDATA[
+					me:AddMsg(XT("记载三阴三绝阵秘图。相传此阵汇聚纯阴之力，依法施展可令威能大增。"));
+					me:DropAwardItem("Item_MiBao_SanYinZhenTu", 1);
+					story:RemoveBindItem();
+					]]>
+                </OKResult>         
+            </li> 
+			 <li>
+			<Display>诸天六御仪典总图</Display>
+				<OKResult>
+					<![CDATA[
+					me:AddMsg(XT("记载诸天六御仪典大阵秘图。相传此阵凝聚天庭六御宫阙之灵机。"));
+					me:DropAwardItem("Item_MiBao_LiuYuZhenTu", 1);
+					story:RemoveBindItem();
+					]]>
+                </OKResult>         
+            </li> 
+			<li>
+			<Display>八门诛天图</Display>
+				<OKResult>
+					<![CDATA[
+					me:AddMsg(XT("记载八门诛天剑阵秘图。相传此阵由八门阵理演化而成。"));
+					me:DropAwardItem("Item_MiBao_BaMenZhenTu", 1);
+					story:RemoveBindItem();
+					]]>
+                </OKResult>         
+            </li> 
+			<li>
+			<Display>先天乙木神图</Display>
+				<OKResult>
+					<![CDATA[
+					me:AddMsg(XT("记载先天乙木神阵秘图。相传此阵可引天地乙木生发之气，令万物复苏。"));
+					me:DropAwardItem("Item_MiBao_ShenMuZhenTu", 1);
+					story:RemoveBindItem();
+					]]>
+                </OKResult>         
+            </li> 
+			<li>
+			<Display>五峰镇鬼风图</Display>
+				<OKResult>
+					<![CDATA[
+					me:AddMsg(XT("记载五峰镇鬼风图。相传此阵以五峰之形护持一方，坚不可摧。"));
+					me:DropAwardItem("Item_MiBao_WuYueZhenTu", 1);
+					story:RemoveBindItem();
+					]]>
+                </OKResult>         
+            </li>   
+		</Selections>
+	</Story>
+
+<!--Cultivation Law compendium-->
+    <Story Name="Story_7ColorCultivationTome" Parent="BaseFillingStory">
+		<DisplayName>七色功法玉简</DisplayName>
+		<Desc>收录本界若干罕见功法的玉简。似乎可择其一参悟，但若已习得对应功法，不知会发生何事。</Desc>
+		<Kind>None</Kind>
+		<ItemCache2>  <!--rare essence materials-->
+			<li>
+				<ThingDef>Item_ShiftingVoidCrystal</ThingDef>
+				<Count>1</Count>
+				<Rate>0.3</Rate>
+			</li> 
+					<li>
+				<ThingDef>Item_StellarMetalEmbryo</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li> 
+					<li>
+				<ThingDef>Item_EarthCoreEmbryo</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_LightningSoul</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_DragonBoneJade</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_JarImmortalEarth</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li>  
+			<li>
+				<ThingDef>Item_YangEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_AncientWitheredEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_YinEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_ThunderNirvanaEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_ProfoundEarthEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li> 
+		</ItemCache2>
+
+		<Selections>
+			<li>
+			<Display>万宝真诀（木，炼宝）</Display>
+				<OKResult>
+                    <![CDATA[	
+					if world:IsGongUnLocked("Gong_2_Mu") == false then
+						me:AddMsg(XT("[NAME]轻吸一口气，玉简显露出《万宝真诀》的修行法门！"));
+						me:UnLockGong("Gong_2_Mu");
+					else
+						me:AddMsg(XT("[NAME]轻吸一口气，只见秘卷化烟而散，原地留下一件稀有资源。"));
+						me:DropAwardItemFromCache(story.ItemCache2, 1, 1);
+					end	
+					story:RemoveBindItem();
+                    ]]>
+                </OKResult>         
+            </li>           
+
+			<li>
+			<Display>七杀剑诀（金，御宝战斗）</Display>
+				<OKResult>
+				<![CDATA[
+					if world:IsGongUnLocked("Gong_3_Jin") == false then
+						me:AddMsg(XT("[NAME]轻吸一口气，玉简显露出《七杀剑诀》的修行法门！"));
+						me:UnLockGong("Gong_3_Jin");
+					else
+						me:AddMsg(XT("[NAME]眼看玉简碎散成尘，只在原地留下一件稀有资源。"));
+						me:DropAwardItemFromCache(story.ItemCache2, 1, 1);
+					end
+
+					story:RemoveBindItem();
+					]]>
+                </OKResult>         
+            </li>   
+
+            <li>
+			<Display>玉清妙法（无，辅助）</Display>
+				<OKResult>
+					<![CDATA[
+					if world:IsGongUnLocked("Gong_4_None") == false then
+						me:AddMsg(XT("[NAME]轻吸一口气，玉简显露出《玉清妙法》的修行法门！"));
+						me:UnLockGong("Gong_4_None");
+					else
+						me:AddMsg(XT("[NAME]眼看玉简碎散成尘，只在原地留下一件稀有资源。"));
+						me:DropAwardItemFromCache(story.ItemCache2, 1, 1);
+					end	
+					story:RemoveBindItem();
+					]]>
+                </OKResult>         
+            </li> 
+			<li>
+			<Display>夺天秘典（土，战斗）</Display>
+				<OKResult>
+					<![CDATA[
+					if world:IsGongUnLocked("Gong_5_Tu") == false then
+						me:AddMsg(XT("[NAME]轻吸一口气，玉简显露出《夺天秘典》的修行法门！"));
+						me:UnLockGong("Gong_5_Tu");
+					else
+						me:AddMsg(XT("[NAME]眼看玉简碎散成尘，只在原地留下一件稀有资源。"));
+						me:DropAwardItemFromCache(story.ItemCache2, 1, 1);
+					end	
+					story:RemoveBindItem();
+					]]>
+                </OKResult>         
+            </li> 
+			 <li>
+			<Display>九转金丹经（火，炼丹）</Display>
+				<OKResult>
+					<![CDATA[
+					if world:IsGongUnLocked("Gong_6_Huo") == false then
+						me:AddMsg(XT("[NAME]轻吸一口气，玉简显露出《九转金丹经》的修行法门！"));
+						me:UnLockGong("Gong_6_Huo"); 
+					else
+						me:AddMsg(XT("[NAME]眼看玉简碎散成尘，只在原地留下一件稀有资源。"));
+						me:DropAwardItemFromCache(story.ItemCache2, 1, 1);
+					end	
+					story:RemoveBindItem();
+					]]>
+                </OKResult>         
+            </li> 
+			 <li>
+			<Display>太上忘情道（火，术法）</Display>
+				<OKResult>
+					<![CDATA[
+					if world:IsGongUnLocked("Gong_7_Huo") == false then
+						me:AddMsg(XT("[NAME]轻吸一口气，玉简显露出《太上忘情道》的修行法门！"));
+						me:UnLockGong("Gong_7_Huo"); 
+					else
+						me:AddMsg(XT("[NAME]眼看玉简碎散成尘，只在原地留下一件稀有资源。"));
+						me:DropAwardItemFromCache(story.ItemCache2, 1, 1);
+					end	
+					story:RemoveBindItem();
+					]]>
+                </OKResult>         
+            </li> 
+			<li>
+			<Display>五初符经（无，符咒）</Display>
+				<OKResult>
+					<![CDATA[
+					if world:IsGongUnLocked("Gong_12_None") == false then
+						me:AddMsg(XT("[NAME]轻吸一口气，玉简显露出《五初符经》的修行法门！"));
+						me:UnLockGong("Gong_12_None");
+					else
+						me:AddMsg(XT("[NAME]眼看玉简碎散成尘，只在原地留下一件稀有资源。"));
+						me:DropAwardItemFromCache(story.ItemCache2, 1, 1);
+					end	
+					story:RemoveBindItem();
+					]]>
+                </OKResult>         
+            </li> 
+		</Selections>
+	</Story>
+
+</List></Stories>

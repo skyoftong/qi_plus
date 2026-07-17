@@ -1,0 +1,290 @@
+<Stories><List>	
+<!--Scripts for stuff from Soul cauldron-->
+
+<Story Name="Story_Item_EssenceGeode" Parent="BaseFillingStory">
+	<DisplayName>精华晶洞</DisplayName>
+		<Desc>经万炼精元鼎淬炼而成的精华晶洞，其中或藏有地脉珍宝。</Desc>
+		<Kind>None</Kind>
+	<ItemCache2>  <!--rare essence materials-->
+			<li>
+				<ThingDef>Item_JadeEssence</ThingDef>
+				<Count>2</Count>
+				<Rate>0.4</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_JadeEssence</ThingDef>
+				<Count>3</Count>
+				<Rate>0.2</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_JadeEssence</ThingDef>
+				<Count>4</Count>
+				<Rate>0.1</Rate>
+			</li> 
+	</ItemCache2>
+	<ItemCache3>
+			<li>
+				<ThingDef>Item_JadeEssence</ThingDef>
+				<Count>8</Count>
+				<Rate>0.6</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_EarthEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.25</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_TuEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li> 
+			<li>
+				<ThingDef>Item_ShiftingVoidCrystal</ThingDef>
+				<Count>1</Count>
+				<Rate>0.025</Rate>
+			</li> 
+
+			<li>
+				<ThingDef>Item_EarthCoreEmbryo</ThingDef>
+				<Count>1</Count>
+				<Rate>0.025</Rate>
+			</li> 
+	</ItemCache3>
+
+		<Selections>
+			<li>
+			<Display>查看</Display>
+				<DisplayCondition>
+					<![CDATA[	
+					me:GetGLevel() == 0 
+					]]>
+				</DisplayCondition>
+				<OKResult>
+                    <![CDATA[	
+						me:AddMsg(XT("[NAME]端详精华晶洞。此物晶莹可爱，却毫无反应，也无从下手。"));
+                    ]]>
+                </OKResult>         
+            </li>           
+
+			<li>
+			<Display>炼化</Display>
+				<DisplayCondition>
+					<![CDATA[	
+					me:GetGLevel() >= 1
+					]]>
+				</DisplayCondition>
+				<OKResult>
+				<![CDATA[
+				local nR = me:RandomInt(1, 10) 
+				if nR <= 4 then
+					me:AddMsg(XT("[NAME]以真气炼化晶洞。虽已尽力掌控，最终也只化出一批玉精。"));
+					me:DropAwardItemFromCache(story.ItemCache2, 1, 1);
+				elseif nR > 4 and nR <= 6  then
+					me:AddMsg(XT("[NAME]以真气炼化晶洞。对其中躁动灵机掌控颇佳，晶洞化作一批玉精，并显出更稀有之物！"));
+					me:DropAwardItemFromCache(story.ItemCache2, 1, 1);
+					me:DropAwardItemFromCache(story.ItemCache3, 1, 1);
+					me:DropAwardItem("Item_SpiritJadeEmbryo", 1);		
+				elseif nR <= 7 then
+					me:AddMsg(XT("[NAME]以真气炼化晶洞。对其中躁动灵机掌控极佳，竟炼出两件地脉珍宝。"));
+					me:DropAwardItemFromCache(story.ItemCache3, 1, 1);
+					me:DropAwardItemFromCache(story.ItemCache3, 1, 1);
+					me:DropAwardItem("Item_SpiritJadeEmbryo", 1);	
+				else
+					me:AddMsg("[NAME] 炼化d the Geode but the thread of Qi, while their control was good it seems the jade was lacking something and the Qi at its core simply became a piece of Jade Essence");	
+				    me:DropAwardItem("Item_JadeEssence", 1);
+				end
+				story:RemoveBindItem();
+				]]>
+                </OKResult>         
+            </li>   
+
+            <li>
+			<Display>暂不炼化精华晶洞</Display>
+				<DisplayCondition>
+					<![CDATA[	
+					me:GetGLevel() >= 1
+					]]>
+				</DisplayCondition>
+				<OKResult>
+					<![CDATA[
+					 me:AddMsg(XT("[NAME]决定暂不炼化这枚精华晶洞。"));
+					]]>              
+                </OKResult>         
+            </li>   
+		</Selections>
+	</Story>
+
+
+<!--星核灵胚-->
+    <Story Name="Story_StellarMetal" Parent="BaseFillingStory">
+		<DisplayName>星核灵胚</DisplayName>
+		<Desc>一块来历成谜的“石片”，相传源自将死星辰的核心，却又蕴含无星虚空的森寒。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+			<Display>查看</Display>
+				<DisplayCondition>
+					<![CDATA[	
+					me:GetGLevel() == 0 and me:GetFlag(701) == 0
+					]]>
+				</DisplayCondition>
+				<OKResult>
+                    <![CDATA[	
+						me:AddMsg(XT("[NAME]端详星核灵胚时，隐隐感到自身灵机与之呼应。"));
+						me:AddModifier("HotStory_MedicineLv");
+						me:AddModifier("HotStory_MiningLv");
+						me:AddModifier("HotStory_ManualLv");
+						me:SetFlag(701, 1);
+                    ]]>
+                </OKResult>         
+            </li>           
+
+			<li>
+			<Display>查看</Display>
+				<DisplayCondition>
+					<![CDATA[	
+					me:GetGLevel() >= 1
+					]]>
+				</DisplayCondition>
+				<OKResult>
+				<![CDATA[
+					 me:AddMsg(XT("抱歉——此内容尚未加入。"));
+					]]>
+                </OKResult>         
+            </li>   
+
+            <li>
+			<Display>查看</Display>
+				<DisplayCondition>
+					<![CDATA[	
+					me:GetGLevel() >= 1
+					]]>
+				</DisplayCondition>
+				<OKResult>
+
+                
+                </OKResult>         
+            </li>   
+ 
+
+
+		
+			<li>
+				<Display>查看</Display>
+				<OKResult>
+				<![CDATA[	
+				local nR = me:RandomInt(1, 6) 
+				if nR == 1 then
+					me:AddMsg(XT("[NAME]随手破开聚合物，一缕闪光黏液渗出。收集之时，总令人有些毛骨悚然。"));
+					me:DropAwardItem("Item_SoulCrystalYou", 1);
+				elseif nR == 2 then
+					me:AddMsg(XT("[NAME]果断破开聚合物，一枚温润雅致的碎片映入眼帘，其中灵光令人心神安定。"));
+					me:DropAwardItem("Item_SoulCrystalNing", 1);	
+				elseif nR == 3 then
+					me:AddMsg(XT("[NAME]小心剖开聚合物，一枚璀璨而坚实的晶体跃入眼中，竟忍不住朗声一笑。"));
+					me:DropAwardItem("Item_SoulCrystalLing", 1);
+				else
+					me:AddMsg("[NAME] Broke open the Agglomeration but it was just reflected light.");	
+				end
+				story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+<!--龙骨玉-->
+    <Story Name="Story_DragonboneJade" Parent="BaseFillingStory">
+		<DisplayName>龙骨玉</DisplayName>
+		<Desc>精炼神魂凝成的结晶，其中似有灵光闪烁，是否破开看看？</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查看</Display>
+				<OKResult>
+				<![CDATA[	
+				local nR = me:RandomInt(1, 6) 
+				if nR == 1 then
+					me:AddMsg(XT("[NAME]随手破开聚合物，一缕闪光黏液渗出。收集之时，总令人有些毛骨悚然。"));
+					me:DropAwardItem("Item_SoulCrystalYou", 1);
+				elseif nR == 2 then
+					me:AddMsg(XT("[NAME]果断破开聚合物，一枚温润雅致的碎片映入眼帘，其中灵光令人心神安定。"));
+					me:DropAwardItem("Item_SoulCrystalNing", 1);	
+				elseif nR == 3 then
+					me:AddMsg(XT("[NAME]小心剖开聚合物，一枚璀璨而坚实的晶体跃入眼中，竟忍不住朗声一笑。"));
+					me:DropAwardItem("Item_SoulCrystalLing", 1);
+				else
+					me:AddMsg("[NAME] Broke open the Agglomeration but it was just reflected light.");	
+				end
+				story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+<!--仙土-->
+    <Story Name="Story_ImmortalEarth" Parent="BaseFillingStory">
+		<DisplayName>仙土</DisplayName>
+		<Desc>一只密封陶坛，内盛来自仙界的沃土，其中初生灵性远超凡土。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查看</Display>
+				<OKResult>
+				<![CDATA[	
+				local nR = me:RandomInt(1, 6) 
+				if nR == 1 then
+					me:AddMsg(XT("[NAME]随手破开聚合物，一缕闪光黏液渗出。收集之时，总令人有些毛骨悚然。"));
+					me:DropAwardItem("Item_SoulCrystalYou", 1);
+				elseif nR == 2 then
+					me:AddMsg(XT("[NAME]果断破开聚合物，一枚温润雅致的碎片映入眼帘，其中灵光令人心神安定。"));
+					me:DropAwardItem("Item_SoulCrystalNing", 1);	
+				elseif nR == 3 then
+					me:AddMsg(XT("[NAME]小心剖开聚合物，一枚璀璨而坚实的晶体跃入眼中，竟忍不住朗声一笑。"));
+					me:DropAwardItem("Item_SoulCrystalLing", 1);
+				else
+					me:AddMsg("[NAME] Broke open the Agglomeration but it was just reflected light.");	
+				end
+				story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+<!--EarthCore-->
+    <Story Name="Story_EarthCore" Parent="BaseFillingStory">
+		<DisplayName>地脉核心</DisplayName>
+		<Desc>由一界深处的原初潜能凝结而成，承载着地表之下诸般根本力量的平衡。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查看</Display>
+				<OKResult>
+				<![CDATA[	
+				local nR = me:RandomInt(1, 6) 
+				if nR == 1 then
+					me:AddMsg(XT("[NAME]随手破开聚合物，一缕闪光黏液渗出。收集之时，总令人有些毛骨悚然。"));
+					me:DropAwardItem("Item_SoulCrystalYou", 1);
+				elseif nR == 2 then
+					me:AddMsg(XT("[NAME]果断破开聚合物，一枚温润雅致的碎片映入眼帘，其中灵光令人心神安定。"));
+					me:DropAwardItem("Item_SoulCrystalNing", 1);	
+				elseif nR == 3 then
+					me:AddMsg(XT("[NAME]小心剖开聚合物，一枚璀璨而坚实的晶体跃入眼中，竟忍不住朗声一笑。"));
+					me:DropAwardItem("Item_SoulCrystalLing", 1);
+				else
+					me:AddMsg("[NAME] Broke open the Agglomeration but it was just reflected light.");	
+				end
+				story:RemoveBindItem();
+				]]>		
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+
+
+
+
+    
+</List></Stories>

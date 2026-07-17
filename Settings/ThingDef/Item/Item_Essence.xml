@@ -1,0 +1,1038 @@
+<ThingDefs><List>
+<!-- Items that all act as Essence gathering resources-->
+<!--Mainly Built using the Spirit Essence Cauldron or found via Story items from that cauldron (WIP)-->
+<!--Basic Fire element gi gathering item-->
+	<ThingDef Type="Item" Name="Item_FireCoppperEssence" Parent="RockBase">
+		<TexPath>Spr\Object\Items\FireCopperEss.png</TexPath>
+		<ThingName>赤铜精华</ThingName>	
+		<Desc>蕴含灵气的火铜矿碎片，经精炼后火性愈发纯粹。 
+[size=10][color=#D06508]可汇聚火灵气[/color][/size]</Desc>
+		<MaxStack>9999</MaxStack>
+		<Rate>5</Rate>
+		<Beauty>12</Beauty>
+		<ElementKind>Huo</ElementKind>
+		<Item>
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>Hard1</li>
+			</PhysicalLables>
+			<BeMaterial>
+					<NamePrefix>赤铜精华</NamePrefix>
+					<RateWhenBeMain>5</RateWhenBeMain>
+					<WorkSpeedCoefficientWhenBeMain>1.5</WorkSpeedCoefficientWhenBeMain>
+					
+					<BeautyWhenBeMain>4</BeautyWhenBeMain>
+					<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+			</BeMaterial>
+			<BeMade>
+				<WorkToMake>10</WorkToMake>
+						<CostItems>
+							<Item name = "Item_CopperRock" count = "5"/>
+							<Item name = "Item_LingStone" count = "25"/>
+						</CostItems>
+				</BeMade>
+		</Item>
+		<Heat>
+			<Value>25</Value>
+			<RoomValue>25</RoomValue>
+			<Radius>2</Radius>
+			<FailRadius>1</FailRadius>
+			<Failing>0.9</Failing>
+			<SkipSelf>1</SkipSelf>
+		</Heat>
+		<Ling>
+			<AddionLing>20</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.03</Attenuation>
+			<Absorption>0.4</Absorption>
+			<Accommodate>18</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Huo</Kind>
+			<Value>3</Value>         
+			<Radius>2</Radius>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Intermediate Fire element gi gathering item-->
+	<ThingDef Type="Item" Name="Item_FireSpark" Parent="RockBase">
+		<TexPath>Spr\Object\Items\FireSpark1.png</TexPath>
+		<ThingName>火灵晶焰</ThingName>	
+		<Desc>一缕异火灵气封存于天然晶石之中，若得机缘，或可孕化出更玄妙之物…… 
+[size=10][color=#D06508]可汇聚火灵气[/color][/size]</Desc>
+		<MaxStack>9999</MaxStack>
+		<Rate>8</Rate>
+		<Beauty>18</Beauty>
+		<ElementKind>Huo</ElementKind>
+		<Item>
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>Hard1</li>
+			</PhysicalLables>
+			<BeMaterial>
+				<NamePrefix>火灵晶焰</NamePrefix>
+				<RateWhenBeMain>5</RateWhenBeMain>
+				<WorkSpeedCoefficientWhenBeMain>1.5</WorkSpeedCoefficientWhenBeMain>
+				
+				<BeautyWhenBeMain>4</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+			</BeMaterial>
+			<BeMade>
+				<WorkToMake>10</WorkToMake>
+				<CostItems> 
+					<Item name = "Item_Water" count = "25"/>
+					<Item name = "Item_FireCoppperEssence" count = "5"/>
+					<Item name = "Item_JadeBlock" count = "5"/>
+				</CostItems>
+			</BeMade>
+		</Item>
+		<Heat>
+			<Value>50</Value>
+			<RoomValue>50</RoomValue>
+			<Radius>2</Radius>
+			<FailRadius>1</FailRadius>
+			<Failing>0.9</Failing>
+			<SkipSelf>1</SkipSelf>
+		</Heat>
+		<Ling>
+			<AddionLing>40</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.03</Attenuation>
+			<Absorption>0.4</Absorption>
+			<Accommodate>18</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Huo</Kind>
+			<Value>6</Value>         
+			<Radius>3</Radius>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Advanced Fire element gi gathering item-->
+	<ThingDef Type="Item" Name="Item_YangFlameEmbryo" Parent="RockBase">
+		<TexPath>Spr\Object\Items\YangFlameEmbryo.png</TexPath>
+		<FabaoTexPath>Spr\Object\Items\EmbryoTreasureFire.png</FabaoTexPath>	
+		<ThingName>阳炎灵胚</ThingName>	
+		<Desc>非止灵气，亦未成生灵。一缕阳火封于石中，隐隐跃动，似有灵胎初成之象……
+ [size=10][color=#D06508]可汇聚火灵气。 
+ 可蕴养为法宝。[/color][/size]</Desc>
+		<MaxStack>1</MaxStack>
+		<Rate>8</Rate>
+		<Beauty>18</Beauty>
+		<ElementKind>Huo</ElementKind>
+		<Item Kind="Equipment">
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<BeMaterial>
+					<NamePrefix>阳炎</NamePrefix>
+					<RateWhenBeMain>8</RateWhenBeMain>
+					<WorkSpeedCoefficientWhenBeMain>1.5</WorkSpeedCoefficientWhenBeMain>
+					
+					<BeautyWhenBeMain>8</BeautyWhenBeMain>
+					<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+			</BeMaterial>
+			<BeMade>
+				<WorkToMake>10</WorkToMake>
+						<CostItems>
+						<Item name = "Item_FireSpark" count = "5"/>
+						<Item name = "Item_SoulPearl" count = "1"/>
+						<Item name = "Item_MonsterBlood" count = "5"/>
+						<Item name = "Item_LingCrystal" count = "2"/>
+						</CostItems>
+				</BeMade>
+		<Fabao>
+		    <ActiveCondition>
+			    <Condition eventid = "KillCount" des = "携带此灵胚击杀 25 个生灵" needcount = "25" />
+				<Condition eventid = "UseNpcLing" des = "消耗灵气" needcount = "1000000" />
+			</ActiveCondition>
+            <SpecialAbility>
+			     <Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="0.5" nParam1="0" sParam1="Jin" Desc="对金属性目标造成的伤害提高 50%"/>
+				<Ability Kind="Sync_AddEquptDataModifier" sParam1="Modifier_QiFireRes10" Desc="提升火属性抗性"/>
+			</SpecialAbility>
+		</Fabao>
+		</Item>
+		<Heat>
+			<Value>75</Value>
+			<RoomValue>75</RoomValue>
+			<Radius>2</Radius>
+			<FailRadius>1</FailRadius>
+			<Failing>0.9</Failing>
+			<SkipSelf>1</SkipSelf>
+		</Heat>
+		<Ling>
+			<AddionLing>60</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.03</Attenuation>
+			<Absorption>0.4</Absorption>
+			<Accommodate>18</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Huo</Kind>
+			<Value>9</Value>         
+			<Radius>3</Radius>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Yang Essence: Immortal Grade Fire Qi Gathering Item-->
+	<ThingDef Type="Item" Name="Item_YangEssence" Parent="DanBase">
+		<ThingName>纯阳精华种</ThingName>
+		<TexPath>Spr\Object\Items\EssenceYangFire.png</TexPath>	
+		<Desc>由朱木之中纯净火灵气凝炼而成的五行精华种，气机炽烈，尚未完全稳定…… 
+[size=10][color=#D06508]可汇聚火灵气，内门弟子可服食[/color][/size]</Desc>
+		<Rate>12</Rate>
+		<Beauty>20</Beauty>
+		<MaxStack>9999</MaxStack>
+		<ElementKind>Huo</ElementKind>
+		<Item Lable="LingStone">
+			<BeMaterial>
+					<NamePrefix></NamePrefix>
+					<CostMultiplier>1</CostMultiplier>
+			</BeMaterial>
+			<PhysicalLables>
+				<li>Heavy1</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<BeMade>
+					<WorkToMake>100</WorkToMake>
+					<CostItems>
+						<Item name = "Item_Dan_LingYuanZhong" count = "1"/>
+						<Item name = "Item_YangFlameEmbryo" count = "1"/>
+						<Item name = "Item_HuoEssence" count = "5"/>
+						<Item name = "Item_LingQiShuiYC" count = "2"/>
+						<Item name = "Item_LingCrystal" count = "5"/>
+					</CostItems>
+			</BeMade>
+			<Elixir>
+				<DiscipleOnly>1</DiscipleOnly>
+				<Ling>1000000</Ling>
+				<Modifier>Dan_LingQiShuiYC</Modifier>
+				<Modifier>Rith_YangEss</Modifier>
+				<Fesistance>0</Fesistance>
+			</Elixir>	
+			<Equip>
+				<ToolModifier>Dan_LingYuanZhong_Equip</ToolModifier>
+				<TemperatureMaxAdd>500</TemperatureMaxAdd>
+				<TemperatureMinAdd>-200</TemperatureMinAdd>
+			</Equip> 	
+		</Item>
+		<Heat>
+			<Value>200</Value>
+			<RoomValue>600</RoomValue>
+			<Radius>5</Radius>
+			<FailRadius>1</FailRadius>
+			<Failing>0.9</Failing>
+			<SkipSelf>1</SkipSelf>
+		</Heat>
+		<Ling>
+		<AddionLing>250</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+		</Ling>
+		<Light>
+			<Value>30</Value>
+			<Failing>0.6</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>2</Radius>
+			<Color>358BA7FF</Color>
+		</Light>
+	</ThingDef>
+<!--Basic Water element gi gathering item-->
+	<ThingDef Type="Item" Name="Item_ColdSilverEssence" Parent="RockBase">
+		<TexPath>Spr\Object\Items\ColdSilverEss.png</TexPath>
+		<ThingName>寒银精华</ThingName>	
+		<Desc>蕴含灵气的寒银矿碎片，水性清寒，灵机内蕴。 
+[size=10][color=#D06508]可汇聚水灵气[/color][/size]</Desc>
+		<MaxStack>9999</MaxStack>
+		<Rate>5</Rate>
+		<Beauty>12</Beauty>
+		<ElementKind>Shui</ElementKind>
+		<Item>
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>Hard1</li>
+			</PhysicalLables>
+			<BeMaterial>
+				<NamePrefix>寒银</NamePrefix>
+				<RateWhenBeMain>5</RateWhenBeMain>
+				<WorkSpeedCoefficientWhenBeMain>1.5</WorkSpeedCoefficientWhenBeMain>
+				
+				<BeautyWhenBeMain>4</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+			</BeMaterial>
+			<BeMade>
+			<WorkToMake>10</WorkToMake>
+			<CostItems>
+				<Item name = "Item_SilverRock" count = "5"/>
+				<Item name = "Item_LingStone" count = "25"/>
+			</CostItems>
+			</BeMade>
+		</Item>
+		<Heat>
+			<Value>-25</Value>
+			<RoomValue>-25</RoomValue>
+			<Radius>2</Radius>
+			<FailRadius>1</FailRadius>
+			<Failing>0.9</Failing>
+			<SkipSelf>1</SkipSelf>
+		</Heat>
+		<Ling>
+			<AddionLing>20</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.03</Attenuation>
+			<Absorption>0.4</Absorption>
+			<Accommodate>18</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>3</Value>         
+			<Radius>2</Radius>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Intermediate water element gi gathering item-->
+	<ThingDef Type="Item" Name="Item_OriginShard" Parent="RockBase">
+		<TexPath>Spr\Object\Items\OriginShard1.png</TexPath>
+		<ThingName>本源晶片</ThingName>	
+		<Desc>此天然晶石在久远岁月中凝入一丝水之本源灵气，若继续蕴养，或可另有造化……
+ [size=10][color=#D06508]可汇聚水灵气[/color][/size]</Desc>
+		<MaxStack>9999</MaxStack>
+		<Rate>8</Rate>
+		<Beauty>18</Beauty>
+		<ElementKind>Shui</ElementKind>
+		<Item>
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>Hard1</li>
+			</PhysicalLables>
+			<BeMaterial>
+					<NamePrefix>本源</NamePrefix>
+					<RateWhenBeMain>5</RateWhenBeMain>
+					<WorkSpeedCoefficientWhenBeMain>1.5</WorkSpeedCoefficientWhenBeMain>
+					
+					<BeautyWhenBeMain>4</BeautyWhenBeMain>
+					<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+			</BeMaterial>
+			<BeMade>
+				<WorkToMake>10</WorkToMake>
+						<CostItems>
+						<Item name = "Item_Water" count = "25"/>
+						<Item name = "Item_ColdSilverEssence" count = "5"/>
+						<Item name = "Item_JadeBlock" count = "5"/>
+						</CostItems>
+				</BeMade>
+		</Item>
+		<Heat>
+			<Value>-50</Value>
+			<RoomValue>-50</RoomValue>
+			<Radius>2</Radius>
+			<FailRadius>1</FailRadius>
+			<Failing>0.9</Failing>
+			<SkipSelf>1</SkipSelf>
+		</Heat>
+		<Ling>
+			<AddionLing>40</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.03</Attenuation>
+			<Absorption>0.4</Absorption>
+			<Accommodate>18</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>6</Value>         
+			<Radius>3</Radius>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Advanced (Divine) water element gi gathering item-->
+	<ThingDef Type="Item" Name="Item_YinOriginEmbryo" Parent="RockBase">
+		<TexPath>Spr\Object\Items\YinOriginEmbryo.png</TexPath>
+		<FabaoTexPath>Spr\Object\Items\EmbryoTreasureWater.png</FabaoTexPath>	
+		<ThingName>阴源灵胚</ThingName>	
+		<Desc>非止灵气，亦未成生灵。冰寒缥缈的阴性本源封存其中，暗暗涌动，似有灵胎初成之象……
+[size=10][color=#D06508]可汇聚水灵气。 
+ 可蕴养为法宝。[/color][/size]</Desc>
+		<MaxStack>9999</MaxStack>
+		<Rate>8</Rate>
+		<Beauty>18</Beauty>
+		<ElementKind>Shui</ElementKind>
+		<Item Kind="Equipment">
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<BeMaterial>
+					<NamePrefix>阴源灵胚</NamePrefix>
+					<RateWhenBeMain>8</RateWhenBeMain>
+					<WorkSpeedCoefficientWhenBeMain>1.5</WorkSpeedCoefficientWhenBeMain>
+					
+					<BeautyWhenBeMain>8</BeautyWhenBeMain>
+					<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+			</BeMaterial>
+			<BeMade>
+				<WorkToMake>10</WorkToMake>
+						<CostItems>
+						<Item name = "Item_OriginShard" count = "5"/>
+						<Item name = "Item_SoulPearl" count = "1"/>
+						<Item name = "Item_MonsterBlood" count = "5"/>
+						<Item name = "Item_LingCrystal" count = "5"/>
+						</CostItems>
+				</BeMade>
+		<Fabao>
+		    <ActiveCondition>
+			    <Condition eventid = "KillCount" des = "携带此灵胚击杀 25 个生灵" needcount = "25" />
+				<Condition eventid = "UseNpcLing" des = "消耗灵气" needcount = "1000000" />
+			</ActiveCondition>
+            <SpecialAbility>
+			    <Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="0.5" nParam1="0" sParam1="Huo" Desc="对火属性目标造成的伤害提高 50%"/>
+				<Ability Kind="Sync_AddEquptDataModifier" sParam1="Modifier_QiWaterRes10" Desc="提升水属性抗性"/>
+			</SpecialAbility>
+		</Fabao>
+		</Item>
+		<Heat>
+			<Value>-75</Value>
+			<RoomValue>-75</RoomValue>
+			<Radius>2</Radius>
+			<FailRadius>1</FailRadius>
+			<Failing>0.9</Failing>
+			<SkipSelf>1</SkipSelf>
+		</Heat>
+		<Ling>
+			<AddionLing>60</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.03</Attenuation>
+			<Absorption>0.4</Absorption>
+			<Accommodate>18</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Shui</Kind>
+			<Value>6</Value>         
+			<Radius>3</Radius>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Yin Essence: Immortal Grade Water Qi Gathering Item-->
+	<ThingDef Type="Item" Name="Item_YinEssence" Parent="DanBase">
+		<ThingName>纯阴精华种</ThingName>
+		<TexPath>Spr\Object\Items\EssenceYinWater.png</TexPath>	
+		<Desc>由五色莲中纯净水灵气凝炼而成的五行精华种，气机幽寒，尚未完全稳定……
+[size=10][color=#D06508]可汇聚水灵气，内门弟子可服食。[/color][/size]</Desc>
+		<Rate>12</Rate>
+		<Beauty>20</Beauty>
+		<MaxStack>9999</MaxStack>
+		<ElementKind>Shui</ElementKind>
+		<Item Lable="LingStone">
+			<BeMaterial>
+					<NamePrefix></NamePrefix>
+					<CostMultiplier>1</CostMultiplier>
+			</BeMaterial>
+			<PhysicalLables>
+				<li>Heavy1</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<BeMade>
+					<WorkToMake>100</WorkToMake>
+					<CostItems>
+						<Item name = "Item_Dan_LingYuanZhong" count = "1"/>						
+						<Item name = "Item_YinOriginEmbryo" count = "1"/>
+						<Item name = "Item_ShuiEssence" count = "5"/>
+						<Item name = "Item_LingQiShuiYC" count = "2"/>
+						<Item name = "Item_LingCrystal" count = "5"/>
+					</CostItems>
+			</BeMade>
+			<Elixir>
+				<DiscipleOnly>1</DiscipleOnly>
+				<Ling>1000000</Ling>
+				<Modifier>Dan_LingQiShuiYC</Modifier>
+				<Modifier>Rith_YangEss</Modifier>
+				<Fesistance>0</Fesistance>
+			</Elixir>	
+			<Equip>
+				<ToolModifier>Dan_LingYuanZhong_Equip</ToolModifier>
+				<TemperatureMaxAdd>500</TemperatureMaxAdd>
+				<TemperatureMinAdd>-200</TemperatureMinAdd>
+			</Equip> 	
+		</Item>
+		<Heat>
+			<Value>-250</Value>
+			<RoomValue>600</RoomValue>
+			<Radius>3</Radius>
+			<FailRadius>1</FailRadius>
+			<Failing>0.9</Failing>
+			<SkipSelf>1</SkipSelf>
+		</Heat>
+		<Ling>
+		<AddionLing>250</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+		</Ling>
+		<Light>
+			<Value>30</Value>
+			<Failing>0.6</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>2</Radius>
+			<Color>358BA7FF</Color>
+		</Light>
+	</ThingDef>
+<!--Basic(Treasure) Metal element gi gathering item-->
+	<ThingDef Type="Item" Name="Item_IronMetalEssence" Parent="MetalBase">
+		<TexPath>Spr\Object\Items\IronMetalEss.png</TexPath>
+		<ThingName>玄铁精华</ThingName>	
+		<Desc>蕴含灵气的玄铁矿碎片，金性凝炼，锋锐内敛。 
+[size=10][color=#D06508]可汇聚金灵气。[/color][/size]</Desc>
+		<MaxStack>9999</MaxStack>
+		<Rate>5</Rate>
+		<Beauty>12</Beauty>
+		<ElementKind>Jin</ElementKind>
+		<Item>
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>Hard1</li>
+			</PhysicalLables>
+			<BeMade>
+			<BeMaterial>
+				<NamePrefix>玄铁精华</NamePrefix>
+				<RateWhenBeMain>5</RateWhenBeMain>
+				<WorkSpeedCoefficientWhenBeMain>1.5</WorkSpeedCoefficientWhenBeMain>
+				
+				<BeautyWhenBeMain>4</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+		</BeMaterial>
+			<WorkToMake>10</WorkToMake>
+				<CostItems>
+					<Item name = "Item_IronRock" count = "5"/>
+					<Item name = "Item_LingStone" count = "25"/>
+				</CostItems>
+			</BeMade>
+		</Item>
+		<Ling>
+			<AddionLing>20</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.03</Attenuation>
+			<Absorption>0.4</Absorption>
+			<Accommodate>18</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Jin</Kind>
+			<Value>3</Value>         
+			<Radius>2</Radius>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Advanced (Divine) Metal element gi gathering item-->
+	<ThingDef Type="Item" Name="Item_AbyssalGoldEmbryo" Parent="RockBase">
+		<TexPath>Spr\Object\Items\AbyssalGoldEmbryo.png</TexPath>
+		<FabaoTexPath>Spr\Object\Items\EmbryoTreasureMetal.png</FabaoTexPath>	
+		<ThingName>渊金灵胚</ThingName>	
+		<Desc>渊金多生于金脉最深处，常蕴浓郁金灵气。此矿中灵机已近孕化，似将蜕为更高之物。
+[size=10][color=#D06508]可汇聚金灵气。 
+ 可蕴养为法宝。[/color][/size]</Desc>
+		<MaxStack>9999</MaxStack>
+		<Rate>8</Rate>
+		<Beauty>18</Beauty>
+		<ElementKind>Jin</ElementKind>
+		<Item Kind="Equipment">
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<BeMaterial>
+					<NamePrefix>渊金灵胚</NamePrefix>
+					<RateWhenBeMain>8</RateWhenBeMain>
+					<WorkSpeedCoefficientWhenBeMain>1.5</WorkSpeedCoefficientWhenBeMain>
+					
+					<BeautyWhenBeMain>8</BeautyWhenBeMain>
+					<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+			</BeMaterial>
+			<BeMade>
+				<WorkToMake>10</WorkToMake>
+						<CostItems>
+						<Item name = "Item_IronMetalEssence" count = "5"/>
+						<Item name = "Item_SoulPearl" count = "1"/>
+						<Item name = "Item_MonsterBlood" count = "5"/>
+						<Item name = "Item_LingCrystal" count = "5"/>
+						</CostItems>
+				</BeMade>
+		<Fabao>
+		    <ActiveCondition>
+			    <Condition eventid = "KillCount" des = "携带此灵胚击杀 25 个生灵" needcount = "25" />
+				<Condition eventid = "UseNpcLing" des = "消耗灵气" needcount = "1000000" />
+			</ActiveCondition>
+            <SpecialAbility>
+			     <Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="0.5" nParam1="0" sParam1="Mu" Desc="对木属性目标造成的伤害提高 50%"/>
+				<Ability Kind="Sync_AddEquptDataModifier" sParam1="Modifier_QiMetalRes10" Desc="提升金属性抗性"/>
+			</SpecialAbility>
+		</Fabao>
+		</Item>
+		<Heat>
+			<Value>-10</Value>
+			<RoomValue>-10</RoomValue>
+			<Radius>2</Radius>
+			<FailRadius>1</FailRadius>
+			<Failing>0.9</Failing>
+			<SkipSelf>1</SkipSelf>
+		</Heat>
+		<Ling>
+			<AddionLing>60</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.03</Attenuation>
+			<Absorption>0.4</Absorption>
+			<Accommodate>18</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Jin</Kind>
+			<Value>6</Value>         
+			<Radius>3</Radius>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Nirvana Metal Essence: Immortal Grade Metal Qi Gathering Item-->
+	<ThingDef Type="Item" Name="Item_ThunderNirvanaEssence" Parent="DanBase">
+		<ThingName>涅雷精华种</ThingName>
+		<TexPath>Spr\Object\Items\EssenceNirvanaMetal.png</TexPath>	
+		<Desc>由涅槃木中金雷二气凝炼而成的五行精华种，雷机潜伏，尚未完全稳定…… 
+[size=10][color=#D06508]可汇聚金灵气，内门弟子可服食[/color][/size]</Desc>
+		<Rate>12</Rate>
+		<Beauty>20</Beauty>
+		<MaxStack>9999</MaxStack>
+		<ElementKind>Jin</ElementKind>
+		<Item Lable="LingStone">
+			<BeMaterial>
+					<NamePrefix></NamePrefix>
+					<CostMultiplier>1</CostMultiplier>
+			</BeMaterial>
+			<PhysicalLables>
+				<li>Heavy1</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<BeMade>
+					<WorkToMake>100</WorkToMake>
+					<CostItems>
+						<Item name = "Item_Dan_LingYuanZhong" count = "1"/>
+						<Item name = "Item_StellarMetalEmbryo" count = "1"/>
+						<Item name = "Item_JinEssence" count = "5"/>
+						<Item name = "Item_LingQiShuiYC" count = "2"/>
+						<Item name = "Item_LingCrystal" count = "5"/>
+					</CostItems>
+			</BeMade>
+			<Elixir>
+				<DiscipleOnly>1</DiscipleOnly>
+				<Ling>1000000</Ling>
+				<Modifier>Dan_LingQiShuiYC</Modifier>
+				<Modifier>Rith_YangEss</Modifier>
+				<Fesistance>0</Fesistance>
+			</Elixir>	
+			<Equip>
+				<ToolModifier>Dan_LingYuanZhong_Equip</ToolModifier>
+				<TemperatureMaxAdd>500</TemperatureMaxAdd>
+				<TemperatureMinAdd>-200</TemperatureMinAdd>
+			</Equip> 	
+		</Item>
+		<Heat>
+			<Value>25</Value>
+			<RoomValue>100</RoomValue>
+			<Radius>5</Radius>
+			<FailRadius>1</FailRadius>
+			<Failing>0.9</Failing>
+			<SkipSelf>1</SkipSelf>
+		</Heat>
+		<Ling>
+		<AddionLing>250</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+		</Ling>
+		<Light>
+			<Value>30</Value>
+			<Failing>0.6</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>2</Radius>
+			<Color>358BA7FF</Color>
+		</Light>
+	</ThingDef>	
+<!--basic(Treasure) wood element gi gathering item-->
+	<ThingDef Type="Item" Name="Item_OldWoodEssence" Parent="WoodBase">
+		<TexPath>Spr\Object\Items\OldWoodEss.png</TexPath>
+		<ThingName>古木精华</ThingName>	
+		<Desc>一截灵气充盈的古木，木性绵长，生机暗藏。 
+[size=10][color=#D06508]可汇聚木灵气。[/color][/size]</Desc>
+		<MaxStack>9999</MaxStack>
+		<Rate>5</Rate>
+		<Beauty>12</Beauty>
+		<ElementKind>Mu</ElementKind>
+		<Item>
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>Hard1</li>
+			</PhysicalLables>
+				<BeMaterial>
+					<NamePrefix>古木精华</NamePrefix>
+					<RateWhenBeMain>5</RateWhenBeMain>
+					<WorkSpeedCoefficientWhenBeMain>1.5</WorkSpeedCoefficientWhenBeMain>
+					
+					<BeautyWhenBeMain>4</BeautyWhenBeMain>
+					<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+			</BeMaterial>
+			<BeMade>
+				<WorkToMake>10</WorkToMake>
+						<CostItems>
+						<Item name = "Item_Wood" count = "10"/>
+						<Item name = "Item_LingStone" count = "25"/>
+						</CostItems>
+				</BeMade>			
+		</Item>
+		<Ling>
+			<AddionLing>20</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.03</Attenuation>
+			<Absorption>0.4</Absorption>
+			<Accommodate>18</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>3</Value>         
+			<Radius>2</Radius>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Advanced (Divine) Wood Qi Gathering Item-->
+	<ThingDef Type="Item" Name="Item_LifeWoodEmbryo" Parent="WoodBase">
+		<TexPath>Spr\Object\Items\LifeSpiritEmbryo.png</TexPath>
+		<FabaoTexPath>Spr\Object\Items\EmbryoTreasureWood.png</FabaoTexPath>	
+		<ThingName>生木灵胚</ThingName>	
+		<Desc>此木内灵气盘根错节，已脱离母株生机，自成一脉，灵胎之势隐隐欲发……
+ [size=10][color=#D06508]可汇聚木灵气。 
+ 可蕴养为法宝。[/color][/size]</Desc>
+		<MaxStack>1</MaxStack>
+		<Rate>8</Rate>
+		<Beauty>18</Beauty>
+		<ElementKind>Mu</ElementKind>
+			<Item Kind="Equipment">
+				<NotFengshuiItem>0</NotFengshuiItem>
+				<PhysicalLables>
+					<li>Light1</li>
+					<li>Hard1</li>
+					<li>GreatThing_Ling</li>
+				</PhysicalLables>
+					<BeMaterial>
+						<NamePrefix>生木</NamePrefix>
+						<RateWhenBeMain>8</RateWhenBeMain>
+						<WorkSpeedCoefficientWhenBeMain>1.5</WorkSpeedCoefficientWhenBeMain>
+						
+						<BeautyWhenBeMain>8</BeautyWhenBeMain>
+						<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+				</BeMaterial>
+				<BeMade>
+					<WorkToMake>10</WorkToMake>
+						<CostItems>
+							<Item name = "Item_OldWoodEssence" count = "10"/>
+							<Item name = "Item_ParasolWood" count = "1"/>
+							<Item name = "Item_MonsterBlood" count = "5"/>
+							<Item name = "Item_OriginShard" count = "1"/>
+						</CostItems>
+				</BeMade>
+			<Fabao>
+				<ActiveCondition>
+					<Condition eventid = "KillCount" des = "携带此灵胚击杀 25 个生灵" needcount = "25" />
+					<Condition eventid = "UseNpcLing" des = "消耗灵气" needcount = "1000000" />
+				</ActiveCondition>
+				<SpecialAbility>
+					<Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="0.5" nParam1="0" sParam1="Tu" Desc="对土属性目标造成的伤害提高 50%"/>
+					<Ability Kind="Sync_AddEquptDataModifier" sParam1="Modifier_QiWoodRes10" Desc="提升木属性抗性"/>
+				</SpecialAbility>
+			</Fabao>			
+			</Item>
+		<Ling>
+			<AddionLing>60</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.03</Attenuation>
+			<Absorption>0.4</Absorption>
+			<Accommodate>18</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>6</Value>         
+			<Radius>2</Radius>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Ancient Withered Essence: Immortal Grade Wood Qi Gathering Item-->
+	<ThingDef Type="Item" Name="Item_AncientWitheredEssence" Parent="DanBase">
+		<ThingName>古枯精华种</ThingName>
+		<TexPath>Spr\Object\Items\EssenceWitherWood.png</TexPath>	
+		<Desc>由枯藤残存的生机与木灵气凝炼而成的五行精华种，枯荣相生，似仍渴求灵机……
+ [size=10][color=#D06508]可汇聚木灵气，内门弟子可服食[/color][/size]</Desc>
+		<Rate>12</Rate>
+		<Beauty>20</Beauty>
+		<MaxStack>9999</MaxStack>
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="LingStone">
+			<BeMaterial>
+					<NamePrefix></NamePrefix>
+					<CostMultiplier>1</CostMultiplier>
+			</BeMaterial>
+			<PhysicalLables>
+				<li>Heavy1</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<BeMade>
+					<WorkToMake>100</WorkToMake>
+					<CostItems>
+						<Item name = "Item_Dan_LingYuanZhong" count = "1"/>
+						<Item name = "Item_JarImmortalEarth" count = "1"/>
+						<Item name = "Item_MuEssence" count = "5"/>
+						<Item name = "Item_LingQiShuiYC" count = "2"/>
+						<Item name = "Item_LingCrystal" count = "5"/>
+					</CostItems>
+			</BeMade>
+			<Elixir>
+				<DiscipleOnly>1</DiscipleOnly>
+				<Ling>1000000</Ling>
+				<Modifier>Dan_LingQiShuiYC</Modifier>
+				<Modifier>Rith_YangEss</Modifier>
+				<Fesistance>0</Fesistance>
+			</Elixir>	
+			<Equip>
+				<ToolModifier>Dan_LingYuanZhong_Equip</ToolModifier>
+				<TemperatureMaxAdd>500</TemperatureMaxAdd>
+				<TemperatureMinAdd>-200</TemperatureMinAdd>
+			</Equip> 	
+		</Item>
+		<Heat>
+			<Value>25</Value>
+			<RoomValue>600</RoomValue>
+			<Radius>5</Radius>
+			<FailRadius>1</FailRadius>
+			<Failing>0.9</Failing>
+			<SkipSelf>1</SkipSelf>
+		</Heat>
+		<Ling>
+		<AddionLing>250</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>1</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+		</Ling>
+		<Light>
+			<Value>30</Value>
+			<Failing>0.6</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>2</Radius>
+			<Color>358BA7FF</Color>
+		</Light>
+	</ThingDef>	
+<!--Advanced (Divine) Earth Qi gathering item and Treasure: SpiritJade Embryo-->
+	<ThingDef Type="Item" Name="Item_SpiritJadeEmbryo" Parent="RockBase">
+		<TexPath>Spr\Object\Items\SpiritJadeEmbryo.png</TexPath>
+		<FabaoTexPath>Spr\Object\Items\EmbryoTreasureEarth.png</FabaoTexPath>	
+		<ThingName>灵玉灵胚</ThingName>	
+		<Desc>经万炼精元鼎点化，此块灵玉之中生出一缕地脉精机。 
+[size=10][color=#D06508]可汇聚土灵气。
+ 可蕴养为法宝。[/color][/size]</Desc>
+		<MaxStack>9999</MaxStack>
+		<SelectAble>1</SelectAble>
+		<Rate>10</Rate>
+		<Beauty>18</Beauty>
+		<ElementKind>Tu</ElementKind>
+		<Item Kind="Equipment">
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<PhysicalLables>
+			<li>Light1</li>
+			<li>Heavy1</li>
+			<li>Hard2</li>
+			<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<BeMaterial>
+					<NamePrefix>灵玉</NamePrefix>
+					<RateWhenBeMain>9</RateWhenBeMain>
+					<WorkSpeedCoefficientWhenBeMain>2</WorkSpeedCoefficientWhenBeMain>
+					
+					<BeautyWhenBeMain>12</BeautyWhenBeMain>
+					<ElementPowerWhenBeMain>7</ElementPowerWhenBeMain>
+			</BeMaterial>
+			<BeMade>
+				<WorkToMake>100</WorkToMake>
+						<CostItems>
+						<!--Debug recipie wood-->
+						<!--<Item name = "Item_Wood" count = "1"/>-->
+						<Item name = "Item_JadeEssence" count = "5"/>
+						<Item name = "Item_LingQiShuiYC" count = "5"/>
+						<Item name = "Item_MonsterBlood" count = "5"/>
+						<Item name = "Item_LingCrystal" count = "5"/>
+						</CostItems>
+				</BeMade>
+		<Fabao>
+		    <ActiveCondition>
+			    <Condition eventid = "KillCount" des = "携带此灵胚击杀 25 个生灵" needcount = "25" />
+			 	<Condition eventid = "UseNpcLing" des = "消耗灵气" needcount = "1000000" />
+			</ActiveCondition>
+            <SpecialAbility>
+			     <Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="0.5" nParam1="0" sParam1="Shui" Desc="对水属性目标造成的伤害提高 50%"/>
+				<Ability Kind="Sync_AddEquptDataModifier" sParam1="Modifier_QiEarthRes10" Desc="提升土属性抗性"/>
+			</SpecialAbility>
+		</Fabao>	
+		</Item>
+		<Ling>
+			<AddionLing>60</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.8</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0.03</Attenuation>
+			<Absorption>0.4</Absorption>
+			<Accommodate>18</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Tu</Kind>
+			<Value>6</Value>         
+			<Radius>3</Radius>
+			<Failing>1</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+	</ThingDef>
+<!--Ancient Withered Essence: Immortal Grade Wood Qi Gathering Item-->
+	<ThingDef Type="Item" Name="Item_ProfoundEarthEssence" Parent="DanBase">
+		<ThingName>玄土精华种</ThingName>
+		<TexPath>Spr\Object\Items\EssenceProfoundEarth.png</TexPath>	
+		<Desc>由黄精中先天土灵气凝炼而成的五行精华种，气息厚重，似有异象…… 
+[size=10][color=#D06508]可汇聚土灵气，可服食[/color][/size]</Desc>
+		<Rate>12</Rate>
+		<Beauty>20</Beauty>
+		<MaxStack>9999</MaxStack>
+		<ElementKind>Tu</ElementKind>
+		<Item Lable="LingStone">
+			<BeMaterial>
+					<NamePrefix></NamePrefix>
+					<CostMultiplier>1</CostMultiplier>
+			</BeMaterial>
+			<PhysicalLables>
+				<li>Heavy1</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			<BeMade>
+					<WorkToMake>100</WorkToMake>
+					<CostItems>
+						<Item name = "Item_Dan_LingYuanZhong" count = "1"/>
+						<Item name = "Item_DragonBoneJade" count = "1"/>
+						<Item name = "Item_TuEssence" count = "5"/>
+						<Item name = "Item_LingQiShuiYC" count = "2"/>
+						<Item name = "Item_LingCrystal" count = "5"/>
+					</CostItems>
+			</BeMade>
+			<Elixir>
+				<DiscipleOnly>1</DiscipleOnly>
+				<Ling>1000000</Ling>
+				<Modifier>Dan_LingQiShuiYC</Modifier>
+				<Modifier>Rith_YangEss</Modifier>
+				<Fesistance>0</Fesistance>
+			</Elixir>	
+			<Equip>
+				<ToolModifier>Dan_LingYuanZhong_Equip</ToolModifier>
+				<TemperatureMaxAdd>500</TemperatureMaxAdd>
+				<TemperatureMinAdd>-200</TemperatureMinAdd>
+			</Equip> 	
+		</Item>
+		<Heat>
+			<Value>25</Value>
+			<RoomValue>600</RoomValue>
+			<Radius>5</Radius>
+			<FailRadius>1</FailRadius>
+			<Failing>0.9</Failing>
+			<SkipSelf>1</SkipSelf>
+		</Heat>
+		<Ling>
+			<AddionLing>250</AddionLing>
+			<AddionRadius>3</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+		<Light>
+			<Value>30</Value>
+			<Failing>0.6</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>2</Radius>
+			<Color>358BA7FF</Color>
+		</Light>
+	</ThingDef>	
+<!--Add more here-->
+
+</List></ThingDefs>

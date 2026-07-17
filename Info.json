@@ -1,8 +1,25 @@
-﻿{
-  "Name": "Example",
-  "DisplayName": "演示模组(Example Mod)",
-  "Desc": "This is an official demo of the mod, showcasing some of the features that mods can offer. Visit https://github.com/GSQStudio/acs1_example_mod for details. You can also submit new mods at https://github.com/GSQStudio/acs1_mods",
-  "Author": "GSQ",
-  "UIPackage": "UI/Sample",
-  "Dependencies": null
+{
+  "Name": "Seven Colour Pagoda",
+  "DisplayName": "七色宝塔",
+  "GameVersion": 0.999,
+  "Version": 1.65,
+  "Desc": "[作者]\r\n    张通\r\n\r\n[汉化]\r\n    小z & ChatGPT\r\n\r\n[简介]\r\n新增多种聚灵摆件、修炼奇观及生产建筑。\r\n\r\n包含四种基础聚灵摆件、五种后期五行修炼奇观，以及多种炼丹、炼器辅助设施。\r\n\r\n同时补充了部分原版缺失的功能，例如真气调和丹、精华合炼丹、灵魂晶石、妖血及稀有资源转换等内容。",
+  "Author": "张通",
+  "UIPackage": null,
+  "ID": "2298508198",
+  "Flag": -274090313,
+  "Tags": [
+    "Building",
+    "Item",
+    "Elixir",
+    "Content",
+    "Chinese",
+    "Integrated",
+    "Usability",
+    "ExcludeRealmsHeaven"
+  ],
+  "IncreasedDesc": "新增4种基础聚灵摆件（1×1）、5种五行修炼奇观、4种生产建筑，并补充真气调和丹、精华合炼丹、灵魂晶石、妖血及稀有资源转换等功能。\n\n[v1.4.2] 修复自定义一级建造菜单注册：统一 Info.json 的 DisplayName 与 MainList 的 Type，并规范 MainList 文件路径及名称。另完成建筑、丹药、物品产出路径检查。\n\n[v1.4.3] 修正 MainList 中 CMDType 被错误改写的问题，全部恢复为游戏建造命令 CMDType=\"Build\"。\n\n[v1.4.4] 建造菜单诊断修复：MainList 保持 Settings/Ui 正确路径，恢复纯英文内部分类键 Type=\"Riths Mod\"，并统一采用已验证格式 Label=\"Buildings\"、CMDType=\"Build\"。\n\n[v1.4.5] 按官方 Example 重建 MainList：使用 Settings/UI/MainList 大写路径、移除 Label。凝气阵单独挂入原版“装饰”栏，用于判断 MainList 是否成功加载；其余建筑保留自定义 Riths Mod 页签测试。",
+  "IsInsideCreat": false,
+  "Previews": [],
+  "ParentModInfo": null
 }

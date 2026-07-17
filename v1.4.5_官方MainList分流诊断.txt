@@ -1,0 +1,13 @@
+SevenColourPagoda-CN v1.4.5 官方 MainList 分流诊断说明
+
+本版严格参考官方 acs1_example_mod：
+1. 使用 Settings/UI/MainList/（大写 UI）
+2. MainList 采用 <MainList><List><Data .../></List></MainList>
+3. 移除 Label 字段
+4. 凝气阵 RithQiArray1 单独注册到原版 Type="装饰"
+5. 其余建筑注册到 Type="Riths Mod"
+
+测试结果判断：
+A. “装饰”栏出现凝气阵，但没有 Riths Mod：MainList 已加载，问题仅在自定义一级页签机制。
+B. “装饰”栏也没有凝气阵：MainList 文件根本未被加载，需查游戏日志/Mod匹配/加载顺序。
+C. 两边都出现：修复成功，可再恢复全部建筑到独立菜单。

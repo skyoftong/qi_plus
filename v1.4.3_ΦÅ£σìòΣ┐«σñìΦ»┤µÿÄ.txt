@@ -1,0 +1,13 @@
+SevenColourPagoda-CN v1.4.3 菜单修复
+
+问题：
+上一测试版 MainList 的 CMDType 被错误写成“七色宝塔”。
+CMDType 是游戏命令类型，不是菜单名称，必须保持为 Build。
+
+本次修复：
+1. 保留一级菜单 Type="七色宝塔"。
+2. 保留 Settings/Ui/MainList/SevenColourPagodaMainList.xml 路径。
+3. 将全部 19 条建筑记录恢复为 CMDType="Build"。
+4. XML 与 Info.json 校验通过。
+
+未改动建筑数值、配方、脚本引用及物品效果。

@@ -1,0 +1,23 @@
+<MainList><List>
+	<!-- 官方示例诊断项：若此建筑出现在“装饰”栏，说明 MainList 已成功加载 -->
+	<Data Kind="Builds" Unlock="0" Type="装饰" CMDType="Build" Name="RithQiArray1"/>
+	<!-- 自定义一级菜单测试：其余建筑 -->
+	<Data Kind="Builds" Unlock="0" Type="Riths Mod" CMDType="Build" Name="RithQiArray2"/>
+	<Data Kind="Builds" Unlock="0" Type="Riths Mod" CMDType="Build" Name="RithQiArray3"/>
+	<Data Kind="Builds" Unlock="4" Type="Riths Mod" CMDType="Build" Name="RithQiArray4"/>
+	<Data Kind="Builds" Unlock="0" Type="Riths Mod" CMDType="Build" Name="RithAlchFurnace"/>
+	<Data Kind="Builds" Unlock="0" Type="Riths Mod" CMDType="Build" Name="Rith7ColourPagoda"/>
+	<Data Kind="Builds" Unlock="0" Type="Riths Mod" CMDType="Build" Name="Rith_SoulCauldron"/>
+	<Data Kind="Builds" Unlock="0" Type="Riths Mod" CMDType="Build" Name="Rith_EssenceCauldron"/>
+	<Data Kind="Builds" Unlock="0" Type="Riths Mod" CMDType="Build" Name="Rith_BloodCauldron"/>
+	<Data Kind="Builds" Unlock="0" Type="Riths Mod" CMDType="Build" Name="RithCultCushionlvl3"/>
+	<Data Kind="Builds" Unlock="0" Type="Riths Mod" CMDType="Build" Name="RithCultPlatform1"/>
+	<Data Kind="Builds" Unlock="4" Type="Riths Mod" CMDType="Build" Name="RithCultPlatform2"/>
+	<Data Kind="Builds" Unlock="4" Type="Riths Mod" CMDType="Build" Name="NascentOriginGate"/>
+	<Data Kind="Builds" Unlock="0" Type="Riths Mod" CMDType="Build" Name="AncientParasolTree"/>
+	<Data Kind="Builds" Unlock="0" Type="Riths Mod" CMDType="Build" Name="YangFissure"/>
+	<Data Kind="Builds" Unlock="0" Type="Riths Mod" CMDType="Build" Name="EarthCorePool"/>
+	<Data Kind="Builds" Unlock="0" Type="Riths Mod" CMDType="Build" Name="8DirThunderArray"/>
+	<Data Kind="Builds" Unlock="0" Type="Riths Mod" CMDType="Build" Name="Build_TheBigGate1"/>
+	<Data Kind="Builds" Unlock="0" Type="Riths Mod" CMDType="Build" Name="Rith_SmallGate"/>
+</List></MainList>

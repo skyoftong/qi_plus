@@ -1,0 +1,131 @@
+General notes
+All contents relating to the 3 coloured Sutra mod, are the property of that mod and its creator, i have merely included them here for cross compatibility.
+
+General Mod Contents
+
+Added
+
+Basic Qi Gathering Array
+Intermediate Qi Gathering Array
+Advanced Qi Gathering Array
+Immortal Qi Gathering Array (Unlockable)
+Advanced Cultivation Cushion 1 range +250 qi
+Cultivation Platform - 3x3 reskin of Kunlun Platform
+Rare Cultivation Platform 3x3 cross (Unlockable)
+
+Alchemy Workbench - produces special pills
+	Adds in a series of 1 use pills that can boost QI attunement a bit in disciples
+	Adds a merged 3 in 1 cultivation pill that combines Ineda, Essence Gathering and Cultivation elixirs into a single one, lasts 28 days - quite expensive to make!
+	
+Myriad Blood Cauldron: Used to Produce Demon Blood and some other rarer materials
+Myriad Souls Cauldron: Used to Produce Soul Crystals (Ominous, Tranquil, Spirit) and other rarer materials
+Myriad Essence Cauldron: Used to procude introduced Qi gathering items
+	All 3 add various "story" items that can provide one time boosts to cultivation and stats for the characters that use them. all have to be found by random chance currently.
+
+7 Coloured Pagoda: Special Psudo Wonder
+	Produces: Auspicious Resource Bundle - converts 5x of each basic resource (total 25) into a chance at qi gathering items, rarer items, or your resources back + some garbage. 
+	Produces: 7 Coloured Scroll - used to aquire various cultivation laws, formations, rare resources and unlock buildings
+:q
+5 elemental cultivation wonders (Unlockable)
+		Metal - 8 Thunder Pond
+		Water - Origin Gate
+		Wood - Ancient Parasol Tree
+		Fire - Yang Immortal Fissure
+		Earth - Earthcore Pond
+
+Version of the Sect gate that is 3 squares wide at the central gate
+Cosmetic version of Sect Gate that is 1 square wide at central gate	
+
+Known Bugs
+shouldnt be any. but the mod is a work in progress!so if there are get in contact with @Rithgard on the Amazing Cultivation Simulator Discord.
+
+Version 1.3 changelog
+Cauldron Changes
+> Increased recipie output for Elemental catalyst from 1 to 5 per craft
+> Increased Qi Gathering of Basic Elemental essences for Wood, Fire, Metal and Water to 20 (+3 range)
+> Increased Qi Gathering of Intermediate Elemental Essences for Fire and Water to 40 (+4 range)
+> Balanced Cost of Essence materials downwards, standardized requirements of mid tier recipies to make them less frustrating to make.
+> Added Beast Cores to Soul Furnace Cauldron Drop Lists to balance out availability of demon blood via the blood cauldron
+
+> Made the rare drop, Yang Blood deal damage less insane and lethal to Outers whe used
+> Added a means to craft Blood Crystal Refuse using Garbage. 
+> Reduced amount of blood crystal refuse required to craft the Ref. Blood Crystal
+
+Auspicious Bundle
+	> now returns 12 garbage along with the other items when resources are returned.
+
+7 coloured Scroll
+	> Changed means of aquiring Formations and Laws through the 7 coloured scroll. 
+		Overall chance has lowered as a result, but the balance should be a bit better. 
+		you now have the ability to choose specific laws or formations
+		as a side effect, the amount of "rare" materials that the 7 coloured scroll gives has also decreased (for now)
+
+	> Cultivation Law Jade Slip (from 7 coloured scroll): Gives choice of cultivation laws, once learnt, will instead drop random rare resources
+	> Formations Jade Slip (From 7 coloured scroll): chance to learn rarer formations, you can pick one... its possible to learn multiple times because different characters can learn formation centers.
+	> Expensive Low output, range 5 qi gathering item with enforced 'neutral' attribute - its use should be obvious...
+	> Variant Cultivation Platform that fits in a 3x3 cross. (from 7 coloured scroll)
+
+Version 1.4 Changelog
+
+>Immortal Qi gathering stand now requires an Immortal stone to make, rather than a shifting void crystal.
+>several other buildings and items now require immortals stones instead of shifting void crystals to make.
+>Immortal stones can be crafted from the Hongjun Array.
+>Swapped about various recipies
+>Radically altered the Yang Blood. Old Yang Blood is now called Bloodline Catalyst. if you drank it before, nothing important changed.
+>Added 5 new bloods that are rare drops froom the Refined Blood Crystal.
+	-Yang Earthly Body
+	-Yin Earthly Body
+	-Golden Body
+	-Longevity Body
+	-Earthspirit Body
+	
+	Each one gives a set of bonus's, you can drink them twice. once as an outer then once as an inner disciple, or twice as an inner, if you didnt drink it as an outer disciple.
+	I wont bother listing waht they do in detail, but each one will give some thematic boosts to a character. stat boosts provided will go above the max (110)
+	
+7 Coloured Scroll 
+	fixed a bug with it (i hope!) if it still doesnt craft occasionally, let me know asap.
+
+>Formations compendium - this previously dropped from the coloured scroll, but i made it craftable under its own merits.
+>Cultivation compendium - this previously dropped from the coloured scroll, but i made it craftable under its own merits.
+
+>Elemental Embryos and Essences can now be refined into tresures. 
+	this is an experimental feature, let me know if it feels unbalanced or doesnt work, i tried to test it pretty
+	exhausivly but there are always bugs (le sigh)
+
+>Lightning Soul will give a nice bonus if you have one equiped when you undergo a tribulation!
+
+>a bunch of other silly bug fixes!
+
+Version 1.5
+Removed three spells included from Three Colour Sutra. they seem to cause issues for some people so it was easier to just nix them. if you want to continue using them, please download the three colour sutra mod.
+
+Changes - 
+>Bloodline Catalyst - Made this more common, along with the elemental blood types. it is still RARE though.
+>added in option to the Refined Blood to drop the catalyst directly. it will also drop with a 25% chance from the cache option.
+>made it clear in the text of the blood catalyst items that they can be taken twice, once as an outer and once as an inner.
+>endevoured to fix the coordinate issue with the golden throne cultivation platform -again-.
+
+
+
+[v1.3 CN]
+- 汉化 ThingDef/Item/Item_Essence.xml
+- 汉化 ThingDef/Item/Item_System.xml
+- 汉化 ThingDef/Item/Item_StoryActive.xml
+- 保留内部 Name、数值、脚本引用与 XML 结构，仅修改玩家可见文本。
+
+
+[v1.4 CN]
+- 补完第一阶段主要残留：Settings/Modifiers、Settings/MapStories、Settings/UI。
+- 汉化 Buff/Modifier 名称与说明、地图事件名称与描述、事件按钮、事件弹窗提示、部分调试按钮与炼化按钮说明。
+- MainList 构筑分类由 Riths Mod 改为“七色宝塔”。
+- 保留内部 Name、脚本引用、数值、掉落表、配方与 XML 结构，仅修改玩家可见文本。
+- XML 解析校验通过；玩家可见字段英文残留扫描通过。
+
+
+[v1.4.2 菜单注册修复]
+- 将 Info.json 的 DisplayName 统一为“七色宝塔”。
+- 将 MainList 中所有 Type 统一为“七色宝塔”，确保一级建造页签能够注册。
+- MainList 文件规范为 Settings/Ui/MainList/SevenColourPagodaMainList.xml。
+- 检查全部 19 个建筑定义，均已注册到 MainList。
+- 检查丹药和物品产出路径：丹药由鸿钧丹阵生产，精华及系统物品由对应生产建筑或地图事件获得。
+- “仙晶（Item_ImmortalLingCrystal）”目前无生产或事件产出路径；因描述显示其可能为预留/不可造化物品，本版不擅自添加。

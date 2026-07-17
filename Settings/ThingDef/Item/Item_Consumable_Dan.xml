@@ -1,0 +1,385 @@
+<ThingDefs><List>
+<!--Special Pills-->
+<!--QI Attunement Boosting Pill Part 1: 开脉丹-->
+	<ThingDef Type="Item" Name="Rith_Dan_QiAt1" Parent="DanBase">
+		<TexScale>0.8</TexScale>
+		<ThingName>塑脉丹</ThingName>
+		<MaxStack>20</MaxStack>
+		<TexPath>Spr\Object\Items\MeridianDan1.png</TexPath>
+		<Desc>采天地潜机炼制而成的灵丹。 \n [size=10][color=#D06508]服用后可开辟新的经脉并延长寿元，仅可服用一次。[/color][/size]</Desc>	
+		<Rate>10</Rate>
+		<Beauty>10</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<NotFengshuiItem>1</NotFengshuiItem>
+			<NotRandom>1</NotRandom>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			
+			<Elixir>
+				<Modifier>Rith_QiAt1</Modifier>
+				<Fesistance>0</Fesistance>
+			</Elixir>
+			
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+			<!--
+				<Item name = "Item_Water" count = "1"/>
+				-->
+					<Item name = "Item_MonsterBlood" count = "1"/>
+					<Item name = "Item_LingStone" count = "500"/>
+					<Item name = "Item_Mint" count = "500"/>
+					<Item name = "Item_MagicHerb" count = "500"/>
+					<Item name = "Item_RedGinseng" count = "50"/>
+					<Item name = "Item_PurpleGanodermaLucidum" count = "50"/>
+					
+				</CostItems>
+			</BeMade>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>
+		</Element>
+	</ThingDef>
+<!--QI Attunement Boosting Pill Part 2: 洗脉丹-->
+	<ThingDef Type="Item" Name="Rith_Dan_QiAt2" Parent="DanBase">
+		<TexScale>0.8</TexScale>
+		<ThingName>净脉丹</ThingName>
+		<MaxStack>20</MaxStack>
+		<TexPath>Spr\Object\Items\MeridianDan2.png</TexPath>
+		<Desc>可洗炼经脉、祛除杂质的上品灵丹。 \n [size=10][color=#D06508]服用后可提升灵气亲和与真气上限，仅可服用一次。[/color][/size]</Desc>	
+		<Rate>10</Rate>
+		<Beauty>10</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<NotFengshuiItem>1</NotFengshuiItem>
+			<NotRandom>1</NotRandom>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			
+			<Elixir>
+				<Modifier>Rith_QiAt2</Modifier>	
+				<Fesistance>0</Fesistance>
+			</Elixir>
+			
+			<BeMade>
+				<WorkToMake>500</WorkToMake>
+				<CostItems>
+					
+					<Item name = "Item_Water" count = "1"/>
+					<Item name = "Item_MonsterBlood" count = "1"/>
+					<Item name = "Item_LingCrystal" count = "1"/>
+					<Item name = "Rith_Dan_QiAt1" count = "1"/>
+					<!--
+					<Item name = "Item_SilverGrit" count = "100"/>
+					<Item name = "Item_CopperGrit" count = "100"/>
+					<Item name = "Item_Item_IronRock" count = "25"/>
+					<Item name = "Item_JadeEssence" count = "25"/>
+					<Item name = "Item_LingWood" count = "25"/>	
+					<Item name = "Item_Cinnabar" count = "25"/>
+					-->
+				</CostItems>
+			</BeMade>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>
+		</Element>
+	</ThingDef>
+<!--QI Attunement Boosting Pill Part 3: 拓脉丹, Can be taken 5x-->
+	<ThingDef Type="Item" Name="Rith_Dan_QiAt3" Parent="DanBase">
+		<TexScale>0.8</TexScale>
+		<ThingName>拓脉丹</ThingName>
+		<MaxStack>20</MaxStack>
+		<TexPath>Spr\Object\Items\MeridianDan3.png</TexPath>
+		<Desc>历经三重丹法炼制而成的玄妙灵丹。 \n [size=10][color=#D06508]服用后可拓宽已有经脉，并小幅提升灵气亲和，可多次服用。[/color][/size]</Desc>	
+		<Rate>10</Rate>
+		<Beauty>10</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<NotFengshuiItem>1</NotFengshuiItem>
+			<NotRandom>1</NotRandom>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			
+			<Elixir>
+				<Modifier>Rith_QiAt3</Modifier>
+				<Fesistance>0.8</Fesistance>
+			</Elixir>
+			
+			<BeMade>
+				<WorkToMake>600</WorkToMake>
+				<CostItems>
+					<!--
+					<Item name = "Item_Water" count = "1"/>
+					-->
+					<Item name = "Item_MonsterBlood" count = "1"/>
+					<Item name = "Item_LingCrystal" count = "5"/>
+					<Item name = "Rith_Dan_QiAt1" count = "1"/>	
+					<Item name = "Rith_Dan_QiAt2" count = "1"/>	
+					<!--
+					<Item name = "Rith_Dan_QiAt1" count = "1"/>	
+					<Item name = "Rith_Dan_QiAt2" count = "1"/>	
+					<Item name = "Item_JinEssence" count = "1"/>
+					<Item name = "Item_MuEssence" count = "1"/>
+					<Item name = "Item_ShuiEssence" count = "1"/>
+					<Item name = "Item_HuoEssence" count = "1"/>
+					<Item name = "Item_TuEssence" count = "1"/>
+					-->
+				</CostItems>
+			</BeMade>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>
+		</Element>
+	</ThingDef>
+<!--5 Element Catalyst: Used for a bunch of recipies-->
+	<ThingDef Type="Item" Name="Rith_5EleCatalyst" Parent="DanBase">
+		<TexScale>0.8</TexScale>
+		<ThingName>五行灵引</ThingName>
+		<MaxStack>9999</MaxStack>
+		<TexPath>Spr\Object\Items\5ElementCatalyst.png</TexPath>
+		<Desc>由五行灵气调和凝炼而成的稳定灵质。 \n[size=10][color=#D06508]可作为炼丹时的灵引与催化材料。[/color][/size]</Desc>	
+		<Rate>6</Rate>
+		<Beauty>9</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<NotFengshuiItem>1</NotFengshuiItem>
+			<NotRandom>1</NotRandom>
+			<PhysicalLables>
+				<li>Smooth2</li>
+				<li>Hard1</li>
+			</PhysicalLables>
+			
+			<Elixir>
+				<DiscipleOnly>1</DiscipleOnly>
+				<Ling>5000</Ling>
+				<Modifier>Modifier_Dan_JingYuan</Modifier>
+			</Elixir>
+			
+			<BeMade>
+				<WorkToMake>150</WorkToMake>
+				<CostItems>
+						<Item name = "Item_StoneEssence" count = "1"/>
+						<Item name = "Item_LingQiShuiYC" count = "1"/>
+						<Item name = "Item_MonsterBlood" count = "1"/>
+						<Item name = "Item_IronMetalEssence" count = "1"/>
+						<Item name = "Item_MagicHerb" count = "5"/>
+				</CostItems>
+			</BeMade>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>
+		</Element>
+	</ThingDef>
+<!--5 Element Essence: Core for various advanced Essence Gathering Items that can be crafted in the mod-->
+	<ThingDef Type="Item" Name="Rith_Dan_5ElementEssence" Parent="DanBase">
+		<TexScale>0.8</TexScale>
+		<ThingName>五行精元</ThingName>
+		<MaxStack>20</MaxStack>
+		<TexPath>Spr\Object\Items\5ElementEssence.png</TexPath>
+		<Desc>借特殊阵法提炼而成的五行纯粹精元。\n [size=10][color=#D06508]可用于炼丹，服用后亦能提升修炼速度。[/color][/size]</Desc>	
+		<Rate>9</Rate>
+		<Beauty>12</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<NotFengshuiItem>1</NotFengshuiItem>
+			<NotRandom>1</NotRandom>
+			<PhysicalLables>
+				<li>Smooth2</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			
+			<Elixir>
+				<Modifier>Rith_5ElementEssence</Modifier>
+			</Elixir>
+			
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+					<Item name = "Item_JinEssence" count = "1"/>
+					<Item name = "Item_MuEssence" count = "1"/>
+					<Item name = "Item_ShuiEssence" count = "1"/>
+					<Item name = "Item_HuoEssence" count = "1"/>
+					<Item name = "Item_TuEssence" count = "1"/>
+				</CostItems>
+			</BeMade>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>
+		</Element>
+	</ThingDef>
+<!--吞龙丹: A pill that merges the effects of 3 main cultivation pills in the base game-->
+<!--Lasts 28 days, contains: Yellow Sprout Elixir, Ineda Pills, 3 Essence boosting pills-->
+	<ThingDef Type="Item" Name="Rith_Dan_EssGather28" Parent="DanBase">
+		<TexScale>0.8</TexScale>
+		<ThingName>吞龙丹</ThingName>
+		<MaxStack>500</MaxStack>
+		<TexPath>res\Sprs\object\object_HULUdanyao01</TexPath>
+		<Desc>借特殊阵法炼制而成的强效灵丹。\n [size=10][color=#D06508]可大幅提升精元炼化与修炼速度，并减缓饥饿和疲劳，药效持续二十八日。[/color][/size] </Desc>	
+		<Rate>10</Rate>
+		<Beauty>10</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<NotFengshuiItem>1</NotFengshuiItem>
+			<NotRandom>1</NotRandom>
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			
+			<Elixir>
+				<Modifier>Rith_EssGather28</Modifier>
+			</Elixir>
+			
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+				<!--
+					<Item name = "Item_Water" count = "1"/>
+				-->
+					<Item name = "Item_MonsterBlood" count = "1"/>
+					<Item name = "Item_Dan_PracticeSpeed" count = "1"/>
+					<Item name = "Item_Dan_JingYuan3" count = "1"/>
+					<Item name = "Item_Dan_NoHunger2" count = "14"/>
+					
+				</CostItems>
+			</BeMade>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>
+		</Element>
+	</ThingDef>
+<!--夺天精华 Dan: Pill that GREATLY enhances Essence refinement at the cost of Longevity and some luck-->
+	<ThingDef Type="Item" Name="Rith_Dan_HeavenSeizingEss" Parent="DanBase">
+		<TexScale>0.8</TexScale>
+		<ThingName>夺天造化丹</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_xianshishennian01</TexPath>
+		<Desc>以一缕仙缘炼化而成的玄奥灵丹。\n [size=10][color=#D06508]服用后将折损一半寿元与部分潜力，但可大幅提升精元炼化、真气上限与机缘。[/color][/size] </Desc>	
+		<Rate>12</Rate>
+		<Beauty>16</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<NotFengshuiItem>1</NotFengshuiItem>
+			<NotRandom>1</NotRandom>
+			<PhysicalLables>
+				<li>Smooth3</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			
+			<Elixir>
+				<DiscipleOnly>1</DiscipleOnly>
+				<Ling>200000</Ling>
+				<Modifier>Rith_HeavenSeizingEss</Modifier>
+				<Fesistance>0</Fesistance>
+			</Elixir>
+			
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+				<!--
+					<Item name = "Item_Water" count = "1"/>
+				-->
+				
+					<Item name = "Item_EarthEssence" count = "5"/>
+					<Item name = "Item_EarthEssence1" count = "5"/>
+					<Item name = "Item_LingMuXueJie" count = "3"/>
+					<Item name = "Item_XianBone" count = "1"/>
+					<Item name = "Item_ThunderAir" count = "1"/>
+				</CostItems>
+			</BeMade>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>
+		</Element>
+		<Light>
+			<Value>20</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>2</Radius>
+			<Color>006BFFFF</Color>
+		</Light>
+	</ThingDef>
+<!--Add more here-->
+
+
+	<ThingDef Type="Item" Name="Rith_Dan_TribulationDelay1Year" Parent="DanBase">
+		<TexScale>0.8</TexScale>
+		<ThingName>欺天丹</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>Spr\Object\Items\Dan_TribulationDelay1Year.png</TexPath>
+		<Desc>蕴含遮蔽天机之力的玄奥灵丹。\n [size=10][color=#D06508]服用后可欺瞒天道，使天劫延后一年，乃鸿钧大圣以简驭繁之妙法。[/color][/size] </Desc>	
+		<Rate>12</Rate>
+		<Beauty>16</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<NotFengshuiItem>1</NotFengshuiItem>
+			<NotRandom>1</NotRandom>
+			<PhysicalLables>
+				<li>Smooth3</li>
+				<li>Hard1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>
+			
+			<Elixir>
+				<DiscipleOnly>1</DiscipleOnly>
+				<Modifier>Dan_TribulationDelay</Modifier>
+			</Elixir>
+			
+			<BeMade>
+				<WorkToMake>400</WorkToMake>
+				<CostItems>
+				<!--
+					<Item name = "Item_Water" count = "1"/>
+				-->
+					<Item name = "Item_MonsterBlood" count = "1"/>
+					<Item name = "Item_LingCrystal" count = "5"/>
+					<Item name = "Item_Mint" count = "100"/>
+					<Item name = "Item_MagicHerb" count = "100"/>
+					<Item name = "Item_RedGinseng" count = "10"/>
+					<Item name = "Item_PurpleGanodermaLucidum" count = "10"/>
+
+				</CostItems>
+			</BeMade>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>
+		</Element>
+		<Light>
+			<Value>20</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>2</Radius>
+			<Color>006BFFFF</Color>
+		</Light>
+	</ThingDef>
+
+
+
+
+
+</List></ThingDefs>

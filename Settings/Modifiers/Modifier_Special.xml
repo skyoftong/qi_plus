@@ -1,0 +1,145 @@
+<ModifierDefs><List>
+
+	<Modifier Name="Mibao_TreasureOver" Type="Normal">
+		<DisplayName>御宝术境界提升</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Fabao" LevelOver="10"/>
+		</Skills>
+	</Modifier>
+
+    <Modifier Name="Mibao_FightSkillOver" Type="Normal">
+		<DisplayName>战斗能力提升</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="FightSkill" LevelOver="10"/>
+		</Skills>
+	</Modifier>
+
+    <Modifier Name="Mibao_QiAttunement" Type="Normal">
+		<DisplayName>灵气亲和提升</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Qi" LevelOver="10"/>
+		</Skills>
+	</Modifier>
+
+    <Modifier Name="Mibao_QiDefense" Type="Normal">
+		<DisplayName>护体能力提升</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Skills>
+			<li Name="Barrier" LevelOver="10"/>
+		</Skills>
+	</Modifier>
+
+    <Modifier Name="Modifier_QiAllResist" Type="Normal">
+		<DisplayName>护体五行抗性</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.5"/>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+    
+    <Modifier Name="Modifier_QiMetalRes10" Type="Normal">
+		<DisplayName>护体五行抗性 +10</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+            <li Name="NpcFight_ShieldConversionRate" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+
+    <Modifier Name="Modifier_QiWoodRes10" Type="Normal">
+		<DisplayName>护体五行抗性 +10</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+            <li Name="NpcFight_ShieldConversionRate" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+
+    <Modifier Name="Modifier_QiWaterRes10" Type="Normal">
+		<DisplayName>护体五行抗性 +10</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+            <li Name="NpcFight_ShieldConversionRate" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+
+    <Modifier Name="Modifier_QiFireRes10" Type="Normal">
+		<DisplayName>护体五行抗性 +10</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+            <li Name="NpcFight_ShieldConversionRate" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+
+    <Modifier Name="Modifier_QiEarthRes10" Type="Normal">
+		<DisplayName>护体五行抗性 +10</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+            <li Name="NpcFight_ShieldConversionRate" AddV="0.1"/>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="0.1"/>
+		</Properties>
+	</Modifier> 
+
+    <Modifier Name="Modifier_StateofMindBase" Type="Normal">
+		<DisplayName>基础心境提升</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="15"/>
+		</Properties>
+	</Modifier>
+
+    <Modifier Name="Modifier_ReduceDao" Type="Normal">
+		<DisplayName>道行折损</DisplayName>	
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-10"/>
+		</Properties>
+	</Modifier>
+
+</List></ModifierDefs>
