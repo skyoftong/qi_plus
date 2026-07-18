@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ThingDefs><List>
+  <ThingDef Type="Building" Name="Building_GatheringMeditationCushion" Parent="FurnitureBase">
+    <ThingName>聚灵蒲团</ThingName>
+    <Desc>以温润灵材编制而成的修行蒲团，既可供修士静坐参悟，也能缓缓牵引四周灵气，使修行之地更为清宁充盈。</Desc>
+    <Tags>
+      <Tag Name="Sitable" Level="1"/>
+      <Tag Name="Practice" Level="20"/>
+    </Tags>
+    <TexScale>1</TexScale>
+    <TexPath>Spr/Object/Buildings/GatheringMeditationCushion.png</TexPath>
+    <SelectAble>1</SelectAble>
+    <CastShadow>0</CastShadow>
+    <BlockLight>0</BlockLight>
+    <Collider>
+      <Data>
+      [6],
+      </Data>
+      <Offset>
+        <x>0</x>
+        <y>-0.1</y>
+      </Offset>
+      <WorkOffset>
+        <li Index="0" X="0" Y="0" Ang="181"/>
+      </WorkOffset>
+    </Collider>
+    <Building>
+      <OwnerCount>1</OwnerCount>
+      <TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+      <BePackage>1</BePackage>
+      <TexScale>1</TexScale>
+      <WorkTexPath>Spr/Object/Buildings/GatheringMeditationCushion.png</WorkTexPath>
+      <PracticeEffectiveness>1.2</PracticeEffectiveness>
+      <BeMade>
+        <WorkToMake>80</WorkToMake>
+        <Quality>0</Quality>
+        <StuffCategories>
+          <Stuff name="WoodBlock"/>
+          <Stuff name="RockBlock"/>
+          <Stuff name="MetalBlock"/>
+        </StuffCategories>
+        <CostStuffCount>20</CostStuffCount>
+      </BeMade>
+      <SnowRenderData>
+        <x>2.4</x>
+        <y>3.55</y>
+        <z>1</z>
+      </SnowRenderData>
+    </Building>
+    <Ling>
+      <AddionLing>100</AddionLing>
+    </Ling>
+  </ThingDef>
+</List></ThingDefs>
