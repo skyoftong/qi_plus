@@ -1,10 +1,8 @@
-﻿{
-	"Name":"一些测试",		
-	"DisplayName":"测试", 
-	"Desc":"测试",
-	"Enable":true,			
-	"GameVersion":0.9485,		
-	"Version":1.00,			
-	"Author":"zt",			
-	"Sort":"1"	
+{
+  "Name": "GatheringMeditationCushion",
+  "DisplayName": "聚灵蒲团",
+  "Desc": "新增一座可供修士打坐修行、并能汇聚周围灵气的蒲团。",
+  "GameVersion": 1.0,
+  "Version": 1.0,
+  "Author": "小z"
 }
