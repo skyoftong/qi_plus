@@ -1,0 +1,1304 @@
+﻿<ThingDefs><List>
+	<ThingDef Type="Building" Name="OrnamentBase" Parent="BuildingBase">
+	<TexPath></TexPath>
+	<ThingName></ThingName>
+	<Desc>装饰用家具，根据制作材料可以影响周围地块的五行属性。</Desc>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<BlockLight>1</BlockLight>
+	<Beauty>12</Beauty>
+	<UseHitPoints>1</UseHitPoints>
+	<MaxHitPoints>300</MaxHitPoints>
+	<GrowAble>0</GrowAble>
+	<VisionRadius>10</VisionRadius>
+	<ElementKind>None</ElementKind>
+	<Flammability>
+		<Flammability>0.2</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	<Building>
+		<NoFengshui>1</NoFengshui>
+		<BuildMode>Single</BuildMode>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>1</BePackage>
+		<IsVirtualBuilding>0</IsVirtualBuilding>
+	</Building>	
+	<Element>
+		<Kind>None</Kind>
+		<Value>2</Value>         
+		<Radius>3</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Ling>
+		<AddionLing>100</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_StoneMan" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_feishengdiaoxiang01</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>雕塑</ThingName>	
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[1,3,1],
+		[1,1,1],
+		</Data>
+		<Offset>
+			<y>0.85</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+	</Flammability>
+	<Building>
+		<BeMade>
+			<WorkToMake>800</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>44</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.06</x>
+			<y>3.95</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_Flag1" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_menpaiqi01a</TexPath>
+	<TexScale>0.6</TexScale>
+	<ThingName>龙旗</ThingName>	
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>Slow</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<y>0.75</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	
+	<Building>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>2</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.13</x>
+			<y>3.42</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_Flag2" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_baguaqi01a</TexPath>
+	<TexScale>0.6</TexScale>
+	<ThingName>八卦旗</ThingName>	
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>Slow</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<y>0.75</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	
+	<Building>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>2</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.75</x>
+			<y>3.55</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_Flag3" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_taijiqi01a</TexPath>
+	<TexScale>0.6</TexScale>
+	<ThingName>太极旗</ThingName>	
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>Slow</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<y>0.75</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	
+	<Building>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>2</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.92</x>
+			<y>3.2</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_StoneLion" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_shishi01</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>狮子</ThingName>	
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+	</Flammability>
+	<Building>
+		<BeMade>
+			<WorkToMake>400</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>12</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.90</x>
+			<y>3.60</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	
+	<ThingDef Type="Building" Name="Building_BigTripod" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_bigding02</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>鼎</ThingName>	
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.6</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[1,3],
+		[1,1],
+		</Data>
+	</Collider>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+	</Flammability>
+	<Building>
+		<BeMade>
+			<WorkToMake>200</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>16</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.8</x>
+			<y>3.85</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_SmallTripod" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_smallding02</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>鼎</ThingName>	
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3],
+		</Data>
+	</Collider>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+	</Flammability>
+	<Building>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>8</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.85</x>
+			<y>3.85</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_BigCenser" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_bigxianglu01</TexPath>
+	<TexScale>0.8</TexScale>
+	<ThingName>香炉</ThingName>	
+	<Tags>
+	</Tags>
+	<ColliderKind>ThrowOver</ColliderKind>
+	<ShadowSize>
+		<x>0.7</x>
+		<y>0.7</y>
+	</ShadowSize>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<y>0.15</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+	</Flammability>
+	<Building>
+		<BeMade>
+			<WorkToMake>240</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>6</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.3</x>
+			<y>3.5</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_SmallCenser" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_smallxianglu02</TexPath>
+	<TexScale>0.6</TexScale>
+	<ThingName>香炉</ThingName>	
+	<Tags>
+	</Tags>
+	<ColliderKind>Slow</ColliderKind>
+	<ShadowSize>
+		<x>0.4</x>
+		<y>1.5</y>
+	</ShadowSize>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<y>0.25</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+	</Flammability>
+	<Building>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>3</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.4</x>
+			<y>3.25</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_BigSwordPillar" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_Djian01</TexPath>
+	<TexScale>1.6</TexScale>
+	<ThingName>护山剑阵</ThingName>	
+	<Desc>可以将无用的法宝投入剑阵，在必要的时候可以开启剑阵，抵御敌人，剑阵只能锁定内门弟子的气息。法宝一旦投入剑阵就无法取出。</Desc>
+	<Beauty>20</Beauty>
+	<Tags>
+		<Tag Name="Zhen" Level="1"/>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>2</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[1,1,1,1],
+		[1,1,3,1],
+		[1,1,1,1],
+		</Data>
+		<Offset>
+			<y>1.25</y>
+			<x>-0.55</x>
+		</Offset>
+	</Collider>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+	</Flammability>
+	<Building>
+		<NoFengshui>0</NoFengshui>
+		<Perfab>Building/Prefabs/Jianzhu</Perfab>
+		<BePackage>0</BePackage>
+		<HelperClass>BuildingHelperZhen</HelperClass>
+		<MaxCount>1</MaxCount>
+		<BagDrop>0</BagDrop>
+		<BeMade>
+			<WorkToMake>250</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>40</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.4</x>
+			<y>4</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>0</Radius>
+		<Failing>1</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_BigVase" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_huaping01</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>花瓶</ThingName>	
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>0.7</x>
+		<y>1.5</y>
+	</ShadowSize>
+	<ColliderKind>ThrowOver</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<y>0.45</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+	</Flammability>
+	<Building>
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.35</x>
+			<y>3.1</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_SmallVase" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_huaping03</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>花瓶</ThingName>	
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>0.5</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>Slow</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+	</Flammability>
+	<Building>
+		<BeMade>
+			<WorkToMake>75</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>2</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.85</x>
+			<y>3.35</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_Screen1" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_pingfeng01</TexPath>
+	<TexScale>0.66</TexScale>
+	<ThingName>屏风</ThingName>	
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3,1],
+		</Data>
+		<Offset>
+			<y>0.2</y>
+			<x>0.5</x>
+		</Offset>
+	</Collider>
+	
+	<Building>
+		<BeMade>
+			<WorkToMake>75</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>4</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.5</x>
+			<y>2.85</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="Building_Screen2" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_pingfeng02</TexPath>
+	<TexScale>0.66</TexScale>
+	<ThingName>屏风</ThingName>	
+	<ShadowSize>
+		<x>0.3</x>
+		<y>1.5</y>
+	</ShadowSize>
+	<Tags>
+	</Tags>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[1],
+		[3],
+		</Data>
+		<Offset>
+			<y>0.55</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	
+	<Building>
+		<BeMade>
+			<WorkToMake>75</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>4</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.5</x>
+			<y>3</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_BookShelf" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_shujia01</TexPath>
+	<TexScale>0.5</TexScale>
+	<ThingName>书架</ThingName>	
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<y>0.35</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	
+	<Building>
+		<BeMade>
+			<WorkToMake>125</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>4</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3</x>
+			<y>3.7</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	<ThingDef Type="Building" Name="Building_BookShelf2" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_shujia02</TexPath>
+	<TexScale>0.5</TexScale>
+	<ThingName>书架</ThingName>	
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<y>0.35</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	
+	<Building>
+		<BeMade>
+			<WorkToMake>125</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>4</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3</x>
+			<y>3.7</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	<ThingDef Type="Building" Name="Building_ItemShelf" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_zhiwutai01</TexPath>
+	<TexScale>0.75</TexScale>
+	<NoElementKind>1</NoElementKind>
+	<ThingName>置物台</ThingName>	
+	<Desc>可以将指定物品摆放在置物台上。</Desc>
+	<Tags>
+		<Tag Name="ItemShelf" Level="1"/>
+	</Tags>
+	<ShadowSize>
+		<x>0.8</x>
+		<y>1.5</y>
+	</ShadowSize>
+	<ColliderKind>Across</ColliderKind>  
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<y>0.25</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+	</Flammability>
+	<Building>
+		<Perfab>Building/Prefabs/ItemShelf</Perfab>
+		<HelperClass>BuildingHelperItemShelf</HelperClass>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>4</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.5</x>
+			<y>4</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>1</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	
+	</ThingDef>
+	
+	
+	<ThingDef Type="Building" Name="Building_ShuZhuangTai" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_shuzhuangtai01</TexPath>
+	<TexScale>0.5</TexScale>
+	<ThingName>梳妆台</ThingName>	
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3],
+		</Data>
+		<Offset>
+			<y>0.1</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	
+	<Building>
+		<BeMade>
+			<WorkToMake>125</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>12</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.55</x>
+			<y>3.75</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_Tower" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_ta03</TexPath>
+	<TexScale>0.9</TexScale>
+	<ThingName>镇塔</ThingName>	
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>12</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[1,1,1,1],
+		[1,1,1,1],
+		[1,1,1,3],
+		</Data>
+		<Offset>
+			<y>4.5</y>
+			<x>-1.5</x>
+		</Offset>
+	</Collider>
+	
+	
+	<Building>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>4250</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>250</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.5</x>
+			<y>3.7</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_Tower2" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_ta01</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>塔</ThingName>	
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>4</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[1,1],
+		[1,3],
+		</Data>
+		<Offset>
+			<y>1.75</y>
+			<x>-0.5</x>
+		</Offset>
+	</Collider>
+	
+	
+	<Building>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>125</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>150</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.8</x>
+			<y>3.8</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_ShiBei" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_shibei01</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>碑</ThingName>	
+	<Tags>
+		<Tag Name="WriteTxt" Level="1"/>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3,1],
+		</Data>
+		<Offset>
+			<y>1.25</y>
+			<x>0.5</x>
+		</Offset>
+	</Collider>
+	
+	<Building>
+		<BePackage>0</BePackage>
+		<Perfab>Building/Prefabs/Shibei</Perfab>
+		<HelperClass>BuildingHelperBei</HelperClass>
+		<BeMade>
+			<WorkToMake>125</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>24</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.7</x>
+			<y>3.3</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_Zhong" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_zhong01</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>钟</ThingName>	
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[1,1],
+		[1,3],
+		</Data>
+		<Offset>
+			<y>1</y>
+			<x>-0.5</x>
+		</Offset>
+	</Collider>
+	
+	<Building>
+		<BeMade>
+			<WorkToMake>125</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>50</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.15</x>
+			<y>3.8</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	
+	<ThingDef Type="Building" Name="Building_Gu" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_gu01</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>鼓</ThingName>	
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[1,3],
+		</Data>
+		<Offset>
+			<y>0.65</y>
+			<x>-0.5</x>
+		</Offset>
+	</Collider>
+	
+	<Building>
+		<BeMade>
+			<WorkToMake>125</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>50</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.65</x>
+			<y>3.55</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_JiaShan1" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_guanjing01</TexPath>
+	<TexScale>0.9</TexScale>
+	<ThingName>假山-层峦</ThingName>	
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>ThrowOver</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[1,3],
+		</Data>
+		<Offset>
+			<y>0.2</y>
+			<x>-0.5</x>
+		</Offset>
+	</Collider>
+	
+	<Building>
+		<BeMade>
+			<WorkToMake>125</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>20</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.8</x>
+			<y>3.35</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	
+	<ThingDef Type="Building" Name="Building_JiaShan2" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_guanjing02</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>假山-叠嶂</ThingName>	
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>ThrowOver</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[1,3,1],
+		</Data>
+		<Offset>
+			<y>0.3</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	
+	<Building>
+		<BeMade>
+			<WorkToMake>125</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>20</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.85</x>
+			<y>3.65</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_PenZai1" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_penjing01</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>盆栽-苍翠</ThingName>	
+	<ElementKind>Mu</ElementKind>
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>ThrowOver</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[1,3],
+		</Data>
+		<Offset>
+			<y>0.7</y>
+			<x>-0.45</x>
+		</Offset>
+	</Collider>
+	
+	<Building>
+		<BeMade>
+			<WorkToMake>125</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.1</x>
+			<y>4.1</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>3</Value>         
+		<Radius>2</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>	
+	
+		
+	<ThingDef Type="Building" Name="Building_PenZai2" Parent="OrnamentBase">
+	<TexPath>res\Sprs\building\building_penjing02</TexPath>
+	<TexScale>0.8</TexScale>
+	<ThingName>盆栽-迎客</ThingName>	
+	<ElementKind>Mu</ElementKind>
+	<Tags>
+	</Tags>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>ThrowOver</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[1,3],
+		</Data>
+		<Offset>
+			<y>0.3</y>
+			<x>-0.6</x>
+		</Offset>
+	</Collider>
+	
+	<Building>
+		<BeMade>
+			<WorkToMake>125</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+			<CostItems>
+				<Item name = "Item_RoughWoodBlock" count = "15"/>
+			</CostItems>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.9</x>
+			<y>4.1</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>3</Value>         
+		<Radius>2</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_PenZai3" Parent="Building_PenZai2">
+	<TexPath>res\Sprs\building\building_penjing03</TexPath>
+	<TexScale>0.8</TexScale>
+	<ThingName>盆栽-迎仙</ThingName>	
+	<Building>
+		<SnowRenderData>
+			<x>2.9</x>
+			<y>4.1</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_Tower1" Parent="Building_Tower2">
+	<TexPath>res\Sprs\building\building_ta02</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>鎏金塔</ThingName>	
+	<Building>
+		<SnowRenderData>
+			<x>2.8</x>
+			<y>3.8</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_ShiBei1" Parent="Building_ShiBei">
+	<TexPath>res\Sprs\building\building_shibei02</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>霸下碑</ThingName>	
+	<Building>
+		<Perfab>Building/Prefabs/Shibei1</Perfab>
+		<SnowRenderData>
+			<x>2.7</x>
+			<y>3.7</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="Building_Zhong1" Parent="Building_Zhong">
+	<TexPath>res\Sprs\building\building_zhong02</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>磐龙钟</ThingName>	
+	<Building>
+		<SnowRenderData>
+			<x>3.15</x>
+			<y>3.7</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+	
+	
+	<ThingDef Type="Building" Name="Building_Gu1" Parent="Building_Gu">
+	<TexPath>res\Sprs\building\building_gu02</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>云龙鼓</ThingName>	
+	<Building>
+		<SnowRenderData>
+			<x>2.65</x>
+			<y>3.55</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	</ThingDef>	
+</List></ThingDefs>

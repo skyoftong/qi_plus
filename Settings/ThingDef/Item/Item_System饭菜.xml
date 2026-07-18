@@ -1,0 +1,1158 @@
+<ThingDefs><List>
+	<!--system下的item名称不能随意更改-->
+
+	<ThingDef Type="Item" Name="Item_HorribleMeal" Parent="SimpleFoodBase">
+	<ThingName>搞砸的饭菜</ThingName>
+	<TexPath>res\Sprs\object\object_BadFood</TexPath>
+	<Desc>一道烹饪失败的料理，味道十分勉强，仅仅可以填肚子。</Desc>
+	<Rate>1</Rate>
+	<Beauty>1</Beauty>
+	<Tags>
+		<Tag Name="Food" Level="-1"/>
+		<Tag Name="BowlFood" Level="1"/>
+	</Tags>	
+	<MaxStack>100</MaxStack>
+	<Item>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>40</Nutrition>
+			<Moods>
+				<li>Eat3</li>
+			</Moods>
+			<Damages>
+				<li PartName="TheWholeBody" Name="AbdominalPain" Rate="0.5"/>
+				<li Rate="0.5"/>
+			</Damages>
+		</Food>
+		<BeMaterial>
+			<RateWhenBeMain>1</RateWhenBeMain>
+		</BeMaterial>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<!--<Skill name = "sss" level="1"/>-->
+					</Skills>
+					<Researchs>
+						<!--<Research name = "sss" level="1"/>-->
+					</Researchs>
+			</Condition>
+			<StuffCategories>
+				<Stuff name = "Meat"/>
+				<Stuff name = "Ingredient"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+		</BeMade> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_HomeFood" Parent="SimpleFoodBase">
+	<TexPath>res/Sprs/object/object_food001</TexPath>		
+	<ThingName>家常菜</ThingName>
+	<Desc>一道简单的家常菜，味道朴素但是很实在。</Desc>
+	<Rate>2</Rate>
+	<Tags>
+		<Tag Name="Food" Level="10"/>
+		<Tag Name="BowlFood" Level="1"/>
+	</Tags>	
+	<MaxStack>100</MaxStack>
+	<Item>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>65</Nutrition>
+			<Moods>
+				<li>Eat7</li>
+			</Moods>
+		</Food>
+		<BeMaterial>
+			<RateWhenBeMain>2</RateWhenBeMain>
+		</BeMaterial>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<!--<Skill name = "sss" level="1"/>-->
+					</Skills>
+					<Researchs>
+						<!--<Research name = "sss" level="1"/>-->
+					</Researchs>
+			</Condition>
+			<StuffCategories>
+				<Stuff name = "Meat"/>
+				<Stuff name = "Ingredient"/>
+			</StuffCategories>
+			<CostStuffCount>4</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_Water" count = "4"/>
+			</CostItems>
+		</BeMade> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_DeliciousFood" Parent="SimpleFoodBase">
+	<TexPath>res/Sprs/object/object_food002</TexPath>		
+	<ThingName>佳肴</ThingName>
+	<Desc>一道佳肴，无论用料与手法都很考究。味道相当不错。</Desc>
+	<Rate>4</Rate>
+	<MaxStack>100</MaxStack>
+	<Beauty>4</Beauty>
+	<Tags>
+		<Tag Name="Food" Level="12"/>
+		<Tag Name="BowlFood" Level="1"/>
+	</Tags>	
+	<Item>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>70</Nutrition>
+			<Water>30</Water>
+			<Moods>
+				<li>Eat8</li>
+			</Moods>
+		</Food>
+		<BeMaterial>
+			<RateWhenBeMain>4</RateWhenBeMain>
+		</BeMaterial>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<!--<Skill name = "sss" level="1"/>-->
+					</Skills>
+					<Researchs>
+						<!--<Research name = "sss" level="1"/>-->
+					</Researchs>
+			</Condition>
+			<StuffCategories>
+				<Stuff name = "Meat"/>
+				<Stuff name = "Ingredient"/>
+			</StuffCategories>
+			<CostStuffCount>16</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_Water" count = "6"/>
+			</CostItems>
+		</BeMade> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_DelicacyFood" Parent="SimpleFoodBase">
+	<TexPath>res/Sprs/object/object_food003</TexPath>		
+	<ThingName>珍馐美食</ThingName>
+	<Desc>一道珍馐，必须要高超的厨艺和精致的食材才能完成，美味绝伦。</Desc>
+	<Rate>6</Rate>
+	<MaxStack>100</MaxStack>
+	<Beauty>6</Beauty>
+	<Tags>
+		<Tag Name="Food" Level="14"/>
+		<Tag Name="BowlFood" Level="1"/>
+	</Tags>
+	<Item>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>75</Nutrition>
+			<Water>30</Water>
+			<Moods>
+				<li>Eat9</li>
+			</Moods>
+		</Food>
+		<BeMaterial>
+			<RateWhenBeMain>6</RateWhenBeMain>
+		</BeMaterial>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<!--<Skill name = "sss" level="1"/>-->
+					</Skills>
+					<Researchs>
+						<!--<Research name = "sss" level="1"/>-->
+					</Researchs>
+			</Condition>
+			<StuffCategories>
+				<Stuff name = "Meat"/>
+				<Stuff name = "Ingredient"/>
+			</StuffCategories>
+			<CostStuffCount>28</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_Water" count = "8"/>
+			</CostItems>
+		</BeMade> 
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_GuanyinMud" Parent="SimpleFoodBase">
+	<ThingName>观音土</ThingName>
+	<TexPath>res\Sprs\object\object_guanyinsoil</TexPath>	
+	<Desc>观音土.</Desc>
+	<Tags>
+		<Tag Name="Food" Level="-1"/>
+	</Tags>
+	
+	<Item Lable="Other">
+		<PhysicalLables>
+			<li>Gravel</li>
+		</PhysicalLables>
+		
+		<Food>
+			<EatDirectable>0</EatDirectable>
+			<Nutrition>30</Nutrition>
+			<Moods>
+				<li>Eat5</li>
+			</Moods>
+			<Damages>
+				<li PartName="TheWholeBody" Name="GuanyinDamage" Rate="1"/>
+			</Damages>
+		</Food>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Water" Parent="SimpleFoodBase">
+	<ThingName>水</ThingName>
+	<TexPath>res\Sprs\object\object_AbucketOfWater</TexPath>	
+	<Desc>一份净水。</Desc>
+	<MaxStack>9999</MaxStack>
+	<ElementKind>Shui</ElementKind>
+	<Tags>
+		<Tag Name="Water" Level="5"/>
+		<Tag Name="_SysWater" Level="1"/>
+	</Tags>	
+	<Item>
+		<FabaoSuffix>水</FabaoSuffix>
+		<IsWater>1</IsWater>
+		<PhysicalLables>
+			<li>Liquid</li>
+		</PhysicalLables>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Water>70</Water>
+		</Food>
+		<Rot>
+			<RotSpeed>0.005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_DirtyWater" Parent="SimpleFoodBase">
+	<ThingName>野外的水</ThingName>
+	<TexPath>res\Sprs\object\object_AbucketOfWater</TexPath>	
+	<Desc>不干净的水，里面有什么东西在游动。</Desc>
+	<MaxStack>9999</MaxStack>
+	<ElementKind>Shui</ElementKind>
+	<Tags>
+		<Tag Name="Water" Level="1"/>
+		<Tag Name="_SysWater" Level="1"/>
+	</Tags>	
+	<Item>
+		<FabaoSuffix>水</FabaoSuffix>
+		<IsWater>1</IsWater>
+		<PhysicalLables>
+			<li>Liquid</li>
+		</PhysicalLables>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Water>70</Water>
+			<Damages>
+				<li PartName="TheWholeBody" Name="AbdominalPain" Rate="0.5"/>
+				<li Rate="0.5"/>
+			</Damages>
+			<Moods>
+				<li>Drink1</li>
+			</Moods>
+		</Food>
+		<Rot>
+			<RotSpeed>0.005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Garbage" Parent="MaterialBase">	
+	<Tags>
+	</Tags>
+	<ThingName>垃圾</ThingName>
+	<TexPath>res\Sprs\object\object_refuse</TexPath>	
+	<Desc>毫无用处的垃圾。</Desc>
+	<MaxStack>100</MaxStack>
+	<Beauty>-20</Beauty>
+	<Rate>1</Rate>
+	<ElementKind>Tu</ElementKind>
+	<Item Lable="Garbage">
+		<FabaoSuffix>散,毒,渣</FabaoSuffix>
+		<PhysicalLables>
+			<li>Rough2</li>
+			<li>LowDensity2</li>
+		</PhysicalLables>
+		 <Rot>
+			 <RotSpeed>1</RotSpeed>
+			 <DaysToRotStart>0</DaysToRotStart>
+			 <DestroyThing></DestroyThing>
+			 <TempMin>0</TempMin>
+			 <LingMax>0</LingMax>
+		 </Rot>
+		 
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.2</Absorption>
+		<Accommodate>0.5</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>0</Value>         
+		<Radius>1</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Shit" Parent="MaterialBase">	
+	<Tags>
+		<Tag Name="_SHIT" Level="1"/>
+		<Tag Name="Food" Level="0"/>
+	</Tags>
+	<ThingName>粪便</ThingName>
+	<TexPath>res\Sprs\object\object_shi01</TexPath>	
+	<Desc>生物的粪便</Desc>
+	<MaxStack>1</MaxStack>
+	<Beauty>-20</Beauty>
+	<Rate>1</Rate>
+	<ElementKind>Tu</ElementKind>
+	<Item Lable="Other">
+		<FabaoSuffix>粪,砂,屎</FabaoSuffix>
+		<PhysicalLables>
+			<li>Rough2</li>
+			<li>LowDensity2</li>
+			<li>Shit</li>
+		</PhysicalLables>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>50</Nutrition>
+			<Moods>
+				<li>Eat12</li>
+			</Moods>
+		</Food>
+		 <Rot>
+			 <RotSpeed>1.2</RotSpeed>
+			 <DaysToRotStart>0</DaysToRotStart>
+			 <DestroyThing></DestroyThing>
+			 <TempMin>0</TempMin>
+			 <LingMax>200</LingMax>
+		 </Rot>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.05</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>1</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>0</Value>         
+		<Radius>1</Radius>
+		<Failing>0</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_DragonShit" Parent="MaterialBase">	
+	<Tags>
+		<Tag Name="_SHIT" Level="1"/>
+	</Tags>
+	<ThingName>天龙砂</ThingName>
+	<TexScale>3</TexScale>
+	<TexPath>res\Sprs\object\object_shi01</TexPath>	
+	<Desc>龙的粪便。</Desc>
+	<MaxStack>1</MaxStack>
+	<Beauty>-20</Beauty>
+	<Rate>5</Rate>
+	<ElementKind>Tu</ElementKind>
+	<Item Lable="Other">
+		<FabaoSuffix>粪,砂,屎</FabaoSuffix>
+		<PhysicalLables>
+			<li>Rough2</li>
+			<li>LowDensity2</li>
+			<li>GreatThing_Ling</li>
+			<li>Shit</li>
+		</PhysicalLables>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>50</Nutrition>
+			<Moods>
+				<li>Eat12</li>
+			</Moods>
+		</Food>
+		 <Rot>
+			 <RotSpeed>0.001</RotSpeed>
+			 <DaysToRotStart>0</DaysToRotStart>
+			 <DestroyThing></DestroyThing>
+			 <TempMin>0</TempMin>
+			 <LingMax>200</LingMax>
+		 </Rot>
+	</Item>
+	<Ling>
+		<AddionLing>75</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.05</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>3</Value>         
+		<Radius>3</Radius>
+		<Failing>0.6</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_FunPainting" Parent="MaterialBase">	
+		<ThingName>画</ThingName>
+		<TexPath>res\Sprs\object\object_shuahua01</TexPath>	
+		<Desc>一张画。</Desc>
+		<MaxStack>1</MaxStack>
+		<Beauty>1</Beauty>
+		<Rate>2</Rate>
+		<ElementKind>Mu</ElementKind>
+		<Item Lable="Other">
+			<FabaoSuffix>卷,图</FabaoSuffix>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>Soft1</li>
+			</PhysicalLables>		
+		</Item>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0.05</Attenuation>
+			<Absorption>0.6</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_FunPoem" Parent="MaterialBase">	
+		<ThingName>书</ThingName>
+		<TexPath>res\Sprs\object\object_shuji01</TexPath>	
+		<Desc>一本文字著作。</Desc>
+		<MaxStack>1</MaxStack>
+		<Beauty>5</Beauty>
+		<Rate>1</Rate>
+		<ElementKind>Mu</ElementKind>
+		
+		<Flammability>
+			<Flammability>0.6</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+			<BurningPoint>120</BurningPoint>
+		</Flammability>
+		
+		<Item Lable="Other">	
+			<FabaoSuffix>册,书,简,卷</FabaoSuffix>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>Soft1</li>
+				<li>GreatThing_Attack</li>
+			</PhysicalLables>			
+		</Item>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0.05</Attenuation>
+			<Absorption>0.6</Absorption>
+			<Accommodate>50</Accommodate>
+		</Ling>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_FunMusic" Parent="MaterialBase">	
+		<ThingName>琴谱</ThingName>
+		<TexPath>res\Sprs\object\object_yuepu01</TexPath>	
+		<Desc>一首琴曲的谱子。</Desc>
+		<MaxStack>1</MaxStack>
+		<Beauty>5</Beauty>
+		<Rate>1</Rate>
+		<ElementKind>Mu</ElementKind>
+		<Flammability>
+			<Flammability>0.6</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+			<BurningPoint>120</BurningPoint>
+		</Flammability>
+		<Item Lable="Other">	
+			<FabaoSuffix>谱,卷</FabaoSuffix>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>Soft1</li>
+				<li>GreatThing_Rot</li>
+			</PhysicalLables>			
+		</Item>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0.05</Attenuation>
+			<Absorption>0.6</Absorption>
+			<Accommodate>50</Accommodate>
+		</Ling>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_FunChess" Parent="MaterialBase">	
+		<ThingName>棋局</ThingName>
+		<TexPath>res\Sprs\object\object_qiju01</TexPath>	
+		<Desc>一张围棋棋谱，记录了一场对决。</Desc>
+		<MaxStack>1</MaxStack>
+		<Beauty>5</Beauty>
+		<Rate>1</Rate>
+		<ElementKind>Mu</ElementKind>
+		<Flammability>
+			<Flammability>0.6</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+			<BurningPoint>120</BurningPoint>
+		</Flammability>
+		<Item Lable="Other">	
+			<FabaoSuffix>谱,卷,局</FabaoSuffix>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>Soft1</li>
+				<li>GreatThing_Ling</li>
+			</PhysicalLables>			
+		</Item>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0.05</Attenuation>
+			<Absorption>0.6</Absorption>
+			<Accommodate>50</Accommodate>
+		</Ling>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SysAxe" Parent="ToolBase">
+	<ThingName>伐木斧</ThingName>	
+	<MaxStack>1</MaxStack>
+	<TexPath>res/Sprs/object/object_fuzi01</TexPath>
+	<Desc>一柄斧头，能极大的增加砍伐效率。当然也能当作武器使用。</Desc>
+	<Beauty>2</Beauty>	
+	<Rate>1</Rate>	
+	<Item Kind="Equipment">
+		<FabaoSuffix>斧</FabaoSuffix>
+		<PhysicalLables>
+			<li>Sharp</li>
+		</PhysicalLables>		
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "MetalBlock"/>
+			</StuffCategories>
+			<CostStuffCount>4</CostStuffCount>
+		</BeMade> 		
+		<Equip>
+			<ToolModifier>SysTool_Axe</ToolModifier>
+			
+			<Damage>20</Damage>
+			<AttackSpeed>0.8</AttackSpeed>
+			<AttackRange>2</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.2"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.3"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.2"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.2"/>
+				<li PartKind="Bone" Name="Fracture2" Rate="0.3"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="SSpgong1" HitPoint="11"/>
+				<li Name="SSpgong2" HitPoint="14"/>
+			</AtkAnis>
+			<WeaponKind>Sword</WeaponKind>
+			<ModPath>Mod/Prop/Weapon/weapon_fuzi1</ModPath>			
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SysPickaxe" Parent="ToolBase">
+	<ThingName>矿镐</ThingName>	
+	<MaxStack>1</MaxStack>
+	<TexPath>res/Sprs/object/object_kuanggao01</TexPath>
+	<Desc>一把镐，能极大的增加采掘速度。当然也能当作武器使用。</Desc>
+	<Beauty>2</Beauty>	
+	<Rate>1</Rate>	
+	<Item Kind="Equipment">
+		<FabaoSuffix>镐</FabaoSuffix>
+		<PhysicalLables>
+			<li>Blunt</li>
+		</PhysicalLables>		
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "MetalBlock"/>
+			</StuffCategories>
+			<CostStuffCount>4</CostStuffCount>
+		</BeMade> 		
+		<Equip>
+			<ToolModifier>SysTool_Pickaxe</ToolModifier>
+			
+			<Damage>20</Damage>
+			<AttackSpeed>0.8</AttackSpeed>
+			<AttackRange>2</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.1"/>
+				<li PartKind="Flesh" Name="Puncture" Rate="0.3"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.3"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.1"/>
+				<li PartKind="Bone" Name="Fracture2" Rate="0.2"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="SSpgong1" HitPoint="11"/>
+				<li Name="SSpgong2" HitPoint="14"/>
+			</AtkAnis>
+			<WeaponKind>Sword</WeaponKind>
+			<ModPath>Mod/Prop/Weapon/weapon_chutou1</ModPath>			
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SysSickle" Parent="ToolBase">
+	<ThingName>农具</ThingName>	
+	<MaxStack>1</MaxStack>
+	<TexPath>res/Sprs/object/object_chutou01</TexPath>
+	<Desc>一套农具，能极大的增加种植速度和收获速度。.</Desc>
+	<Beauty>2</Beauty>	
+	<Rate>1</Rate>	
+	<Item Kind="Equipment">
+		<FabaoSuffix>锄</FabaoSuffix>
+		<PhysicalLables>
+			<li>Blunt</li>
+		</PhysicalLables>	
+		<BeMade>
+			<WorkToMake>80</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "MetalBlock"/>
+			</StuffCategories>
+			<CostStuffCount>7</CostStuffCount>
+		</BeMade> 		
+		<Equip>
+			<ToolModifier>SysTool_Sickle</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+
+	
+	<ThingDef Type="Item" Name="Item_SysAcupuncture" Parent="ToolBase">
+	<ThingName>针灸</ThingName>	
+	<MaxStack>1</MaxStack>
+	<TexPath>res/Sprs/object/object_zhenjiu01</TexPath>
+	<Desc>一套针灸，能提高医疗的质量和成功率。</Desc>
+	<Beauty>2</Beauty>	
+	<Rate>1</Rate>	
+	<Item Kind="Equipment">
+		<FabaoSuffix>针,刺</FabaoSuffix>
+		<PhysicalLables>
+			<li>Sharp</li>
+			<li>Light2</li>
+			<li>Smooth2</li>
+			<li>SmallThing</li>
+		</PhysicalLables>	
+		<BeMade>
+			<WorkToMake>200</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "Wood"/>
+				<Stuff name = "Rock"/>
+				<Stuff name = "Metal"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+		</BeMade> 		
+		<Equip>
+			<ToolModifier>SysTool_Acupuncture</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Umbrella" Parent="ToolBase">
+		<Tags>
+		</Tags>
+		<ThingName>伞</ThingName>	
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_san01</TexPath>
+		<Desc>一把雨伞。</Desc> 
+
+		<Beauty>4</Beauty>
+		
+		<Rate>1</Rate>
+		<Flammability>
+			<Flammability>0.7</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>	
+		
+		<Item Kind="Equipment">
+			<FabaoSuffix>伞</FabaoSuffix>
+			<PhysicalLables>
+				<li>Light1</li>
+			</PhysicalLables>	
+			<BeMade>
+				<WorkToMake>50</WorkToMake>
+				<Quality>0</Quality>
+				<ArtDesc></ArtDesc>		
+				<StuffCategories>
+					<Stuff name = "Leather"/>
+					<Stuff name = "Cloth"/>
+				</StuffCategories>
+				<CostStuffCount>4</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_Wood" count = "1"/>
+				</CostItems>
+			</BeMade> 
+			<Equip>
+				<Modifier>SysTool_Umbrella</Modifier>
+			</Equip>
+		</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Esoterica" Parent="MaterialBase">
+	<ThingName>秘籍</ThingName>	
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_miji01</TexPath>
+	<Desc>一本秘籍。</Desc>
+	<Beauty>7</Beauty>	
+	<Rate>0</Rate>		
+	<Item Kind="Equipment" Lable="Esoterica">	
+		<FabaoSuffix>书,册,卷</FabaoSuffix>
+		<PhysicalLables>
+			<li>Light1</li>
+			<li>Soft1</li>
+		</PhysicalLables>		
+		<BeMade>
+			<Quality>1</Quality>
+		</BeMade>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_StoneBox" Parent="MaterialBase">
+		<ThingName>石匣</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+		<Desc>神秘石匣，大约一尺见方。其外壳浑然一体，不似凡物。</Desc>	
+		<Beauty>1</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+			<Tag Name="CarryHold" Level="1"/> 
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">	
+			<FabaoSuffix>匣</FabaoSuffix>			
+		</Item>
+		<StoryBnts>
+			<li Name="打开" Desc="试着打开这个匣子" Story="Story_Item_StoneBox" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_StoneBox1" Parent="MaterialBase">
+		<ThingName>石匣</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+		<Desc>南屏村猎户张二娃从某具尸体上获得的石匣，水火不侵，十分灵异。</Desc>	
+		<Beauty>1</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">	
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>匣</FabaoSuffix>			
+		</Item>
+		<StoryBnts>
+			<li Name="打开" Desc="试着打开这个匣子" Story="Story_Item_StoneBox1" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_E_FaBaoBox" Parent="MaterialBase">
+		<ThingName>太一宝匣</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+		<Desc>在灭门之夜，你发现器庐禁法被破，你不忍派中至宝尽数被洗劫，于是拼死闯入其中，将几件珍贵的法宝装入匣中带走。</Desc>	
+		<Beauty>1</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">		
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>匣</FabaoSuffix>		
+		</Item>
+		<StoryBnts>
+			<li Name="打开" Desc="打开太一宝匣。" Story="Story_Item_E_FaBaoBox" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_E_DanBox" Parent="MaterialBase">
+		<ThingName>太一宝匣</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+		<Desc>在灭门之夜，你发现药庐禁法被破，你不忍派中至宝尽数被洗劫，于是拼死闯入其中，将几瓶珍贵的丹药装入匣中带走。</Desc>	
+		<Beauty>1</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">	
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>匣</FabaoSuffix>				
+		</Item>
+		<StoryBnts>
+			<li Name="打开" Desc="打开太一宝匣。" Story="Story_Item_E_DanBox" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_E_MiJiBox" Parent="MaterialBase">
+		<ThingName>太一宝匣</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+		<Desc>在灭门之夜，你发现藏经楼禁法被破，你不忍派中至宝尽数被洗劫，于是拼死闯入其中，将几册珍贵的秘籍装入匣中带走。</Desc>	
+		<Beauty>1</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">	
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>匣</FabaoSuffix>				
+		</Item>
+		<StoryBnts>
+			<li Name="打开" Desc="打开太一宝匣。" Story="Story_Item_E_MiJiBox" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_E_FuBox" Parent="MaterialBase">
+		<ThingName>太一宝匣</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+		<Desc>在灭门之夜，你发现云箓房禁法被破，你不忍派中至宝尽数被洗劫，于是拼死闯入其中，将几张珍贵的符箓装入匣中带走。</Desc>	
+		<Beauty>1</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">	
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>匣</FabaoSuffix>				
+		</Item>
+		<StoryBnts>
+			<li Name="打开" Desc="打开太一宝匣。" Story="Story_Item_E_FuBox" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+	
+	
+	
+	<ThingDef Type="Item" Name="Item_StoneBox2" Parent="MaterialBase">
+		<ThingName>古旧石匣</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+		<Desc>深埋在山岩中的一方石匣，看上去有些年代了，不知道里面有什么东西。</Desc>	
+		<Beauty>1</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">		
+			<FabaoSuffix>匣</FabaoSuffix>			
+		</Item>
+		<StoryBnts>
+			<li Name="打开" Desc="试着打开这个匣子" Story="Story_Item_StoneBox2" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_BuildingBox" Parent="MaterialBase">
+		<ThingName>建筑打包</ThingName>
+		<TexPath>res\Sprs\object\object_PrimaryToolbox</TexPath>
+		<Desc>一个建筑的打包，可以重新放置在某个地方。</Desc>	
+		<Tags>
+			<Tag Name="CarryHold" Level="1"/> 
+		</Tags>
+		<Beauty>-2</Beauty>	
+		<ElementKind>None</ElementKind>		
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">	
+			<NotRandom>1</NotRandom>
+		</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Baobeier" Parent="MaterialBase">
+		<ThingName>宝贝儿</ThingName>
+		<TexPath>res\Sprs\object\building_JJ01</TexPath>
+		<TexScale>0.5</TexScale>
+		<Desc>值得纪念。</Desc>	
+	    <MaxStack>1</MaxStack>
+		<Beauty>3</Beauty>	
+		<ElementKind>None</ElementKind>		
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">			
+			<FabaoSuffix>根</FabaoSuffix>	
+			<NotRandom>1</NotRandom>
+		</Item>
+		
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0.1</Attenuation>
+			<Absorption>0.4</Absorption>
+			<Accommodate>50</Accommodate>
+		</Ling>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_LunHui_Box1" Parent="MaterialBase">
+		<ThingName>神奇符咒匣</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+		<Desc>陆夫人随身携带的神奇符咒匣，其中装有三张神奇的符咒。</Desc>	
+		<Beauty>1</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">	
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>匣</FabaoSuffix>				
+		</Item>
+		<StoryBnts>
+			<li Name="打开" Desc="打开太一宝匣。" Story="Story_Item_LunHui_Box1" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_LunHui_Box2" Parent="MaterialBase">
+		<ThingName>神符匣</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+		<Desc>杨树随身携带的神符匣，其中装有一张绝品符咒。</Desc>	
+		<Beauty>1</Beauty>	
+		<Rate>9</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">	
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>匣</FabaoSuffix>				
+		</Item>
+		<StoryBnts>
+			<li Name="打开" Desc="打开太一宝匣。" Story="Story_Item_LunHui_Box2" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_ZuShiZhiCi" Parent="MaterialBase">
+		<ThingName>祖师之赐</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+		<Desc>祖师之赐，其中藏有珍惜之宝物。</Desc>	
+		<Beauty>25</Beauty>	
+		<Rate>12</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_StoneBox" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">	
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>匣</FabaoSuffix>				
+		</Item>
+		<StoryBnts>
+			<li Name="打开" Desc="打开祖师之赐。" Story="Story_Item_ZuShiZhiCi" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_XiangHuo1" Parent="MaterialBase">
+		<ThingName>三才祭</ThingName>
+		<MaxStack>999999</MaxStack>
+		<TexPath>res\Sprs\building\building_smallxianglu01</TexPath>
+		<Desc>基础的祭祀，流程比较简洁。产生1点香火。如用高级食物祭祀，会产生额外香火。</Desc>	
+		<Beauty>1</Beauty>	
+		<Rate>1</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_INCENSE" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">	
+			<NotRandom>1</NotRandom>
+			<BeMade>
+				<WorkToMake>300</WorkToMake>
+				<Quality>0</Quality>
+				<ArtDesc></ArtDesc>
+			
+				<StuffCategories>
+					<Stuff name = "Food"/>
+				</StuffCategories>
+				<CostStuffCount>9</CostStuffCount>
+				
+				<CostItems>
+					<Item name = "Item_LingCrystal" count = "9"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_XiangHuo2" Parent="MaterialBase">
+		<ThingName>五行祭</ThingName>
+		<MaxStack>999999</MaxStack>
+		<TexPath>res\Sprs\building\building_smallxianglu01</TexPath>
+		<Desc>中等级别的祭祀，需要一些器具来协助。产生4点香火。如用高级食物祭祀，会产生额外香火。</Desc>	
+		<Beauty>1</Beauty>	
+		<Rate>1</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_INCENSE" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">	
+			<NotRandom>1</NotRandom>
+			<BeMade>
+				<WorkToMake>1000</WorkToMake>
+				<Quality>0</Quality>
+				<ArtDesc></ArtDesc>
+			
+				<StuffCategories>
+					<Stuff name = "Food"/>
+				</StuffCategories>
+				<CostStuffCount>25</CostStuffCount>
+				
+				<CostItems>
+					<Item name = "Item_LingCrystal" count = "25"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_XiangHuo3" Parent="MaterialBase">
+		<ThingName>七星祭</ThingName>
+		<MaxStack>999999</MaxStack>
+		<TexPath>res\Sprs\building\building_bigxianglu01</TexPath>
+		<Desc>最高等的祭祀，需要复杂的器具与长时间的祷告。产生9点香火。如用高级食物祭祀，会产生额外香火。</Desc>	
+		<Beauty>1</Beauty>	
+		<Rate>1</Rate>
+		<ElementKind>None</ElementKind>
+		<Tags>
+			<Tag Name="_INCENSE" Level="1"/>
+		</Tags>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">	
+			<NotRandom>1</NotRandom>
+			<BeMade>
+				<WorkToMake>1800</WorkToMake>
+				<Quality>0</Quality>
+				<ArtDesc></ArtDesc>
+			
+				<StuffCategories>
+					<Stuff name = "Food"/>
+				</StuffCategories>
+				<CostStuffCount>49</CostStuffCount>
+				
+				<CostItems>
+					<Item name = "Item_LingCrystal" count = "49"/>
+				</CostItems>
+			</BeMade> 			
+		</Item>
+	</ThingDef>
+</List></ThingDefs>

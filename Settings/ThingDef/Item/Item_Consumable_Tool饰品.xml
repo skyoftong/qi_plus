@@ -1,0 +1,471 @@
+﻿<ThingDefs><List>
+	<ThingDef Type="Item" Name="ToolBase" Parent="ItemBase">
+	
+	<Tags>
+	</Tags>
+	<ThingName></ThingName>
+	
+	<MaxStack>1</MaxStack>
+	<TexPath></TexPath>
+	<Desc>Desc.</Desc>
+	<SelectAble>1</SelectAble>
+	<VisualAble>1</VisualAble>
+
+	<Beauty>2</Beauty>
+	<Rate>1</Rate>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>150</BurningPoint>
+	</Flammability>
+	
+	<Item  Lable="Tool">
+		<FuelMultiplier>1</FuelMultiplier>
+		<!-- 
+		<BeMade>
+			<WorkToMake>1</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<Skill name = "sss" level="1"/>
+					</Skills>
+					<Researchs>
+						<Research name = "sss" level="1"/>
+					</Researchs>
+			</Condition>
+			<StuffCategories>
+				<Stuff name = "Metallic"/>
+			</StuffCategories>
+			<CostStuffCount>5</CostStuffCount>
+			<CostItems>
+				<Item name = "wheat" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		
+		-->
+		<BeMaterial>
+			<NamePrefix></NamePrefix>
+			<CostMultiplier>1</CostMultiplier>
+			
+			<SharpDamageMultiplier>1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1</BluntDamageMultiplier>
+			<LingDamageMultiplier>1</LingDamageMultiplier>
+			<AttackSpeedWhenBeMain>1.2</AttackSpeedWhenBeMain>
+			
+			<SharpDefenceMultiplier>1</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>1</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>1</LingDefenceMultiplier>
+			<ColdInsulationMultiplier>1</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>1</HeatInsulationMultiplier>
+			
+			<MaxHitPointsPerNum>6</MaxHitPointsPerNum>
+			<LingNumberRate>0.3</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0.2</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>0</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>1</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>1</Accommodate>
+	</Ling>
+	
+	<Element>
+		<Kind>None</Kind>
+		<Value>1</Value>         
+		<Radius>2</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dice" Parent="ToolBase">
+	<Tags>
+	</Tags>
+	<ThingName>骰子</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_dice</TexPath>
+	<Desc>一对骰子，带在身上可以没事的时候用来解解闷，提高心情，但是会影响工作效率。</Desc>
+	<Flammability>
+		<Flammability>0.5</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Kind="Equipment">
+		<FabaoSuffix>骰</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+		
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "Wood"/>
+				<Stuff name = "Rock"/>
+				<Stuff name = "Metal"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+		</BeMade> 
+		
+		<Equip>
+			<ToolModifier>SysTool_Fun1</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SmallBell" Parent="ToolBase">
+	<Tags>
+	</Tags>
+	<ThingName>铃铛</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_lingdang01</TexPath>
+	<Desc>一只铃铛，带着身上可以让心情变好，也能吸引旁人的注意，使他们乐于与你交流。</Desc>
+	<Flammability>
+		<Flammability>0.2</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Kind="Equipment">
+		<FabaoSuffix>铃</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+		
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "Wood"/>
+				<Stuff name = "Rock"/>
+				<Stuff name = "Metal"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+		</BeMade> 
+		
+		<Equip>
+			<ToolModifier>SysTool_Fun2</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Bracelet" Parent="ToolBase">
+	<Tags>
+	</Tags>
+	<ThingName>手镯</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_jinzhuozi01</TexPath>
+	<Desc>一对手镯，带在身上让你变得更有魅力。</Desc>
+	<Flammability>
+		<Flammability>0.5</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Kind="Equipment">
+		<FabaoSuffix>镯,琢</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+		
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "Wood"/>
+				<Stuff name = "Rock"/>
+				<Stuff name = "Metal"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+		</BeMade> 
+		
+		<Equip>
+			<ToolModifier>SysTool_Fun3</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Handkerchief" Parent="ToolBase">
+	<Tags>
+	</Tags>
+	<ThingName>手帕</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_shoujuan01</TexPath>
+	<Desc>一张手帕，随身携带可以让你在别人眼中成为很讲究的人。</Desc>
+	<Flammability>
+		<Flammability>0.5</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Kind="Equipment">
+		<FabaoSuffix>帕,绢,帛</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+		
+			<StuffCategories>
+				<Stuff name = "Cloth"/>
+				<Stuff name = "Leather"/>
+			</StuffCategories>
+			<CostStuffCount>4</CostStuffCount>
+		</BeMade> 
+		
+		<Equip>
+			<ToolModifier>SysTool_Fun4</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_PerfumeBag" Parent="ToolBase">
+	<Tags>
+	</Tags>
+	<ThingName>香囊</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_xiangnang01</TexPath>
+	<Desc>一个香囊，内门弟子佩戴可以提高心境。</Desc>
+	<Flammability>
+		<Flammability>0.5</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Kind="Equipment">
+		<FabaoSuffix>囊</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "Cloth"/>
+				<Stuff name = "Leather"/>
+			</StuffCategories>
+			<CostStuffCount>10</CostStuffCount>
+			<CostItems>
+				<Item name = "Item_Mint" count = "10"/>
+			</CostItems>
+		</BeMade> 
+		
+		<Equip>
+			<ToolModifier>SysTool_Fun5</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_LunHui_PerfectWorld" Parent="ToolBase">
+	<Tags>
+	</Tags>
+	<ThingName>美好世界</ThingName>
+	<MaxStack>1</MaxStack>
+	<Rate>8</Rate>
+	<TexPath>res\Sprs\object\object_shixiazi01</TexPath>
+	<Desc>一个来自异世界的盒子，以神念沉浸其中可以游玩一个有趣而感人的游戏。</Desc>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Kind="Equipment">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>匣</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		<Equip>
+			<ToolModifier>SysTool_LunHui1</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_MuBai_BaiYuShi" Parent="ToolBase">
+	<Tags>
+	</Tags>
+	<ThingName>白玉石</ThingName>
+	<MaxStack>1</MaxStack>
+	<Rate>6</Rate>
+	<TexPath>res\Sprs\object\object_shisui01</TexPath>
+	<Desc>木白仙人留下的白玉石，看上去平平无奇，但却能极大的提高佩戴者的自然恢复力。</Desc>
+	<Flammability>
+		<Flammability>-1</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Kind="Equipment">
+		<NotRandom>1</NotRandom>
+		<FabaoSuffix>石</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		<BeMade>
+			<Quality>100</Quality>
+		</BeMade> 
+		<Equip>
+			<ToolModifier>SysTool_SP_BaiYuShi</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Other_PuppetTest" Parent="ToolBase">
+	<ThingName>傀儡</ThingName>
+	<TexScale>0.75</TexScale>
+	<TexPath>res\Sprs\object\object_6d6j001;res\Sprs\object\object_6d6j002</TexPath>
+	<Desc>一具傀儡。传闻《太和十六洞天》中记载有赋予傀儡灵性的秘法。</Desc>	
+	<Rate>0</Rate>
+	<Tags>
+		<Tag Name="Puppet" Level = "1"/>
+	</Tags>
+	<ElementKind>None</ElementKind>
+	<Item>
+		<FabaoSuffix>傀儡</FabaoSuffix>	
+		<BeMade>
+			<WorkToMake>1800</WorkToMake>
+			<Quality>1</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>150</CostStuffCount>
+		</BeMade> 
+		<NotRandom>1</NotRandom>
+		<PhysicalLables>
+			<li>Heavy2</li>
+		</PhysicalLables>	
+	</Item>
+	</ThingDef>
+
+        <ThingDef Type="Item" Name="Item_PerfumeBag1" Parent="ToolBase">
+	<Tags>
+	</Tags>
+	<ThingName>内门香囊</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_xiangnang01</TexPath>
+	<Desc>一个内门香囊，内门弟子佩戴可以提高能力。</Desc>
+	<Flammability>
+		<Flammability>0.5</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Kind="Equipment">
+		<FabaoSuffix>囊</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "Wood"/>
+				<Stuff name = "Rock"/>
+				<Stuff name = "Metal"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+		</BeMade> 
+		
+		<Equip>
+			<ToolModifier>SysTool_NEW1</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_PerfumeBag2" Parent="ToolBase">
+	<Tags>
+	</Tags>
+	<ThingName>外门香囊</ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath>res\Sprs\object\object_xiangnang01</TexPath>
+	<Desc>一个外门香囊，外门弟子佩戴可以提高工作能力。</Desc>
+	<Flammability>
+		<Flammability>0.5</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	
+	<Item Kind="Equipment">
+		<FabaoSuffix>囊</FabaoSuffix>
+		<PhysicalLables>
+			<li>SmallThing</li>
+		</PhysicalLables>
+		
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "Wood"/>
+				<Stuff name = "Rock"/>
+				<Stuff name = "Metal"/>
+			</StuffCategories>
+			<CostStuffCount>1</CostStuffCount>
+		</BeMade> 
+		
+		<Equip>
+			<ToolModifier>SysTool_NEW2</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+</List></ThingDefs>

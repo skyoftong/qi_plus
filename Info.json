@@ -1,8 +1,10 @@
-{
-  "Name": "GatheringMeditationCushion",
-  "DisplayName": "聚灵蒲团",
-  "Desc": "新增一座可供修士打坐修行、并能汇聚周围灵气的蒲团。",
-  "GameVersion": 1.0,
-  "Version": 1.0,
-  "Author": "小z"
+﻿{
+	"Name":"jvlingshijvan",		
+	"DisplayName":"聚灵石卷", 
+	"Desc":"提供3种聚灵石，每种5个",
+	"Enable":true,			
+	"GameVersion":0.9485,		
+	"Version":1.0,			
+	"Author":"血夜漫游",			
+	"Sort":"1",				
 }
