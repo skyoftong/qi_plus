@@ -1,1 +1,8 @@
-{"Name":"魔之星","DisplayName":"3 Color Souls","GameVersion":1.0,"Version":1.36,"Desc":"[作者]\r\n    Beathoven\r\n[简介]\r\nAll Credit to Original Author https://steamcommunity.com/sharedfiles/filedetails/?id=1882497874\n\n[Author]\nSoulColor\n\nAdds\n- Beginner Law\n- Full map reveal in reincarnator setting\n- Magic Array to craft Qi Gather Swords a special mood pill and Spirit Cloth\n- The Magic Array also contains special functions.\n- Temperature regulating incense burner (placing more than 1 with different settings cause it to malfunction)\n- Terraforming\n- Map location to gather resources\n\n*Added option at Magic Circle to spawn Coloful Mountain for ppl wo activate the mod midgame*.","Author":"SoulColor","UIPackage":"UI/SoulColor","ID":"2324186054","Flag":38860680,"Tags":["Reincarnation","Gong","Elixir","Building","Function","Usability","Integrated","ExcludeRealmsHeaven","Non-Chinese","Non-Chinese"],"IncreasedDesc":"Translation to English\n1.01 Fixed Magic Array function bug.\n1.1Fixed Event Spawn.\n1.11 small Law translation adjustments\n1.12 merged terraform and buildings into 1 tab for more clarity\n1.13 changed Fire Spiritstone Block color\n1.2 fixed qi gather sword with spiritblockbase not gathering chi \n1.25 adjusted qi gather stats for stoneblocks\n1.3 Added option to activate CM location\n1.35 Disabled Illusion Cloth, fixed some grammar\n1.36 Further Law Translation","IsInsideCreat":false,"Previews":[],"ParentModInfo":null}
+{
+  "Name": "GatheringMeditationCushion",
+  "DisplayName": "聚灵蒲团",
+  "Desc": "新增一座可供修士打坐修行、并能汇聚周围灵气的蒲团。",
+  "GameVersion": 1.0,
+  "Version": 1.0,
+  "Author": "小z"
+}
