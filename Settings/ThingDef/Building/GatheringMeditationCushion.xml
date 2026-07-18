@@ -32,7 +32,7 @@
 
 		<PracticeEffectiveness>1</PracticeEffectiveness>
 		<BeMade>
-			<WorkToMake>50</WorkToMake>
+			<WorkToMake>1</WorkToMake>
 			<Quality>0</Quality>
 			<StuffCategories>
 				<Stuff name = "MetalBlock"/>
@@ -51,7 +51,7 @@
 		</SnowRenderData>
 	</Building>
 	<Ling>
-		<AddionLing>1000000</AddionLing>
+		<AddionLing>10000000</AddionLing>
 		<AddionRadius>2</AddionRadius>
 		<AddionFailing>0.1</AddionFailing>
 		<AddionFailRadius>0</AddionFailRadius>
