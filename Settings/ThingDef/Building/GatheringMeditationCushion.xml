@@ -1,6 +1,6 @@
 <ThingDefs><List>
-	<ThingDef Type="Building" Name="Building_MagicCushion" Parent="FurnitureBase">
-	<ThingName>法座</ThingName>
+	<ThingDef Type="Building" Name="Building_MagicCushion_super" Parent="FurnitureBase">
+	<ThingName>法座plus</ThingName>
 	<Desc>修炼专用的法座，能聚集灵气。</Desc>
 	<Tags>
 		<Tag Name="Sitable" Level="1"/>
@@ -41,7 +41,7 @@
 			</StuffCategories>
 			<CostStuffCount>1</CostStuffCount>
 			<CostItems>
-				<Item name = "Item_LingStone" count = "25"/>
+				<Item name = "Item_LingStone" count = "1"/>
 			</CostItems>
 		</BeMade>
 		<SnowRenderData>
@@ -51,7 +51,7 @@
 		</SnowRenderData>
 	</Building>
 	<Ling>
-		<AddionLing>600</AddionLing>
+		<AddionLing>1000000</AddionLing>
 		<AddionRadius>2</AddionRadius>
 		<AddionFailing>0.1</AddionFailing>
 		<AddionFailRadius>0</AddionFailRadius>
