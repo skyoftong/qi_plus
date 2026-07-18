@@ -1,0 +1,195 @@
+<ThingDefs><List>
+	<ThingDef Type="Building" Name="Cushion" Parent="FurnitureBase">
+	<ThingName>蒲团</ThingName>
+	<Desc>一张柔软的坐垫。</Desc>
+	<Tags>
+		<Tag Name="Sitable" Level="1"/>
+		<Tag Name="Practice" Level="15"/>
+	</Tags>
+		<Frags>
+			<li Frag="SeeTrain" />
+		</Frags>
+
+	<TexScale>0.9</TexScale>
+	<NoElementKind>1</NoElementKind>
+	<TexPath>res/Sprs/buildingnew/building_putuan1a</TexPath>
+	<SelectAble>1</SelectAble>
+	<CastShadow>0</CastShadow>
+	<BlockLight>0</BlockLight>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[6],
+		</Data>
+		<WorkOffset>
+			<li Index="0"  X="0" Y="0" Ang="181"/>
+		</WorkOffset>
+	</Collider>
+
+	<Building>
+		<OwnerCount>1</OwnerCount>
+		<NoFengshui>1</NoFengshui>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>1</BePackage>
+		<WorkTexPath>res/Sprs/buildingnew/building_putuan1a</WorkTexPath>
+
+		<PracticeEffectiveness>0.5</PracticeEffectiveness>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "Cloth"/>
+			</StuffCategories>
+			<CostStuffCount>10</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.2</x>
+			<y>3.5</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_MagicCushion" Parent="FurnitureBase">
+	<ThingName>法座</ThingName>
+	<Desc>修炼专用的法座，能聚集灵气。</Desc>
+	<Tags>
+		<Tag Name="Sitable" Level="1"/>
+		<Tag Name="Practice" Level="15"/>
+	</Tags>
+		<Frags>
+			<li Frag="SeeTrain" />
+		</Frags>
+	<TexScale>0.9</TexScale>
+	<TexPath>res/Sprs/buildingnew/building_fazuo01</TexPath>
+	<SelectAble>1</SelectAble>
+	<CastShadow>0</CastShadow>
+	<BlockLight>0</BlockLight>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[6],
+		</Data>
+		<WorkOffset>
+			<li Index="0"  X="0" Y="0" Ang="181"/>
+		</WorkOffset>
+	</Collider>
+
+	<Building>
+		<OwnerCount>1</OwnerCount>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<BePackage>1</BePackage>
+		<WorkTexPath>res/Sprs/buildingnew/building_fazuo01</WorkTexPath>
+
+		<PracticeEffectiveness>1</PracticeEffectiveness>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>20</CostStuffCount>
+			<CostItems>
+				<Item name = "Item_LingStone" count = "25"/>
+			</CostItems>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.4</x>
+			<y>3.55</y>
+			<z>1</z>
+		</SnowRenderData>
+	</Building>
+	<Ling>
+		<AddionLing>60</AddionLing>
+		<AddionRadius>2</AddionRadius>
+		<AddionFailing>0.1</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="Building_SleeveSpace" Parent="MiracleBase">
+	<TexPath>res\Sprs\building_yaozujueqi\building_xiaoqiankun01</TexPath>
+	<TexScale>1</TexScale>
+	<Tags>
+		<Tag Name="_WONDER" Level="1"/>
+		<Tag Name="SleeveSpace" Level="1"/>
+	</Tags>
+	<ThingName>小乾坤界</ThingName>
+	<Desc>以乾坤灵晶的空间之力为引，辅以五行宝材开辟出的不稳定小千世界，可以储存物品在其中。但是由于其空间并不稳定，只能存放一些性质平稳的普通之物。否则可能会导致其内空间崩塌。</Desc>
+	<FromDLC></FromDLC>
+	<ElementKind>None</ElementKind>
+	<BlockLight>0</BlockLight>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[1,1,1,1,1,1,1,1],
+		[1,1,1,1,1,1,1,1],
+		[1,1,1,1,1,1,1,1],
+		[1,1,1,1,3,1,1,1],
+		[1,1,1,1,1,1,1,1],
+		[1,1,1,1,1,1,1,1],
+		[1,1,1,1,1,1,1,1],
+		</Data>
+		<OffsetGroup>
+			<li><x>0</x><y>0</y></li>  <!-- 后 -->
+			<li><x>0</x><y>0</y></li>     <!-- 右 -->
+			<li><x>-0.5</x><y>1.3</y></li>     <!-- 前 -->
+			<li><x>0</x><y>0</y></li>     <!-- 左 -->
+		</OffsetGroup>
+	</Collider>
+	<Building>
+		<NotRandom>1</NotRandom>
+		<Perfab>Building/Prefabs/xiaoqiankunjie</Perfab>
+		<SnowRenderData>
+			<x>1.5</x>
+			<y>1.5</y>
+			<z>1</z>
+		</SnowRenderData>
+		<BeMade>
+			<WorkToMake>18000</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_LingStone" count = "500"/>
+			</CostItems>
+		</BeMade>
+	</Building>
+	<Harvest>
+		<DropItems>
+			<li>
+				<ThingDef>Item_Wonder_QianKunLingJing</ThingDef>
+				<Count>1</Count>
+			</li>
+		</DropItems>
+	</Harvest>
+	<StoryBnts>
+			<li Name="收集" Desc="将地图上的所有不在迷雾中且非禁用的可以收入小乾坤界的物品收入其中。" Script="Map:CollectToRemoteStorage(bind.Key)" Icon="res/Sprs/ui/icon_hand"/>
+			<li Name="探查" Desc="运用神念查探小乾坤界的玄妙。" Cost="1" Appoint="2" Scope="0"  Story="System_EnterQianKunJie" WorldFlag="FinaleActive" Ani="dazuo" Icon="res/Sprs/ui/icon_gsq"/>
+	</StoryBnts>
+	<Element>
+		<Kind>None</Kind>
+	</Element>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+	</Ling>
+	<Light>
+		<Value>200</Value>
+		<Failing>1</Failing>
+		<FailRadius>4</FailRadius>
+		<Radius>4</Radius>
+		<Color>FDAD00C6</Color>
+	</Light>
+	</ThingDef>
+
+</List></ThingDefs>
