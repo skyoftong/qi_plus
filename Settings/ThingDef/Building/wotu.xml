@@ -1,0 +1,42 @@
+<ThingDefs><List>
+
+	<ThingDef Type="Building" Name="FillSoil" Parent="FillBase">
+		<Color>EEEE00FF</Color>
+		<ThingName>土地改造</ThingName>
+		<Desc>将一块区域改造成土地，本工作需要消耗大量时间。</Desc>
+		<Building>
+			<FillTarrain>Soil</FillTarrain>
+			<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+			<BeMade>
+				<WorkToMake>1</WorkToMake>
+			</BeMade>
+		</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="FillFertileSoil" Parent="FillBase">
+		<Color>C1FFC1FF</Color>
+		<ThingName>沃土改造</ThingName>
+		<Desc>将一块陆地区域改造成沃土，本工作需要消耗大量时间。</Desc>
+		<Building>
+			<FillTarrain>FertileSoil</FillTarrain>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<BeMade>
+				<WorkToMake>1</WorkToMake>
+			</BeMade>
+		</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="FillShallowWater" Parent="FillBase">
+		<Color>98F5FFFF</Color>
+		<ThingName>浅水改造</ThingName>
+		<Desc>将一块陆地区域改造成浅水，本工作需要消耗大量时间。</Desc>
+		<Building>
+			<FillTarrain>ShallowWater</FillTarrain>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<BeMade>
+				<WorkToMake>1</WorkToMake>
+			</BeMade>
+		</Building>
+	</ThingDef>
+
+</List></ThingDefs>
