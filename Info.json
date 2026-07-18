@@ -1,10 +1,10 @@
 ﻿{
-	"Name":"整合多功能Mods",		
-	"DisplayName":"整合多功能Mods", 
-	"Desc":"整合多功能Mods",
+	"Name":"一些测试",		
+	"DisplayName":"测试", 
+	"Desc":"测试",
 	"Enable":true,			
 	"GameVersion":0.9485,		
 	"Version":1.00,			
-	"Author":"执念莫相颜",			
-	"Sort":"1",				
+	"Author":"zt",			
+	"Sort":"1"	
 }
