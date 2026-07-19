@@ -1,0 +1,18 @@
+﻿<PhysicalLables>
+	<List>
+		<Lable Name="shenxiufabao01"> 
+			<Effects>
+				<li Kind="AttackPower" Addp="3"/>				<!--法宝威力-->
+				<li Kind="LingRecover" Addp="1"/>			<!--回灵速度-->
+				<li Kind="MaxLing" Addp="0.001"/>				<!--灵气容量-->
+				<li Kind="FlySpeed" Addp="1"/>				<!--飞行速度-->
+				<li Kind="RotSpeed" Addp="1"/>				<!--转弯速度-->
+				<li Kind="KnockBackResistance" Addv="2.5"/>		<!--击退抵抗-->
+				<li Kind="KnockBackAddition" Addv="2.5"/>		<!--击退强度-->
+				<li Kind="TailLenght" Addp="5"/>			<!--拖尾长度-->
+				<li Kind="Scale" Addp="1.5"/>				<!--体积-->
+				<li Kind="AttackRate" Addv="0.01"/>				<!--攻击间隔-->
+			</Effects>
+		</Lable>
+	</List>
+</PhysicalLables> 

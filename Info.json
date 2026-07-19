@@ -1,1 +1,8 @@
-{"Name":"精元丹","DisplayName":"精元丹","GameVersion":0.9713,"Version":1.3,"Desc":"[作者]\r\n    xiaoyao\r\n[简介]\r\n恢复精元、补充精元、回复灵气、增加灵气上限、增加技能等级的丹药","Author":"逍遥","UIPackage":null,"ID":"1913436208","Flag":31353492,"Tags":["Elixir","Function","Usability","ExcludeRealmsHeaven"],"IncreasedDesc":"v1.1更新\n新增：\n精元丹十倍：十倍回复精元\n精元丹百倍：百倍回复精元\nv1.2更新\n新增:\n回灵丹：回复灵气。\n灵力丹：增加1W灵气上限。\n技能丹：基础技能全20。","IsInsideCreat":false,"Previews":[]}
+{
+  "Name": "GatheringMeditationCushion",
+  "DisplayName": "法座plus",
+  "Desc": "加强了法座的聚灵能力为10000000。地图去迷雾。土地浅水沃土改造无需材料, 降低所需时间。行商五天来一次。小乾坤界增强。增加弟子数量。增加逆天丹药, 神修法宝。",
+  "GameVersion": 1.0,
+  "Version": 1.01,
+  "Author": "小z"
+}

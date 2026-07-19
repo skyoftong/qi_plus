@@ -1,0 +1,16 @@
+﻿<Esotericas><List>
+	<Esoterica Name="Esoterica_XinYangShengWu">
+		<DisplayName>秘宝：神道信仰圣物</DisplayName>
+		<StarLevel>0</StarLevel>
+		<Difficulty>0</Difficulty>
+		<Desc>远古的神道修行者飞升成仙后，留下的本命法宝信仰圣物被古代大能得到并参悟研究最后得出炼制之法。\n记录秘宝：神道信仰圣物的炼制方法。</Desc>
+		<GLevel>God</GLevel>
+		<Element>None</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]习得 秘宝：\n信仰圣物[/color][/size]</EffectDesc>
+		<Fabaos>
+			<li>MiBaoFormula_ShenXiuFaBaoXinYangShengWu</li>
+		</Fabaos>
+	</Esoterica> 
+</List></Esotericas>
+

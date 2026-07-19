@@ -1,0 +1,111 @@
+<ThingDefs><List>
+
+	<ThingDef Type="Item" Name="ShengWu01Base" Parent="ItemBase">
+	
+	<ThingName></ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath></TexPath>
+	<Desc>Desc.</Desc>
+	<SelectAble>1</SelectAble>
+	<VisualAble>1</VisualAble>
+
+	<Beauty>23</Beauty>
+	<Rate>15</Rate>
+	
+	<Flammability>
+		<Flammability>-10</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>0</BurningPoint>
+	</Flammability>
+	
+	<Item Kind="Equipment" Lable="Treasure">
+		<NotRandom>1</NotRandom>
+		<NotFengshuiItem>1</NotFengshuiItem>
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<Quality>100</Quality>
+			<WorkToMake>3000</WorkToMake>
+		</BeMade> 
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+		
+		<!-- 
+		<Equip>
+			<ToolModifier>Modifier_Item_BossFeng_HuoYu</ToolModifier>
+		</Equip> 
+		-->
+		<DevourDatas>
+			<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+		</DevourDatas> 
+	</Item>
+	
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	
+	<Element>
+		<Kind>None</Kind>
+		<Value>15</Value>         
+		<Radius>3</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_MiBao_ShenXiuFaBaoXinYangShengWu" Parent="ShengWu01Base">
+		<ThingName>信仰圣物</ThingName>
+		<TexPath>res\Sprs\object_zhengfatianxia\object_PTjian01</TexPath>	
+		<FabaoTexPath>res\Sprs\object_zhengfatianxia\object_MBjian01</FabaoTexPath>
+		<Desc>仿制的神道修行者的本命法宝信仰圣物。</Desc>
+		<Beauty>23</Beauty>
+		<Rate>15</Rate>	
+		<ElementKind>None</ElementKind>
+		<Item>
+			<PhysicalLables>	
+				<!--圣宝阁14级调整属性相等--><li>shenxiufabao01</li>	
+				<!--真刚殿2级--><li>Hard2</li>					
+				<!--介子殿-->	<li>SmallThing</li>				
+				<!--玄刃殿-->	<li>Sharp</li>					
+				<!--天雷殿-->	<li>GreatThing_AttackLow</li>	
+				<!--浑沉殿-->	<li>Blunt</li>					
+				<!--啸风殿-->	<li>GreatThing_Fly</li>			
+				<!--玄冲殿-->	<li>GreatThing_Knock</li>
+			</PhysicalLables>
+			<BeMade>
+				<CostItems>
+					<Item name = "Item_LingCrystal" count = "1"/>
+				</CostItems>
+			</BeMade> 
+			<Fabao>
+				<ActiveCondition>
+					<Condition eventid = "SoulCrystalYou" des = "将宝物成功幽粹11次。" needcount = "11" fParam = "1" />
+				</ActiveCondition>
+				<SpecialAbility>
+					<!--灵冲殿--><Ability Kind="HitCountCostSkill" nParam1="1"  sParam1="DamageSkill_4" Desc="每1次攻击会对目标敌人发动一次法术。"/>
+					<!--灵归殿--><Ability Kind="HitAddRecovery" fParam1="3"  Desc="造成伤害的300%会补充为法宝自身的灵气。"/>
+					<!--分光殿--><Ability Kind="HitCountAddMirror" nParam1="1" nParam2="1" fParam1="15" Desc="每攻击1次，产生1道剑光分化，持续15秒。"/>
+					<!--回息殿--><Ability Kind="HitCountAddSubColdDown" nParam1="1" fParam1="1" Desc="每1次攻击会减少1秒技能CD。"/>								 
+					<!--九极殿--><Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="9" nParam1="0" Desc="造成伤害时，有100%的几率造成9倍伤害。"/>	
+					<!--无极殿--><Ability Kind="FristHitPowerUp" fParam1="9" Desc="第一剑威力增加9倍，法宝补充灵气重置。"/>	
+					<!--破罡殿--><Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="9" nParam1="1" Desc="攻击敌方本体时，造成9倍伤害。"/>
+				    <!--五毒殿--><Ability Kind="HitCountAddDamage" nParam1="1" sParam1="TheWholeBody" sParam2="FivePoison" Desc="每1次攻击修行者本体，会穿透护盾造成额外伤害。"/>	
+				</SpecialAbility>
+			</Fabao>
+		</Item>
+	</ThingDef>
+	<Element>
+		<Kind>None</Kind>
+	</Element>	
+</List></ThingDefs>

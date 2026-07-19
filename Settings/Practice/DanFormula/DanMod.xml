@@ -8,50 +8,90 @@
 		<SuccessRate>1</SuccessRate>
 		<Count>1</Count>
 	</Dan>
-	<!--精元丹-无限-->
-	<Dan Name="Dan_JingYuan98">
+	<!--超人丹-->
+	<Dan Name="Dan_ChaoRen1">
 		<Normal>1</Normal>
-		<ItemName>Item_Dan_JingYuan98</ItemName>
+		<ItemName>Item_Dan_ChaoRen1</ItemName>
 		<Level>0</Level>
 		<SuccessRate>1</SuccessRate>
 		<Count>1</Count>
 	</Dan>
-	<!--精元丹-无限十倍-->
-	<Dan Name="Dan_JingYuan97">
+	<!--剑仙丹-->
+	<Dan Name="Dan_ChaoRen2">
 		<Normal>1</Normal>
-		<ItemName>Item_Dan_JingYuan97</ItemName>
-		<Level>0</Level>
-		<SuccessRate>1</SuccessRate>
-		<Count>1</Count>
-	</Dan>
-	<!--精元丹-无限百倍-->
-	<Dan Name="Dan_JingYuan96">
-		<Normal>1</Normal>
-		<ItemName>Item_Dan_JingYuan96</ItemName>
-		<Level>0</Level>
-		<SuccessRate>1</SuccessRate>
-		<Count>1</Count>
-	</Dan>
-		<!--回灵丹-->
-	<Dan Name="Dan_JingYuan95">
-		<Normal>1</Normal>
-		<ItemName>Item_Dan_JingYuan95</ItemName>
+		<ItemName>Item_Dan_ChaoRen2</ItemName>
 		<Level>0</Level>
 		<SuccessRate>1</SuccessRate>
 		<Count>1</Count>
 	</Dan>	
-		<!--灵力丹-->
-	<Dan Name="Dan_JingYuan94">
+	<!--劫灭丹-->
+	<Dan Name="Dan_ChaoRen3">
 		<Normal>1</Normal>
-		<ItemName>Item_Dan_JingYuan94</ItemName>
+		<ItemName>Item_Dan_ChaoRen3</ItemName>
 		<Level>0</Level>
 		<SuccessRate>1</SuccessRate>
 		<Count>1</Count>
 	</Dan>	
-	<!--技能丹-->
-	<Dan Name="Dan_JingYuan93">
+	<!--天道丹-->
+	<Dan Name="Dan_ChaoRen4">
 		<Normal>1</Normal>
-		<ItemName>Item_Dan_JingYuan93</ItemName>
+		<ItemName>Item_Dan_ChaoRen4</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>	
+	<!--功德丹-->
+	<Dan Name="Dan_ChaoRen5">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_ChaoRen5</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>	
+	<!--体修丹-->
+	<Dan Name="Dan_ChaoRen6">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_ChaoRen6</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--金灵丹-->
+	<Dan Name="Dan_ChaoRen7">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_ChaoRen7</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--木灵丹-->
+	<Dan Name="Dan_ChaoRen8">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_ChaoRen8</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--水灵丹-->
+	<Dan Name="Dan_ChaoRen9">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_ChaoRen9</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--火灵丹-->
+	<Dan Name="Dan_ChaoRen10">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_ChaoRen10</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<!--土灵丹-->
+	<Dan Name="Dan_ChaoRen11">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_ChaoRen11</ItemName>
 		<Level>0</Level>
 		<SuccessRate>1</SuccessRate>
 		<Count>1</Count>

@@ -1,0 +1,14 @@
+<Stories><List>
+	<Story Name="Secrets_XingYangShengWu"  Parent="BaseFillingStory">
+		<DisplayName>神道信仰圣物</DisplayName>
+		<Desc>[NAME]来到[PLACE]，发现一处山顶有微光闪烁……”</Desc>
+		<Selections>
+			<li>
+				<Display>飞到闪烁着光芒的地方......</Display>
+				
+				<OKResult>me:AddMsg(XT("……光芒忽然飞进身体……"));me:AddMsg(XT("[NAME]忽然感觉怀中有动静，多出一份玉简。"));me:DropEsoteric("Esoterica_XinYangShengWu", 1);story:FinishSecret();</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+</List></Stories>

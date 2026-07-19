@@ -1,0 +1,15 @@
+<ThingDefs><List>
+
+<ThingDef Type="Building" Name="XinYangShengWu01"  Parent="MaterialWorkPlace">
+	<ThingName></ThingName>
+	<Desc></Desc>
+	<TileID>213</TileID>
+	<SelectAble>1</SelectAble>
+	<CastShadow>0</CastShadow>
+	<Beauty>0</Beauty>
+	<BlockLight>0</BlockLight>
+	<MaxHitPoints>1</MaxHitPoints>
+	<ColliderKind>Across</ColliderKind>
+	<VisionRadius>0</VisionRadius>
+</ThingDef>	
+</List></ThingDefs>

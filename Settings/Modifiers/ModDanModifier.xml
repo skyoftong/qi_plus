@@ -11,68 +11,10 @@
 			<li Name="MaxAge" AddV="1"/>
 		</Properties>
 	</Modifier>
-	<!--精元丹-无限-->
-	<Modifier Name="Dan_JingYuan98" Type="Normal">
-		<DisplayName>精元丹-无限</DisplayName>
-		<Desc>精元丹-无限。</Desc>
-		<MaxStack>1</MaxStack>
-		<Duration>99999999</Duration>
-		<Display>1</Display>
-		<Properties>
-			<li Name="NutritionConsumeConstant" BAddV="0"/>
-			<li Name="NutritionToJingYuanK" AddV="1"/>
-		</Properties>
-	</Modifier>
-	<!--精元丹-无限十倍-->
-	<Modifier Name="Dan_JingYuan97" Type="Normal">
-		<DisplayName>精元丹-无限十倍</DisplayName>
-		<Desc>精元丹-无限十倍。</Desc>
-		<MaxStack>1</MaxStack>
-		<Duration>99999999</Duration>
-		<Display>1</Display>
-		<Properties>
-			<li Name="NutritionConsumeConstant" BAddV="0"/>
-			<li Name="NutritionToJingYuanK" AddV="10"/>
-		</Properties>
-	</Modifier>
-	<!--精元丹-无限百倍-->
-	<Modifier Name="Dan_JingYuan96" Type="Normal">
-		<DisplayName>精元丹-无限百倍</DisplayName>
-		<Desc>精元丹-无限百倍。</Desc>
-		<MaxStack>1</MaxStack>
-		<Duration>99999999</Duration>
-		<Display>1</Display>
-		<Properties>
-			<li Name="NutritionConsumeConstant" BAddV="0"/>
-			<li Name="NutritionToJingYuanK" AddV="100"/>
-		</Properties>
-	</Modifier>
-	<!--回灵丹-->
-	<Modifier Name="Dan_JingYuan95" Type="Normal">
-		<DisplayName>回灵丹</DisplayName>
-		<Desc>回灵丹。</Desc>
-		<MaxStack>1</MaxStack>
-		<Duration>600</Duration>
-		<Display>1</Display>
-		<Properties>
-			<li Name="LingAbsorbSpeed" AddP="5000"/>
-		</Properties>
-	</Modifier>
-	<!--灵力丹-->
-	<Modifier Name="Dan_JingYuan94" Type="Normal">
-		<DisplayName>灵力丹</DisplayName>
-		<Desc>灵力丹。</Desc>
-		<MaxStack>0</MaxStack>
-		<Duration>-1</Duration>
-		<Display>0</Display>
-		<Properties>
-			<li Name="NpcLingMaxValue" AddV="100000"/>
-		</Properties>
-	</Modifier>
-	<!--技能丹-->
-	<Modifier Name="Dan_JingYuan93" Type="Normal">
-		<DisplayName>技能丹</DisplayName>
-		<Desc>技能丹。</Desc>
+	<!--超人丹-->
+	<Modifier Name="Dan_ChaoRen1" Type="Normal">
+		<DisplayName>超人丹</DisplayName>
+		<Desc>长生不老, 五维和能力拉满, 辟谷, 寿命增加一亿, 心如止水, 百倍工作效率和移速</Desc>
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
@@ -111,6 +53,7 @@
 			<li Name="DanQi" LevelOver="210"/>
 			<li Name="Medicine" LevelOver="210"/>
 			<li Name="Barrier" LevelOver="210"/>
+			<li Name="Fight" LevelOver="210"/>
 			<li Name="FightSkill" LevelOver="210"/>
 			<li Name="Fabao" LevelOver="210"/>
 			<li Name="SocialContact" LevelOver="210"/>
@@ -126,6 +69,7 @@
 			<li Name="DanQi" Level="240"/>
 			<li Name="Medicine" Level="240"/>
 			<li Name="Barrier" Level="240"/>
+			<li Name="Fight" Level="210"/>
 			<li Name="FightSkill" Level="240"/>
 			<li Name="Fabao" Level="240"/>
 			<li Name="SocialContact" Level="240"/>
@@ -137,7 +81,151 @@
 			<li Name="Mining" Level="240"/>
 			<li Name="DouFa" Level="240"/>
 			<li Name="Manual" Level="240"/> 
-        </Skills>
+		</Skills>
+		</Properties>
+	</Modifier>
+	<!--剑仙丹-->
+	<Modifier Name="Dan_ChaoRen2" Type="Normal">
+		<DisplayName>剑仙丹</DisplayName>
+		<Desc>根本灵气和灵气回复增加一亿, 法宝位全开, 剑修能力增加百倍</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="100000000"/>
+			<li Name="LingAbsorbSpeed" AddP="100000000"/>
+			<li Name="NpcFight_FabaoNum" AddV="5"/>
+			<li Name="NpcFight_ShieldConversionRate" BAddP="100"/>
+			<li Name="NpcFight_FabaoPowerAddP" BAddP="10000"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" BAddP="10000"/>
+			<li Name="NpcFight_FabaoLingRecoverK" AddV="10000"/>
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="200"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="100"/> 
+			<li Name="NpcFight_FabaoTrailingLengthAddP" AddP="100"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddV="100"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-100"/>
+			<li Name="NpcFight_SpellCoolDownAddP" AddV="-1"/> 
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="100"/>
+			<li Name="FabaoMake_SpeedAddV" AddV="200"/>
+			<li Name="FabaoMake_SuccessRateAddV" AddV="200"/>
+			<li Name="FabaoMake_LingInheritRateAddV" AddV="200"/>
+			<li Name="FabaoMake_QualityAddV" AddV="10"/>
+			<li Name="FabaoMake_TwelveRateChance" AddV="10"/>
+			<li Name="DanMake_SpeedAddV" AddV="300"/>
+			<li Name="DanMake_SuccessRateAddV" AddV="300"/>
+			<li Name="DanMake_YieldAddP" AddV="10"/>
+		</Properties>
+	</Modifier>
+	<!--劫灭丹-->
+	<Modifier Name="Dan_ChaoRen3" Type="Normal">
+		<DisplayName>劫灭丹</DisplayName>
+		<Desc>天劫推迟10年</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NeckCountdownAddV" AddV="6000000"/>
+		</Properties>
+	</Modifier>
+	<!--功德丹-->
+	<Modifier Name="Dan_ChaoRen5" Type="Normal">
+		<DisplayName>功德丹</DisplayName>
+		<Desc>功德增加10000</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="GodPenaltyAddV" AddV="-10000"/>
+		</Properties>
+	</Modifier>
+	<!--体修丹-->
+	<Modifier Name="Dan_ChaoRen6" Type="Normal">
+		<DisplayName>体修丹</DisplayName>
+		<Desc>获取所需坏心情, 体修能力百倍</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="RecoveryPower" AddP="400"/>
+			<li Name="MagicDamageRecoveryPowerAddV" AddV="400"/>
+			<li Name="BodyPractice_SuperPartRecoverAddP" AddV="100"/>
+			<li Name="BodyPractice_Other_TunaAddp" AddV="100"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="100"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="100"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkRate" AddV="100"/>
+			<li Name="BodyPractice_SuperPartAddp_DefRate" AddV="100"/>
+			<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddV="100"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="100"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="100"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="100"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="100"/>
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="100"/>
+			<li Name="BodyPratice_QuenchingSpeed" AddV="1000"/>
+			<li Name="BodyPractice_RollAddtion_Cache1" AddV="50"/>
+			<li Name="BodyPractice_RollAddtion_Cache2" AddV="200"/>
+			<li Name="BodyPractice_RollAddtion_Cache3" AddV="300"/>
+			<li Name="BodyPractice_RollAddtion_Cache4" AddV="500"/>
+		</Properties>
+		<Moods>
+			<li>Illusion2</li>
+			<li>BeSale</li>
+			<li>ThunderDisaster3</li>
+			<li>DevilBlood</li>
+			<li>Temperature2</li>
+			<li>Temperature1</li>
+			<li>Temperature9</li>
+			<li>Pain1</li>
+			<li>Consciousness1</li>
+			<li>ClosedRoom</li>
+			<li>SleepWithWhat</li>
+			<li>Magic2</li>
+			<li>ZhenkongJie</li>
+			<li>Iamdying</li>
+			<li>Temperature8</li>
+		</Moods>
+	</Modifier>
+	<!--小灵丹-->
+	<Modifier Name="Dan_ChaoRen7" Type="Normal">
+		<DisplayName>小灵丹</DisplayName>
+		<Desc>长生不老, 五维和能力拉满</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>100,100,100,100,100</BaseFive>
+		<Skills>
+			<li Name="Manual" LevelOver="10"/>
+			<li Name="DanQi" LevelOver="10"/>
+			<li Name="Medicine" LevelOver="10"/>
+			<li Name="Barrier" LevelOver="10"/>
+			<li Name="FightSkill" LevelOver="10"/>
+			<li Name="Fabao" LevelOver="10"/>
+			<li Name="SocialContact" LevelOver="10"/>
+			<li Name="Qi" LevelOver="10"/>
+			<li Name="Art" LevelOver="10"/>
+			<li Name="Cooking" LevelOver="10"/>
+			<li Name="Building" LevelOver="10"/>
+			<li Name="Farming" LevelOver="10"/> 
+			<li Name="Mining" LevelOver="10"/>
+			<li Name="DouFa" LevelOver="10"/>
+			<li Name="Manual" LevelOver="10"/> 
+			<li Name="Manual" Level="40"/>
+			<li Name="DanQi" Level="40"/>
+			<li Name="Medicine" Level="40"/>
+			<li Name="Barrier" Level="40"/>
+			<li Name="FightSkill" Level="40"/>
+			<li Name="Fabao" Level="40"/>
+			<li Name="SocialContact" Level="40"/>
+			<li Name="Qi" Level="40"/>
+			<li Name="Art" Level="40"/>
+			<li Name="Cooking" Level="40"/>
+			<li Name="Building" Level="40"/>
+			<li Name="Farming" Level="40"/> 
+			<li Name="Mining" Level="40"/>
+			<li Name="DouFa" Level="40"/>
+			<li Name="Manual" Level="40"/> 
+	</Skills>
+		<Properties>
+			<li Name="AgeCostSpeed" AddP="-100"/>
 		</Properties>
 	</Modifier>
 </List></ModifierDefs>
