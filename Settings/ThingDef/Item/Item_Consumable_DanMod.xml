@@ -30,7 +30,7 @@
 		</Item>
 		<Element>
 			<Kind>None</Kind>
-			<Value>3</Value>   
+			<Value>3</Value>
 		</Element>
 	</ThingDef>
 	<!--超人丹-->
@@ -95,7 +95,7 @@
 		</Item>
 		<Element>
 			<Kind>None</Kind>
-			<Value>3</Value>   
+			<Value>3</Value>
 		</Element>
 	</ThingDef>
 	<!--劫灭丹-->
@@ -127,7 +127,7 @@
 		</Item>
 		<Element>
 			<Kind>None</Kind>
-			<Value>3</Value>   
+			<Value>3</Value>
 		</Element>
 	</ThingDef>
 	<!--天道丹-->
@@ -159,7 +159,7 @@
 		</Item>
 		<Element>
 			<Kind>None</Kind>
-			<Value>3</Value>   
+			<Value>3</Value>
 		</Element>
 	</ThingDef>
 	<!--功德丹-->
@@ -191,7 +191,7 @@
 		</Item>
 		<Element>
 			<Kind>None</Kind>
-			<Value>3</Value>   
+			<Value>3</Value>
 		</Element>
 	</ThingDef>
 	<!--体修丹-->
@@ -223,7 +223,7 @@
 		</Item>
 		<Element>
 			<Kind>None</Kind>
-			<Value>3</Value>   
+			<Value>3</Value>
 		</Element>
 	</ThingDef>
 	<!--金灵丹-->
@@ -255,7 +255,7 @@
 		</Item>
 		<Element>
 			<Kind>jin</Kind>
-			<Value>100</Value>   
+			<Value>100</Value>
 		</Element>
 	</ThingDef>
 	<!--木灵丹-->
@@ -287,7 +287,7 @@
 		</Item>
 		<Element>
 			<Kind>mu</Kind>
-			<Value>100</Value>   
+			<Value>100</Value>
 		</Element>
 	</ThingDef>
 	<!--水灵丹-->
@@ -319,7 +319,7 @@
 		</Item>
 		<Element>
 			<Kind>shui</Kind>
-			<Value>100</Value>   
+			<Value>100</Value>
 		</Element>
 	</ThingDef>
 	<!--火灵丹-->
@@ -351,7 +351,7 @@
 		</Item>
 		<Element>
 			<Kind>huo</Kind>
-			<Value>100</Value>   
+			<Value>100</Value>
 		</Element>
 	</ThingDef>
 	<!--土灵丹-->
@@ -383,7 +383,7 @@
 		</Item>
 		<Element>
 			<Kind>tu</Kind>
-			<Value>100</Value>   
+			<Value>100</Value>
 		</Element>
 	</ThingDef>
 </List></ThingDefs>
