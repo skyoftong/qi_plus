@@ -1,7 +1,7 @@
--- 淬体效果无限刷新 v3
--- 不使用自定义 FUI 包，直接调用游戏内置 UI_Button。
+-- 淬体效果无限刷新 v4
+-- 兼容 WindowEvent 可能传入 Window、contentPane、data 或事件对象的不同形式。
 
-local Mod = GameMain:GetMod("BodyLabelRerollUnlimited")
+local Mod = GameMain:GetMod("BodyLabelRerollUnlimitedV4")
 local WindowEvent = GameMain:GetMod("WindowEvent")
 
 local registered = false
@@ -9,114 +9,222 @@ local registered = false
 xlua.private_accessible(CS.XiaWorld.Wnd_BodyRollLabel)
 
 local function Log(text)
-    print("[BodyLabelRerollUnlimited] " .. tostring(text))
+    print("[BodyLabelRerollUnlimitedV4] " .. tostring(text))
+end
+
+local function SafeGet(obj, key)
+    if obj == nil then
+        return nil
+    end
+
+    local ok, value = pcall(function()
+        return obj[key]
+    end)
+
+    if ok then
+        return value
+    end
+
+    return nil
+end
+
+local function SafeCall(func)
+    local ok, value = pcall(func)
+    if ok then
+        return value
+    end
+    return nil
+end
+
+local function GetTypeName(obj)
+    if obj == nil then
+        return "nil"
+    end
+
+    local value = SafeCall(function()
+        return obj:GetType():ToString()
+    end)
+
+    if value ~= nil then
+        return tostring(value)
+    end
+
+    return tostring(obj)
 end
 
 local function ShowMessage(text)
-    local ok = pcall(function()
+    local shown = pcall(function()
         CS.XiaWorld.InGame.Wnd_Message:Show(text)
     end)
 
-    if not ok then
+    if not shown then
         pcall(function()
             CS.WorldLuaHelper():ShowMsgBox(text, "提示")
         end)
     end
 end
 
-local function GetTypeName(obj)
-    if obj == nil then
-        return ""
+local function HasAnchor(pane)
+    if pane == nil then
+        return false
     end
 
-    local ok, result = pcall(function()
-        return obj:GetType():ToString()
+    local child = SafeCall(function()
+        return pane:GetChild("m_n76")
     end)
 
-    if ok and result ~= nil then
-        return tostring(result)
-    end
-
-    return tostring(obj)
+    return child ~= nil
 end
 
-local function ResolveWindow(...)
+local function FindPaneAndWindow(...)
     local args = {...}
+    local pane = nil
+    local window = nil
+    local data = nil
 
-    for _, value in ipairs(args) do
-        if value ~= nil then
-            local ok1, window1 = pcall(function()
-                return value.Window
-            end)
-            if ok1 and window1 ~= nil then
-                return window1
+    local function CheckObject(obj)
+        if obj == nil then
+            return
+        end
+
+        local objType = GetTypeName(obj)
+        Log("检查对象：" .. objType)
+
+        if window == nil and string.find(objType, "Wnd_BodyRollLabel", 1, true) then
+            window = obj
+        end
+
+        local directPane = SafeGet(obj, "contentPane")
+        if directPane ~= nil and HasAnchor(directPane) then
+            pane = pane or directPane
+            window = window or obj
+        end
+
+        if pane == nil and HasAnchor(obj) then
+            pane = obj
+        end
+
+        local nestedWindow = SafeGet(obj, "Window") or SafeGet(obj, "window")
+        if nestedWindow ~= nil then
+            local nestedType = GetTypeName(nestedWindow)
+            if string.find(nestedType, "Wnd_BodyRollLabel", 1, true) then
+                window = window or nestedWindow
             end
 
-            local ok2, window2 = pcall(function()
-                return value.window
-            end)
-            if ok2 and window2 ~= nil then
-                return window2
+            local nestedPane = SafeGet(nestedWindow, "contentPane")
+            if nestedPane ~= nil and HasAnchor(nestedPane) then
+                pane = pane or nestedPane
             end
+        end
 
-            if string.find(GetTypeName(value), "Wnd_BodyRollLabel", 1, true) then
-                return value
-            end
+        local objData = SafeGet(obj, "data")
+        if objData ~= nil and SafeGet(objData, "QData") ~= nil then
+            data = data or objData
+        end
+
+        if SafeGet(obj, "QData") ~= nil then
+            data = data or obj
         end
     end
 
-    return nil
-end
-
-local function Reroll(window)
-    if window == nil or window.data == nil or window.data.QData == nil then
-        ShowMessage("无法读取当前淬体数据。")
-        return
+    for _, arg in ipairs(args) do
+        CheckObject(arg)
     end
 
-    local data = window.data
-    local qdata = data.QData
-    local practiceMgr = CS.XiaWorld.PracticeMgr.Instance
+    if window ~= nil and data == nil then
+        local windowData = SafeGet(window, "data")
+        if windowData ~= nil then
+            data = windowData
+        end
+    end
 
-    local methodDef = practiceMgr:GetBodyQuenchingMethodDef(qdata.method)
+    return pane, window, data
+end
+
+local function GenerateLabels(window, data)
+    data = data or SafeGet(window, "data")
+
+    if data == nil then
+        ShowMessage("淬体刷新：未找到窗口数据。")
+        return false
+    end
+
+    local qdata = SafeGet(data, "QData")
+    if qdata == nil then
+        ShowMessage("淬体刷新：未找到 QData。")
+        return false
+    end
+
+    local method = SafeGet(qdata, "method")
+    local part = SafeGet(qdata, "part")
+    local item = SafeGet(qdata, "item")
+
+    if method == nil then
+        ShowMessage("淬体刷新：未找到淬体方法。")
+        return false
+    end
+
+    local practiceMgr = CS.XiaWorld.PracticeMgr.Instance
+    local methodDef = practiceMgr:GetBodyQuenchingMethodDef(method)
+
     if methodDef == nil then
-        ShowMessage("无法读取当前淬体方法。")
-        return
+        ShowMessage("淬体刷新：无法读取淬体方法定义。")
+        return false
     end
 
     local labelMoreCount = tonumber(methodDef.LabelMoreCount) or 0
-
     local randomCount = CS.XiaWorld.World.RandomRange(
         CS.XiaWorld.GMathUtl.RandomType.emBodyPractice,
         0,
         labelMoreCount + 1
     )
 
-    data.Labels = practiceMgr:GetRandomQuenchingLabelList(
-        qdata.method,
-        qdata.part,
-        qdata.item,
+    local labels = practiceMgr:GetRandomQuenchingLabelList(
+        method,
+        part,
+        item,
         randomCount
     )
 
-    window:ShowOrUpdate(data)
-    Log("已刷新淬体结果。")
+    data.Labels = labels
+
+    local updated = false
+
+    if window ~= nil then
+        updated = pcall(function()
+            window:ShowOrUpdate(data)
+        end)
+    end
+
+    if not updated then
+        ShowMessage("词条已重新生成，但窗口刷新接口调用失败。")
+        return false
+    end
+
+    Log("淬体结果已刷新。")
+    return true
 end
 
-local function AddButton(window)
-    if window == nil or window.contentPane == nil then
+local function AddButton(pane, window, data)
+    if pane == nil then
         return
     end
 
-    local pane = window.contentPane
+    local oldButton = SafeCall(function()
+        return pane:GetChild("RerollBtn")
+    end)
 
-    -- 避免同一个窗口重复添加。
-    local oldButton = pane:GetChild("RerollBtn")
     if oldButton ~= nil then
         return
     end
 
-    local anchor = pane:GetChild("m_n76")
+    local anchor = SafeCall(function()
+        return pane:GetChild("m_n76")
+    end)
+
+    if anchor == nil then
+        return
+    end
 
     local button = CS.XiaWorld.InGame.UI_Button.CreateInstance()
     button.name = "RerollBtn"
@@ -124,86 +232,65 @@ local function AddButton(window)
 
     pane:AddChild(button)
 
-    if anchor ~= nil then
-        button.width = anchor.width
-        button.height = anchor.height
-
-        -- 优先放在原按钮区域旁边；空间不足时放在上方。
-        button.x = anchor.x + anchor.width + 8
-        button.y = anchor.y
-
-        if button.x + button.width > pane.width then
-            button.x = anchor.x
-            button.y = anchor.y - anchor.height - 8
-        end
-    else
-        -- 找不到锚点时，使用窗口底部的保底位置。
-        button.width = 110
-        button.height = 32
-        button.x = math.max(10, pane.width - button.width - 20)
-        button.y = math.max(10, pane.height - button.height - 20)
-        Log("未找到 m_n76，已使用保底位置。")
-    end
+    button.width = anchor.width
+    button.height = anchor.height
+    button.x = anchor.x
+    button.y = anchor.y + anchor.height + 6
 
     button.onClick:Add(function()
-        Reroll(window)
-
-        -- 某些版本 ShowOrUpdate 会重建内容，重新检查按钮。
-        if pane:GetChild("RerollBtn") == nil then
-            AddButton(window)
-        end
+        GenerateLabels(window, data)
     end)
 
     Log(
-        "刷新按钮已添加，位置："
+        "按钮已添加：x="
         .. tostring(button.x)
-        .. ","
+        .. ", y="
         .. tostring(button.y)
     )
 end
 
 local function OnWindowEvent(...)
-    local window = ResolveWindow(...)
-    if window == nil then
-        return
-    end
+    Log("收到 WindowEvent，参数数量：" .. tostring(select("#", ...)))
 
-    local typeName = GetTypeName(window)
-    if string.find(typeName, "Wnd_BodyRollLabel", 1, true) then
-        Log("检测到淬体窗口：" .. typeName)
-        AddButton(window)
+    local pane, window, data = FindPaneAndWindow(...)
+
+    if pane ~= nil then
+        Log("找到包含 m_n76 的 contentPane。")
+        AddButton(pane, window, data)
+    else
+        Log("本次事件未找到 m_n76。")
     end
 end
 
-local function Register()
+local function RegisterEvent()
     if registered then
         return
     end
 
     if WindowEvent == nil then
-        Log("未找到 WindowEvent 前置。")
+        Log("缺少 WindowEvent 前置。")
         ShowMessage("淬体无限刷新：缺少 WindowEvent 前置 MOD。")
         return
     end
 
     WindowEvent._Event:RegisterEvent(
         g_emEvent.WindowEvent,
-        "BodyLabelRerollUnlimited",
+        "BodyLabelRerollUnlimitedV4",
         OnWindowEvent
     )
 
     registered = true
-    Log("窗口事件注册完成。")
+    Log("WindowEvent 注册完成。")
 end
 
 function Mod:OnInit()
-    Log("MOD 初始化完成。")
+    RegisterEvent()
 end
 
 function Mod:OnEnter()
-    Register()
+    RegisterEvent()
 end
 
 function Mod:OnLoad(tbLoad)
-    Register()
+    RegisterEvent()
 end
