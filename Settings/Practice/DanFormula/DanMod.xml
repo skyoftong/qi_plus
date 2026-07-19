@@ -50,7 +50,7 @@
 	</Dan>	
 	<!--技能丹-->
 	<Dan Name="Dan_JingYuan93">
-		<Normal>0</Normal>
+		<Normal>1</Normal>
 		<ItemName>Item_Dan_JingYuan93</ItemName>
 		<Level>0</Level>
 		<SuccessRate>1</SuccessRate>
