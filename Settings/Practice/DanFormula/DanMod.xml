@@ -2,7 +2,7 @@
 <DanFormulas><List>
 	<!--超人丹-->
 	<Dan Name="Dan_ChaoRen1">
-		<Normal>0</Normal>
+		<Normal>1</Normal>
 		<ItemName>Item_Dan_ChaoRen1</ItemName>
 		<Level>0</Level>
 		<SuccessRate>1</SuccessRate>
@@ -10,7 +10,7 @@
 	</Dan>
 	<!--剑仙丹-->
 	<Dan Name="Dan_ChaoRen2">
-		<Normal>0</Normal>
+		<Normal>1</Normal>
 		<ItemName>Item_Dan_ChaoRen2</ItemName>
 		<Level>0</Level>
 		<SuccessRate>1</SuccessRate>
