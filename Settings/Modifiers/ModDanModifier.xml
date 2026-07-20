@@ -9,6 +9,38 @@
 		<Display>0</Display>
 		<BaseFive>100,100,100,100,100</BaseFive>
 		<Skills>
+			<li Name="Manual" LevelOver="210"/>
+			<li Name="DanQi" LevelOver="210"/>
+			<li Name="Medicine" LevelOver="210"/>
+			<li Name="Barrier" LevelOver="210"/>
+			<li Name="Fight" LevelOver="210"/>
+			<li Name="FightSkill" LevelOver="210"/>
+			<li Name="Fabao" LevelOver="210"/>
+			<li Name="SocialContact" LevelOver="210"/>
+			<li Name="Qi" LevelOver="210"/>
+			<li Name="Art" LevelOver="210"/>
+			<li Name="Cooking" LevelOver="210"/>
+			<li Name="Building" LevelOver="210"/>
+			<li Name="Farming" LevelOver="210"/> 
+			<li Name="Mining" LevelOver="210"/>
+			<li Name="DouFa" LevelOver="210"/>
+			<li Name="Manual" Level="240"/>
+			<li Name="DanQi" Level="240"/>
+			<li Name="Medicine" Level="240"/>
+			<li Name="Barrier" Level="240"/>
+			<li Name="Fight" Level="210"/>
+			<li Name="FightSkill" Level="240"/>
+			<li Name="Fabao" Level="240"/>
+			<li Name="SocialContact" Level="240"/>
+			<li Name="Qi" Level="240"/>
+			<li Name="Art" Level="240"/>
+			<li Name="Cooking" Level="240"/>
+			<li Name="Building" Level="240"/>
+			<li Name="Farming" Level="240"/> 
+			<li Name="Mining" Level="240"/>
+			<li Name="DouFa" Level="240"/>
+		</Skills>
+		<Properties>
 			<li Name="TreatmentExpectQuality" AddP="200"/>
 			<li Name="NutritionConsumeConstant" AddP="-100"/>
 			<li Name="FatigueConsumeConstant" AddP="-100"/>
@@ -37,40 +69,6 @@
 			<li Name="ExperienceFindSpeedAddV" AddV="100"/>
 			<li Name="NpcFight_SneakValue" AddV="500"/>	
 			<li Name="AgeCostSpeed" AddP="-100"/>
-		</Skills>
-		<Properties>
-			<li Name="Manual" LevelOver="210"/>
-			<li Name="DanQi" LevelOver="210"/>
-			<li Name="Medicine" LevelOver="210"/>
-			<li Name="Barrier" LevelOver="210"/>
-			<li Name="Fight" LevelOver="210"/>
-			<li Name="FightSkill" LevelOver="210"/>
-			<li Name="Fabao" LevelOver="210"/>
-			<li Name="SocialContact" LevelOver="210"/>
-			<li Name="Qi" LevelOver="210"/>
-			<li Name="Art" LevelOver="210"/>
-			<li Name="Cooking" LevelOver="210"/>
-			<li Name="Building" LevelOver="210"/>
-			<li Name="Farming" LevelOver="210"/> 
-			<li Name="Mining" LevelOver="210"/>
-			<li Name="DouFa" LevelOver="210"/>
-			<li Name="Manual" LevelOver="210"/> 
-			<li Name="Manual" Level="240"/>
-			<li Name="DanQi" Level="240"/>
-			<li Name="Medicine" Level="240"/>
-			<li Name="Barrier" Level="240"/>
-			<li Name="Fight" Level="210"/>
-			<li Name="FightSkill" Level="240"/>
-			<li Name="Fabao" Level="240"/>
-			<li Name="SocialContact" Level="240"/>
-			<li Name="Qi" Level="240"/>
-			<li Name="Art" Level="240"/>
-			<li Name="Cooking" Level="240"/>
-			<li Name="Building" Level="240"/>
-			<li Name="Farming" Level="240"/> 
-			<li Name="Mining" Level="240"/>
-			<li Name="DouFa" Level="240"/>
-			<li Name="Manual" Level="240"/> 
 		</Properties>
 	</Modifier>
 	<!--剑仙丹-->
@@ -186,6 +184,7 @@
 			<li Name="DanQi" LevelOver="10"/>
 			<li Name="Medicine" LevelOver="10"/>
 			<li Name="Barrier" LevelOver="10"/>
+			<li Name="Fight" LevelOver="10"/>
 			<li Name="FightSkill" LevelOver="10"/>
 			<li Name="Fabao" LevelOver="10"/>
 			<li Name="SocialContact" LevelOver="10"/>
@@ -196,11 +195,11 @@
 			<li Name="Farming" LevelOver="10"/> 
 			<li Name="Mining" LevelOver="10"/>
 			<li Name="DouFa" LevelOver="10"/>
-			<li Name="Manual" LevelOver="10"/> 
 			<li Name="Manual" Level="40"/>
 			<li Name="DanQi" Level="40"/>
 			<li Name="Medicine" Level="40"/>
 			<li Name="Barrier" Level="40"/>
+			<li Name="Fight" Level="40"/>
 			<li Name="FightSkill" Level="40"/>
 			<li Name="Fabao" Level="40"/>
 			<li Name="SocialContact" Level="40"/>
@@ -211,10 +210,11 @@
 			<li Name="Farming" Level="40"/> 
 			<li Name="Mining" Level="40"/>
 			<li Name="DouFa" Level="40"/>
-			<li Name="Manual" Level="40"/> 
 	</Skills>
 		<Properties>
 			<li Name="AgeCostSpeed" AddP="-100"/>
+			<li Name="GlobalEfficiency" AddP="100"/>
+			<li Name="MoveSpeed" AddP="100"/>
 		</Properties>
 	</Modifier>
 </List></ModifierDefs>
