@@ -8,7 +8,7 @@
 		<Duration>-1</Duration>
 		<Display>0</Display>
 		<BaseFive>100,100,100,100,100</BaseFive>
-		<Properties>
+		<Skills>
 			<li Name="TreatmentExpectQuality" AddP="200"/>
 			<li Name="NutritionConsumeConstant" AddP="-100"/>
 			<li Name="FatigueConsumeConstant" AddP="-100"/>
@@ -37,7 +37,8 @@
 			<li Name="ExperienceFindSpeedAddV" AddV="100"/>
 			<li Name="NpcFight_SneakValue" AddV="500"/>	
 			<li Name="AgeCostSpeed" AddP="-100"/>
-		<Skills>
+		</Skills>
+		<Properties>
 			<li Name="Manual" LevelOver="210"/>
 			<li Name="DanQi" LevelOver="210"/>
 			<li Name="Medicine" LevelOver="210"/>
@@ -70,7 +71,6 @@
 			<li Name="Mining" Level="240"/>
 			<li Name="DouFa" Level="240"/>
 			<li Name="Manual" Level="240"/> 
-		</Skills>
 		</Properties>
 	</Modifier>
 	<!--剑仙丹-->
