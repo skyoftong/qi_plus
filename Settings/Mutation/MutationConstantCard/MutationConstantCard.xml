@@ -141,7 +141,7 @@
         <Def Name="Mutation_Effect_Constant_UnlockGong"> 
             <DisplayName>道果危悬</DisplayName>
             <Desc>筑基需要的筑基值，修行所需的修行值增幅5倍。修行界为道统延续，也向所有修行者公开了全部修行功法。</Desc>
-            <Weight>-1,-1,150</Weight>
+            <Weight>-1,-1,1500</Weight>
             <Effects>
                 <li>Mutation_Effect_Constant_UnlockGong</li>
             </Effects>
@@ -276,7 +276,7 @@
         <Def Name="Mutation_Effect_Constant_Sacrific"> 
             <DisplayName>祭妖盛典</DisplayName>
             <Desc>开启祭妖盛典，但每次祭妖都会引起万妖殿的愤怒（可通过祖师殿进行祭妖）</Desc>
-            <Weight>-1,-1,2000</Weight>
+            <Weight>-1,-1,1000</Weight>
             <CoverEffects>
                 <li>Mutation_Effect_Constant_Sacrific</li>
             </CoverEffects>
@@ -336,7 +336,7 @@
         <Def Name="Mutation_Effect_Constant_ModifierChange_7"> 
             <DisplayName>贪食氤氲</DisplayName>
             <Desc>门派弟子亲近自然，气感极好，但因此变得更容易感到饥渴与疲劳（气感＋10）</Desc>
-            <Weight>-1,-1,100</Weight>
+            <Weight>-1,-1,0</Weight>
             <Effects>
                 <li>Mutation_Effect_Constant_ModifierChange_7</li>
             </Effects>
@@ -372,7 +372,7 @@
         <Def Name="Mutation_Effect_Constant_ModifierChange_11"> 
             <DisplayName>沉溺术法</DisplayName>
             <Desc>门派弟子沉溺于术法一道，术法技艺高超，却因此荒废了修行；修炼速度大幅下降，术法技能＋10（提高上限）</Desc>
-            <Weight>-1,-1,400</Weight>
+            <Weight>-1,-1,0</Weight>
             <Effects>
                 <li>Mutation_Effect_Constant_ModifierChange_11</li>
             </Effects>
@@ -404,7 +404,7 @@
         <Def Name="Mutation_Effect_Constant_ModifierChange_14"> 
             <DisplayName>沉溺御器</DisplayName>
             <Desc>门派弟子沉溺于御器一道，御器技艺高超，却因此荒废了研习；学习速度大幅下降，御器技能＋5（提高上限）</Desc>
-            <Weight>-1,-1,100</Weight>
+            <Weight>-1,-1,0</Weight>
             <Effects>
                 <li>Mutation_Effect_Constant_ModifierChange_14</li>
             </Effects>

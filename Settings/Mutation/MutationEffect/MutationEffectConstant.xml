@@ -195,17 +195,9 @@
 
         <Def Name="Mutation_Effect_Constant_UnlockGong"  Parent="Mutation_Effect_ConstantBase"> 
             <DisplayName>道果危悬</DisplayName>
-            <Desc>筑基需要的筑基值，修行所需的修行值增幅5倍。修行界为道统延续，也向所有修行者公开了全部修行功法。</Desc>
+            <Desc>修行界为道统延续，向所有修行者公开了全部修行功法。</Desc>
             <Weight>-1,-1,100</Weight>
             <Effects>
-                <li>
-                    <Kind>ZhuJiBaseValueChange</Kind>
-                    <fParam1>4</fParam1>
-                 </li>
-                <li>
-                    <Kind>StageValueChange</Kind>
-                    <fParam1>4</fParam1>
-                 </li>
                 <li>
                     <Kind>UnlockGong</Kind>
                     <sParam1>Gong_1_Shui,Gong_2_Mu,Gong_3_Jin,Gong_4_None,Gong_5_Tu,Gong_6_Huo,Gong_7_Huo,Gong_8_Jin,Gong_9_Mu,Gong_10_Huo,Gong_11_Tu,Gong_12_None,Gong_13_None,God_Gong_1,God_Gong_2,God_Gong_3,Body_Gong_1,Body_Gong_2,Body_Gong_3,Body_Gong_5</sParam1>
