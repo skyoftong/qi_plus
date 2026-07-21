@@ -41,30 +41,18 @@
 			<li Name="DouFa" Level="240"/>
 		</Skills>
 		<Properties>
-			<li Name="TreatmentExpectQuality" AddP="200"/>
-			<li Name="NutritionToJingYuanK" BAddV="1000"/>
-			<li Name="NutritionToJingYuanK" AddP="1000"/>
-			<li Name="NutritionWaterAutoRecover" BAddV="10000"/>
-			<li Name="MaxAge" AddV="100000000"/>
-			<li Name="MindStateBaseValue" AddV="10000"/>
-			<li Name="SpeedOfMindStateCoefficient" AddP="-100"/>
+			<li Name="NpcFight_BaseHitChance" AddV="10"/>
+			<li Name="NpcFight_BaseDodgeChance" AddV="10"/>
+			<li Name="AgeCostSpeed" AddP="-100"/>
 			<li Name="GlobalEfficiency" AddP="100"/>
 			<li Name="MoveSpeed" AddP="100"/>
 			<li Name="ToleranceTMin" AddV="-273"/>
 			<li Name="ToleranceTMax" AddV="10000"/>
-			<li Name="IntelligenceSkillEXPConstant" AddP="10000"/>
-			<li Name="PotentialOfBasepracticeAddValue" AddV="100"/>
-			<li Name="NpcFight_BaseHitChance" AddV="10"/>
-			<li Name="NpcFight_BaseDodgeChance" AddV="10"/>
-			<li Name="NpcFight_ShieldResistanceToJin" AddV="10"/>
-			<li Name="NpcFight_ShieldResistanceToMu" AddV="10"/>
-			<li Name="NpcFight_ShieldResistanceToShui" AddV="10"/>
-			<li Name="NpcFight_ShieldResistanceToHuo" AddV="10"/>
-			<li Name="NpcFight_ShieldResistanceToTu" AddV="10"/>
-			<li Name="WorldMapFlySpeedAddP" AddP="100"/>
-			<li Name="ExperienceFindSpeedAddV" AddV="100"/>
-			<li Name="NpcFight_SneakValue" AddV="500"/>	
-			<li Name="AgeCostSpeed" AddV="-100"/>
+			<li Name="PracticeFoodRecoveryConstant" AddP="100000"/>
+			<li Name="NutritionConsumeConstant" BAddV="0"/>
+			<li Name="NutritionToJingYuanK" AddP="100000"/>
+			<li Name="MindStateBaseValue" AddV="10000"/>
+			<li Name="SpeedOfMindStateCoefficient" AddP="-100"/>
 		</Properties>
 	</Modifier>
 	<!--剑仙丹-->
