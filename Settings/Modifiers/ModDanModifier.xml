@@ -224,6 +224,8 @@
 			<li Name="MoveSpeed" AddP="100"/>
 			<li Name="ToleranceTMin" AddV="-273"/>
 			<li Name="ToleranceTMax" AddV="10000"/>
+			<li Name="RecoveryPower" AddP="10"/>
+			<li Name="MagicDamageRecoveryPowerAddV" AddV="10"/>
 		</Properties>
 	</Modifier>
 </List></ModifierDefs>
