@@ -42,9 +42,9 @@
 		</Skills>
 		<Properties>
 			<li Name="TreatmentExpectQuality" AddP="200"/>
-			<li Name="NutritionConsumeConstant" AddP="-100"/>
+			<li Name="NutritionConsumeConstant" BAddV="0"/>
+			<li Name="NutritionToJingYuanK" AddV="10000"/>
 			<li Name="FatigueConsumeConstant" AddP="-100"/>
-			<li Name="NutritionToJingYuanK" AddV="-1"/>
 			<li Name="PracticeFoodConsumeConstant" AddP="-1000"/>
 			<li Name="PracticeFoodRecoveryConstant" AddP="1000"/>
 			<li Name="NutritionWaterAutoRecover" AddV="1000"/>
@@ -230,6 +230,8 @@
 			<li Name="MagicDamageRecoveryPowerAddV" AddV="10"/>
 			<li Name="PracticeFoodRecoveryConstant" AddP="10"/>
 			<li Name="PracticeFoodConsumeConstant" AddP="-10"/>
+			<li Name="NutritionConsumeConstant" BddV="0"/>
+			<li Name="NutritionToJingYuanK" AddV="10000"/>
 		</Properties>
 	</Modifier>
 </List></ModifierDefs>
