@@ -80,27 +80,26 @@
 		<Display>0</Display>
 		<Properties>
 			<li Name="NpcLingMaxValue" BAddV="100000000"/>
-			<li Name="LingAbsorbSpeed" AddP="100000000"/>
+			<li Name="LingAbsorbSpeed" AddP="10000000000"/>
 			<li Name="NpcFight_FabaoNum" AddV="5"/>
-			<li Name="NpcFight_ShieldConversionRate" BAddP="100"/>
+			<li Name="NpcFight_ShieldConversionRate" BAddP="10000"/>
 			<li Name="NpcFight_FabaoPowerAddP" BAddP="10000"/>
 			<li Name="NpcFight_FabaoLingRecoverAddP" BAddP="10000"/>
 			<li Name="NpcFight_FabaoLingRecoverK" AddV="10000"/>
-			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="200"/>
-			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="100"/> 
-			<li Name="NpcFight_FabaoTrailingLengthAddP" AddP="100"/>
-			<li Name="NpcFight_SpellPowerAddP" BAddV="100"/>
-			<li Name="NpcFight_SpellLingCostAddP" AddP="-100"/>
-			<li Name="NpcFight_SpellCoolDownAddP" AddV="-1"/> 
-			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="100"/>
-			<li Name="FabaoMake_SpeedAddV" AddV="200"/>
-			<li Name="FabaoMake_SuccessRateAddV" AddV="200"/>
-			<li Name="FabaoMake_LingInheritRateAddV" AddV="200"/>
-			<li Name="FabaoMake_QualityAddV" AddV="10"/>
-			<li Name="FabaoMake_TwelveRateChance" AddV="10"/>
-			<li Name="DanMake_SpeedAddV" AddV="300"/>
-			<li Name="DanMake_SuccessRateAddV" AddV="300"/>
-			<li Name="DanMake_YieldAddP" AddV="10"/>
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="10000"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="10000"/> 
+			<li Name="NpcFight_FabaoTrailingLengthAddP" AddP="10000"/>
+			<li Name="NpcFight_SpellPowerAddP" BAddV="10000"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-10000"/>
+			<li Name="NpcFight_SpellCoolDownAddP" AddV="-10"/> 
+			<li Name="FabaoMake_SpeedAddV" AddV="10000"/>
+			<li Name="FabaoMake_SuccessRateAddV" AddV="10000"/>
+			<li Name="FabaoMake_LingInheritRateAddV" AddV="10000"/>
+			<li Name="FabaoMake_QualityAddV" AddV="10000"/>
+			<li Name="FabaoMake_TwelveRateChance" AddV="10000"/>
+			<li Name="DanMake_SpeedAddV" AddV="100"/>
+			<li Name="DanMake_SuccessRateAddV" AddV="100"/>
+			<li Name="DanMake_YieldAddP" AddV="100"/>
 		</Properties>
 	</Modifier>
 	<!--劫灭丹-->
@@ -133,10 +132,11 @@
 		<Duration>-1</Duration>
 		<Display>0</Display>
 		<Properties>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="10000"/>
 			<li Name="RecoveryPower" AddP="400"/>
 			<li Name="MagicDamageRecoveryPowerAddV" AddV="400"/>
 			<li Name="BodyPractice_SuperPartRecoverAddP" AddV="100"/>
-			<li Name="BodyPractice_Other_TunaAddp" AddV="100"/>
+			<li Name="BodyPractice_Other_TunaAddp" AddV="1000"/>
 			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="100"/>
 			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="100"/>
 			<li Name="BodyPractice_SuperPartAddp_AtkRate" AddV="100"/>
@@ -212,6 +212,13 @@
 			<li Name="DouFa" Level="40"/>
 	</Skills>
 		<Properties>
+			<li Name="NpcLingMaxValue" BAddV="1000000"/>
+			<li Name="LingAbsorbSpeed" AddP="100000000"/>
+			<li Name="RecoveryPower" AddP="100"/>
+			<li Name="MagicDamageRecoveryPowerAddV" AddV="100"/>
+			<li Name="BodyPratice_QuenchingSpeed" AddV="10"/>
+			<li Name="BodyPractice_Other_TunaAddp" AddV="10"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="1000"/>
 			<li Name="AgeCostSpeed" AddP="-100"/>
 			<li Name="GlobalEfficiency" AddP="100"/>
 			<li Name="MoveSpeed" AddP="100"/>
