@@ -62,8 +62,8 @@
 			<li Name="NpcFight_ShieldResistanceToShui" AddV="10"/>
 			<li Name="NpcFight_ShieldResistanceToHuo" AddV="10"/>
 			<li Name="NpcFight_ShieldResistanceToTu" AddV="10"/>
-			<li Name="RecoveryPower" AddV="100"/>
-			<li Name="MagicDamageRecoveryPowerAddV" AddV="100"/>
+			<li Name="RecoveryPower" AddV="1"/>
+			<li Name="MagicDamageRecoveryPowerAddV" AddV="1"/>
 			<li Name="WorldMapFlySpeedAddP" AddP="100"/>
 			<li Name="ExperienceFindSpeedAddV" AddV="100"/>
 			<li Name="NpcFight_SneakValue" AddV="500"/>	
@@ -137,8 +137,8 @@
 		<Display>0</Display>
 		<Properties>
 			<li Name="BodyPratice_RecoverZhenQi" AddV="100000"/>
-			<li Name="RecoveryPower" AddP="400"/>
-			<li Name="MagicDamageRecoveryPowerAddV" AddV="400"/>
+			<li Name="RecoveryPower" AddP="4"/>
+			<li Name="MagicDamageRecoveryPowerAddV" AddV="4"/>
 			<li Name="BodyPractice_SuperPartRecoverAddP" AddV="100"/>
 			<li Name="BodyPractice_Other_TunaAddp" AddV="1000"/>
 			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="100"/>
