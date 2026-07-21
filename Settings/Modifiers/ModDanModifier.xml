@@ -230,7 +230,7 @@
 			<li Name="MagicDamageRecoveryPowerAddV" AddV="10"/>
 			<li Name="PracticeFoodRecoveryConstant" AddP="10"/>
 			<li Name="PracticeFoodConsumeConstant" AddP="-10"/>
-			<li Name="NutritionConsumeConstant" BddV="0"/>
+			<li Name="NutritionConsumeConstant" BAddV="0"/>
 			<li Name="NutritionToJingYuanK" AddV="10000"/>
 		</Properties>
 	</Modifier>
