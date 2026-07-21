@@ -44,7 +44,7 @@
 			<li Name="TreatmentExpectQuality" AddP="200"/>
 			<li Name="NutritionConsumeConstant" AddP="-100"/>
 			<li Name="FatigueConsumeConstant" AddP="-100"/>
-			<li Name="NutritionToJingYuanK" AddV="1000"/>
+			<li Name="NutritionToJingYuanK" AddV="-1"/>
 			<li Name="PracticeFoodConsumeConstant" AddP="-1000"/>
 			<li Name="PracticeFoodRecoveryConstant" AddP="1000"/>
 			<li Name="NutritionWaterAutoRecover" AddV="1000"/>
