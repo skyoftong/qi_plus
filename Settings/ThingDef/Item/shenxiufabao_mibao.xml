@@ -66,8 +66,8 @@
 
 	<ThingDef Type="Item" Name="Item_MiBao_ShenXiuFaBaoXinYangShengWu" Parent="ShengWu01Base">
 		<ThingName>信仰圣物</ThingName>
-		<TexPath>res\Sprs\object_zhengfatianxia\object_PTjian01</TexPath>	
-		<FabaoTexPath>res\Sprs\object_zhengfatianxia\object_MBjian01</FabaoTexPath>
+		<TexPath>res\Sprs\object\object_PTliantai01</TexPath>	
+		<FabaoTexPath>res\Sprs\object\object_MBliantai01</FabaoTexPath>
 		<Desc>仿制的神道修行者的本命法宝信仰圣物。</Desc>
 		<Beauty>23</Beauty>
 		<Rate>15</Rate>	
@@ -89,9 +89,6 @@
 				</CostItems>
 			</BeMade> 
 			<Fabao>
-				<ActiveCondition>
-					<Condition eventid = "Other" des = "以精血喂养宝物1次" needcount = "1"/>
-				</ActiveCondition>
 				<SpecialAbility>
 					<Ability Kind="HitCountAddMirror" nParam1="3" nParam2="9" fParam1="3" Desc="每攻击3次，产生9道蚊须分形，持续3秒。"/>
 					<!--灵冲殿--><Ability Kind="HitCountCostSkill" nParam1="18"  sParam1="DamageSkill_4" Desc="每18次攻击会对目标敌人发动一次法术。"/>
