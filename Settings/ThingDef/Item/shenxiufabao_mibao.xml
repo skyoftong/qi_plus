@@ -4,7 +4,7 @@
 	
 	<ThingName></ThingName>
 	<MaxStack>1</MaxStack>
-	<TexPath></TexPath>
+	<TexPath>res\Sprs\object_zhengfatianxia\object_PTjian01</TexPath>
 	<Desc>Desc.</Desc>
 	<SelectAble>1</SelectAble>
 	<VisualAble>1</VisualAble>
@@ -85,19 +85,10 @@
 			</PhysicalLables>
 			<BeMade>
 				<CostItems>
-					<Item name = "Item_SkyStone" count = "1"/>
-					<Item name = "Item_ParasolWood" count = "1"/>
 					<Item name = "Item_LingCrystal" count = "1"/>
-					<Item name = "Item_CopperRock" count = "1"/>
-					<Item name = "Item_SilverRock" count = "1"/>
-					<Item name = "Item_ExtremeJade" count = "1"/>
-					<Item name = "Item_StarEssence" count = "1"/>
 				</CostItems>
 			</BeMade> 
 			<Fabao>
-				<ActiveCondition>
-					<Condition eventid = "SoulCrystalYou" des = "将宝物成功幽粹11次。" needcount = "11" fParam = "1" />
-				</ActiveCondition>
 				<SpecialAbility>
 					<!--灵冲殿--><Ability Kind="HitCountCostSkill" nParam1="18"  sParam1="DamageSkill_4" Desc="每18次攻击会对目标敌人发动一次法术。"/>
 					<!--灵归殿--><Ability Kind="HitAddRecovery" fParam1="0.03"  Desc="造成伤害的3%会补充为法宝自身的灵气。"/>
