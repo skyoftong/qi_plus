@@ -62,6 +62,11 @@
 			<li Name="NpcFight_ShieldResistanceToHuo" AddV="10"/>
 			<li Name="NpcFight_ShieldResistanceToTu" AddV="10"/>
 			<li Name="AgeCostSpeed" AddV="-100"/>
+			<li Name="RecoveryPower" AddP="100"/>
+			<li Name="MagicDamageRecoveryPowerAddV" AddV="100"/>
+			<li Name="WorldMapFlySpeedAddP" AddV="100"/>
+			<li Name="ExperienceFindSpeedAddV" AddV="100"/>
+			<li Name="NpcFight_SneakValue" AddV="500"/>	
 		</Properties>
 	</Modifier>
 	<!--剑仙丹-->
@@ -98,12 +103,6 @@
 			<li Name="DanMake_SpeedAddV" AddV="100"/>
 			<li Name="DanMake_SuccessRateAddV" AddV="100"/>
 			<li Name="DanMake_YieldAddP" AddP="100"/>
-			<li Name="RecoveryPower" AddP="100"/>
-			<li Name="MagicDamageRecoveryPowerAddV" AddV="100"/>
-			<li Name="WorldMapFlySpeedAddP" AddV="100"/>
-			<li Name="ExperienceFindSpeedAddV" AddV="100"/>
-			<li Name="NpcFight_SneakValue" AddV="500"/>	
-			<li Name="AgeCostSpeed" AddP="-100"/>
 		</Properties>
 	</Modifier>
 	<!--劫灭丹-->
