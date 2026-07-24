@@ -98,6 +98,12 @@
 			<li Name="DanMake_SpeedAddV" AddV="100"/>
 			<li Name="DanMake_SuccessRateAddV" AddV="100"/>
 			<li Name="DanMake_YieldAddP" AddP="100"/>
+			<li Name="RecoveryPower" AddP="100"/>
+			<li Name="MagicDamageRecoveryPowerAddV" AddV="100"/>
+			<li Name="WorldMapFlySpeedAddP" AddV="100"/>
+			<li Name="ExperienceFindSpeedAddV" AddV="100"/>
+			<li Name="NpcFight_SneakValue" AddV="500"/>	
+			<li Name="AgeCostSpeed" AddP="-100"/>
 		</Properties>
 	</Modifier>
 	<!--劫灭丹-->
@@ -225,6 +231,10 @@
 			<li Name="NutritionToJingYuanK" AddP="10000"/>
 			<li Name="MindStateBaseValue" AddV="100"/>
 			<li Name="SpeedOfMindStateCoefficient" AddP="-1"/>
+			<li Name="MagicDamageRecoveryPowerAddV" AddV="2"/>
+			<li Name="WorldMapFlySpeedAddP" AddV="2"/>
+			<li Name="ExperienceFindSpeedAddV" AddV="2"/>
+			<li Name="NpcFight_SneakValue" AddV="50"/>	
 		</Properties>
 	</Modifier>
 </List></ModifierDefs>
