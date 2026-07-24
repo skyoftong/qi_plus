@@ -1,6 +1,6 @@
 <ThingDefs><List>
 
-	<ThingDef Type="Item" Name="ShengWu01Base" Parent="ItemBase">
+	<ThingDef Type="Item" Name="ShengWu01Base" Parent="MiBaoBase">
 	
 	<ThingName></ThingName>
 	<MaxStack>1</MaxStack>
