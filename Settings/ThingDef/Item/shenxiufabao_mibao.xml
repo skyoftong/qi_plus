@@ -96,7 +96,7 @@
 			</BeMade> 
 			<Fabao>
 				<ActiveCondition>
-					<Condition eventid = "Other" des = "以精血喂养宝物1次" needcount = "1"/>
+					<Condition eventid = "SoulCrystalYou" des = "将宝物成功幽粹11次。" needcount = "11" fParam = "1" />
 				</ActiveCondition>
 				<SpecialAbility>
 					<!--灵冲殿--><Ability Kind="HitCountCostSkill" nParam1="18"  sParam1="DamageSkill_4" Desc="每18次攻击会对目标敌人发动一次法术。"/>
@@ -111,5 +111,7 @@
 			</Fabao>
 		</Item>
 	</ThingDef>
-
+	<Element>
+		<Kind>None</Kind>
+	</Element>	
 </List></ThingDefs>
