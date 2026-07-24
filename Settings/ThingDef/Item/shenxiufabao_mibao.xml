@@ -1,10 +1,10 @@
 <ThingDefs><List>
 
-	<ThingDef Type="Item" Name="ShengWu01Base" Parent="MiBaoBase">
+	<ThingDef Type="Item" Name="ShengWu01Base" Parent="ItemBase">
 	
 	<ThingName></ThingName>
 	<MaxStack>1</MaxStack>
-	<TexPath>res\Sprs\object_zhengfatianxia\object_PTjian01</TexPath>
+	<TexPath></TexPath>
 	<Desc>Desc.</Desc>
 	<SelectAble>1</SelectAble>
 	<VisualAble>1</VisualAble>
@@ -66,8 +66,8 @@
 
 	<ThingDef Type="Item" Name="Item_MiBao_ShenXiuFaBaoXinYangShengWu" Parent="ShengWu01Base">
 		<ThingName>信仰圣物</ThingName>
-		<TexPath>res\Sprs\object_zhengfatianxia\object_PTjian01</TexPath>	
-		<FabaoTexPath>res\Sprs\object_zhengfatianxia\object_MBjian01</FabaoTexPath>
+		<TexPath>res\Sprs\object\object_PTzhu01</TexPath>	
+		<FabaoTexPath>res\Sprs\object\object_MBzhu01</FabaoTexPath>
 		<Desc>仿制的神道修行者的本命法宝信仰圣物。</Desc>
 		<Beauty>23</Beauty>
 		<Rate>15</Rate>	
@@ -89,7 +89,11 @@
 				</CostItems>
 			</BeMade> 
 			<Fabao>
+				<ActiveCondition>
+					<Condition eventid = "SoulCrystalYou" des = "将宝物成功幽粹1次。" needcount = "1" fParam = "1" />
+				</ActiveCondition>
 				<SpecialAbility>
+					<Ability Kind="HitCountAddMirror" nParam1="3" nParam2="9" fParam1="3" Desc="每攻击3次，产生9道蚊须分形，持续3秒。"/>
 					<!--灵冲殿--><Ability Kind="HitCountCostSkill" nParam1="18"  sParam1="DamageSkill_4" Desc="每18次攻击会对目标敌人发动一次法术。"/>
 					<!--灵归殿--><Ability Kind="HitAddRecovery" fParam1="0.03"  Desc="造成伤害的3%会补充为法宝自身的灵气。"/>
 					<!--分光殿--><Ability Kind="HitCountAddMirror" nParam1="15" nParam2="1" fParam1="15" Desc="每攻击15次，产生1道剑光分化，持续15秒。"/>
