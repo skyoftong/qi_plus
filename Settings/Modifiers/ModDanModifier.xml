@@ -67,6 +67,8 @@
 			<li Name="WorldMapFlySpeedAddP" AddV="100"/>
 			<li Name="ExperienceFindSpeedAddV" AddV="100"/>
 			<li Name="NpcFight_SneakValue" AddV="500"/>	
+			<li Name="PlantHarvestYieldEfficiency" AddP="100"/>
+			<li Name="ButcherYieldEfficiency" AddP="100"/>
 		</Properties>
 	</Modifier>
 	<!--剑仙丹-->
@@ -100,9 +102,9 @@
 			<li Name="FabaoMake_LingInheritRateAddV" AddV="10000"/>
 			<li Name="FabaoMake_QualityAddV" AddV="10000"/>
 			<li Name="FabaoMake_TwelveRateChance" AddV="10000"/>
-			<li Name="DanMake_SpeedAddV" AddV="100"/>
-			<li Name="DanMake_SuccessRateAddV" AddV="100"/>
-			<li Name="DanMake_YieldAddP" AddP="100"/>
+			<li Name="DanMake_SpeedAddV" AddV="10000"/>
+			<li Name="DanMake_SuccessRateAddV" AddV="10000"/>
+			<li Name="DanMake_YieldAddP" AddP="10000"/>
 		</Properties>
 	</Modifier>
 	<!--劫灭丹-->
@@ -212,6 +214,8 @@
 			<li Name="Farming" Level="40"/> 
 			<li Name="Mining" Level="40"/>
 			<li Name="DouFa" Level="40"/>
+			<li Name="PlantHarvestYieldEfficiency" AddP="1"/>
+			<li Name="ButcherYieldEfficiency" AddP="1"/>
 	</Skills>
 		<Properties>
 			<li Name="NpcLingMaxValue" BAddV="1000000"/>
