@@ -140,22 +140,22 @@
 			<li Name="BodyPratice_RecoverZhenQi" AddV="100000"/>
 			<li Name="PracticeFoodRecoveryConstant" AddP="10000"/>
 			<li Name="BodyPractice_SuperPartRecoverAddP" AddV="4000"/>
-			<li Name="BodyPractice_Other_TunaAddp" AddV="1000"/>
-			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="100"/>
-			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="100"/>
-			<li Name="BodyPractice_SuperPartAddp_AtkRate" AddV="100"/>
-			<li Name="BodyPractice_SuperPartAddp_DefRate" AddV="100"/>
-			<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddV="100"/>
-			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="100"/>
-			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="100"/>
-			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="100"/>
-			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="100"/>
-			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="100"/>
+			<li Name="BodyPractice_Other_TunaAddp" AddV="10000"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="1000"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="1000"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkRate" AddV="1000"/>
+			<li Name="BodyPractice_SuperPartAddp_DefRate" AddV="1000"/>
+			<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddV="1000"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="1000"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="1000"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="1000"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="1000"/>
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="1000"/>
 			<li Name="BodyPratice_QuenchingSpeed" AddV="1000"/>
 			<li Name="BodyPractice_RollAddtion_Cache1" AddV="50"/>
 			<li Name="BodyPractice_RollAddtion_Cache2" AddV="200"/>
 			<li Name="BodyPractice_RollAddtion_Cache3" AddV="300"/>
-			<li Name="BodyPractice_RollAddtion_Cache4" AddV="500"/>
+			<li Name="BodyPractice_RollAddtion_Cache4" AddV="5000"/>
 		</Properties>
 	</Modifier>
 	<!--小灵丹-->
