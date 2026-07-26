@@ -104,4 +104,12 @@
 		<SuccessRate>1</SuccessRate>
 		<Count>10</Count>
 	</Dan>
+	<!--体修心情丹-->
+	<Dan Name="Dan_ChaoRen14">
+		<Normal>1</Normal>
+		<ItemName>Item_Dan_ChaoRen14</ItemName>
+		<Level>0</Level>
+		<SuccessRate>1</SuccessRate>
+		<Count>10</Count>
+	</Dan>
 </List></DanFormulas>

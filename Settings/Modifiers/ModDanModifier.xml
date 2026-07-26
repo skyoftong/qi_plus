@@ -132,7 +132,7 @@
 	<!--体修丹-->
 	<Modifier Name="Dan_ChaoRen6" Type="Normal">
 		<DisplayName>体修丹</DisplayName>
-		<Desc>获取所需坏心情, 体修能力百倍</Desc>
+		<Desc>体修能力百倍</Desc>
 		<MaxStack>0</MaxStack>
 		<Duration>-1</Duration>
 		<Display>0</Display>
@@ -157,23 +157,6 @@
 			<li Name="BodyPractice_RollAddtion_Cache3" AddV="300"/>
 			<li Name="BodyPractice_RollAddtion_Cache4" AddV="500"/>
 		</Properties>
-		<Moods>
-			<li>Illusion2</li>
-			<li>BeSale</li>
-			<li>ThunderDisaster3</li>
-			<li>DevilBlood</li>
-			<li>Temperature2</li>
-			<li>Temperature1</li>
-			<li>Temperature9</li>
-			<li>Pain1</li>
-			<li>Consciousness1</li>
-			<li>ClosedRoom</li>
-			<li>SleepWithWhat</li>
-			<li>Magic2</li>
-			<li>ZhenkongJie</li>
-			<li>Iamdying</li>
-			<li>Temperature8</li>
-		</Moods>
 	</Modifier>
 	<!--小灵丹-->
 	<Modifier Name="Dan_ChaoRen7" Type="Normal">
@@ -240,19 +223,45 @@
 			<li Name="ButcherYieldEfficiency" AddP="100"/>
 		</Properties>
 	</Modifier>
-</List></ModifierDefs>
 
-<!--真辟谷丹-->
-<Modifier Name="Dan_ChaoRen8" Type="Normal">
-	<DisplayName>真辟谷丹</DisplayName>
-	<Desc>饮食，喝水，精力不再消耗(精元需要消耗这三样回复)</Desc>
-	<MaxStack>0</MaxStack>
-	<Duration>-1</Duration>
-	<Display>0</Display>
-	<Properties>
-		<li Name="NutritionConsumeConstant" BAddV="-10"/>
-		<li Name="WaterConsumeConstant" BAddV="-10"/>
-		<li Name="FatigueConsumeConstant" AddP="-10"/>
-		<li Name="NutritionWaterAutoRecover" BAddV="10000"/>
-	</Properties>
-</Modifier>
+	<!--真辟谷丹-->
+	<Modifier Name="Dan_ChaoRen8" Type="Normal">
+		<DisplayName>真辟谷丹</DisplayName>
+		<Desc>饮食，喝水，精力不再消耗(精元需要消耗这三样回复)</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NutritionConsumeConstant" BAddV="-10"/>
+			<li Name="WaterConsumeConstant" BAddV="-10"/>
+			<li Name="FatigueConsumeConstant" AddP="-10"/>
+			<li Name="NutritionWaterAutoRecover" BAddV="10000"/>
+		</Properties>
+	</Modifier>
+
+	<!--体修心情丹-->
+	<Modifier Name="Dan_ChaoRen9" Type="Normal">
+		<DisplayName>体修心情丹</DisplayName>
+		<Desc>获取所需坏心情</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>60</Duration>
+		<Display>0</Display>
+		<Moods>
+			<li>Illusion2</li>
+			<li>BeSale</li>
+			<li>ThunderDisaster3</li>
+			<li>DevilBlood</li>
+			<li>Temperature2</li>
+			<li>Temperature1</li>
+			<li>Temperature9</li>
+			<li>Pain1</li>
+			<li>Consciousness1</li>
+			<li>ClosedRoom</li>
+			<li>SleepWithWhat</li>
+			<li>Magic2</li>
+			<li>ZhenkongJie</li>
+			<li>Iamdying</li>
+			<li>Temperature8</li>
+		</Moods>
+	</Modifier>
+</List></ModifierDefs>
