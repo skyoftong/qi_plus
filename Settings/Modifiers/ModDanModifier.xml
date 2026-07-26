@@ -243,9 +243,9 @@
 	<Modifier Name="Dan_ChaoRen9" Type="Normal">
 		<DisplayName>体修心情丹</DisplayName>
 		<Desc>获取所需坏心情</Desc>
-		<MaxStack>0</MaxStack>
+		<MaxStack>1</MaxStack>
 		<Duration>60</Duration>
-		<Display>0</Display>
+		<Display>1</Display>
 		<Moods>
 			<li>Illusion2</li>
 			<li>BeSale</li>
