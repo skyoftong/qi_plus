@@ -246,6 +246,7 @@
 		<MaxStack>1</MaxStack>
 		<Duration>60</Duration>
 		<Display>1</Display>
+		<Sync>1</Sync>
 		<Moods>
 			<li>Illusion2</li>
 			<li>BeSale</li>
