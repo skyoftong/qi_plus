@@ -140,9 +140,13 @@
 			<li Name="BodyPratice_RecoverZhenQi" AddV="10000000"/>
 			<li Name="BodyPratice_MaxZhenQi" AddV="10000000"/>
 			<li Name="PracticeFoodRecoveryConstant" AddP="10000000"/>
+			<li Name="BodyPratice_BodyStrong" AddV="10000000"/>
+			<li Name="BodyPractice_EatItemProduceRateAddp" AddV="10000000"/>
+			<li Name="BodyPractice_EatItemProduceCountAddp" AddV="10000000"/>
 			<li Name="RecoveryPower" AddP="10000000"/>
 			<li Name="MagicDamageRecoveryPowerAddV" AddV="10000000"/>
 			<li Name="BodyPractice_SuperPartRecoverAddP" AddV="10000000"/>
+			<li Name="PainTolerance" AddV="10000000"/>
 			<li Name="BodyPractice_Other_TunaAddp" AddV="10000000"/>
 			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="10000000"/>
 			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="10000000"/>
