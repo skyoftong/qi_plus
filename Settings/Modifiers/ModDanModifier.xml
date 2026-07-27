@@ -9,64 +9,64 @@
 		<Display>0</Display>
 		<BaseFive>100,100,100,100,100</BaseFive>
 		<Skills>
-			<li Name="Manual" LevelOver="210"/>
-			<li Name="DanQi" LevelOver="210"/>
-			<li Name="Medicine" LevelOver="210"/>
-			<li Name="Barrier" LevelOver="210"/>
-			<li Name="Fight" LevelOver="210"/>
-			<li Name="FightSkill" LevelOver="210"/>
-			<li Name="Fabao" LevelOver="210"/>
-			<li Name="SocialContact" LevelOver="210"/>
-			<li Name="Qi" LevelOver="210"/>
-			<li Name="Art" LevelOver="210"/>
-			<li Name="Cooking" LevelOver="210"/>
-			<li Name="Building" LevelOver="210"/>
-			<li Name="Farming" LevelOver="210"/> 
-			<li Name="Mining" LevelOver="210"/>
-			<li Name="DouFa" LevelOver="210"/>
-			<li Name="Manual" Level="240"/>
-			<li Name="DanQi" Level="240"/>
-			<li Name="Medicine" Level="240"/>
-			<li Name="Barrier" Level="240"/>
-			<li Name="Fight" Level="210"/>
-			<li Name="FightSkill" Level="240"/>
-			<li Name="Fabao" Level="240"/>
-			<li Name="SocialContact" Level="240"/>
-			<li Name="Qi" Level="240"/>
-			<li Name="Art" Level="240"/>
-			<li Name="Cooking" Level="240"/>
-			<li Name="Building" Level="240"/>
-			<li Name="Farming" Level="240"/> 
-			<li Name="Mining" Level="240"/>
-			<li Name="DouFa" Level="240"/>
+			<li Name="Manual" LevelOver="210000"/>
+			<li Name="DanQi" LevelOver="210000"/>
+			<li Name="Medicine" LevelOver="210000"/>
+			<li Name="Barrier" LevelOver="210000"/>
+			<li Name="Fight" LevelOver="210000"/>
+			<li Name="FightSkill" LevelOver="210000"/>
+			<li Name="Fabao" LevelOver="210000"/>
+			<li Name="SocialContact" LevelOver="210000"/>
+			<li Name="Qi" LevelOver="210000"/>
+			<li Name="Art" LevelOver="210000"/>
+			<li Name="Cooking" LevelOver="210000"/>
+			<li Name="Building" LevelOver="210000"/>
+			<li Name="Farming" LevelOver="210000"/> 
+			<li Name="Mining" LevelOver="210000"/>
+			<li Name="DouFa" LevelOver="210000"/>
+			<li Name="Manual" Level="240000"/>
+			<li Name="DanQi" Level="240000"/>
+			<li Name="Medicine" Level="240000"/>
+			<li Name="Barrier" Level="240000"/>
+			<li Name="Fight" Level="240000"/>
+			<li Name="FightSkill" Level="240000"/>
+			<li Name="Fabao" Level="240000"/>
+			<li Name="SocialContact" Level="240000"/>
+			<li Name="Qi" Level="240000"/>
+			<li Name="Art" Level="240000"/>
+			<li Name="Cooking" Level="240000"/>
+			<li Name="Building" Level="240000"/>
+			<li Name="Farming" Level="240000"/> 
+			<li Name="Mining" Level="240000"/>
+			<li Name="DouFa" Level="240000"/>
 		</Skills>
 		<Properties>
-			<li Name="NpcFight_BaseHitChance" AddV="10"/>
-			<li Name="NpcFight_BaseDodgeChance" AddV="10"/>
+			<li Name="NpcFight_BaseHitChance" AddV="10000"/>
+			<li Name="NpcFight_BaseDodgeChance" AddV="10000"/>
 			<li Name="AgeCostSpeed" AddP="-100"/>
-			<li Name="GlobalEfficiency" AddP="100"/>
-			<li Name="MoveSpeed" AddP="100"/>
+			<li Name="GlobalEfficiency" AddP="10000"/>
+			<li Name="MoveSpeed" AddP="10000"/>
 			<li Name="ToleranceTMin" AddV="-273"/>
 			<li Name="ToleranceTMax" AddV="10000"/>
 			<li Name="PracticeFoodRecoveryConstant" AddP="100000"/>
-			<li Name="TreatmentExpectQuality" AddP="200"/>
+			<li Name="TreatmentExpectQuality" AddP="10000"/>
 			<li Name="NutritionToJingYuanK" AddP="100000"/>
-			<li Name="MindStateBaseValue" AddV="10000"/>
+			<li Name="MindStateBaseValue" AddV="100000"/>
 			<li Name="SpeedOfMindStateCoefficient" AddP="-100"/>
 			<li Name="MaxAge" AddV="100000000"/>
-			<li Name="IntelligenceSkillEXPConstant" AddP="10000"/>
-			<li Name="PotentialOfBasepracticeAddValue" AddV="100"/>
-			<li Name="NpcFight_ShieldResistanceToJin" AddV="10"/>
-			<li Name="NpcFight_ShieldResistanceToMu" AddV="10"/>
-			<li Name="NpcFight_ShieldResistanceToShui" AddV="10"/>
-			<li Name="NpcFight_ShieldResistanceToHuo" AddV="10"/>
-			<li Name="NpcFight_ShieldResistanceToTu" AddV="10"/>
+			<li Name="IntelligenceSkillEXPConstant" AddP="10000000"/>
+			<li Name="PotentialOfBasepracticeAddValue" AddV="10000"/>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="10000"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="10000"/>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="10000"/>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="10000"/>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="10000"/>
 			<li Name="AgeCostSpeed" AddV="-100"/>
-			<li Name="RecoveryPower" AddP="100"/>
-			<li Name="MagicDamageRecoveryPowerAddV" AddV="100"/>
+			<li Name="RecoveryPower" AddP="10000"/>
+			<li Name="MagicDamageRecoveryPowerAddV" AddV="10000"/>
 			<li Name="WorldMapFlySpeedAddP" AddV="100"/>
 			<li Name="ExperienceFindSpeedAddV" AddV="100"/>
-			<li Name="NpcFight_SneakValue" AddV="500"/>
+			<li Name="NpcFight_SneakValue" AddV="50000"/>
 			<li Name="PlantHarvestYieldEfficiency" AddP="10000"/>
 			<li Name="ButcherYieldEfficiency" AddP="10000"/>	
 		</Properties>
@@ -79,31 +79,31 @@
 		<Duration>-1</Duration>
 		<Display>0</Display>
 		<Properties>
-			<li Name="NpcLingMaxValue" BAddV="100000000"/>
-			<li Name="LingAbsorbSpeed" BAddV="100000000"/>
-			<li Name="NpcFight_FabaoNum" AddV="9"/>
-			<li Name="NpcFight_ShieldConversionRate" BAddV="10000"/>
-			<li Name="NpcFight_ShieldConversionRate" Add="10000"/>
-			<li Name="NpcFight_FabaoPowerAddP" BAddV="10000"/>
-			<li Name="NpcFight_FabaoPowerAddP" AddP="10000"/>
-			<li Name="NpcFight_FabaoLingRecoverAddP" BAddV="10000"/>
-			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="10000"/>
-			<li Name="NpcFight_FabaoLingRecoverK" BAddV="10000"/>
-			<li Name="NpcFight_FabaoLingRecoverK" AddP="10000"/>
-			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="10000"/>
-			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="10000"/> 
-			<li Name="NpcFight_FabaoTrailingLengthAddP" AddP="10000"/>
-			<li Name="NpcFight_FabaoRepelResistanceAddV" AddV="10000"/>
-			<li Name="NpcFight_SpellPowerAddP" AddV="10000"/>
-			<li Name="NpcFight_SpellLingCostAddP" AddP="-10000"/>
-			<li Name="NpcFight_SpellCoolDownAddP" AddP="-10"/> 
-			<li Name="FabaoMake_SpeedAddV" AddV="10000"/>
-			<li Name="FabaoMake_SuccessRateAddV" AddV="10000"/>
-			<li Name="FabaoMake_LingInheritRateAddV" AddV="10000"/>
-			<li Name="FabaoMake_QualityAddV" AddV="10000"/>
-			<li Name="FabaoMake_TwelveRateChance" AddV="10000"/>
-			<li Name="DanMake_SpeedAddV" AddV="100"/>
-			<li Name="DanMake_SuccessRateAddV" AddV="100"/>
+			<li Name="NpcLingMaxValue" BAddV="1000000000"/>
+			<li Name="LingAbsorbSpeed" BAddV="1000000000"/>
+			<li Name="NpcFight_FabaoNum" AddV="100"/>
+			<li Name="NpcFight_ShieldConversionRate" BAddV="100000000"/>
+			<li Name="NpcFight_ShieldConversionRate" Add="100000000"/>
+			<li Name="NpcFight_FabaoPowerAddP" BAddV="100000000"/>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="100000000"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" BAddV="100000000"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="100000000"/>
+			<li Name="NpcFight_FabaoLingRecoverK" BAddV="100000000"/>
+			<li Name="NpcFight_FabaoLingRecoverK" AddP="100000000"/>
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddV="100000000"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="100000000"/> 
+			<li Name="NpcFight_FabaoTrailingLengthAddP" AddP="100000000"/>
+			<li Name="NpcFight_FabaoRepelResistanceAddV" AddV="100000000"/>
+			<li Name="NpcFight_SpellPowerAddP" AddV="100000000"/>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="-100000000"/>
+			<li Name="NpcFight_SpellCoolDownAddP" AddP="-10000"/> 
+			<li Name="FabaoMake_SpeedAddV" AddV="100000000"/>
+			<li Name="FabaoMake_SuccessRateAddV" AddV="100000000"/>
+			<li Name="FabaoMake_LingInheritRateAddV" AddV="100000000"/>
+			<li Name="FabaoMake_QualityAddV" AddV="100000000"/>
+			<li Name="FabaoMake_TwelveRateChance" AddV="100000000"/>
+			<li Name="DanMake_SpeedAddV" AddV="100000000"/>
+			<li Name="DanMake_SuccessRateAddV" AddV="100000000"/>
 			<li Name="DanMake_YieldAddP" AddP="10000"/>
 		</Properties>
 	</Modifier>
@@ -115,7 +115,7 @@
 		<Duration>-1</Duration>
 		<Display>0</Display>
 		<Properties>
-			<li Name="NeckCountdownAddV" AddV="6000000"/>
+			<li Name="NeckCountdownAddV" AddV="60000000"/>
 		</Properties>
 	</Modifier>
 	<!--功德丹-->
@@ -126,7 +126,7 @@
 		<Duration>-1</Duration>
 		<Display>0</Display>
 		<Properties>
-			<li Name="GodPenaltyAddV" AddV="-10000"/>
+			<li Name="GodPenaltyAddV" AddV="-100000"/>
 		</Properties>
 	</Modifier>
 	<!--体修丹-->
@@ -137,25 +137,28 @@
 		<Duration>-1</Duration>
 		<Display>0</Display>
 		<Properties>
-			<li Name="BodyPratice_RecoverZhenQi" AddV="100000"/>
-			<li Name="PracticeFoodRecoveryConstant" AddP="10000"/>
-			<li Name="BodyPractice_SuperPartRecoverAddP" AddV="4000"/>
-			<li Name="BodyPractice_Other_TunaAddp" AddV="10000"/>
-			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="1000"/>
-			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="1000"/>
-			<li Name="BodyPractice_SuperPartAddp_AtkRate" AddV="1000"/>
-			<li Name="BodyPractice_SuperPartAddp_DefRate" AddV="1000"/>
-			<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddV="1000"/>
-			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="1000"/>
-			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="1000"/>
-			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="1000"/>
-			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="1000"/>
-			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="1000"/>
-			<li Name="BodyPratice_QuenchingSpeed" AddV="1000"/>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="10000000"/>
+			<li Name="BodyPratice_MaxZhenQi" AddV="10000000"/>
+			<li Name="PracticeFoodRecoveryConstant" AddP="10000000"/>
+			<li Name="RecoveryPower" AddP="10000000"/>
+			<li Name="MagicDamageRecoveryPowerAddV" AddV="10000000"/>
+			<li Name="BodyPractice_SuperPartRecoverAddP" AddV="10000000"/>
+			<li Name="BodyPractice_Other_TunaAddp" AddV="10000000"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="10000000"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="10000000"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkRate" AddV="10000000"/>
+			<li Name="BodyPractice_SuperPartAddp_DefRate" AddV="10000000"/>
+			<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddV="10000000"/>
+			<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="10000000"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="10000000"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="10000000"/>
+			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="10000000"/>
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="10000000"/>
+			<li Name="BodyPratice_QuenchingSpeed" AddV="10000000"/>
 			<li Name="BodyPractice_RollAddtion_Cache1" AddV="50"/>
 			<li Name="BodyPractice_RollAddtion_Cache2" AddV="200"/>
 			<li Name="BodyPractice_RollAddtion_Cache3" AddV="300"/>
-			<li Name="BodyPractice_RollAddtion_Cache4" AddV="5000"/>
+			<li Name="BodyPractice_RollAddtion_Cache4" AddV="50000"/>
 		</Properties>
 	</Modifier>
 	<!--小灵丹-->
@@ -199,11 +202,8 @@
 			<li Name="DouFa" Level="40"/>
 	</Skills>
 		<Properties>
+			<li Name="BodyPractice_RollAddtion_Cache4" AddV="50000"/>
 			<li Name="NpcLingMaxValue" BAddV="1000000"/>
-			<li Name="LingAbsorbSpeed" BAddV="1000000"/>
-			<li Name="BodyPratice_QuenchingSpeed" AddV="100"/>
-			<li Name="BodyPractice_Other_TunaAddp" AddV="100"/>
-			<li Name="BodyPratice_RecoverZhenQi" AddV="10000"/>
 			<li Name="NpcFight_BaseHitChance" AddV="10"/>
 			<li Name="NpcFight_BaseDodgeChance" AddV="10"/>
 			<li Name="AgeCostSpeed" AddP="-100"/>
@@ -211,13 +211,10 @@
 			<li Name="MoveSpeed" AddP="100"/>
 			<li Name="ToleranceTMin" AddV="-273"/>
 			<li Name="ToleranceTMax" AddV="10000"/>
-			<li Name="PracticeFoodRecoveryConstant" AddP="10000"/>
-			<li Name="NutritionToJingYuanK" AddP="10000"/>
-			<li Name="MindStateBaseValue" AddV="100"/>
+			<li Name="MindStateBaseValue" AddV="1000"/>
 			<li Name="SpeedOfMindStateCoefficient" AddP="-2"/>
-			<li Name="MagicDamageRecoveryPowerAddV" AddV="2"/>
-			<li Name="WorldMapFlySpeedAddP" AddV="2"/>
-			<li Name="ExperienceFindSpeedAddV" AddV="2"/>
+			<li Name="WorldMapFlySpeedAddP" AddV="10"/>
+			<li Name="ExperienceFindSpeedAddV" AddV="10"/>
 			<li Name="NpcFight_SneakValue" AddV="50"/>	
 			<li Name="PlantHarvestYieldEfficiency" AddP="100"/>
 			<li Name="ButcherYieldEfficiency" AddP="100"/>
