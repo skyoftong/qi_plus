@@ -161,7 +161,7 @@
 			<li Name="BodyPratice_QuenchingSpeed" AddV="10000000"/>
 			<li Name="BodyPractice_RollAddtion_Cache1" AddV="50"/>
 			<li Name="BodyPractice_RollAddtion_Cache2" AddV="200"/>
-			<li Name="BodyPractice_RollAddtion_Cache3" AddV="300"/>
+			<li Name="BodyPractice_RollAddtion_Cache3" AddV="30000"/>
 			<li Name="BodyPractice_RollAddtion_Cache4" AddV="50000"/>
 		</Properties>
 	</Modifier>
