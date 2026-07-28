@@ -158,6 +158,9 @@
 			<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="10000000"/>
 			<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="10000000"/>
 			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="10000000"/>
+			<li Name="BodyPractice_AngerFireNum" AddV="1000"/>
+			<li Name="BodyPractice_AngerFireDuration" AddV="10000000"/>
+			<li Name="BodyPractice_AngerFireEffectAddp" AddV="10000000"/>
 			<li Name="BodyPratice_QuenchingSpeed" AddV="10000000"/>
 			<li Name="BodyPractice_RollAddtion_Cache1" AddV="50"/>
 			<li Name="BodyPractice_RollAddtion_Cache2" AddV="200"/>
