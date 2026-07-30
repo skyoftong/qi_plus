@@ -138,7 +138,6 @@ Item_SnakeEgg	药食
 Item_CatMeat	药食
 Item_TigerMeat	药食
 Item_TurtleEgg	药食
-Item_StrangeMush	药食
 Item_RedGinseng	灵药
 Item_PurpleGanodermaLucidum	灵药
 Item_Ginseng	灵药
@@ -191,12 +190,6 @@ Item_Winter_LingZhi	灵丹
 Item_Spring_LingZhi	灵丹
 Item_Summer_LingZhi	灵丹
 Item_Earth_LingZhi	灵丹
-Item_Dan_Fail1      灵丹
-Item_Dan_Fail2      灵丹
-Item_Dan_Fail3      灵丹
-Item_Dan_Fail4      灵丹
-Item_Dan_Fail5      灵丹
-Item_Dan_SanHuaHuangJing    灵丹
 Item_Dan_JingYuan	丹药
 Item_Dan_JingYuan2	丹药
 Item_Dan_JingYuan3	丹药
@@ -222,7 +215,6 @@ Item_Dan_FaceUnLock	丹药
 Item_Dan_FaceLock1	丹药
 Item_Dan_FaceLock2	丹药
 Item_Dan_FaceLock3	丹药
-Item_Dan_WuQiNoHunger2  丹药
 Item_LifeStream	天材地宝
 Item_MonsterBlood	天材地宝
 Item_EarthEssence	天材地宝
@@ -299,8 +291,4 @@ Item_SpringBox	年货
 Item_StoneCutter	工具
 Item_SewingDefender	工具
 Item_MillVell	工具
-Item_FunPoem    工具
-Item_FunMusic   工具
-Item_FunChess   工具
-Item_FunPainting    工具
 Item_AuctionPaper	邀请函
