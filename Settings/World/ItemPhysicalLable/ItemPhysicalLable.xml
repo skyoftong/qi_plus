@@ -3,7 +3,7 @@
 		<Lable Name="shenxiufabao01"> 
 			<Effects>
 				<li Kind="AttackPower" Addp="0.3"/>				<!--法宝威力-->
-				<li Kind="LingRecover" Addp="0.2"/>			<!--回灵速度-->
+				<li Kind="LingRecover" Addp="10"/>			<!--回灵速度-->
 				<li Kind="MaxLing" Addp="0.001"/>				<!--灵气容量-->
 				<li Kind="FlySpeed" Addp="0.1"/>				<!--飞行速度-->
 				<li Kind="RotSpeed" Addp="0.1"/>				<!--转弯速度-->
