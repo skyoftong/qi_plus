@@ -138,6 +138,7 @@ Item_SnakeEgg	药食
 Item_CatMeat	药食
 Item_TigerMeat	药食
 Item_TurtleEgg	药食
+Item_StrangeMush    药食
 Item_RedGinseng	灵药
 Item_PurpleGanodermaLucidum	灵药
 Item_Ginseng	灵药
@@ -306,4 +307,3 @@ Item_Dan_ChaoRen11  邀请函
 Item_Dan_ChaoRen12  邀请函
 Item_Dan_ChaoRen13  邀请函
 Item_Dan_ChaoRen14  邀请函
-Item_MiBao_ShenXiuFaBaoXinYangShengWu 邀请函
