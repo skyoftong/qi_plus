@@ -1,0 +1,16 @@
+<Magics><List>	
+	<Magic Name="Magic_Body_JingXi" Type="Class">
+		<FromDLC>YaoZuJueQi</FromDLC>
+		<DisplayName>鲸息吐纳法</DisplayName>
+		<Desc>在目标地点发动剧烈的吐纳，效率是平常的百倍</Desc>
+		<Icon>res\Sprs\ui\icon_jingxituna01</Icon>
+		<Param1>10</Param1><!--持续时间-->
+		<Param2>600000</Param2><!--相当于多少秒的吐纳-->
+		<SelectMode>Single</SelectMode>
+		<CheckTag>Practice</CheckTag>
+		<SelectTarget>Point|InLight|WorkPractice|Walkable</SelectTarget>
+		<ClassName>Magic_BodyJingxituna</ClassName>
+		<TargetDesc>选择一个进行吐纳的地点</TargetDesc>
+		<Ani>dazuo</Ani>
+	</Magic>	
+</List></Magics>
