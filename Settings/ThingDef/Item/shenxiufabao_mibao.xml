@@ -90,7 +90,7 @@
 			</BeMade> 
 			<Fabao>
 				<SpecialAbility>
-					<Ability Kind="HitCountAddMirror" nParam1="3" nParam2="9" fParam1="3" Desc="每攻击3次，产生9道蚊须分形，持续3秒。"/>
+					<Ability Kind="HitCountAddMirror" nParam1="3" nParam2="9" fParam1="30" Desc="每攻击3次，产生9道蚊须分形，持续30秒。"/>
 					<!--灵冲殿--><Ability Kind="HitCountCostSkill" nParam1="18"  sParam1="DamageSkill_4" Desc="每18次攻击会对目标敌人发动一次法术。"/>
 					<!--灵归殿--><Ability Kind="HitAddRecovery" fParam1="0.03"  Desc="造成伤害的3%会补充为法宝自身的灵气。"/>
 					<!--分光殿--><Ability Kind="HitCountAddMirror" nParam1="15" nParam2="1" fParam1="15" Desc="每攻击15次，产生1道剑光分化，持续15秒。"/>
