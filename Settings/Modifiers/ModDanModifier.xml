@@ -225,6 +225,8 @@
 			<li Name="NpcFight_SneakValue" AddV="50"/>	
 			<li Name="PlantHarvestYieldEfficiency" AddP="100"/>
 			<li Name="ButcherYieldEfficiency" AddP="100"/>
+			<li Name="MaxAge" AddV="100000000"/>
+			<li Name="AgeCostSpeed" AddV="-100"/>
 		</Properties>
 	</Modifier>
 
