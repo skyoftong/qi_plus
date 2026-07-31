@@ -964,7 +964,7 @@
 				<li>
 					<Kind>FaBaoSpecialAbility</Kind>   
 					<SpecialAbilities>
-						<li Kind="HitCountAddMirror" nParam1="3" nParam2="9" fParam1="3" Desc="每攻击3次，产生9道蚊须分形，持续3秒。"/>
+						<li Kind="HitCountAddMirror" nParam1="1" nParam2="9" fParam1="30" Desc="每攻击1次，产生9道蚊须分形，持续30秒。"/>
 					</SpecialAbilities>
 				</li>
 			</Effects>
