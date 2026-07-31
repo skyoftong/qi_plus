@@ -150,7 +150,7 @@
         <Def Name="Mutation_Effect_Constant_Yang"> 
             <DisplayName>阳极宝地</DisplayName>
             <Desc>门派风水恒定为最高，门派基础聚灵效果提高100点，所有地块火木属性增加，但地图基础温度提高20°</Desc>
-            <Weight>-1,-1,1500</Weight>
+            <Weight>-1,-1,0</Weight>
             <Effects>
                 <li>Mutation_Effect_Constant_Yang</li>
             </Effects>
@@ -159,7 +159,7 @@
         <Def Name="Mutation_Effect_Constant_Yin"> 
             <DisplayName>阴极宝地</DisplayName>
             <Desc>门派风水恒定为最高，门派基础聚灵效果提高100点，所有地块金水属性增加，但地图基础温度降低20°</Desc>
-            <Weight>-1,-1,1500</Weight>
+            <Weight>-1,-1,0</Weight>
             <Effects>
                 <li>Mutation_Effect_Constant_Yin</li>
             </Effects>
