@@ -6,6 +6,7 @@
 		<Icon>res\Sprs\ui\icon_jingxituna01</Icon>
 		<Param1>18</Param1><!--持续时间-->
 		<Param2>60000</Param2><!--相当于多少秒的吐纳-->
+		<sParam1>Modifier_BodyPractice_Magic_JingXi</sParam1><!--结束之后加的MODIFIER 这个效果要可以叠加-->
 		<SelectMode>Single</SelectMode>
 		<CheckTag>Practice</CheckTag>
 		<SelectTarget>Point|InLight|WorkPractice|Walkable</SelectTarget>
