@@ -90,15 +90,14 @@
 			</BeMade> 
 			<Fabao>
 				<SpecialAbility>
-					<Ability Kind="HitCountAddMirror" nParam1="1" nParam2="9" fParam1="30" Desc="每攻击1次，产生9道蚊须分形，持续30秒。"/>
-					<!--灵冲殿--><Ability Kind="HitCountCostSkill" nParam1="18"  sParam1="DamageSkill_4" Desc="每18次攻击会对目标敌人发动一次法术。"/>
-					<!--灵归殿--><Ability Kind="HitAddRecovery" fParam1="0.03"  Desc="造成伤害的3%会补充为法宝自身的灵气。"/>
-					<!--分光殿--><Ability Kind="HitCountAddMirror" nParam1="1" nParam2="15" fParam1="15" Desc="每攻击1次，产生15道剑光分化，持续15秒。"/>
-					<!--回息殿--><Ability Kind="HitCountAddSubColdDown" nParam1="7" fParam1="1" Desc="每7次攻击会减少1秒技能CD。"/>								 
-					<!--九极殿--><Ability Kind="AtkRateDamageAddp" fParam1="0.04" fParam2="9" nParam1="0" Desc="造成伤害时，有4%的几率造成9倍伤害。"/>	
+					<!--灵冲殿--><Ability Kind="HitCountCostSkill" nParam1="1"  sParam1="DamageSkill_4" Desc="每1次攻击会对目标敌人发动一次法术。"/>
+					<!--灵归殿--><Ability Kind="HitAddRecovery" fParam1="3"  Desc="造成伤害的300%会补充为法宝自身的灵气。"/>
+					<!--分光殿--><Ability Kind="HitCountAddMirror" nParam1="1" nParam2="15" fParam1="30" Desc="每攻击1次，产生15道剑光分化，持续30秒。"/>
+					<!--回息殿--><Ability Kind="HitCountAddSubColdDown" nParam1="1" fParam1="1" Desc="每1次攻击会减少1秒技能CD。"/>								 
+					<!--九极殿--><Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="9" nParam1="0" Desc="造成伤害时，有100%的几率造成9倍伤害。"/>	
 					<!--无极殿--><Ability Kind="FristHitPowerUp" fParam1="4" Desc="第一剑威力增加3倍，法宝补充灵气重置。"/>	
 					<!--破罡殿--><Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="1.25" nParam1="1" Desc="攻击敌方本体时，造成1.25倍伤害。"/>
-				    <!--五毒殿--><Ability Kind="HitCountAddDamage" nParam1="36" sParam1="TheWholeBody" sParam2="FivePoison" Desc="每36次攻击修行者本体，会穿透护盾造成额外伤害。"/>	
+				    <!--五毒殿--><Ability Kind="HitCountAddDamage" nParam1="1" sParam1="TheWholeBody" sParam2="FivePoison" Desc="每1次攻击修行者本体，会穿透护盾造成额外伤害。"/>	
 				</SpecialAbility>
 			</Fabao>
 			<UseLua>GameMain:GetMod('_FabaoHelper'):FeedSelf()</UseLua>
