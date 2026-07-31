@@ -75,13 +75,6 @@
 		<Item>
 			<PhysicalLables>	
 				<!--圣宝阁14级调整属性相等--><li>shenxiufabao01</li>	
-				<!--真刚殿2级--><li>Hard2</li>					
-				<!--介子殿-->	<li>SmallThing</li>				
-				<!--玄刃殿-->	<li>Sharp</li>					
-				<!--天雷殿-->	<li>GreatThing_AttackLow</li>	
-				<!--浑沉殿-->	<li>Blunt</li>					
-				<!--啸风殿-->	<li>GreatThing_Fly</li>			
-				<!--玄冲殿-->	<li>GreatThing_Knock</li>
 			</PhysicalLables>
 			<BeMade>
 				<CostItems>

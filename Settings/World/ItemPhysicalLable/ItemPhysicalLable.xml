@@ -4,13 +4,13 @@
 			<Effects>
 				<li Kind="AttackPower" Addp="10"/>				<!--法宝威力-->
 				<li Kind="LingRecover" Addp="10"/>			<!--回灵速度-->
-				<li Kind="MaxLing" BAddp="-0.99"/>				<!--灵气容量-->
-				<li Kind="FlySpeed" Addp="1"/>				<!--飞行速度-->
-				<li Kind="RotSpeed" Addp="1"/>				<!--转弯速度-->
-				<li Kind="KnockBackResistance" Addv="2.5"/>		<!--击退抵抗-->
-				<li Kind="KnockBackAddition" Addv="2.5"/>		<!--击退强度-->
-				<li Kind="TailLenght" Addp="5"/>			<!--拖尾长度-->
-				<li Kind="Scale" Addp="0.15"/>				<!--体积-->
+				<li Kind="MaxLing" Addp="-0.999"/>				<!--灵气容量-->
+				<li Kind="FlySpeed" Addp="10"/>				<!--飞行速度-->
+				<li Kind="RotSpeed" Addp="10"/>				<!--转弯速度-->
+				<li Kind="KnockBackResistance" Addv="25"/>		<!--击退抵抗-->
+				<li Kind="KnockBackAddition" Addv="25"/>		<!--击退强度-->
+				<li Kind="TailLenght" Addp="50"/>			<!--拖尾长度-->
+				<li Kind="Scale" Addp="1"/>				<!--体积-->
 				<li Kind="AttackRate" Addv="-1"/>				<!--攻击间隔-->
 			</Effects>
 		</Lable>
