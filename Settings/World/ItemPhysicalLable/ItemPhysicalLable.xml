@@ -4,7 +4,7 @@
 			<Effects>
 				<li Kind="AttackPower" Addp="10"/>				<!--法宝威力-->
 				<li Kind="LingRecover" Addp="10"/>			<!--回灵速度-->
-				<li Kind="MaxLing" Addp="-0.9"/>				<!--灵气容量-->
+				<li Kind="MaxLing" BAddp="-0.99"/>				<!--灵气容量-->
 				<li Kind="FlySpeed" Addp="1"/>				<!--飞行速度-->
 				<li Kind="RotSpeed" Addp="1"/>				<!--转弯速度-->
 				<li Kind="KnockBackResistance" Addv="2.5"/>		<!--击退抵抗-->
