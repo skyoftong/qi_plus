@@ -167,6 +167,7 @@
 			<li Name="BodyPractice_RollAddtion_Cache2" AddV="200"/>
 			<li Name="BodyPractice_RollAddtion_Cache3" AddV="30000"/>
 			<li Name="BodyPractice_RollAddtion_Cache4" AddV="50000"/>
+			<li Name="BodyPratice_BodyRecover" AddV="10000"/>
 		</Properties>
 	</Modifier>
 	<!--小灵丹-->
@@ -231,6 +232,7 @@
 			<li Name="MaxAge" AddV="100000000"/>
 			<li Name="AgeCostSpeed" AddV="-100"/>
 			<li Name="MindStateBaseValue" AddV="100"/>
+			<li Name="BodyPratice_BodyRecover" AddV="1"/>
 		</Properties>
 	</Modifier>
 
