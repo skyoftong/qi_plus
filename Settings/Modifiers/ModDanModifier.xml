@@ -211,6 +211,7 @@
 		<Properties>
 			<li Name="BodyPractice_RollAddtion_Cache4" AddV="50000"/>
 			<li Name="NpcLingMaxValue" BAddV="1000000"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" BAddV="10000"/>
 			<li Name="NpcFight_FabaoNum" AddV="10"/>
 			<li Name="NpcFight_BaseHitChance" AddV="10"/>
 			<li Name="NpcFight_BaseDodgeChance" AddV="10"/>
