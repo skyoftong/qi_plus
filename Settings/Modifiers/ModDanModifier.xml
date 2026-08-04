@@ -61,7 +61,6 @@
 			<li Name="NpcFight_ShieldResistanceToShui" AddV="10000"/>
 			<li Name="NpcFight_ShieldResistanceToHuo" AddV="10000"/>
 			<li Name="NpcFight_ShieldResistanceToTu" AddV="10000"/>
-			<li Name="AgeCostSpeed" AddV="-100"/>
 			<li Name="RecoveryPower" AddP="10000"/>
 			<li Name="MagicDamageRecoveryPowerAddV" AddV="10000"/>
 			<li Name="WorldMapFlySpeedAddP" AddV="100"/>
@@ -69,7 +68,7 @@
 			<li Name="NpcFight_SneakValue" AddV="50000"/>
 			<li Name="PlantHarvestYieldEfficiency" AddP="10000"/>
 			<li Name="ButcherYieldEfficiency" AddP="10000"/>
-			<li Name="MindStateBaseValue" AddV="10000"/>	
+			<li Name="BaseEmotionAddV" AddV="10000"/>	
 		</Properties>
 	</Modifier>
 	<!--剑仙丹-->
@@ -230,9 +229,7 @@
 			<li Name="PlantHarvestYieldEfficiency" AddP="100"/>
 			<li Name="ButcherYieldEfficiency" AddP="100"/>
 			<li Name="MaxAge" AddV="100000000"/>
-			<li Name="AgeCostSpeed" AddV="-100"/>
-			<li Name="MindStateBaseValue" AddV="100"/>
-			<li Name="BodyPratice_BodyRecover" AddV="1"/>
+			<li Name="BodyPratice_BodyRecover" AddV="1"/>	
 		</Properties>
 	</Modifier>
 
