@@ -408,6 +408,16 @@
 					<Item name = "Item_LingStone" count = "1"/>
 				</CostItems>
 			</BeMade> 
+			<DevourDatas>
+				<li Name="Item_BodyPractice_WuXing" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_TaiXu" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XuanTian" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_JiuYang" Count="1" Rate="1"/>
+				<li Name="Item_BodyPractice_XuanYue" Count="1" Rate="1"/>
+			</DevourDatas> 
 		</Item>
 		<Element>
 			<Kind>None</Kind>
