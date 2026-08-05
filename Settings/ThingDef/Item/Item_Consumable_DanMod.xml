@@ -409,7 +409,6 @@
 				</CostItems>
 			</BeMade> 
 			<DevourDatas>
-				<li Name="Item_BodyPractice_WuXing" Count="0.1" Rate="0.1"/>
 				<li Name="Item_BodyPractice_TaiXu" Count="0.1" Rate="0.1"/>
 				<li Name="Item_BodyPractice_XuanTian" Count="0.1" Rate="0.1"/>
 				<li Name="Item_BodyPractice_ShengMingLv1" Count="0.1" Rate="0.1"/>
