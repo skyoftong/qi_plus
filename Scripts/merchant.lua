@@ -4,6 +4,7 @@ local function ApplyTraderInterval()
     CS.XiaWorld.WalkTraderData.NextComeDay_Min = 5
     CS.XiaWorld.WalkTraderData.NextComeDay_Max = 5
     CS.XiaWorld.WalkTraderData.FirstComeDay = 5
+    CS.XiaWorld.TradeMgr.Instance.default_walkdef.AllRandomCount = 10000
 end
 
 function MOD:OnInit()
